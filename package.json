@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "concurrently \"npm run js\" \"npm run css\" \"npm run css\"",
+    "css": "postcss -u precss -u autoprefixer -u postcss-flexbugs-fixes -o index.css index.pcss",
+    "html": "pug index.pug",
+    "js": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +27,8 @@
     "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
+    "concurrently": "^3.1.0",
+    "normalize.css": "^5.0.0",
     "postcss-cli": "^2.6.0",
     "postcss-flexbugs-fixes": "^2.1.0",
     "precss": "^1.4.0",
