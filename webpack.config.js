@@ -15,6 +15,13 @@ module.exports = {
 			query: {
 				presets: ['es2015', 'react']
 			},
+		}, {
+			test: /\.pcss$/,
+			loaders: [
+				'style-loader?sourceMap',
+				'css-loader?modules&importLoaders=1',
+				'postcss-loader?sourceMap',
+			],
 		}],
 	},
 };
