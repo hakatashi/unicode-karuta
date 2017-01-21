@@ -18,17 +18,23 @@ class Game extends React.Component {
 			this.setState({
 				voices: speechSynthesis.getVoices(),
 			});
-
-			const utterance = new SpeechSynthesisUtterance('Hello.');
-			utterance.voice = this.state.voices.find((voice) => voice.name === 'Google US English');
-			speechSynthesis.speak(utterance);
 		};
 
 		speechSynthesis.addEventListener('voiceschanged', this.onvoicechanged);
+		this.onvoicechanged();
 	}
 
 	componentWillUnmount() {
 		speechSynthesis.removeEventListener('voiceschanged', this.onvoicechanged);
+	}
+
+	utterVoice = (event) => {
+		event.preventDefault();
+
+		const voiceName = event.target.getAttribute('data-name');
+		const utterance = new SpeechSynthesisUtterance('Hello.');
+		utterance.voice = this.state.voices.find((voice) => voice.name === voiceName);
+		speechSynthesis.speak(utterance);
 	}
 
 	render() {
@@ -37,7 +43,7 @@ class Game extends React.Component {
 				<h1 styleName="head">unicode-karuta</h1>
 				<ul>
 					{this.state.voices.map((voice) => (
-						<li key={voice.voiceURI}>{voice.name}</li>
+						<li data-name={voice.name} key={voice.voiceURI} onClick={this.utterVoice}>{voice.name}</li>
 					))}
 				</ul>
 			</div>
