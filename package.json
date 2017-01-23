@@ -8,7 +8,8 @@
     "css": "postcss -u precss -u autoprefixer -u postcss-flexbugs-fixes -o index.css index.pcss",
     "html": "pug index.pug",
     "js": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
     "react": "^15.4.2",
     "react-css-modules": "^4.1.0",
     "react-dom": "^15.4.2",
+    "react-player": "^0.14.1",
     "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
