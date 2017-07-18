@@ -15,3 +15,63 @@
     - アラビア語では疑問符を左右反対にして書く。理由はもちろん、そもそもアラビア語では右から左に文章を書くから――なのだが、同じく右書きのヘブライ語やイディッシュ語では通常の疑問符と同じ向きのものを使う。
   references:
     - https://en.wikipedia.org/wiki/Question_mark#Mirrored_question_mark
+
+-
+  codepoint: 0x1F0A0
+  name: PLAYING CARD BACK
+  description:
+    - トランプの裏面。
+    - トランプがUnicodeに収録されているのだから、そのうち「Unicodeかるた」もUnicodeに収録される日が来るかもしれない。しかし「Unicodeかるた」もUnicodeに収録されると、その文字を記載した「Unicodeかるた」のカードが必要になり、さらにそのカードを表す文字がUnicodeに収録され、さらに⋯⋯。
+    - ⋯⋯やっぱり収録されないほうが幸せかもしれない。
+
+-
+  codepoint: 0x1F0B1
+  name: PLAYING CARD ACE OF HEARTS
+  description:
+    - トランプの、ハートのエース。
+    - 「エース」というのはもともと、トランプやサイコロの目を表すための序数の一つである。エースの後は、デュース、トレイ、ケイター、シンク、と続くのだが、現在ではデュース以外の単語はほとんど使われない。
+
+-
+  codepoint: 0x2680
+  name: DIE FACE-1
+  description:
+    - 賽の目の1。ピンとも呼ぶ。サイコロのこの目だけが赤いのは、実は日本だけである。
+    - ノーカン! ノーカン!
+
+-
+  codepoint: 0x2681
+  name: DIE FACE-2
+  description:
+    - 賽の目の2。墨を塗ることで3にも4にも5にも6にもできる便利な目である。
+
+-
+  codepoint: 0x2682
+  name: DIE FACE-3
+  description:
+    - 賽の目の3。
+    - 元老院と敵対したユリウス・カエサルは、ルビコン川を渡り進軍する際に「賽は投げられた」と述べた。彼が礎を築いた帝政ローマの皇帝が賭博を禁じながらも自らはダイスゲームに熱中したのは、ひょっとしたら彼のせいかもしれない。
+
+-
+  codepoint: 0x2683
+  name: DIE FACE-4
+  description:
+    - 賽の目の4。中国では1の目に加えてこの目も赤く塗られている。清代は趙翼の伝によると、唐の玄宗帝がこの目でゲームに勝ったため4の目を赤く塗らせたとか。
+  references:
+    - https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%A4%E3%82%B3%E3%83%AD#.E4.B8.AD.E5.9B.BD.E3.81.AE.E3.82.B5.E3.82.A4.E3.82.B3.E3.83.AD
+    - https://zh.wikipedia.org/wiki/%E9%AA%B0%E5%AD%90#.E6.AD.B7.E5.8F.B2
+
+-
+  codepoint: 0x2684
+  name: DIE FACE-5
+  description:
+    - 賽の目の5。
+    - 古代ローマで用いられたサイコロの一種に、2の目と5の目が欠けた4面のダイスがある。形も立方体とか正四面体ではない、へんてこな形をしている。
+  references:
+    - https://en.wikipedia.org/wiki/Dice#History
+    - http://www.aerobiologicalengineering.com/wxk116/Roman/BoardGames/tali.html
+
+-
+  codepoint: 0x2685
+  name: DIE FACE-6
+  description:
+    - 賽の目の6。目が彫刻されているサイコロの場合、1の目が一番彫る量が少ないので少しだけ重く、そのぶん6の目がでる確率が少しだけ高い⋯⋯かもしれない。
