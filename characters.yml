@@ -1,0 +1,17 @@
+-
+  codepoint: 0x4DF0
+  name: HEXAGRAM FOR REVOLUTION
+  description:
+    - ――革は、巳日(いじつ)にしてすなわち孚(まこと)とせらる。元(おお)いに亨(とお)り貞(ただ)しきに利(よ)ろし。悔(くい)亡ぶ。
+    - 結局どこの文化圏でも、君主は常に君臨して統治する存在なのだ。禅譲とはなんだったのか。
+    - ちなみに、この卦の上爻の爻辞にある「君子豹変、小人革面」は、「君子は豹変す」の語源である。
+  references:
+    - 高田眞治・後藤基巳訳　『易経』　岩波書店〈岩波文庫〉、1959年。ISBN 9784003320112。
+
+-
+  codepoint: 0x061F
+  name: ARABIC QUESTION MARK
+  description:
+    - アラビア語では疑問符を左右反対にして書く。理由はもちろん、そもそもアラビア語では右から左に文章を書くから――なのだが、同じく右書きのヘブライ語やイディッシュ語では通常の疑問符と同じ向きのものを使う。
+  references:
+    - https://en.wikipedia.org/wiki/Question_mark#Mirrored_question_mark
