@@ -36,7 +36,7 @@
   name: DIE FACE-1
   description:
     - 賽の目の1。ピンとも呼ぶ。サイコロのこの目だけが赤いのは、実は日本だけである。
-    - ノーカン! ノーカン!
+    - 通るかっ⋯⋯! こんなもん⋯⋯!
 
 -
   codepoint: 0x2681
@@ -77,6 +77,13 @@
     - 賽の目の6。賽の目が彫刻されているサイコロの場合、1の目が一番彫る量が少ないので少しだけ重く、そのぶん6の目がでる確率が少しだけ高い⋯⋯かもしれない。
 
 -
+  codepoint: 0x0030
+  name: DIGIT ZERO
+  description:
+    - アラビア数字のゼロ。
+    - ゼロを表す文字は、ゼロという概念が生まれる前に生まれた。
+
+-
   codepoint: 0x0041
   name: LATIN CAPITAL LETTER A
   description:
@@ -112,3 +119,28 @@
   name: LATIN CAPITAL LETTER O
   description:
     - ラテン文字の大文字のオー。ラテン文字・ギリシャ文字・キリル文字の間で、大文字小文字を含めて同じ活字を使える文字は、実はこれだけである。
+
+-
+  codepoint: 0x0149
+  name: LATIN SMALL LETTER N PRECEDED BY APOSTROPHE
+  description:
+    - ラテン文字の小文字のnと前置アポストロフィー。Rock'n roll のように様々な単語の略記として用いられるほか、オランダ語から派生したアフリカーンス語では、オランダ語の不定冠詞eenの略記法であるこれを正式な不定冠詞として採用しており、非常によく用いられる⋯⋯のだが、ひと目見たら分かる通り、明らかに「2文字」である。
+    - そのためこの文字は、現在では「強く非推奨」となっており、12文字の(互換文字でない)非推奨文字の1つに数えられている。
+  references:
+    - http://www.unicode.org/versions/Unicode10.0.0/ch07.pdf
+    - http://www.unicode.org/notes/tn27/tn27-4.html
+
+-
+  codepoint: 0x732A
+  name: CJK UNIFIED IDEOGRAPH-732A
+  definition: pig, hog, wild boar
+  description:
+    - 日本ではイノシシを意味する漢字だが、中国やその他の国では主にブタを意味する。したがって干支の亥年も、中国ではイノシシ年ではなくブタ年である。
+
+-
+  codepoint: 0x037F
+  name: GREEK CAPITAL LETTER YOT
+  description:
+    -
+  references:
+    - http://www.opoudjis.net/unicode/yot.html
