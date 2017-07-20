@@ -188,6 +188,41 @@
     - http://www.unicode.org/notes/tn27/tn27-4.html
 
 -
+  codepoint: 0x3044
+  name: HIRAGANA LETTER I
+  description:
+    - ひらがなの「い」。字母は「以」。
+    - いろは順で並べた時に最初に来る文字。「いの一番」という成語もこれが由来である。
+
+-
+  codepoint: 0x306B
+  name: HIRAGANA LETTER NI
+  description:
+    - ひらがなの「に」。字母は「仁」。
+    - 最も字母に形が近い平仮名であると思われる。次点は「こ」「す」「た」「や」あたりか。
+
+-
+  codepoint: 0x306C
+  name: HIRAGANA LETTER NU
+  description:
+    - ひらがなの「ぬ」。字母は「奴」。
+    - FXで有り金を全部溶かすと、この文字と「ね」の区別がつかなくなることで有名。
+
+-
+  codepoint: 0x306F
+  name: HIRAGANA LETTER HA
+  description:
+    - ひらがなの「は」。字母は「波」。
+    - 江戸時代の日本語で恥ずかしいことを「はの字」とか「おはの字」とか言った。「恥ずかしい」と言うのも恥ずかしかったのだろう。
+
+-
+  codepoint: 0x308D
+  name: HIRAGANA LETTER RO
+  description:
+    - ひらがなの「ろ」。字母は「呂」。
+    - 字母の「呂」は人間の背骨をかたどった漢字である。この用法は文字を転じて現在「膂力」の「りょ」にかろうじて形を留めている。
+
+-
   codepoint: 0x732A
   name: CJK UNIFIED IDEOGRAPH-732A
   definition: pig, hog, wild boar
