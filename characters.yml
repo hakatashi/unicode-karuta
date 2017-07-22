@@ -195,6 +195,23 @@
     - いろは順で並べた時に最初に来る文字。「いの一番」という成語もこれが由来である。
 
 -
+  codepoint: 0x3061
+  name: HIRAGANA LETTER TI
+  description:
+    - ひらがなの「ち」。字母は「知」。
+    - 「知は力なり」と言ったのはイギリス経験論の泰斗たるフランシス・ベーコンだが、彼は晩年、鶏に雪を詰めて冷凍する実験をしている最中に肺炎を患い、そのまま病死してしまった。好奇心は哲学者を殺す。
+  references:
+    - https://en.wikipedia.org/wiki/Francis_Bacon#Death
+
+-
+  codepoint: 0x3068
+  name: HIRAGANA LETTER TO
+  description:
+    - ひらがなの「と」。字母は「止」。
+    - 元となった読みは訓読みの「とまる」ではなく音読みの「ト」である。
+    - 将棋の歩兵の裏側に「と」と書いてあるのも、「歩」に含まれる「止」の文字が関連しているとか、していないとか。
+
+-
   codepoint: 0x306B
   name: HIRAGANA LETTER NI
   description:
@@ -216,11 +233,61 @@
     - 江戸時代の日本語で恥ずかしいことを「はの字」とか「おはの字」とか言った。「恥ずかしい」と言うのも恥ずかしかったのだろう。
 
 -
+  codepoint: 0x3078
+  name: HIRAGANA LETTER HE
+  description:
+    - ひらがなの「へ」。字母は「阝」。
+    - 「阝」は「部屋」の「部」の略字である。成り立ちがわかりづらいが、奈良時代ごろはカタカナの「マ」のような形をしており、ここから現在の形になったと考えるとわかりやすい。
+  references:
+    - https://ja.wikipedia.org/wiki/%E3%81%B8
+    - 森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。
+
+-
+  codepoint: 0x307B
+  name: HIRAGANA LETTER HO
+  description:
+    - ひらがなの「ほ」。字母は「保」。
+    - 「ほの字」とは「惚れている」を表す言葉である。用例は江戸初期まで遡るとか。
+
+-
+  codepoint: 0x308A
+  name: HIRAGANA LETTER RI
+  description:
+    - ひらがなの「り」。字母は「利」。
+    - 「利」の右側ではなく、全体を崩して作られた文字である。ショゴスの鳴き声。
+  references:
+    - 森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。
+
+-
   codepoint: 0x308D
   name: HIRAGANA LETTER RO
   description:
-    - ひらがなの「ろ」。字母は「呂」。
-    - 字母の「呂」は人間の背骨をかたどった漢字である。この用法は文字を転じて現在「膂力」の「りょ」にかろうじて形を留めている。
+    - ひらがなの「ろ」。字母は「吕」。
+    - 字母の「吕(呂の異体字)」は人間の背骨をかたどった漢字である。この用法は文字を転じて現在「膂力」の「りょ」にかろうじて形を留めている。
+  references:
+    - 森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。
+
+-
+  codepoint: 0x30D8
+  name: KATAKANA LETTER HE
+  description:
+    - カタカナの「ヘ」。字源は「阝」。
+    - 仮名の中で唯一、ひらがなとカタカナの形が全く同じ文字。しかし活字では、ひらがな・カタカナそれぞれのデザインに合わせて微妙な差異を設けており、プロの活版職人なら活字を見ただけでひらがなかカタカナか判別できるらしい。
+  references:
+    - http://crd.ndl.go.jp/reference/detail?page=ref_view&id=1000137387
+
+-
+  codepoint: 0x72AC
+  name: CJK UNIFIED IDEOGRAPH-72AC
+  definition: dog; radical number 94
+  description:
+    - |-
+      ――「貴様は手習いをしたか?」「手習いどころか唐様でも和様でもなんでも書きます」「どふやら嘘らしい、貴様『大』の字を書き得るか」「書き得る書き得る」「そんなら書いて見せなへか」「ムム書いて見せよふ見せよふ」と七といふ字や八といふ字を書く。「ソレ見やれ大の字も知らぬ。文字を知らぬ者は畜生だ」と言へば大きに腹を立てて「そんなら大の字を書いて見せやうか」「サァサァ書いて見やれ」「書かねへでは畜生だと言はれたが悔しい、書いて見せやう」と大の字を書き、脇へ点を打つて「サァこれでも畜生か」。
+      ――桜川慈悲成「無筆」 『落噺常々草』所収
+    - 江戸ののび太である。
+  references:
+    - http://dl.ndl.go.jp/info:ndljp/pid/8929358/8
+    - http://rakugonobutai.web.fc2.com/156sitinoji/siti.html
 
 -
   codepoint: 0x732A
