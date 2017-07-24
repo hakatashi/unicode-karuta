@@ -309,6 +309,15 @@
     - http://umejii.cocolog-nifty.com/blog/2007/07/post_dc51.html
 
 -
+  codepoint: 0x305F
+  name: HIRAGANA LETTER TA
+  description:
+    - ひらがなの「た」。字母は「太」。
+    - いろは順でも五十音順でも同じ位置に来る二文字のひらがなのうちの一つ。ちなみにもう一つは「な」である。
+  references:
+    - https://en.wikipedia.org/wiki/Francis_Bacon#Death
+
+-
   codepoint: 0x3061
   name: HIRAGANA LETTER TI
   description:
