@@ -125,9 +125,10 @@
   description:
     - ラテン文字の小文字のシー。元となったギリシャ文字のガンマ(Gamma)の綴りからも見て取れるとおり、この文字は当初は/g/(ガ行の音)を表す文字だった。ギリシャ文字からエトルリア文字に輸入された際に濁りのない/k/(カ行の音)を表すようになり、ラテン文字となったときには/g/と/k/の2つの音を表すようになっていた。
     - その後もこの文字は多様化の洗礼を受け、言語によって/k/、/s/、/ʧ/、/θ/、/t͡s/など、様々な音価を持つめんどくさい文字となっている。
-    - ところで、悪逆で有名なローマ皇帝、ガイウス帝の綴りはGAIUSだが、頭文字で書くときにはCと書く。Cが/g/だった頃の名残である。
+    - ところで、悪逆で有名なローマ皇帝、ガイウス帝の綴りはGAIUSだが、イニシャルで書くときにはCと書く。Cが/g/だった頃の名残である。
   references:
     - 西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。
+    - http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic
 
 -
   codepoint: 0x0044
@@ -198,6 +199,7 @@
     - 紀元前3世紀ごろまでのラテン語では、「C」が/k/(カ行の音)および/g/(ガ行の音)を表していた。しかし流石に不便だったのか、後にこの「C」に1本線を足して「G」としたのが起源である。
   references:
     - 西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。
+    - http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic
 
 -
   codepoint: 0x0067
@@ -213,18 +215,23 @@
   codepoint: 0x0048
   name: LATIN CAPITAL LETTER H
   description:
-    - ラテン文字の大文字のエイチ。日本においては最も卑猥なアルファベットである。
-    - TODO: 書く
+    - ラテン文字の大文字のエイチ。日本においては(最近は世界でも)最も卑猥なアルファベットである。
+    - 実際のところ、なぜ英語でこの文字を「エイチ」ないし「ヘイチ」と読むのかに関してはよくわかっていない。オックスフォード英語辞典には、「ハー(古典ラテン語)」→「アハ(ラテン語)」→「アカ(俗ラテン語)」→「アッチ(古フランス語)」→「アーチ(中期英語)」と変遷した、とあるが、必ずしも定説ではない。
   references:
-    - TODO: 書く
+    - https://en.wikipedia.org/wiki/H
+    - https://en.oxforddictionaries.com/definition/h
+    - https://www.theguardian.com/science/shortcuts/2013/nov/04/letter-h-contentious-alphabet-history-alphabetical-rosen
 
 -
   codepoint: 0x0068
   name: LATIN SMALL LETTER H
   description:
-    - TODO: 書く
+    - ラテン文字の小文字のエイチ。
+    - エイチはギリシャ文字のΗ(エータ)に由来している⋯⋯が、「B」と同様に、この文字が表す/h/(ハ行の音)は古代ギリシャ語での発音を受け継いでいる。現在のギリシャ語でΗ(エータ)はなんと母音である。
   references:
-    - TODO: 書く
+    - 西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。
+    - http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic
+    - https://en.wikipedia.org/wiki/H
 
 -
   codepoint: 0x0049
