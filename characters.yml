@@ -357,6 +357,16 @@
     - 「ほの字」とは「惚れている」を表す俗語である。用例は江戸初期まで遡るとか。
 
 -
+  codepoint: 0x3088
+  name: HIRAGANA LETTER YO
+  description:
+    - ひらがなの「よ」。字母は「与」。
+    - 2017年5月、数学記号の一種としてひらがなの「よ」が用いられている論文があると話題になった。論文は圏論に関する証明を行っており、「米田の補題」から導かれる、任意の局所小圏に対して定義される関手、すなわち「米田埋め込み」を「よ」と表記している。由来はもちろん、「米田の補題」に名が知られる数学者米田信夫の頭文字である。
+  references:
+    - https://twitter.com/unununum_1/status/860125300104937472
+    - https://arxiv.org/abs/1506.08870
+
+-
   codepoint: 0x308A
   name: HIRAGANA LETTER RI
   description:
@@ -376,25 +386,6 @@
     - http://auemath.aichi-edu.ac.jp/~ykhashi/semi/2010note/08_issey_final.pdf
 
 -
-  codepoint: 0x308D
-  name: HIRAGANA LETTER RO
-  description:
-    - ひらがなの「ろ」。字母は「吕」。
-    - 字母の「吕(呂の異体字)」は人間の背骨をかたどった漢字である。この用法は文字を転じて現在「膂力」の「りょ」にかろうじて形を留めている。
-  references:
-    - 森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。
-
--
-  codepoint: 0x3088
-  name: HIRAGANA LETTER YO
-  description:
-    - ひらがなの「よ」。字母は「与」。
-    - 2017年5月、数学記号の一種としてひらがなの「よ」が用いられている論文があると話題になった。論文は圏論に関する証明を行っており、「米田の補題」から導かれる、任意の局所小圏に対して定義される関手、すなわち「米田埋め込み」を「よ」と表記している。由来はもちろん、「米田の補題」に名が知られる数学者米田信夫の頭文字である。
-  references:
-    - https://twitter.com/unununum_1/status/860125300104937472
-    - https://arxiv.org/abs/1506.08870
-
--
   codepoint: 0x308C
   name: HIRAGANA LETTER RE
   description:
@@ -403,6 +394,15 @@
     - 現在、「れ」ナンバーのレンタカーが見られるのは北海道と沖縄だけである。
   references:
     - https://trafficnews.jp/post/65790/2/
+
+-
+  codepoint: 0x308D
+  name: HIRAGANA LETTER RO
+  description:
+    - ひらがなの「ろ」。字母は「吕」。
+    - 字母の「吕(呂の異体字)」は人間の背骨をかたどった漢字である。この用法は文字を転じて現在「膂力」の「りょ」にかろうじて形を留めている。
+  references:
+    - 森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。
 
 -
   codepoint: 0x308F
