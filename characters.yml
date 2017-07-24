@@ -134,14 +134,14 @@
   name: LATIN CAPITAL LETTER D
   description:
     - ラテン文字の大文字のディー。ギリシャ文字のΔ(デルタ)から派生した。
-    - 英語圏で「the D」といえば、男の雄大なアレを指す隠語である。しかしてこんな有名なジョークもある。
+    - 英語圏で「the D」といえば、男の雄大なアレを指す隠語である。しかしてこんな有名なジョークがある。
     - |-
       Boy: There are 20 letters in the Alphabet, right?
       Girl: Nope. 26.
-      Boy: Oh, sorry I must have forgot the U R A Q T.
+      Boy: Oh, sorry I must have forgot U R A Q T.
       Girl: You'd still be missing one letter.
       Boy: Yeah I know, I will give you the D later...
-    - 蛇足ながら解説しておくと「URAQT」は「You are a cutie.」の意味である。
+    - 蛇足ながら解説しておくと「U R A Q T」は「You are a cutie.」の意味である。
 
 -
   codepoint: 0x0064
@@ -172,7 +172,7 @@
   codepoint: 0x0046
   name: LATIN CAPITAL LETTER F
   description:
-    - ラテン文字の大文字のエフ。字源的にはギリシャ文字のΥ(ウプシロン)の上のほうを、こう、右にくいっと傾けたものとと見るのが正しい。
+    - ラテン文字の大文字のエフ。字源的にはギリシャ文字のΥ(ウプシロン)の上のほうを、こう、右にくいっと傾けたものと見るのが正しい。
     - 森博嗣は誰よりも文字を愛したミステリー作家である。その中でも「F」は、彼の代表作である『すべてがFになる』で事件の鍵を握るアルファベット。博士の部屋に残されたコンピューターに表示されていた「すべてがFになる」という言葉を解き明かしていく。その謎は、同じくミステリー作家である我孫子武丸の推薦文によると⋯⋯「リアルオーディオよりCOOLでJAVAよりもHOT」だ。
   references:
     - https://en.wikipedia.org/wiki/F
@@ -189,11 +189,56 @@
     - 西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。
     - http://seesaawiki.jp/w/qvarie/d/%a5%e9%a5%c6%a5%f3%ca%b8%bb%fa%a1%daF%a1%db
     - https://en.wikipedia.org/wiki/F
+
 -
   codepoint: 0x0047
   name: LATIN CAPITAL LETTER G
   description:
     - ラテン文字の大文字のジー。名前を言ってはいけないあの生物。
+    - 紀元前3世紀ごろまでのラテン語では、「C」が/k/(カ行の音)および/g/(ガ行の音)を表していた。しかし流石に不便だったのか、後にこの「C」に1本線を足して「G」としたのが起源である。
+  references:
+    - 西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。
+
+-
+  codepoint: 0x0067
+  name: LATIN SMALL LETTER G
+  description:
+    - ラテン文字の小文字のジー。
+    - 手書きの文字に近い字と、下の方で一回転させる形の2種類の字形が存在するが、これらはそれぞれ、「一階建てのg (the single-story g)」、「二階建てのg (the double-story g)」と呼ばれている。
+  references:
+    - https://advenc.ru/post/strochnye-istiny
+    - https://twitter.com/nixeneko/status/757286834187538432
+
+-
+  codepoint: 0x0048
+  name: LATIN CAPITAL LETTER H
+  description:
+    - ラテン文字の大文字のエイチ。日本においては最も卑猥なアルファベットである。
+    - TODO: 書く
+  references:
+    - TODO: 書く
+
+-
+  codepoint: 0x0068
+  name: LATIN SMALL LETTER H
+  description:
+    - TODO: 書く
+  references:
+    - TODO: 書く
+
+-
+  codepoint: 0x0049
+  name: LATIN CAPITAL LETTER I
+  description:
+    - ラテン文字の大文字のアイ。Hの次に来るもの。
+    - TODO: 書く
+  references:
+    - TODO: 書く
+
+-
+  codepoint: 0x0068
+  name: LATIN SMALL LETTER H
+  description:
     - TODO: 書く
   references:
     - TODO: 書く
@@ -246,6 +291,15 @@
   description:
     - ひらがなの「い」。字母は「以」。
     - いろは順で並べた時に最初に来る文字。「いの一番」という成語もこれが由来である。
+
+-
+  codepoint: 0x304B
+  name: HIRAGANA LETTER KA
+  description:
+    - ひらがなの「か」。字母は「加」。
+    - 江戸いろはかるたの「か」は「癩(かったい)の瘡(かさ)うらみ」である。癩も瘡も病名であり、自分よりも僅かでも病状の軽い病人を羨むこと、転じてつまらない愚痴をこぼすことを指す。ちなみに癩は「ハンセン病」、瘡は「梅毒」を指す。どちらも現在では治療法が確立している病気である。
+  references:
+    - http://umejii.cocolog-nifty.com/blog/2007/07/post_dc51.html
 
 -
   codepoint: 0x3061
@@ -331,6 +385,35 @@
     - 森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。
 
 -
+  codepoint: 0x3088
+  name: HIRAGANA LETTER YO
+  description:
+    - ひらがなの「よ」。字母は「与」。
+    - 2017年5月、数学記号の一種としてひらがなの「よ」が用いられている論文があると話題になった。論文は圏論に関する証明を行っており、「米田の補題」から導かれる、任意の局所小圏に対して定義される関手、すなわち「米田埋め込み」を「よ」と表記している。由来はもちろん、「米田の補題」に名が知られる数学者米田信夫の頭文字である。
+  references:
+    - https://twitter.com/unununum_1/status/860125300104937472
+    - https://arxiv.org/abs/1506.08870
+
+-
+  codepoint: 0x308C
+  name: HIRAGANA LETTER RE
+  description:
+    - ひらがなの「れ」。字母は「礼」。
+    - 日本の車のナンバープレートで、レンタカーに付けられる文字といえば「わ」が有名だが、実は制度上は「れ」も用いることができる。全国の陸運支局の中で、札幌だけはなぜかナンバープレート交付開始直後から「れ」ナンバーのプレートを発行していた。一説にはFAXで書類を送信した際に「わ」と「れ」を取り違えたとされているが、信憑性は薄い。
+    - 現在、「れ」ナンバーのレンタカーが見られるのは北海道と沖縄だけである。
+  references:
+    - https://trafficnews.jp/post/65790/2/
+
+-
+  codepoint: 0x308F
+  name: HIRAGANA LETTER WA
+  description:
+    - ひらがなの「わ」。字母は「和」。
+    - 日本の車のナンバープレートで、「わ」がレンタカーに付けられる文字だというのは有名。なぜ「わ」がレンタカーなのかはよく分かってないが、「50音順で後半の使われていなかった文字が当てはめられたのではないか」と言われている。
+  references:
+    - https://trafficnews.jp/post/65790/2/
+
+-
   codepoint: 0x3092
   name: HIRAGANA LETTER WO
   description:
@@ -370,7 +453,7 @@
   codepoint: 0x037F
   name: GREEK CAPITAL LETTER YOT
   description:
-    - 果てしなく異端。果てしなく厄介。それがUnicodeに収録された32番目のギリシャ文字、「ヨット」である。
+    - 果てしなく不可解。果てしなく厄介。それがUnicodeに収録された32番目のギリシャ文字、「ヨット」である。
     - 大げさに言えば、この文字はギリシャ文字に存在するはずがない、存在してはいけない文字だ。
     - TODO: 書く
   references:
@@ -390,7 +473,7 @@
     - 古くからある文字を、どうやって新しい書記体系に組み込むか。このような問題は、他の言語でもしばしば見られる。日本語だって例外ではない。例えば、踊り字の一つである「くの字点」を、横書きで表現する時にどうするのかという問題――横書き用の新たな「くの字点」を考案するのか、それとも「くの字点」を用いず開いてしまうのか⋯⋯。開いてしまっても意味としては同じだが、きっと「くの字点」の古典的な雰囲気を崩してしまうことに抵抗がある人も多いだろう。
     - ドイツ語は、新たな文字を考案するという選択をした。個人的には、2007年のUnicode採択が一役買っているのではないかと考えている。
     - 文字コードは社会を変える。
-  reference:
+  references:
     - https://en.wikipedia.org/wiki/%C3%9F
     - https://en.wikipedia.org/wiki/Capital_%E1%BA%9E
     - http://www.zeit.de/news/2017-06/29/sprache-die-deutsche-sprache-hat-jetzt-auch-ein-grosses-eszett-29114003
