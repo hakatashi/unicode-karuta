@@ -237,18 +237,21 @@
   codepoint: 0x0049
   name: LATIN CAPITAL LETTER I
   description:
-    - ラテン文字の大文字のアイ。Hの次に来るもの。
-    - TODO: 書く
+    - ラテン文字の大文字のアイ。Hのあとに来るもの。
+    - 1928年に制定されたトルコ語ラテン文字では、2種類のアイをドットがついているかついてないかで区別する。つまり「I」と「i」は別の文字であり、「I」の小文字は「ı(ドットなし小文字アイ)」、「i」の大文字は「İ(ドット付き大文字アイ)」となる。これは、同じ文字体系でも言語によって大文字/小文字変換を使い分けなくてはいけない例として、しばしば挙げられる。
   references:
-    - TODO: 書く
+    - http://www.unicode.org/versions/Unicode10.0.0/ch05.pdf#page=44
+    - http://seesaawiki.jp/w/qvarie/d/%a5%e9%a5%c6%a5%f3%ca%b8%bb%fa%a1%daI%a1%db
 
 -
-  codepoint: 0x0068
-  name: LATIN SMALL LETTER H
+  codepoint: 0x0069
+  name: LATIN SMALL LETTER I
   description:
-    - TODO: 書く
+    - ラテン文字の小文字のアイ。
+    - 1998年、AppleはMacintoshコンピューターの新シリーズ「iMac」を発表した。これが現在まで用いられているiPhoneやiPodやiTunesの「i」の端緒である。その由来は「Internet」の頭文字を筆頭として、「Individual」「Instruct」「Inform」など様々な意味をかけ合わせたものとのことだが、それがなぜ小文字なのかは⋯⋯まあ、おそらくブランドデザイン的な問題だろうと思われている。
   references:
-    - TODO: 書く
+    - https://www.quora.com/Why-is-the-letter-i-in-the-word-iPhone-is-in-lower-case-Is-there-any-reason-for-it/answer/Mark-Hetherington?srid=h2BPt
+    - http://www.iphonejd.com/iphone_jd/2009/01/the-i-in-iphone.html
 
 -
   codepoint: 0x004A
@@ -492,6 +495,7 @@
   references:
     - https://en.wikipedia.org/wiki/%C3%9F
     - https://en.wikipedia.org/wiki/Capital_%E1%BA%9E
+    - http://www.unicode.org/versions/Unicode10.0.0/ch05.pdf#page=45
     - http://www.zeit.de/news/2017-06/29/sprache-die-deutsche-sprache-hat-jetzt-auch-ein-grosses-eszett-29114003
     - http://www.pocus.jp/e-deutsch/eszet.html
     - https://web.archive.org/web/20110131220357/http://opentype.info:80/blog/2011/01/24/capital-sharp-s/
