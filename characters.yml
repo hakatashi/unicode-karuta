@@ -273,6 +273,26 @@
     - https://english.stackexchange.com/a/148416
 
 -
+  codepoint: 0x004B
+  name: LATIN CAPITAL LETTER K
+  description:
+    - ラテン文字の大文字のケー。
+    - ギリシャ文字からラテン文字が生まれたのち、この文字は同じ発音を持つC(シー)に統合され、消滅した。そのためラテン語の直系(ロマンス諸語)であるフランス語やイタリア語などでは原則としてこの文字は使用しない。
+  references:
+    - 西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。
+
+-
+  codepoint: 0x006B
+  name: LATIN SMALL LETTER K
+  description:
+    - ラテン文字の小文字のケー。
+    - 英語では、語頭に「kn-」が綴られた時に「k」を発音しない、「黙字のK」と呼ばれる現象が存在する。これは発音が難しいため省略されたという説が濃厚だが、ドイツ語やスウェーデン語では現在でも「kn-」の「k」を発音する。ドイツ人の真面目さが現れているのだろうか(?)。
+    - BUMP OF CHICKEN の楽曲「K」は、この「黙字のK」を上手くストーリーに組み込んだ名作である。
+  references:
+    - https://en.wikipedia.org/wiki/Silent_k
+    - https://www.quora.com/Why-should-we-write-the-letter-K-if-it-is-silent-in-words-like-knowledge-and-knife/answer/Priyanka-Sharma-878?srid=h2BPt
+
+-
   codepoint: 0x004F
   name: LATIN CAPITAL LETTER O
   description:
@@ -316,9 +336,7 @@
   name: HIRAGANA LETTER TA
   description:
     - ひらがなの「た」。字母は「太」。
-    - いろは順でも五十音順でも同じ位置に来る二文字のひらがなのうちの一つ。ちなみにもう一つは「な」である。
-  references:
-    - https://en.wikipedia.org/wiki/Francis_Bacon#Death
+    - "たにほたたんたのなたたたぞたなたぞでたたよたくたぬかされたたる、たかたわいたそうたたなたたひたらたたがたなである。(ヒント: たぬき)"
 
 -
   codepoint: 0x3061
@@ -336,6 +354,13 @@
     - ひらがなの「と」。字母は「止」。
     - 元となった読みは訓読みの「とまる」ではなく音読みの「ト」である。
     - 将棋の歩兵の裏側に「と」と書いてあるのも、「歩」に含まれる「止」の文字が関連しているとか、していないとか。
+
+-
+  codepoint: 0x306A
+  name: HIRAGANA LETTER NA
+  description:
+    - ひらがなの「な」。字母は「奈」。
+    - いろは順でも五十音順でも同じ位置に来る二文字のひらがなのうちの一つ。ちなみにもう一つは「た」である。
 
 -
   codepoint: 0x306B
