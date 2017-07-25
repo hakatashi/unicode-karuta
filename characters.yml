@@ -238,7 +238,7 @@
   name: LATIN CAPITAL LETTER I
   description:
     - ラテン文字の大文字のアイ。Hのあとに来るもの。
-    - 1928年に制定されたトルコ語ラテン文字では、2種類のアイをドットがついているかついてないかで区別する。つまり「I」と「i」は別の文字であり、「I」の小文字は「ı(ドットなし小文字アイ)」、「i」の大文字は「İ(ドット付き大文字アイ)」となる。これは、同じ文字体系でも言語によって大文字/小文字変換を使い分けなくてはいけない例として、しばしば挙げられる。
+    - 1928年に制定されたトルコ語ラテン文字では、2種類のアイをドットがついているかついてないかで区別する。つまり「I」と「i」は別の文字であり、「I」の小文字は「ı(ドットなし小文字アイ)」、「i」の大文字は「İ(ドット付き大文字アイ)」となる。これは、同じ文字体系でも言語によって大文字/小文字変換を使い分けなくてはいけない例として、しばしば取り沙汰される。
   references:
     - http://www.unicode.org/versions/Unicode10.0.0/ch05.pdf#page=44
     - http://seesaawiki.jp/w/qvarie/d/%a5%e9%a5%c6%a5%f3%ca%b8%bb%fa%a1%daI%a1%db
@@ -293,6 +293,27 @@
     - https://www.quora.com/Why-should-we-write-the-letter-K-if-it-is-silent-in-words-like-knowledge-and-knife/answer/Priyanka-Sharma-878?srid=h2BPt
 
 -
+  codepoint: 0x004C
+  name: LATIN CAPITAL LETTER L
+  description:
+    - ラテン文字の大文字のエル。
+    - 物理学などで用いられる単位は、人名に由来するものは大文字で、それ以外は小文字で記述することになっている。中でも体積の単位であるリットルは、18世紀フランスの物理学者であるクロード・リットルに由来している。彼はその生涯を主に珪酸化合物の研究に捧げ、その一環として、今日でも用いられている実験用ガラス器具の製造法を確立した。現在、体積の単位を大文字の「L」で記述するのは、彼がもたらした正確な液体計量法を讃えてのことなのである。
+    - ⋯⋯というのは真っ赤なウソで、「クロード・リットル」の人物伝なるものは、物理学界では有名な作り話。リットルを大文字で記述する正しい理由は、数字の1との混同を避けるためである。
+  references:
+    - https://uwaterloo.ca/chem13news/sites/ca.chem13news/files/uploads/files/Jean%20Litre-article.pdf
+
+-
+  codepoint: 0x006C
+  name: LATIN SMALL LETTER L
+  description:
+    - ラテン文字の小文字のエル。
+    - 6点点字において、左側の3点を用いて表される(⠇)が、これは小文字の「l」の形をかたどったもの⋯⋯ではない。12番目の文字「L」を表すために、2番目の文字「B」に左下の点を足して作ったものである。
+  references:
+    - http://seesaawiki.jp/w/qvarie/d/%a5%e9%a5%c6%a5%f3%ca%b8%bb%fa%a1%daL%a1%db
+    - https://en.wikipedia.org/wiki/Braille
+    - https://en.wikipedia.org/wiki/Braille_pattern_dots-123
+
+-
   codepoint: 0x004F
   name: LATIN CAPITAL LETTER O
   description:
@@ -328,6 +349,15 @@
   description:
     - ひらがなの「か」。字母は「加」。
     - 江戸いろはかるたの「か」は「癩(かったい)の瘡(かさ)うらみ」である。癩も瘡も病名であり、自分よりも僅かでも病状の軽い病人を羨むこと、転じてつまらない愚痴をこぼすことを指す。ちなみに癩は「ハンセン病」、瘡は「梅毒」を指す。どちらも現在では治療法が確立している病気である。
+  references:
+    - http://umejii.cocolog-nifty.com/blog/2007/07/post_dc51.html
+
+-
+  codepoint: 0x305D
+  name: HIRAGANA LETTER SO
+  description:
+    - ひらがなの「そ」。字母は「曾」。
+    - 左上の部分を続けて書く形と、離して書く形の2種類の字形が存在する。実のところ、漢字と違って平仮名には公的に定められた「正しい字形」が存在しないため、どちらが正しいとも言えない。
   references:
     - http://umejii.cocolog-nifty.com/blog/2007/07/post_dc51.html
 
