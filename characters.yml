@@ -415,7 +415,18 @@
   name: HIRAGANA LETTER NU
   description:
     - ひらがなの「ぬ」。字母は「奴」。
-    - FXで有り金を全部溶かすと、この文字と「ね」の区別がつかなくなることで有名。
+    - 多くの頻度統計において、清音としては最も出現頻度の低い仮名である。そのため、かな入力配列において「ぬ」は、キーボードの一番左上の最も打ちにくい場所に追いやられている。
+  references:
+    - http://ameblo.jp/asuka-layout/entry-11421831908.html
+    - https://www50.atwiki.jp/keylay/pages/16.html
+    - http://61degc.seesaa.net/article/33618150.html
+
+-
+  codepoint: 0x306D
+  name: HIRAGANA LETTER NE
+  description:
+    - ひらがなの「ね」。字母は「祢」。
+    - FXで有り金を全部溶かすと、この文字と「ぬ」の区別がつかなくなることで有名。
 
 -
   codepoint: 0x306F
@@ -442,6 +453,15 @@
     - 「ほの字」とは「惚れている」を表す俗語である。用例は江戸初期まで遡るとか。
 
 -
+  codepoint: 0x3080
+  name: HIRAGANA LETTER MU
+  description:
+    - ひらがなの「む」。字母は「武」。
+    - マックスウェルなる人物が、全てを終わらせる時にノートから召喚するものである。
+  references:
+    - http://www.nicovideo.jp/watch/sm17484462
+
+-
   codepoint: 0x3088
   name: HIRAGANA LETTER YO
   description:
@@ -450,6 +470,15 @@
   references:
     - https://twitter.com/unununum_1/status/860125300104937472
     - https://arxiv.org/abs/1506.08870
+
+-
+  codepoint: 0x3089
+  name: HIRAGANA LETTER RA
+  description:
+    - ひらがなの「ら」。字母は「良」。
+    - おもちゃ専門量販店の「Toys"Я"us」の名前は、「Toys are us.」という英文に由来している。「R」が反転しているのは、英語圏の子どもがよく間違える書き方だとか。日本語名の「トイザらス」の「ら」がひらがななのも原語にならっており、同じく子どもの間違いをうまく図表化した、秀逸なローカリゼーションによるものである。
+  references:
+    - https://www.toysrus.co.jp/h/CSfHelpFaq10.jsp
 
 -
   codepoint: 0x308A
