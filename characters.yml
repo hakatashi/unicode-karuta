@@ -354,6 +354,17 @@
     - https://ja.wikipedia.org/wiki/%E5%9C%9F%E7%94%A8%E3%81%AE%E4%B8%91%E3%81%AE%E6%97%A5
 
 -
+  codepoint: 0x304A
+  name: HIRAGANA LETTER O
+  description:
+    - ひらがなの「お」。字母は「於」。
+    - 江戸時代中期まで、わ行の文字だと思われていた。「お」を「あ行」に、「を」を「わ行」に正しく配置し直したのは、他ならぬ本居宣長である。
+  references:
+    - https://ja.wikipedia.org/wiki/%E3%82%92#.E6.B1.9F.E6.88.B8.E6.99.82.E4.BB.A3
+    - http://www.norinagakinenkan.com/norinaga/kaisetsu/jion.html
+    - http://dl.ndl.go.jp/info:ndljp/pid/993103/10
+
+-
   codepoint: 0x304B
   name: HIRAGANA LETTER KA
   description:
