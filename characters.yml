@@ -496,13 +496,36 @@
     - 「ほの字」とは「惚れている」を表す俗語である。今でも使われるが、用例は江戸初期まで遡るとか。
 
 -
+  codepoint: 0x307E
+  name: HIRAGANA LETTER MA
+  description:
+    - ひらがなの「ま」。字母は「末」。
+    - 尾張いろはかるたの「ま」の札は「待てば甘露の日和あり」である。甘露とは中国の伝説で君主が善政を敷いたときに降るとされる、甘い雨のこと。現在では「待てば海路の日和あり」で知られているが、これは甘露が海路に転じたものである。
+    - つまり、アメではなくアメが⋯⋯。いや、なんでもない。
+  references:
+    - http://www.geocities.jp/n_quaker/karuta/owari.html
+    - https://ja.wikipedia.org/wiki/%E7%94%98%E9%9C%B2
+
+-
   codepoint: 0x3080
   name: HIRAGANA LETTER MU
   description:
     - ひらがなの「む」。字母は「武」。
-    - とあるゲームにおいて、マックスウェルなる人物が全てを終わらせる時にノートから召喚するものである。
+    - とあるゲームにおいて、マックスウェルなる人物が全てを終わらせる時にノートから召喚する文字である。
   references:
     - http://www.nicovideo.jp/watch/sm17484462
+
+-
+  codepoint: 0x3084
+  name: HIRAGANA LETTER YA
+  description:
+    - ひらがなの「や」。字母は「也」。
+    - 時は平安、藤原成範卿は、流罪を赦されて京に召還されたとき、内裏にて宮女から次のごとき和歌を受け取った。
+    - ――雲の上はありし昔にかはらねど見し玉だれの内やゆかしき
+    - 成範卿が配流される前は彼も簾中に出入りできる身分だったことを指しての歌である。返歌をしようとした成範だったが、時の内大臣である平重盛が参内したのを見て、すぐさま受け取った歌の「や」の文字を書き換えて宮女に返し、忽ち辞去した。果たして―― (U+305Eに続く)
+  references:
+    - http://dl.ndl.go.jp/info:ndljp/pid/945602/53
+    - http://dl.ndl.go.jp/info:ndljp/pid/877526/29
 
 -
   codepoint: 0x3088
