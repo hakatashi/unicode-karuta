@@ -386,6 +386,13 @@
     - http://why.kenji.ne.jp/review/review402.html
 
 -
+  codepoint: 0x3051
+  name: HIRAGANA LETTER KE
+  description:
+    - ひらがなの「け」。字母は「計」。
+    - 2017年7月現在、「け」でGoogle検索をかけると「けものフレンズ」がヒットする。
+
+-
   codepoint: 0x305D
   name: HIRAGANA LETTER SO
   description:
@@ -435,6 +442,7 @@
   description:
     - ひらがなの「な」。字母は「奈」。
     - いろは順でも五十音順でも同じ位置に来る二つのひらがなのうちの一つ。ちなみにもう一つは「た」である。
+    #- ひぐらしの声が聞こえる。
 
 -
   codepoint: 0x306B
