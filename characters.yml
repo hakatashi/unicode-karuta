@@ -374,6 +374,18 @@
     - http://umejii.cocolog-nifty.com/blog/2007/07/post_dc51.html
 
 -
+  codepoint: 0x304F
+  name: HIRAGANA LETTER KU
+  description:
+    - ひらがなの「く」。字母は「久」。
+    - |-
+      ――深い鋼青から柔らかな桔梗(ききゃう)、それからうるはしい天の瑠璃(るり)、それからけむりに目を瞑(つぶ)るとな、やはりはがねの空が眼(め)の前一面にこめてその中にるりいろのくの字が沢山沢山光ってうごいてゐるよ。くの字が光ってうご……。
+      ――宮沢賢治『柳沢』
+  references:
+    - http://www.aozora.gr.jp/cards/000081/files/4465_8269.html
+    - http://why.kenji.ne.jp/review/review402.html
+
+-
   codepoint: 0x305D
   name: HIRAGANA LETTER SO
   description:
