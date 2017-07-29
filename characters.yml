@@ -125,10 +125,11 @@
   description:
     - ラテン文字の小文字のシー。元となったギリシャ文字のガンマ(Gamma)の綴りからも見て取れるとおり、この文字は当初は/g/(ガ行の音)を表す文字だった。ギリシャ文字からエトルリア文字に輸入された際に濁りのない/k/(カ行の音)を表すようになり、ラテン文字となったときには/g/と/k/の2つの音を表すようになっていた。
     - その後もこの文字は多様化の洗礼を受け、言語によって/k/、/s/、/ʧ/、/θ/、/t͡s/など、様々な音価を持つめんどくさい文字となっている。
-    - ところで、悪逆で有名なローマ皇帝、ガイウス帝の綴りはGAIUSだが、イニシャルで書くときにはCと書く。Cが/g/だった頃の名残である。
+    - ところで、悪逆で有名なローマ皇帝、ガイウス帝の名前(プラエノーメン)の綴りはGaiusだが、イニシャルで書くときにはCと書く。Cが/g/だった頃の名残である。
   references:
     - 西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。
     - http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic
+    - https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%A9%E3%82%A8%E3%83%8E%E3%83%BC%E3%83%A1%E3%83%B3
 
 -
   codepoint: 0x0044
@@ -314,6 +315,25 @@
     - https://en.wikipedia.org/wiki/Braille_pattern_dots-123
 
 -
+  codepoint: 0x004D
+  name: LATIN CAPITAL LETTER M
+  description:
+    - ラテン文字の大文字のエム。
+    - ラテン文字では最も幅の広い文字。かつての活字では大文字の「M」の型(ソート)の縦横が同じ長さになるようにデザインされていたため、活字におけるこの長さのことをエムと呼んだ。現在の書体では必ずしもそうなっていないが、主に、活字でいうところの縦の長さを指す単位としてエムは現在でも使われている。
+  references:
+    - https://en.wikipedia.org/wiki/Em_(typography)
+
+-
+  codepoint: 0x006D
+  name: LATIN SMALL LETTER M
+  description:
+    - ラテン文字の小文字のエム。
+    - 英語圏ではかつてマイルを「m」と略していたが、メートルが国際化するにつれて「mi」表記が使われるようになり、現在では「mi」と書くのが主流である。
+    - ついでにマイルを廃止してほしいものである。
+  references:
+    - https://en.wikipedia.org/wiki/Mile
+
+-
   codepoint: 0x004F
   name: LATIN CAPITAL LETTER O
   description:
@@ -393,11 +413,10 @@
     - 2017年7月現在、「け」でGoogle検索をかけると「けものフレンズ」がヒットする。
 
 -
-  codepoint: 0x3051
-  name: HIRAGANA LETTER KE
+  codepoint: 0x3053
+  name: HIRAGANA LETTER KO
   description:
-    - ひらがなの「け」。字母は「計」。
-    - 2017年7月現在、「け」でGoogle検索をかけると「けものフレンズ」がヒットする。
+    - ひらがなの「こ」。字母は「己」。
 
 -
   codepoint: 0x305D
@@ -695,3 +714,16 @@
     - http://www.pocus.jp/e-deutsch/eszet.html
     - https://web.archive.org/web/20110131220357/http://opentype.info:80/blog/2011/01/24/capital-sharp-s/
     - http://blog.colorfullife.net/archives/2007/06/04-000644.php
+
+-
+  codepoint: 0xFDFD
+  name: ARABIC LIGATURE BISMILLAH AR-RAHMAN ARRAHEEM
+  description:
+    - アラビア書道は、アラビア文字の美しさを極限まで追求した芸術である。複雑に絡みながら一面を埋め尽くす線と線、壮大で美麗な文字の交わりは、見るものを否応なしに圧倒する力を有している。
+    - TODO: 書く
+    - 画像は右下からスルス体で連ねられたバスマラである。頂点には「アッラー」の文字を配し、左右には「ラフマーニ」と「ラヒーム」の二語が対称に置かれた涙滴形となっている。全体として、非常に美しい調和がとれている。
+    - TODO: 書く
+  references:
+    - https://commons.wikimedia.org/wiki/File:Bismillah_Calligraphy_37.svg
+    - https://plaza.rakuten.co.jp/alqalam/diary/200705200000/
+    - http://www.nippon.com/ja/people/e00028/
