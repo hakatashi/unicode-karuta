@@ -417,12 +417,6 @@
   name: HIRAGANA LETTER KO
   description:
     - ひらがなの「こ」。字母は「己」。
-
--
-  codepoint: 0x304F
-  name: HIRAGANA LETTER KU
-  description:
-    - ひらがなの「く」。字母は「久」。
     - TODO: 書く
   references:
     - TODO: 書く
