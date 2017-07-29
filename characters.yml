@@ -125,10 +125,11 @@
   description:
     - ラテン文字の小文字のシー。元となったギリシャ文字のガンマ(Gamma)の綴りからも見て取れるとおり、この文字は当初は/g/(ガ行の音)を表す文字だった。ギリシャ文字からエトルリア文字に輸入された際に濁りのない/k/(カ行の音)を表すようになり、ラテン文字となったときには/g/と/k/の2つの音を表すようになっていた。
     - その後もこの文字は多様化の洗礼を受け、言語によって/k/、/s/、/ʧ/、/θ/、/t͡s/など、様々な音価を持つめんどくさい文字となっている。
-    - ところで、悪逆で有名なローマ皇帝、ガイウス帝の綴りはGAIUSだが、イニシャルで書くときにはCと書く。Cが/g/だった頃の名残である。
+    - ところで、悪逆で有名なローマ皇帝、ガイウス帝の名前(プラエノーメン)の綴りはGaiusだが、イニシャルで書くときにはCと書く。Cが/g/だった頃の名残である。
   references:
     - 西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。
     - http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic
+    - https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%A9%E3%82%A8%E3%83%8E%E3%83%BC%E3%83%A1%E3%83%B3
 
 -
   codepoint: 0x0044
@@ -314,6 +315,25 @@
     - https://en.wikipedia.org/wiki/Braille_pattern_dots-123
 
 -
+  codepoint: 0x004D
+  name: LATIN CAPITAL LETTER M
+  description:
+    - ラテン文字の大文字のエム。
+    - ラテン文字では最も幅の広い文字。かつての活字では大文字の「M」の型(ソート)の縦横が同じ長さになるようにデザインされていたため、活字におけるこの長さのことをエムと呼んだ。現在の書体では必ずしもそうなっていないが、主に、活字でいうところの縦の長さを指す単位としてエムは現在でも使われている。
+  references:
+    - https://en.wikipedia.org/wiki/Em_(typography)
+
+-
+  codepoint: 0x006D
+  name: LATIN SMALL LETTER M
+  description:
+    - ラテン文字の小文字のエム。
+    - 英語圏ではかつてマイルを「m」と略していたが、メートルが国際化するにつれて「mi」表記が使われるようになり、現在では「mi」と書くのが主流である。
+    - ついでにマイルを廃止してほしいものである。
+  references:
+    - https://en.wikipedia.org/wiki/Mile
+
+-
   codepoint: 0x004F
   name: LATIN CAPITAL LETTER O
   description:
@@ -369,9 +389,34 @@
   name: HIRAGANA LETTER KA
   description:
     - ひらがなの「か」。字母は「加」。
-    - 江戸いろはかるたの「か」は「癩(かったい)の瘡(かさ)うらみ」である。癩も瘡も病名であり、自分よりも僅かでも病状の軽い病人を羨むこと、転じてつまらない愚痴をこぼすことを指す。ちなみに癩は「ハンセン病」、瘡は「梅毒」を指す。どちらも現在では治療法が確立している病気である。
+    - 江戸いろはかるたの「か」は「癩(かったい)の瘡(かさ)うらみ」である。癩も瘡も病名であり、自分よりも僅かでも病状の軽い病人を羨むこと、転じてつまらない愚痴をこぼすことを指す。ちなみに癩は「ハンセン病」、瘡は「梅毒」を指し、どちらも現在では治療法が確立している病気である。
   references:
     - http://umejii.cocolog-nifty.com/blog/2007/07/post_dc51.html
+
+-
+  codepoint: 0x304F
+  name: HIRAGANA LETTER KU
+  description:
+    - ひらがなの「く」。字母は「久」。
+    - |-
+      ――深い鋼青から柔らかな桔梗(ききゃう)、それからうるはしい天の瑠璃(るり)、それからけむりに目を瞑(つぶ)るとな、やはりはがねの空が眼(め)の前一面にこめてその中にるりいろのくの字が沢山沢山光ってうごいてゐるよ。くの字が光ってうご……。
+      ――宮沢賢治『柳沢』
+  references:
+    - http://www.aozora.gr.jp/cards/000081/files/4465_8269.html
+    - http://why.kenji.ne.jp/review/review402.html
+
+-
+  codepoint: 0x3051
+  name: HIRAGANA LETTER KE
+  description:
+    - ひらがなの「け」。字母は「計」。
+    - 2017年7月現在、「け」でGoogle検索をかけると「けものフレンズ」がヒットする。
+
+-
+  codepoint: 0x3053
+  name: HIRAGANA LETTER KO
+  description:
+    - ひらがなの「こ」。字母は「己」。
 
 -
   codepoint: 0x304F
@@ -432,6 +477,7 @@
   description:
     - ひらがなの「な」。字母は「奈」。
     - いろは順でも五十音順でも同じ位置に来る二つのひらがなのうちの一つ。ちなみにもう一つは「た」である。
+    #- ひぐらしの声が聞こえる。
 
 -
   codepoint: 0x306B
@@ -476,6 +522,17 @@
     - 江戸時代の言葉で、恥ずかしいことを「はの字」とか「おはの字」とか言った。「恥ずかしい」と言うのも恥ずかしかったのだろう。
 
 -
+  codepoint: 0x3075
+  name: HIRAGANA LETTER HU
+  description:
+    - ひらがなの「ふ」。字母は「不」。
+    - 日本語の「ふ」の音の子音は、英語の「h」とも「f」とも「wh」とも異なる、無声両唇摩擦音と呼ばれる特殊な子音である。実はこの子音を持つ言語は世界的にも珍しく、日本語に流暢な外国人でも「ふ」の音だけは苦手としていることが多いらしい。
+  references:
+    - http://www.timor-leste.emb-japan.go.jp/column_abe2.html
+    - https://oshiete.goo.ne.jp/qa/8260172.html
+    - https://en.wikipedia.org/wiki/Voiceless_bilabial_fricative
+
+-
   codepoint: 0x3078
   name: HIRAGANA LETTER HE
   description:
@@ -493,21 +550,45 @@
     - 「ほの字」とは「惚れている」を表す俗語である。今でも使われるが、用例は江戸初期まで遡るとか。
 
 -
+  codepoint: 0x307E
+  name: HIRAGANA LETTER MA
+  description:
+    - ひらがなの「ま」。字母は「末」。
+    - 尾張いろはかるたの「ま」の札は「待てば甘露の日和あり」である。甘露とは中国の伝説で君主が善政を敷いたときに降るとされる、甘い雨のこと。現在では「待てば海路の日和あり」で知られているが、これは甘露が海路に転じたものである。
+    - つまり、アメではなくアメが⋯⋯。いや、なんでもない。
+  references:
+    - http://www.geocities.jp/n_quaker/karuta/owari.html
+    - https://ja.wikipedia.org/wiki/%E7%94%98%E9%9C%B2
+
+-
   codepoint: 0x3080
   name: HIRAGANA LETTER MU
   description:
     - ひらがなの「む」。字母は「武」。
-    - とあるゲームにおいて、マックスウェルなる人物が全てを終わらせる時にノートから召喚するもの。
+    - とあるゲームにおいて、マックスウェルなる人物が全てを終わらせる時にノートから召喚する文字。
   references:
     - http://www.nicovideo.jp/watch/sm17484462
+
+-
+  codepoint: 0x3084
+  name: HIRAGANA LETTER YA
+  description:
+    - ひらがなの「や」。字母は「也」。
+    - 時は平安、藤原成範卿は、流罪を赦されて京に召還されたとき、内裏にて宮女から次のごとき和歌を受け取った。
+    - ――雲の上はありし昔にかはらねど見し玉だれの内やゆかしき
+    - 成範卿が配流される前は彼も簾中に出入りできる身分だったことを指しての歌である。返歌をしようとした成範だったが、時の内大臣である平重盛が参内したのを見て、すぐさま受け取った歌の「や」の文字を書き換えて宮女に返し、忽ち辞去した。果たしてその字は―― (U+305Eに続く)
+  references:
+    - http://dl.ndl.go.jp/info:ndljp/pid/945602/53
+    - http://dl.ndl.go.jp/info:ndljp/pid/877526/29
 
 -
   codepoint: 0x3088
   name: HIRAGANA LETTER YO
   description:
-    - ひらがなの「よ」。字母は「与」。
+    - ひらがなの「よ」。字母は「与󠄁」。
     - 2017年5月、数学記号の一種としてひらがなの「よ」が用いられている論文があると話題になった。論文は圏論に関する証明を行っており、「米田の補題」から導かれる、任意の局所小圏に対して定義される前層圏への充満忠実関手、すなわち「米田埋め込み」を「よ」と表記している。由来はもちろん、「米田の補題」に名が知られる数学者米田信夫の頭文字である。
   references:
+    - 森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。
     - https://twitter.com/unununum_1/status/860125300104937472
     - https://arxiv.org/abs/1506.08870
 
@@ -642,3 +723,16 @@
     - http://www.pocus.jp/e-deutsch/eszet.html
     - https://web.archive.org/web/20110131220357/http://opentype.info:80/blog/2011/01/24/capital-sharp-s/
     - http://blog.colorfullife.net/archives/2007/06/04-000644.php
+
+-
+  codepoint: 0xFDFD
+  name: ARABIC LIGATURE BISMILLAH AR-RAHMAN ARRAHEEM
+  description:
+    - アラビア書道は、アラビア文字の美しさを極限まで追求した芸術である。複雑に絡みながら一面を埋め尽くす線と線、壮大で美麗な文字の交わりは、見るものを否応なしに圧倒する力を有している。
+    - TODO: 書く
+    - 画像は右下からスルス体で連ねられたバスマラである。頂点には「アッラー」の文字を配し、左右には「ラフマーニ」と「ラヒーム」の二語が対称に置かれた涙滴形となっている。全体として、非常に美しい調和がとれている。
+    - TODO: 書く
+  references:
+    - https://commons.wikimedia.org/wiki/File:Bismillah_Calligraphy_37.svg
+    - https://plaza.rakuten.co.jp/alqalam/diary/200705200000/
+    - http://www.nippon.com/ja/people/e00028/
