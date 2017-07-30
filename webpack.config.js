@@ -1,5 +1,5 @@
 const path = require('path');
-const webpack = require('webpack');
+const {HotModuleReplacementPlugin} = require('webpack');
 
 module.exports = (env = {}) => ({
 	entry: './index.jsx',
@@ -9,6 +9,7 @@ module.exports = (env = {}) => ({
 	},
 	devtool: env.production ? 'source-map' : 'cheap-module-eval-source-map',
 	devServer: {
+		hot: true,
 		host: '0.0.0.0',
 		disableHostCheck: true,
 	},
@@ -40,4 +41,7 @@ module.exports = (env = {}) => ({
 			],
 		}],
 	},
+	plugins: [
+		new HotModuleReplacementPlugin(),
+	],
 });

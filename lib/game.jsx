@@ -75,7 +75,7 @@ class Game extends React.Component {
 						},
 					}}
 				/>
-				<ul>
+				<ul styleName="voices">
 					{this.state.voices.map((voice) => (
 						<li data-name={voice.name} key={voice.voiceURI} onClick={this.handleClickVoice}>{voice.name}</li>
 					))}
