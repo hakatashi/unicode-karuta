@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "concurrently \"npm run js\" \"npm run html\"",
+    "build:production": "concurrently \"npm run js -- --env.production\" \"npm run html\"",
     "html": "pug index.pug",
     "js": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -22,7 +22,7 @@ install:
   - yarn upgrade --no-lockfile
 
 script:
-  - yarn build -- --env.production
+  - yarn build:production
 
 after_success:
   - bash bin/deploy.sh
