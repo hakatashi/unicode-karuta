@@ -16,39 +16,62 @@ class Game extends React.Component {
 	}
 
 	componentDidMount() {
-		this.onvoicechanged = () => {
-			this.setState({
-				voices: speechSynthesis.getVoices(),
-			});
-		};
-
-		speechSynthesis.addEventListener('voiceschanged', this.onvoicechanged);
-		this.onvoicechanged();
+		speechSynthesis.addEventListener('voiceschanged', this.handleVoiceChanged);
+		this.handleVoiceChanged();
 	}
 
 	componentWillUnmount() {
-		speechSynthesis.removeEventListener('voiceschanged', this.onvoicechanged);
+		speechSynthesis.removeEventListener('voiceschanged', this.handleVoiceChanged);
 	}
 
-	utterVoice = (event) => {
-		event.preventDefault();
+	handleVoiceChanged = () => {
+		this.setState({
+			voices: speechSynthesis.getVoices(),
+		});
+	};
 
-		const voiceName = event.target.getAttribute('data-name');
-		const utterance = new SpeechSynthesisUtterance('Hello.');
+	utterVoice = (text, voiceName) => {
+		const utterance = new SpeechSynthesisUtterance(text);
 		utterance.voice = this.state.voices.find((voice) => voice.name === voiceName);
+		utterance.rate = 0.7;
 		speechSynthesis.speak(utterance);
+	}
 
+	handleClickVoice = async (event) => {
+		const voiceName = event.target.getAttribute('data-name');
+
+		event.preventDefault();
 		this.setState({bgmPlaying: true});
+
+		const text = 'you plus three zero eight B HIRAGANA LETTER RU';
+		const words = text.split(' ');
+		for (let i = 0; i < words.length; i++) {
+			const word = words[i];
+			this.utterVoice(word, voiceName);
+
+			await new Promise((resolve, reject) => {
+				setTimeout(resolve, 700);
+			});
+		}
 	}
 
 	render() {
 		return (
 			<div styleName="wrap">
 				<h1 styleName="head">unicode-karuta</h1>
-				<ReactPlayer styleName="player" url="https://soundcloud.com/funappy_0/bgm" width={300} height={300} playing={this.state.bgmPlaying} loop controls volume={1} />
+				<ReactPlayer
+					styleName="player"
+					url="https://www.youtube.com/watch?v=Bn5_d7DgL6o"
+					width={160}
+					height={90}
+					playing={this.state.bgmPlaying}
+					loop
+					controls
+					volume={0.1}
+				/>
 				<ul>
 					{this.state.voices.map((voice) => (
-						<li data-name={voice.name} key={voice.voiceURI} onClick={this.utterVoice}>{voice.name}</li>
+						<li data-name={voice.name} key={voice.voiceURI} onClick={this.handleClickVoice}>{voice.name}</li>
 					))}
 				</ul>
 			</div>

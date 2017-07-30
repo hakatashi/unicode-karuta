@@ -14,7 +14,17 @@ module.exports = {
 			loader: 'babel-loader',
 			exclude: /node_modules/,
 			query: {
-				presets: ['es2015', 'react'],
+				presets: [
+					['env', {
+						targets: {
+							browsers: [
+								'last 2 Chrome versions',
+							],
+							useBuiltIns: true,
+						}
+					}],
+					'react',
+				],
 				plugins: ['transform-class-properties'],
 			},
 		}, {
