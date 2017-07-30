@@ -329,9 +329,29 @@
   description:
     - ラテン文字の小文字のエム。
     - 英語圏ではかつてマイルを「m」と略していたが、メートルが国際化するにつれて「mi」表記が使われるようになり、現在では「mi」と書くのが主流である。
-    - ついでにマイルを廃止してほしいものである。
+    - この際ついでにマイル自体も廃止してほしいものである。
   references:
     - https://en.wikipedia.org/wiki/Mile
+
+-
+  codepoint: 0x004E
+  name: LATIN CAPITAL LETTER N
+  description:
+    - ラテン文字の大文字のエヌ。
+    - ラテン文字の起源をたどっていくと、最終的にはエジプトのヒエログリフに行き着くという説がある。定説でこそないがそれなりに支持されている学説なのだが、それによると、「N」の起源は蛇の形を象ったヒエログリフであるという。今の形にも若干その面影を見ることができるかもしれない。
+  references:
+    - William Bright, Peter T. Daniels　『The world's writing systems』　Oxford University Press、1996年。ISBN 9780195079937。
+    - https://www.jstor.org/stable/3853586
+
+-
+  codepoint: 0x006E
+  name: LATIN SMALL LETTER N
+  description:
+    - ラテン文字の小文字のエヌ。
+    - あるとき、「ヨーロッパの言語において、『夜』という単語は『N』と『八』を組み合わせたものである」という説が話題に上がったことがある。例えば、英語なら「n」+「eight」→「night」、ドイツ語なら「n」+「Acht」→「Nacht」と言った具合である。これは確かにいくつかの言語で成り立つのだが⋯⋯その全てがゲルマン語派である以上、ゲルマン祖語が同根であることによる一致、および偶然の産物以外の何物でもない。
+  references:
+    - https://linguistics.stackexchange.com/a/11446
+    - https://www.facebook.com/etymonline/posts/821462227970662
 
 -
   codepoint: 0x004F
@@ -522,6 +542,7 @@
     - http://www.timor-leste.emb-japan.go.jp/column_abe2.html
     - https://oshiete.goo.ne.jp/qa/8260172.html
     - https://en.wikipedia.org/wiki/Voiceless_bilabial_fricative
+    - https://www.quora.com/In-Japanese-how-do-you-pronounce-the-kana-%E3%81%B5-or-%E3%83%95-fu-or-hu
 
 -
   codepoint: 0x3078
@@ -727,3 +748,6 @@
     - https://commons.wikimedia.org/wiki/File:Bismillah_Calligraphy_37.svg
     - https://plaza.rakuten.co.jp/alqalam/diary/200705200000/
     - http://www.nippon.com/ja/people/e00028/
+    - http://www.unicode.org/L2/L2002/02163-n2413-4-urdu.pdf
+    - http://www.unicode.org/L2/L2002/02011R-kew.pdf
+    - http://www.unicode.org/versions/Unicode10.0.0/ch09.pdf#page=31
