@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "concurrently \"npm run js\" \"npm run css\" \"npm run html\"",
-    "css": "postcss -u precss -u autoprefixer -u postcss-flexbugs-fixes -o index.css index.pcss",
+    "build": "concurrently \"npm run js\" \"npm run html\"",
     "html": "pug index.pug",
     "js": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
