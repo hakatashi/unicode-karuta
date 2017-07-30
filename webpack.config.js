@@ -1,13 +1,13 @@
 const path = require('path');
 const webpack = require('webpack');
 
-module.exports = {
+module.exports = (env = {}) => ({
 	entry: './index.jsx',
 	output: {
 		path: __dirname,
 		filename: 'index.js',
 	},
-	devtool: 'cheap-module-eval-source-map',
+	devtool: env.production ? 'source-map' : 'cheap-module-eval-source-map',
 	devServer: {
 		host: '0.0.0.0',
 		disableHostCheck: true,
@@ -40,4 +40,4 @@ module.exports = {
 			],
 		}],
 	},
-};
+});
