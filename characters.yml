@@ -367,6 +367,18 @@
     - ラテン文字の小文字のオー。ラテン文字・ギリシャ文字・キリル文字の間で同じ活字を共有できる小文字は、実はこれだけである。
 
 -
+  codepoint: 0x0050
+  name: LATIN CAPITAL LETTER P
+  description:
+    - ラテン文字の大文字のピー。
+
+-
+  codepoint: 0x0070
+  name: LATIN SMALL LETTER P
+  description:
+    - ラテン文字の小文字のピー。
+
+-
   codepoint: 0x0149
   name: LATIN SMALL LETTER N PRECEDED BY APOSTROPHE
   description:
