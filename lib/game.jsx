@@ -1,6 +1,6 @@
 const React = require('react');
 const CSSModules = require('react-css-modules');
-const ReactPlayer = require('react-player');
+const {default: ReactPlayer} = require('react-player');
 const styles = require('./game.pcss');
 
 const {speechSynthesis, SpeechSynthesisUtterance} = window;
