@@ -33,6 +33,7 @@ class Game extends React.Component {
 	utterVoice = (text, voiceName) => {
 		const utterance = new SpeechSynthesisUtterance(text);
 		utterance.voice = this.state.voices.find((voice) => voice.name === voiceName);
+		utterance.lang = 'en-US';
 		utterance.rate = 0.7;
 		speechSynthesis.speak(utterance);
 	}
@@ -50,7 +51,7 @@ class Game extends React.Component {
 			this.utterVoice(word, voiceName);
 
 			await new Promise((resolve, reject) => {
-				setTimeout(resolve, 700);
+				setTimeout(resolve, 1500);
 			});
 		}
 	}
@@ -61,13 +62,18 @@ class Game extends React.Component {
 				<h1 styleName="head">unicode-karuta</h1>
 				<ReactPlayer
 					styleName="player"
-					url="https://www.youtube.com/watch?v=Bn5_d7DgL6o"
+					url="https://www.youtube.com/watch?v=XbMAyw9rknk"
 					width={160}
 					height={90}
 					playing={this.state.bgmPlaying}
 					loop
 					controls
 					volume={0.1}
+					youtubeConfig={{
+						playerVars: {
+							start: 3,
+						},
+					}}
 				/>
 				<ul>
 					{this.state.voices.map((voice) => (
