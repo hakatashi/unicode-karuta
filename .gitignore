@@ -36,6 +36,7 @@ jspm_packages
 *.js
 !webpack.config.js
 !postcss.config.js
+*.map
 *.css
 *.html
 
