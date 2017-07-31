@@ -4,8 +4,6 @@ const {default: ReactPlayer} = require('react-player');
 const styles = require('./game.pcss');
 const characters = require('../characters.yml');
 
-console.log(characters);
-
 const {speechSynthesis, SpeechSynthesisUtterance} = window;
 
 class Game extends React.Component {
@@ -48,9 +46,8 @@ class Game extends React.Component {
 		this.setState({bgmPlaying: true});
 
 		const text = 'you plus three zero eight B HIRAGANA LETTER RU';
-		const words = text.split(' ');
-		for (let i = 0; i < words.length; i++) {
-			const word = words[i];
+
+		for (let word of text.split(' ')) {
 			this.utterVoice(word, voiceName);
 
 			await new Promise((resolve, reject) => {
