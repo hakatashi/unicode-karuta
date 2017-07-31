@@ -23,6 +23,7 @@ install:
 
 script:
   - yarn build:production
+  - yarn test
 
 after_success:
   - bash bin/deploy.sh

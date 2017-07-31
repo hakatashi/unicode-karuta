@@ -8,6 +8,6 @@ const Game = require('./lib/game.jsx');
 require('!!style-loader?sourceMap!css-loader!postcss-loader?sourceMap!./index.pcss');
 
 ReactDOM.render(
-	<Game></Game>,
+	<Game/>,
 	document.querySelector('.app')
 );
