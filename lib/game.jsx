@@ -47,7 +47,7 @@ class Game extends React.Component {
 
 		const text = 'you plus three zero eight B HIRAGANA LETTER RU';
 
-		for (let word of text.split(' ')) {
+		for (const word of text.split(' ')) {
 			this.utterVoice(word, voiceName);
 
 			await new Promise((resolve) => {
