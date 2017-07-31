@@ -60,6 +60,6 @@ module.exports = (env = {}) => ({
 		}],
 	},
 	plugins: [
-		new HotModuleReplacementPlugin(),
+		...(env.production ? [] : [new HotModuleReplacementPlugin()]),
 	],
 });
