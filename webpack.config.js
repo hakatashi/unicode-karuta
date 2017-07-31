@@ -14,11 +14,11 @@ module.exports = (env = {}) => ({
 		disableHostCheck: true,
 	},
 	module: {
-		loaders: [{
+		rules: [{
 			test: /\.jsx$/,
-			loader: 'babel-loader',
 			exclude: /node_modules/,
-			query: {
+			loader: 'babel-loader',
+			options: {
 				presets: [
 					['env', {
 						targets: {
@@ -33,15 +33,33 @@ module.exports = (env = {}) => ({
 				plugins: ['transform-class-properties'],
 			},
 		}, {
+			test: /\.yml$/,
+			exclude: /node_modules/,
+			use: ['json-loader', 'yaml-loader'],
+		}, {
 			test: /\.pcss$/,
-			loaders: [
-				'style-loader?sourceMap',
-				'css-loader?modules&importLoaders=1',
-				'postcss-loader?sourceMap',
-			],
+			exclude: /node_modules/,
+			use: [{
+				loader: 'style-loader',
+				options: {
+					sourceMap: true,
+				},
+			}, {
+				loader: 'css-loader',
+				options: {
+					modules: true,
+					localIdentName: '[name]__[local]--[hash:base64:5]',
+					importLoaders: 1,
+				},
+			}, {
+				loader: 'postcss-loader',
+				options: {
+					sourceMap: true,
+				},
+			}],
 		}],
 	},
 	plugins: [
-		new HotModuleReplacementPlugin(),
+		...(env.production ? [] : [new HotModuleReplacementPlugin()]),
 	],
 });

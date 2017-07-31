@@ -2,6 +2,9 @@ const React = require('react');
 const CSSModules = require('react-css-modules');
 const {default: ReactPlayer} = require('react-player');
 const styles = require('./game.pcss');
+const characters = require('../characters.yml');
+
+console.log(characters);
 
 const {speechSynthesis, SpeechSynthesisUtterance} = window;
 

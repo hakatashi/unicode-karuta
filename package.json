@@ -33,6 +33,7 @@
     "concurrently": "^3.5.0",
     "css-loader": "^0.28.4",
     "js-yaml": "^3.9.1",
+    "json-loader": "^0.5.7",
     "normalize.css": "^7.0.0",
     "postcss-cli": "^4.1.0",
     "postcss-flexbugs-fixes": "^3.0.0",
@@ -45,6 +46,7 @@
     "react-player": "^0.20.0",
     "style-loader": "^0.18.2",
     "webpack": "^3.4.1",
-    "webpack-dev-server": "^2.6.1"
+    "webpack-dev-server": "^2.6.1",
+    "yaml-loader": "^0.5.0"
   }
 }
