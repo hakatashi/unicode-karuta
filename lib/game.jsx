@@ -50,7 +50,7 @@ class Game extends React.Component {
 		for (let word of text.split(' ')) {
 			this.utterVoice(word, voiceName);
 
-			await new Promise((resolve, reject) => {
+			await new Promise((resolve) => {
 				setTimeout(resolve, 1500);
 			});
 		}
@@ -77,7 +77,20 @@ class Game extends React.Component {
 				/>
 				<ul styleName="voices">
 					{this.state.voices.map((voice) => (
-						<li data-name={voice.name} key={voice.voiceURI} onClick={this.handleClickVoice}>{voice.name}</li>
+						<li
+							data-name={voice.name}
+							key={voice.voiceURI}
+							onClick={this.handleClickVoice}
+						>
+							{voice.name}
+						</li>
+					))}
+				</ul>
+				<ul>
+					{characters.map((character) => (
+						<li key={character.codepoint}>
+							U+{character.codepoint.toString(16)} {character.name}
+						</li>
 					))}
 				</ul>
 			</div>

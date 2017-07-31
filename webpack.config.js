@@ -1,4 +1,3 @@
-const path = require('path');
 const {HotModuleReplacementPlugin} = require('webpack');
 
 module.exports = (env = {}) => ({
@@ -26,7 +25,7 @@ module.exports = (env = {}) => ({
 								'last 2 Chrome versions',
 							],
 							useBuiltIns: true,
-						}
+						},
 					}],
 					'react',
 				],
