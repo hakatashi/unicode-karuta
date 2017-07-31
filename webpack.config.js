@@ -34,7 +34,7 @@ module.exports = (env = {}) => ({
 		}, {
 			test: /\.yml$/,
 			exclude: /node_modules/,
-			use: ['json-loader', 'yaml-loader'],
+			use: ['json-loader', './lib/characters-loader.js', 'yaml-loader'],
 		}, {
 			test: /\.pcss$/,
 			exclude: /node_modules/,
