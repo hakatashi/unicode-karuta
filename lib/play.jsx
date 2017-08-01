@@ -28,11 +28,15 @@ class Play extends React.Component {
 						{activeCharacter.name}
 					</div>
 				</div>
-				<div styleName="character-card-area">
+				<div styleName="character-cards-area">
 					<div styleName="character-cards">
 						{this.state.characters.map((character) => (
-							<div key={character.codepoint} styleName="character-card">
-								{String.fromCodePoint(character.codepoint)}
+							<div key={character.codepoint} styleName="character-card-area">
+								<div styleName="character-card">
+									<div styleName="character-body">
+										{String.fromCodePoint(character.codepoint)}
+									</div>
+								</div>
 							</div>
 						))}
 					</div>
