@@ -2,7 +2,7 @@ const React = require('react');
 const CSSModules = require('react-css-modules');
 const {default: ReactPlayer} = require('react-player');
 const styles = require('./game.pcss');
-const characters = require('../characters.yml');
+const Play = require('./play.jsx');
 
 const {speechSynthesis, SpeechSynthesisUtterance} = window;
 
@@ -58,8 +58,8 @@ class Game extends React.Component {
 
 	render() {
 		return (
-			<div styleName="wrap">
-				<h1 styleName="head">unicode-karuta</h1>
+			<div styleName="game">
+				<Play/>
 				<ReactPlayer
 					styleName="player"
 					url="https://www.youtube.com/watch?v=XbMAyw9rknk"
@@ -75,24 +75,6 @@ class Game extends React.Component {
 						},
 					}}
 				/>
-				<ul styleName="voices">
-					{this.state.voices.map((voice) => (
-						<li
-							data-name={voice.name}
-							key={voice.voiceURI}
-							onClick={this.handleClickVoice}
-						>
-							{voice.name}
-						</li>
-					))}
-				</ul>
-				<ul>
-					{characters.map((character) => (
-						<li key={character.codepoint}>
-							U+{character.codepoint.toString(16)} {character.name}
-						</li>
-					))}
-				</ul>
 			</div>
 		);
 	}
