@@ -39,7 +39,7 @@
     "immutable": "^3.8.1",
     "js-yaml": "^3.9.1",
     "json-loader": "^0.5.7",
-    "lodash.samplesize": "^4.2.0",
+    "lodash": "^4.17.4",
     "normalize.css": "^7.0.0",
     "postcss-cli": "^4.1.0",
     "postcss-flexbugs-fixes": "^3.0.0",

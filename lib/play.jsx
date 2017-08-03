@@ -1,6 +1,6 @@
 const React = require('react');
 const CSSModules = require('react-css-modules');
-const samplesize = require('lodash.samplesize');
+const sampleSize = require('lodash/sampleSize');
 const {List} = require('immutable');
 
 const styles = require('./play.pcss');
@@ -12,7 +12,7 @@ class Play extends React.Component {
 
 		this.state = {
 			activeCharacterIndex: 0,
-			characters: List(samplesize(characters, 12)),
+			characters: List(sampleSize(characters, 12)),
 		};
 	}
 
