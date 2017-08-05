@@ -562,6 +562,10 @@
 -
   codepoint: 0x3078
   name: HIRAGANA LETTER HE
+  ssml:
+    - HIRAGANA
+    - LETTER
+    - <phoneme alphabet="ipa" ph="he̞">HE</phoneme>
   description:
     - ひらがなの「へ」。字母は「阝」。
     - 「阝」は「部屋」の「部」の略字である。成り立ちがわかりづらいが、奈良時代ごろにはカタカナの「マ」のような形をしており、これを経由して現在の形になったと考えるとわかりやすい。
