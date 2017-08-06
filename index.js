@@ -644,7 +644,7 @@ module.exports = !__webpack_require__(6)(function(){
 /***/ (function(module, exports, __webpack_require__) {
 
 var anObject       = __webpack_require__(4)
-  , IE8_DOM_DEFINE = __webpack_require__(168)
+  , IE8_DOM_DEFINE = __webpack_require__(169)
   , toPrimitive    = __webpack_require__(33)
   , dP             = Object.defineProperty;
 
@@ -680,7 +680,7 @@ exports.f = __webpack_require__(11) ? Object.defineProperty : function definePro
 var _prodInvariant = __webpack_require__(7);
 
 var DOMProperty = __webpack_require__(48);
-var ReactDOMComponentFlags = __webpack_require__(203);
+var ReactDOMComponentFlags = __webpack_require__(204);
 
 var invariant = __webpack_require__(2);
 
@@ -877,6 +877,16 @@ module.exports = function(it){
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+module.exports = __webpack_require__(66);
+
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -914,7 +924,7 @@ var ExecutionEnvironment = {
 module.exports = ExecutionEnvironment;
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.13 ToObject(argument)
@@ -922,16 +932,6 @@ var defined = __webpack_require__(31);
 module.exports = function(it){
   return Object(defined(it));
 };
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(66);
-
 
 /***/ }),
 /* 18 */
@@ -1462,7 +1462,7 @@ var pIE            = __webpack_require__(75)
   , toIObject      = __webpack_require__(22)
   , toPrimitive    = __webpack_require__(33)
   , has            = __webpack_require__(18)
-  , IE8_DOM_DEFINE = __webpack_require__(168)
+  , IE8_DOM_DEFINE = __webpack_require__(169)
   , gOPD           = Object.getOwnPropertyDescriptor;
 
 exports.f = __webpack_require__(11) ? gOPD : function getOwnPropertyDescriptor(O, P){
@@ -1480,8 +1480,8 @@ exports.f = __webpack_require__(11) ? gOPD : function getOwnPropertyDescriptor(O
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
 var has         = __webpack_require__(18)
-  , toObject    = __webpack_require__(16)
-  , IE_PROTO    = __webpack_require__(116)('IE_PROTO')
+  , toObject    = __webpack_require__(17)
+  , IE_PROTO    = __webpack_require__(118)('IE_PROTO')
   , ObjectProto = Object.prototype;
 
 module.exports = Object.getPrototypeOf || function(O){
@@ -1643,7 +1643,7 @@ module.exports = function(KEY, exec){
 // 6 -> Array#findIndex
 var ctx      = __webpack_require__(39)
   , IObject  = __webpack_require__(74)
-  , toObject = __webpack_require__(16)
+  , toObject = __webpack_require__(17)
   , toLength = __webpack_require__(14)
   , asc      = __webpack_require__(350);
 module.exports = function(TYPE, $create){
@@ -1733,9 +1733,9 @@ module.exports = ReactCurrentOwner;
 var _prodInvariant = __webpack_require__(7),
     _assign = __webpack_require__(10);
 
-var CallbackQueue = __webpack_require__(207);
+var CallbackQueue = __webpack_require__(208);
 var PooledClass = __webpack_require__(59);
-var ReactFeatureFlags = __webpack_require__(208);
+var ReactFeatureFlags = __webpack_require__(209);
 var ReactReconciler = __webpack_require__(68);
 var Transaction = __webpack_require__(98);
 
@@ -2014,7 +2014,7 @@ if(__webpack_require__(11)){
     , fails               = __webpack_require__(6)
     , $export             = __webpack_require__(0)
     , $typed              = __webpack_require__(93)
-    , $buffer             = __webpack_require__(139)
+    , $buffer             = __webpack_require__(141)
     , ctx                 = __webpack_require__(39)
     , anInstance          = __webpack_require__(56)
     , propertyDesc        = __webpack_require__(45)
@@ -2025,26 +2025,26 @@ if(__webpack_require__(11)){
     , toIndex             = __webpack_require__(52)
     , toPrimitive         = __webpack_require__(33)
     , has                 = __webpack_require__(18)
-    , same                = __webpack_require__(174)
+    , same                = __webpack_require__(175)
     , classof             = __webpack_require__(76)
     , isObject            = __webpack_require__(8)
-    , toObject            = __webpack_require__(16)
-    , isArrayIter         = __webpack_require__(131)
+    , toObject            = __webpack_require__(17)
+    , isArrayIter         = __webpack_require__(133)
     , create              = __webpack_require__(53)
     , getPrototypeOf      = __webpack_require__(27)
     , gOPN                = __webpack_require__(54).f
-    , getIterFn           = __webpack_require__(133)
+    , getIterFn           = __webpack_require__(135)
     , uid                 = __webpack_require__(49)
     , wks                 = __webpack_require__(9)
     , createArrayMethod   = __webpack_require__(35)
     , createArrayIncludes = __webpack_require__(85)
-    , speciesConstructor  = __webpack_require__(136)
-    , ArrayIterators      = __webpack_require__(135)
+    , speciesConstructor  = __webpack_require__(138)
+    , ArrayIterators      = __webpack_require__(137)
     , Iterators           = __webpack_require__(63)
     , $iterDetect         = __webpack_require__(89)
     , setSpecies          = __webpack_require__(55)
-    , arrayFill           = __webpack_require__(134)
-    , arrayCopyWithin     = __webpack_require__(183)
+    , arrayFill           = __webpack_require__(136)
+    , arrayCopyWithin     = __webpack_require__(184)
     , $DP                 = __webpack_require__(12)
     , $GOPD               = __webpack_require__(26)
     , dP                  = $DP.f
@@ -2491,10 +2491,10 @@ if(__webpack_require__(11)){
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Map     = __webpack_require__(186)
+var Map     = __webpack_require__(187)
   , $export = __webpack_require__(0)
   , shared  = __webpack_require__(84)('metadata')
-  , store   = shared.store || (shared.store = new (__webpack_require__(189)));
+  , store   = shared.store || (shared.store = new (__webpack_require__(190)));
 
 var getOrCreateMetadataMap = function(target, targetKey, create){
   var targetMetadata = store.get(target);
@@ -3185,8 +3185,8 @@ module.exports = false;
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 / 15.2.3.14 Object.keys(O)
-var $keys       = __webpack_require__(170)
-  , enumBugKeys = __webpack_require__(117);
+var $keys       = __webpack_require__(171)
+  , enumBugKeys = __webpack_require__(119);
 
 module.exports = Object.keys || function keys(O){
   return $keys(O, enumBugKeys);
@@ -3210,22 +3210,22 @@ module.exports = function(index, length){
 
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 var anObject    = __webpack_require__(4)
-  , dPs         = __webpack_require__(171)
-  , enumBugKeys = __webpack_require__(117)
-  , IE_PROTO    = __webpack_require__(116)('IE_PROTO')
+  , dPs         = __webpack_require__(172)
+  , enumBugKeys = __webpack_require__(119)
+  , IE_PROTO    = __webpack_require__(118)('IE_PROTO')
   , Empty       = function(){ /* empty */ }
   , PROTOTYPE   = 'prototype';
 
 // Create object with fake `null` prototype: use iframe Object with cleared prototype
 var createDict = function(){
   // Thrash, waste and sodomy: IE GC bug
-  var iframe = __webpack_require__(114)('iframe')
+  var iframe = __webpack_require__(116)('iframe')
     , i      = enumBugKeys.length
     , lt     = '<'
     , gt     = '>'
     , iframeDocument;
   iframe.style.display = 'none';
-  __webpack_require__(119).appendChild(iframe);
+  __webpack_require__(121).appendChild(iframe);
   iframe.src = 'javascript:'; // eslint-disable-line no-script-url
   // createDict = iframe.contentWindow.Object;
   // html.removeChild(iframe);
@@ -3256,8 +3256,8 @@ module.exports = Object.create || function create(O, Properties){
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
-var $keys      = __webpack_require__(170)
-  , hiddenKeys = __webpack_require__(117).concat('length', 'prototype');
+var $keys      = __webpack_require__(171)
+  , hiddenKeys = __webpack_require__(119).concat('length', 'prototype');
 
 exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O){
   return $keys(O, hiddenKeys);
@@ -3327,7 +3327,7 @@ var warning = __webpack_require__(3);
 var canDefineProperty = __webpack_require__(95);
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 
-var REACT_ELEMENT_TYPE = __webpack_require__(198);
+var REACT_ELEMENT_TYPE = __webpack_require__(199);
 
 var RESERVED_PROPS = {
   key: true,
@@ -3809,7 +3809,7 @@ module.exports = function(it, tag, stat){
 var $export = __webpack_require__(0)
   , defined = __webpack_require__(31)
   , fails   = __webpack_require__(6)
-  , spaces  = __webpack_require__(121)
+  , spaces  = __webpack_require__(123)
   , space   = '[' + spaces + ']'
   , non     = '\u200b\u0085'
   , ltrim   = RegExp('^' + space + space + '*')
@@ -3860,11 +3860,11 @@ module.exports = function(key){
 /***/ (function(module, exports, __webpack_require__) {
 
 var ctx         = __webpack_require__(39)
-  , call        = __webpack_require__(181)
-  , isArrayIter = __webpack_require__(131)
+  , call        = __webpack_require__(182)
+  , isArrayIter = __webpack_require__(133)
   , anObject    = __webpack_require__(4)
   , toLength    = __webpack_require__(14)
-  , getIterFn   = __webpack_require__(133)
+  , getIterFn   = __webpack_require__(135)
   , BREAK       = {}
   , RETURN      = {};
 var exports = module.exports = function(iterable, entries, fn, that, ITERATOR){
@@ -3904,7 +3904,7 @@ exports.RETURN = RETURN;
 
 var _assign = __webpack_require__(10);
 
-var ReactBaseClasses = __webpack_require__(196);
+var ReactBaseClasses = __webpack_require__(197);
 var ReactChildren = __webpack_require__(442);
 var ReactDOMFactories = __webpack_require__(446);
 var ReactElement = __webpack_require__(58);
@@ -3919,9 +3919,9 @@ var createFactory = ReactElement.createFactory;
 var cloneElement = ReactElement.cloneElement;
 
 if (process.env.NODE_ENV !== 'production') {
-  var lowPriorityWarning = __webpack_require__(140);
+  var lowPriorityWarning = __webpack_require__(142);
   var canDefineProperty = __webpack_require__(95);
-  var ReactElementValidator = __webpack_require__(200);
+  var ReactElementValidator = __webpack_require__(201);
   var didWarnPropTypesDeprecated = false;
   createElement = ReactElementValidator.createElement;
   createFactory = ReactElementValidator.createFactory;
@@ -4256,11 +4256,11 @@ module.exports = ReactReconciler;
 
 
 
-var DOMNamespaces = __webpack_require__(148);
+var DOMNamespaces = __webpack_require__(150);
 var setInnerHTML = __webpack_require__(100);
 
-var createMicrosoftUnsafeLocalFunction = __webpack_require__(149);
-var setTextContent = __webpack_require__(212);
+var createMicrosoftUnsafeLocalFunction = __webpack_require__(151);
+var setTextContent = __webpack_require__(213);
 
 var ELEMENT_NODE_TYPE = 1;
 var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
@@ -4515,9 +4515,9 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(17);
+var _react = __webpack_require__(15);
 
-var _props2 = __webpack_require__(165);
+var _props2 = __webpack_require__(168);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -4729,10 +4729,10 @@ module.exports = function(it){
 
 
 var EventPluginHub = __webpack_require__(78);
-var EventPluginUtils = __webpack_require__(142);
+var EventPluginUtils = __webpack_require__(144);
 
-var accumulateInto = __webpack_require__(204);
-var forEachAccumulated = __webpack_require__(205);
+var accumulateInto = __webpack_require__(205);
+var forEachAccumulated = __webpack_require__(206);
 var warning = __webpack_require__(3);
 
 var getListener = EventPluginHub.getListener;
@@ -4871,11 +4871,11 @@ module.exports = EventPropagators;
 var _prodInvariant = __webpack_require__(7);
 
 var EventPluginRegistry = __webpack_require__(97);
-var EventPluginUtils = __webpack_require__(142);
-var ReactErrorUtils = __webpack_require__(143);
+var EventPluginUtils = __webpack_require__(144);
+var ReactErrorUtils = __webpack_require__(145);
 
-var accumulateInto = __webpack_require__(204);
-var forEachAccumulated = __webpack_require__(205);
+var accumulateInto = __webpack_require__(205);
+var forEachAccumulated = __webpack_require__(206);
 var invariant = __webpack_require__(2);
 
 /**
@@ -5150,7 +5150,7 @@ module.exports = EventPluginHub;
 
 var SyntheticEvent = __webpack_require__(42);
 
-var getEventTarget = __webpack_require__(144);
+var getEventTarget = __webpack_require__(146);
 
 /**
  * @interface UIEvent
@@ -5294,7 +5294,7 @@ module.exports = keys;
 /***/ (function(module, exports, __webpack_require__) {
 
 var isFunction = __webpack_require__(103),
-    isLength = __webpack_require__(162);
+    isLength = __webpack_require__(165);
 
 /**
  * Checks if `value` is array-like. A value is considered array-like if it's
@@ -5528,7 +5528,7 @@ var global            = __webpack_require__(5)
   , fails             = __webpack_require__(6)
   , $iterDetect       = __webpack_require__(89)
   , setToStringTag    = __webpack_require__(61)
-  , inheritIfRequired = __webpack_require__(122);
+  , inheritIfRequired = __webpack_require__(124);
 
 module.exports = function(NAME, wrapper, methods, common, IS_MAP, IS_WEAK){
   var Base  = global[NAME]
@@ -6214,9 +6214,9 @@ module.exports = TransactionImpl;
 
 
 var SyntheticUIEvent = __webpack_require__(79);
-var ViewportMetrics = __webpack_require__(211);
+var ViewportMetrics = __webpack_require__(212);
 
-var getEventModifierState = __webpack_require__(146);
+var getEventModifierState = __webpack_require__(148);
 
 /**
  * @interface MouseEvent
@@ -6290,13 +6290,13 @@ module.exports = SyntheticMouseEvent;
 
 
 
-var ExecutionEnvironment = __webpack_require__(15);
-var DOMNamespaces = __webpack_require__(148);
+var ExecutionEnvironment = __webpack_require__(16);
+var DOMNamespaces = __webpack_require__(150);
 
 var WHITESPACE_TEST = /^[ \r\n\t\f]/;
 var NONVISIBLE_TEST = /<(!--|link|noscript|meta|script|style)[ \r\n\t\f\/>]/;
 
-var createMicrosoftUnsafeLocalFunction = __webpack_require__(149);
+var createMicrosoftUnsafeLocalFunction = __webpack_require__(151);
 
 // SVG temp container for IE lacking innerHTML
 var reusableSVGContainer;
@@ -6524,10 +6524,10 @@ var _assign = __webpack_require__(10);
 
 var EventPluginRegistry = __webpack_require__(97);
 var ReactEventEmitterMixin = __webpack_require__(491);
-var ViewportMetrics = __webpack_require__(211);
+var ViewportMetrics = __webpack_require__(212);
 
 var getVendorPrefixedEventName = __webpack_require__(492);
-var isEventSupported = __webpack_require__(145);
+var isEventSupported = __webpack_require__(147);
 
 /**
  * Summary of `ReactBrowserEventEmitter` event handling:
@@ -7137,7 +7137,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-var _react = __webpack_require__(17);
+var _react = __webpack_require__(15);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -7379,6 +7379,447 @@ function loadSDK(url, globalVar) {
 
 /***/ }),
 /* 114 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+/* 115 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+
+var stylesInDom = {};
+
+var	memoize = function (fn) {
+	var memo;
+
+	return function () {
+		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+		return memo;
+	};
+};
+
+var isOldIE = memoize(function () {
+	// Test for IE <= 9 as proposed by Browserhacks
+	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+	// Tests for existence of standard globals is to allow style-loader
+	// to operate correctly into non-standard environments
+	// @see https://github.com/webpack-contrib/style-loader/issues/177
+	return window && document && document.all && !window.atob;
+});
+
+var getElement = (function (fn) {
+	var memo = {};
+
+	return function(selector) {
+		if (typeof memo[selector] === "undefined") {
+			memo[selector] = fn.call(this, selector);
+		}
+
+		return memo[selector]
+	};
+})(function (target) {
+	return document.querySelector(target)
+});
+
+var singleton = null;
+var	singletonCounter = 0;
+var	stylesInsertedAtTop = [];
+
+var	fixUrls = __webpack_require__(674);
+
+module.exports = function(list, options) {
+	if (typeof DEBUG !== "undefined" && DEBUG) {
+		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+	}
+
+	options = options || {};
+
+	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
+
+	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+	// tags it will allow on a page
+	if (!options.singleton) options.singleton = isOldIE();
+
+	// By default, add <style> tags to the <head> element
+	if (!options.insertInto) options.insertInto = "head";
+
+	// By default, add <style> tags to the bottom of the target
+	if (!options.insertAt) options.insertAt = "bottom";
+
+	var styles = listToStyles(list, options);
+
+	addStylesToDom(styles, options);
+
+	return function update (newList) {
+		var mayRemove = [];
+
+		for (var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+
+			domStyle.refs--;
+			mayRemove.push(domStyle);
+		}
+
+		if(newList) {
+			var newStyles = listToStyles(newList, options);
+			addStylesToDom(newStyles, options);
+		}
+
+		for (var i = 0; i < mayRemove.length; i++) {
+			var domStyle = mayRemove[i];
+
+			if(domStyle.refs === 0) {
+				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
+
+				delete stylesInDom[domStyle.id];
+			}
+		}
+	};
+};
+
+function addStylesToDom (styles, options) {
+	for (var i = 0; i < styles.length; i++) {
+		var item = styles[i];
+		var domStyle = stylesInDom[item.id];
+
+		if(domStyle) {
+			domStyle.refs++;
+
+			for(var j = 0; j < domStyle.parts.length; j++) {
+				domStyle.parts[j](item.parts[j]);
+			}
+
+			for(; j < item.parts.length; j++) {
+				domStyle.parts.push(addStyle(item.parts[j], options));
+			}
+		} else {
+			var parts = [];
+
+			for(var j = 0; j < item.parts.length; j++) {
+				parts.push(addStyle(item.parts[j], options));
+			}
+
+			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+		}
+	}
+}
+
+function listToStyles (list, options) {
+	var styles = [];
+	var newStyles = {};
+
+	for (var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var id = options.base ? item[0] + options.base : item[0];
+		var css = item[1];
+		var media = item[2];
+		var sourceMap = item[3];
+		var part = {css: css, media: media, sourceMap: sourceMap};
+
+		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
+		else newStyles[id].parts.push(part);
+	}
+
+	return styles;
+}
+
+function insertStyleElement (options, style) {
+	var target = getElement(options.insertInto)
+
+	if (!target) {
+		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
+	}
+
+	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
+
+	if (options.insertAt === "top") {
+		if (!lastStyleElementInsertedAtTop) {
+			target.insertBefore(style, target.firstChild);
+		} else if (lastStyleElementInsertedAtTop.nextSibling) {
+			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
+		} else {
+			target.appendChild(style);
+		}
+		stylesInsertedAtTop.push(style);
+	} else if (options.insertAt === "bottom") {
+		target.appendChild(style);
+	} else {
+		throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
+	}
+}
+
+function removeStyleElement (style) {
+	if (style.parentNode === null) return false;
+	style.parentNode.removeChild(style);
+
+	var idx = stylesInsertedAtTop.indexOf(style);
+	if(idx >= 0) {
+		stylesInsertedAtTop.splice(idx, 1);
+	}
+}
+
+function createStyleElement (options) {
+	var style = document.createElement("style");
+
+	options.attrs.type = "text/css";
+
+	addAttrs(style, options.attrs);
+	insertStyleElement(options, style);
+
+	return style;
+}
+
+function createLinkElement (options) {
+	var link = document.createElement("link");
+
+	options.attrs.type = "text/css";
+	options.attrs.rel = "stylesheet";
+
+	addAttrs(link, options.attrs);
+	insertStyleElement(options, link);
+
+	return link;
+}
+
+function addAttrs (el, attrs) {
+	Object.keys(attrs).forEach(function (key) {
+		el.setAttribute(key, attrs[key]);
+	});
+}
+
+function addStyle (obj, options) {
+	var style, update, remove, result;
+
+	// If a transform function was defined, run it on the css
+	if (options.transform && obj.css) {
+	    result = options.transform(obj.css);
+
+	    if (result) {
+	    	// If transform returns a value, use that instead of the original css.
+	    	// This allows running runtime transformations on the css.
+	    	obj.css = result;
+	    } else {
+	    	// If the transform function returns a falsy value, don't add this css.
+	    	// This allows conditional loading of css
+	    	return function() {
+	    		// noop
+	    	};
+	    }
+	}
+
+	if (options.singleton) {
+		var styleIndex = singletonCounter++;
+
+		style = singleton || (singleton = createStyleElement(options));
+
+		update = applyToSingletonTag.bind(null, style, styleIndex, false);
+		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+
+	} else if (
+		obj.sourceMap &&
+		typeof URL === "function" &&
+		typeof URL.createObjectURL === "function" &&
+		typeof URL.revokeObjectURL === "function" &&
+		typeof Blob === "function" &&
+		typeof btoa === "function"
+	) {
+		style = createLinkElement(options);
+		update = updateLink.bind(null, style, options);
+		remove = function () {
+			removeStyleElement(style);
+
+			if(style.href) URL.revokeObjectURL(style.href);
+		};
+	} else {
+		style = createStyleElement(options);
+		update = applyToTag.bind(null, style);
+		remove = function () {
+			removeStyleElement(style);
+		};
+	}
+
+	update(obj);
+
+	return function updateStyle (newObj) {
+		if (newObj) {
+			if (
+				newObj.css === obj.css &&
+				newObj.media === obj.media &&
+				newObj.sourceMap === obj.sourceMap
+			) {
+				return;
+			}
+
+			update(obj = newObj);
+		} else {
+			remove();
+		}
+	};
+}
+
+var replaceText = (function () {
+	var textStore = [];
+
+	return function (index, replacement) {
+		textStore[index] = replacement;
+
+		return textStore.filter(Boolean).join('\n');
+	};
+})();
+
+function applyToSingletonTag (style, index, remove, obj) {
+	var css = remove ? "" : obj.css;
+
+	if (style.styleSheet) {
+		style.styleSheet.cssText = replaceText(index, css);
+	} else {
+		var cssNode = document.createTextNode(css);
+		var childNodes = style.childNodes;
+
+		if (childNodes[index]) style.removeChild(childNodes[index]);
+
+		if (childNodes.length) {
+			style.insertBefore(cssNode, childNodes[index]);
+		} else {
+			style.appendChild(cssNode);
+		}
+	}
+}
+
+function applyToTag (style, obj) {
+	var css = obj.css;
+	var media = obj.media;
+
+	if(media) {
+		style.setAttribute("media", media)
+	}
+
+	if(style.styleSheet) {
+		style.styleSheet.cssText = css;
+	} else {
+		while(style.firstChild) {
+			style.removeChild(style.firstChild);
+		}
+
+		style.appendChild(document.createTextNode(css));
+	}
+}
+
+function updateLink (link, options, obj) {
+	var css = obj.css;
+	var sourceMap = obj.sourceMap;
+
+	/*
+		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
+		and there is no publicPath defined then lets turn convertToAbsoluteUrls
+		on by default.  Otherwise default to the convertToAbsoluteUrls option
+		directly
+	*/
+	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
+
+	if (options.convertToAbsoluteUrls || autoFixUrls) {
+		css = fixUrls(css);
+	}
+
+	if (sourceMap) {
+		// http://stackoverflow.com/a/26603875
+		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+	}
+
+	var blob = new Blob([css], { type: "text/css" });
+
+	var oldSrc = link.href;
+
+	link.href = URL.createObjectURL(blob);
+
+	if(oldSrc) URL.revokeObjectURL(oldSrc);
+}
+
+
+/***/ }),
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(8)
@@ -7390,13 +7831,13 @@ module.exports = function(it){
 };
 
 /***/ }),
-/* 115 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var global         = __webpack_require__(5)
   , core           = __webpack_require__(38)
   , LIBRARY        = __webpack_require__(50)
-  , wksExt         = __webpack_require__(169)
+  , wksExt         = __webpack_require__(170)
   , defineProperty = __webpack_require__(12).f;
 module.exports = function(name){
   var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
@@ -7404,7 +7845,7 @@ module.exports = function(name){
 };
 
 /***/ }),
-/* 116 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var shared = __webpack_require__(84)('keys')
@@ -7414,7 +7855,7 @@ module.exports = function(key){
 };
 
 /***/ }),
-/* 117 */
+/* 119 */
 /***/ (function(module, exports) {
 
 // IE 8- don't enum bug keys
@@ -7423,7 +7864,7 @@ module.exports = (
 ).split(',');
 
 /***/ }),
-/* 118 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.2.2 IsArray(argument)
@@ -7433,13 +7874,13 @@ module.exports = Array.isArray || function isArray(arg){
 };
 
 /***/ }),
-/* 119 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(5).document && document.documentElement;
 
 /***/ }),
-/* 120 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Works with __proto__ only. Old v8 can't work with null proto objects.
@@ -7469,18 +7910,18 @@ module.exports = {
 };
 
 /***/ }),
-/* 121 */
+/* 123 */
 /***/ (function(module, exports) {
 
 module.exports = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003' +
   '\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF';
 
 /***/ }),
-/* 122 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject       = __webpack_require__(8)
-  , setPrototypeOf = __webpack_require__(120).set;
+  , setPrototypeOf = __webpack_require__(122).set;
 module.exports = function(that, target, C){
   var P, S = target.constructor;
   if(S !== C && typeof S == 'function' && (P = S.prototype) !== C.prototype && isObject(P) && setPrototypeOf){
@@ -7489,7 +7930,7 @@ module.exports = function(that, target, C){
 };
 
 /***/ }),
-/* 123 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7507,7 +7948,7 @@ module.exports = function repeat(count){
 };
 
 /***/ }),
-/* 124 */
+/* 126 */
 /***/ (function(module, exports) {
 
 // 20.2.2.28 Math.sign(x)
@@ -7516,7 +7957,7 @@ module.exports = Math.sign || function sign(x){
 };
 
 /***/ }),
-/* 125 */
+/* 127 */
 /***/ (function(module, exports) {
 
 // 20.2.2.14 Math.expm1(x)
@@ -7531,7 +7972,7 @@ module.exports = (!$expm1
 } : $expm1;
 
 /***/ }),
-/* 126 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var toInteger = __webpack_require__(47)
@@ -7553,7 +7994,7 @@ module.exports = function(TO_STRING){
 };
 
 /***/ }),
-/* 127 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7564,7 +8005,7 @@ var LIBRARY        = __webpack_require__(50)
   , hide           = __webpack_require__(19)
   , has            = __webpack_require__(18)
   , Iterators      = __webpack_require__(63)
-  , $iterCreate    = __webpack_require__(128)
+  , $iterCreate    = __webpack_require__(130)
   , setToStringTag = __webpack_require__(61)
   , getPrototypeOf = __webpack_require__(27)
   , ITERATOR       = __webpack_require__(9)('iterator')
@@ -7629,7 +8070,7 @@ module.exports = function(Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCED
 };
 
 /***/ }),
-/* 128 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7648,7 +8089,7 @@ module.exports = function(Constructor, NAME, next){
 };
 
 /***/ }),
-/* 129 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // helper for String#{startsWith, endsWith, includes}
@@ -7661,7 +8102,7 @@ module.exports = function(that, searchString, NAME){
 };
 
 /***/ }),
-/* 130 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var MATCH = __webpack_require__(9)('match');
@@ -7678,7 +8119,7 @@ module.exports = function(KEY){
 };
 
 /***/ }),
-/* 131 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // check on default Array iterator
@@ -7691,7 +8132,7 @@ module.exports = function(it){
 };
 
 /***/ }),
-/* 132 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7705,7 +8146,7 @@ module.exports = function(object, index, value){
 };
 
 /***/ }),
-/* 133 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var classof   = __webpack_require__(76)
@@ -7718,13 +8159,13 @@ module.exports = __webpack_require__(38).getIteratorMethod = function(it){
 };
 
 /***/ }),
-/* 134 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 // 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 
-var toObject = __webpack_require__(16)
+var toObject = __webpack_require__(17)
   , toIndex  = __webpack_require__(52)
   , toLength = __webpack_require__(14);
 module.exports = function fill(value /*, start = 0, end = @length */){
@@ -7739,13 +8180,13 @@ module.exports = function fill(value /*, start = 0, end = @length */){
 };
 
 /***/ }),
-/* 135 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var addToUnscopables = __webpack_require__(64)
-  , step             = __webpack_require__(184)
+  , step             = __webpack_require__(185)
   , Iterators        = __webpack_require__(63)
   , toIObject        = __webpack_require__(22);
 
@@ -7753,7 +8194,7 @@ var addToUnscopables = __webpack_require__(64)
 // 22.1.3.13 Array.prototype.keys()
 // 22.1.3.29 Array.prototype.values()
 // 22.1.3.30 Array.prototype[@@iterator]()
-module.exports = __webpack_require__(127)(Array, 'Array', function(iterated, kind){
+module.exports = __webpack_require__(129)(Array, 'Array', function(iterated, kind){
   this._t = toIObject(iterated); // target
   this._i = 0;                   // next index
   this._k = kind;                // kind
@@ -7779,7 +8220,7 @@ addToUnscopables('values');
 addToUnscopables('entries');
 
 /***/ }),
-/* 136 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.3.20 SpeciesConstructor(O, defaultConstructor)
@@ -7792,13 +8233,13 @@ module.exports = function(O, D){
 };
 
 /***/ }),
-/* 137 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ctx                = __webpack_require__(39)
   , invoke             = __webpack_require__(87)
-  , html               = __webpack_require__(119)
-  , cel                = __webpack_require__(114)
+  , html               = __webpack_require__(121)
+  , cel                = __webpack_require__(116)
   , global             = __webpack_require__(5)
   , process            = global.process
   , setTask            = global.setImmediate
@@ -7872,11 +8313,11 @@ module.exports = {
 };
 
 /***/ }),
-/* 138 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var global    = __webpack_require__(5)
-  , macrotask = __webpack_require__(137).set
+  , macrotask = __webpack_require__(139).set
   , Observer  = global.MutationObserver || global.WebKitMutationObserver
   , process   = global.process
   , Promise   = global.Promise
@@ -7945,7 +8386,7 @@ module.exports = function(){
 };
 
 /***/ }),
-/* 139 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7962,7 +8403,7 @@ var global         = __webpack_require__(5)
   , toLength       = __webpack_require__(14)
   , gOPN           = __webpack_require__(54).f
   , dP             = __webpack_require__(12).f
-  , arrayFill      = __webpack_require__(134)
+  , arrayFill      = __webpack_require__(136)
   , setToStringTag = __webpack_require__(61)
   , ARRAY_BUFFER   = 'ArrayBuffer'
   , DATA_VIEW      = 'DataView'
@@ -8224,7 +8665,7 @@ exports[ARRAY_BUFFER] = $ArrayBuffer;
 exports[DATA_VIEW] = $DataView;
 
 /***/ }),
-/* 140 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8295,7 +8736,7 @@ module.exports = lowPriorityWarning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 141 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8316,7 +8757,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 142 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8334,7 +8775,7 @@ module.exports = ReactPropTypesSecret;
 
 var _prodInvariant = __webpack_require__(7);
 
-var ReactErrorUtils = __webpack_require__(143);
+var ReactErrorUtils = __webpack_require__(145);
 
 var invariant = __webpack_require__(2);
 var warning = __webpack_require__(3);
@@ -8548,7 +8989,7 @@ module.exports = EventPluginUtils;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 143 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8630,7 +9071,7 @@ module.exports = ReactErrorUtils;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 144 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8670,7 +9111,7 @@ function getEventTarget(nativeEvent) {
 module.exports = getEventTarget;
 
 /***/ }),
-/* 145 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8686,7 +9127,7 @@ module.exports = getEventTarget;
 
 
 
-var ExecutionEnvironment = __webpack_require__(15);
+var ExecutionEnvironment = __webpack_require__(16);
 
 var useHasFeature;
 if (ExecutionEnvironment.canUseDOM) {
@@ -8735,7 +9176,7 @@ function isEventSupported(eventNameSuffix, capture) {
 module.exports = isEventSupported;
 
 /***/ }),
-/* 146 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8783,7 +9224,7 @@ function getEventModifierState(nativeEvent) {
 module.exports = getEventModifierState;
 
 /***/ }),
-/* 147 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8804,9 +9245,9 @@ var Danger = __webpack_require__(476);
 var ReactDOMComponentTree = __webpack_require__(13);
 var ReactInstrumentation = __webpack_require__(29);
 
-var createMicrosoftUnsafeLocalFunction = __webpack_require__(149);
+var createMicrosoftUnsafeLocalFunction = __webpack_require__(151);
 var setInnerHTML = __webpack_require__(100);
-var setTextContent = __webpack_require__(212);
+var setTextContent = __webpack_require__(213);
 
 function getNodeAfter(parentNode, node) {
   // Special case for text components, which return [open, close] comments
@@ -9015,7 +9456,7 @@ module.exports = DOMChildrenOperations;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 148 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9040,7 +9481,7 @@ var DOMNamespaces = {
 module.exports = DOMNamespaces;
 
 /***/ }),
-/* 149 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9077,7 +9518,7 @@ var createMicrosoftUnsafeLocalFunction = function (func) {
 module.exports = createMicrosoftUnsafeLocalFunction;
 
 /***/ }),
-/* 150 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9095,8 +9536,8 @@ module.exports = createMicrosoftUnsafeLocalFunction;
 
 var _prodInvariant = __webpack_require__(7);
 
-var ReactPropTypesSecret = __webpack_require__(216);
-var propTypesFactory = __webpack_require__(201);
+var ReactPropTypesSecret = __webpack_require__(217);
+var propTypesFactory = __webpack_require__(202);
 
 var React = __webpack_require__(66);
 var PropTypes = propTypesFactory(React.isValidElement);
@@ -9221,7 +9662,7 @@ module.exports = LinkedValueUtils;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 151 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9271,7 +9712,7 @@ module.exports = ReactComponentEnvironment;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 152 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9344,7 +9785,7 @@ function shallowEqual(objA, objB) {
 module.exports = shallowEqual;
 
 /***/ }),
-/* 153 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9391,7 +9832,7 @@ function shouldUpdateReactComponent(prevElement, nextElement) {
 module.exports = shouldUpdateReactComponent;
 
 /***/ }),
-/* 154 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9455,7 +9896,7 @@ var KeyEscapeUtils = {
 module.exports = KeyEscapeUtils;
 
 /***/ }),
-/* 155 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9695,7 +10136,7 @@ module.exports = ReactUpdateQueue;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 156 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10072,7 +10513,7 @@ module.exports = validateDOMNesting;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 157 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10127,7 +10568,90 @@ function getEventCharCode(nativeEvent) {
 module.exports = getEventCharCode;
 
 /***/ }),
-/* 158 */
+/* 160 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _isFunction2 = __webpack_require__(103);
+
+var _isFunction3 = _interopRequireDefault(_isFunction2);
+
+var _extendReactClass = __webpack_require__(545);
+
+var _extendReactClass2 = _interopRequireDefault(_extendReactClass);
+
+var _wrapStatelessFunction = __webpack_require__(645);
+
+var _wrapStatelessFunction2 = _interopRequireDefault(_wrapStatelessFunction);
+
+var _makeConfiguration = __webpack_require__(656);
+
+var _makeConfiguration2 = _interopRequireDefault(_makeConfiguration);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Determines if the given object has the signature of a class that inherits React.Component.
+ */
+
+
+/**
+ * @see https://github.com/gajus/react-css-modules#options
+ */
+var isReactComponent = function isReactComponent(maybeReactComponent) {
+  return 'prototype' in maybeReactComponent && (0, _isFunction3.default)(maybeReactComponent.prototype.render);
+};
+
+/**
+ * When used as a function.
+ */
+var functionConstructor = function functionConstructor(Component, defaultStyles, options) {
+  var decoratedClass = void 0;
+
+  var configuration = (0, _makeConfiguration2.default)(options);
+
+  if (isReactComponent(Component)) {
+    decoratedClass = (0, _extendReactClass2.default)(Component, defaultStyles, configuration);
+  } else {
+    decoratedClass = (0, _wrapStatelessFunction2.default)(Component, defaultStyles, configuration);
+  }
+
+  if (Component.displayName) {
+    decoratedClass.displayName = Component.displayName;
+  } else {
+    decoratedClass.displayName = Component.name;
+  }
+
+  return decoratedClass;
+};
+
+/**
+ * When used as a ES7 decorator.
+ */
+var decoratorConstructor = function decoratorConstructor(defaultStyles, options) {
+  return function (Component) {
+    return functionConstructor(Component, defaultStyles, options);
+  };
+};
+
+exports.default = function () {
+  if ((0, _isFunction3.default)(arguments.length <= 0 ? undefined : arguments[0])) {
+    return functionConstructor(arguments.length <= 0 ? undefined : arguments[0], arguments.length <= 1 ? undefined : arguments[1], arguments.length <= 2 ? undefined : arguments[2]);
+  } else {
+    return decoratorConstructor(arguments.length <= 0 ? undefined : arguments[0], arguments.length <= 1 ? undefined : arguments[1]);
+  }
+};
+
+module.exports = exports['default'];
+
+/***/ }),
+/* 161 */
 /***/ (function(module, exports) {
 
 /**
@@ -10154,7 +10678,7 @@ module.exports = arrayMap;
 
 
 /***/ }),
-/* 159 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(60),
@@ -10167,7 +10691,7 @@ module.exports = Map;
 
 
 /***/ }),
-/* 160 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var mapCacheClear = __webpack_require__(564),
@@ -10205,7 +10729,7 @@ module.exports = MapCache;
 
 
 /***/ }),
-/* 161 */
+/* 164 */
 /***/ (function(module, exports) {
 
 /** Used as references for various `Number` constants. */
@@ -10233,7 +10757,7 @@ module.exports = isIndex;
 
 
 /***/ }),
-/* 162 */
+/* 165 */
 /***/ (function(module, exports) {
 
 /** Used as references for various `Number` constants. */
@@ -10274,7 +10798,7 @@ module.exports = isLength;
 
 
 /***/ }),
-/* 163 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isArray = __webpack_require__(25),
@@ -10309,7 +10833,7 @@ module.exports = isKey;
 
 
 /***/ }),
-/* 164 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseForOwn = __webpack_require__(620),
@@ -10329,7 +10853,7 @@ module.exports = baseEach;
 
 
 /***/ }),
-/* 165 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10464,468 +10988,27 @@ var defaultProps = exports.defaultProps = {
 };
 
 /***/ }),
-/* 166 */
-/***/ (function(module, exports) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function(useSourceMap) {
-	var list = [];
-
-	// return the list of modules as css string
-	list.toString = function toString() {
-		return this.map(function (item) {
-			var content = cssWithMappingToString(item, useSourceMap);
-			if(item[2]) {
-				return "@media " + item[2] + "{" + content + "}";
-			} else {
-				return content;
-			}
-		}).join("");
-	};
-
-	// import a list of modules into the list
-	list.i = function(modules, mediaQuery) {
-		if(typeof modules === "string")
-			modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for(var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if(typeof id === "number")
-				alreadyImportedModules[id] = true;
-		}
-		for(i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if(mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if(mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-	var content = item[1] || '';
-	var cssMapping = item[3];
-	if (!cssMapping) {
-		return content;
-	}
-
-	if (useSourceMap && typeof btoa === 'function') {
-		var sourceMapping = toComment(cssMapping);
-		var sourceURLs = cssMapping.sources.map(function (source) {
-			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
-		});
-
-		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-	}
-
-	return [content].join('\n');
-}
-
-// Adapted from convert-source-map (MIT)
-function toComment(sourceMap) {
-	// eslint-disable-next-line no-undef
-	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-
-	return '/*# ' + data + ' */';
-}
-
-
-/***/ }),
-/* 167 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-
-var stylesInDom = {};
-
-var	memoize = function (fn) {
-	var memo;
-
-	return function () {
-		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
-		return memo;
-	};
-};
-
-var isOldIE = memoize(function () {
-	// Test for IE <= 9 as proposed by Browserhacks
-	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
-	// Tests for existence of standard globals is to allow style-loader
-	// to operate correctly into non-standard environments
-	// @see https://github.com/webpack-contrib/style-loader/issues/177
-	return window && document && document.all && !window.atob;
-});
-
-var getElement = (function (fn) {
-	var memo = {};
-
-	return function(selector) {
-		if (typeof memo[selector] === "undefined") {
-			memo[selector] = fn.call(this, selector);
-		}
-
-		return memo[selector]
-	};
-})(function (target) {
-	return document.querySelector(target)
-});
-
-var singleton = null;
-var	singletonCounter = 0;
-var	stylesInsertedAtTop = [];
-
-var	fixUrls = __webpack_require__(674);
-
-module.exports = function(list, options) {
-	if (typeof DEBUG !== "undefined" && DEBUG) {
-		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
-	}
-
-	options = options || {};
-
-	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
-
-	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-	// tags it will allow on a page
-	if (!options.singleton) options.singleton = isOldIE();
-
-	// By default, add <style> tags to the <head> element
-	if (!options.insertInto) options.insertInto = "head";
-
-	// By default, add <style> tags to the bottom of the target
-	if (!options.insertAt) options.insertAt = "bottom";
-
-	var styles = listToStyles(list, options);
-
-	addStylesToDom(styles, options);
-
-	return function update (newList) {
-		var mayRemove = [];
-
-		for (var i = 0; i < styles.length; i++) {
-			var item = styles[i];
-			var domStyle = stylesInDom[item.id];
-
-			domStyle.refs--;
-			mayRemove.push(domStyle);
-		}
-
-		if(newList) {
-			var newStyles = listToStyles(newList, options);
-			addStylesToDom(newStyles, options);
-		}
-
-		for (var i = 0; i < mayRemove.length; i++) {
-			var domStyle = mayRemove[i];
-
-			if(domStyle.refs === 0) {
-				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
-
-				delete stylesInDom[domStyle.id];
-			}
-		}
-	};
-};
-
-function addStylesToDom (styles, options) {
-	for (var i = 0; i < styles.length; i++) {
-		var item = styles[i];
-		var domStyle = stylesInDom[item.id];
-
-		if(domStyle) {
-			domStyle.refs++;
-
-			for(var j = 0; j < domStyle.parts.length; j++) {
-				domStyle.parts[j](item.parts[j]);
-			}
-
-			for(; j < item.parts.length; j++) {
-				domStyle.parts.push(addStyle(item.parts[j], options));
-			}
-		} else {
-			var parts = [];
-
-			for(var j = 0; j < item.parts.length; j++) {
-				parts.push(addStyle(item.parts[j], options));
-			}
-
-			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
-		}
-	}
-}
-
-function listToStyles (list, options) {
-	var styles = [];
-	var newStyles = {};
-
-	for (var i = 0; i < list.length; i++) {
-		var item = list[i];
-		var id = options.base ? item[0] + options.base : item[0];
-		var css = item[1];
-		var media = item[2];
-		var sourceMap = item[3];
-		var part = {css: css, media: media, sourceMap: sourceMap};
-
-		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
-		else newStyles[id].parts.push(part);
-	}
-
-	return styles;
-}
-
-function insertStyleElement (options, style) {
-	var target = getElement(options.insertInto)
-
-	if (!target) {
-		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
-	}
-
-	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
-
-	if (options.insertAt === "top") {
-		if (!lastStyleElementInsertedAtTop) {
-			target.insertBefore(style, target.firstChild);
-		} else if (lastStyleElementInsertedAtTop.nextSibling) {
-			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
-		} else {
-			target.appendChild(style);
-		}
-		stylesInsertedAtTop.push(style);
-	} else if (options.insertAt === "bottom") {
-		target.appendChild(style);
-	} else {
-		throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
-	}
-}
-
-function removeStyleElement (style) {
-	if (style.parentNode === null) return false;
-	style.parentNode.removeChild(style);
-
-	var idx = stylesInsertedAtTop.indexOf(style);
-	if(idx >= 0) {
-		stylesInsertedAtTop.splice(idx, 1);
-	}
-}
-
-function createStyleElement (options) {
-	var style = document.createElement("style");
-
-	options.attrs.type = "text/css";
-
-	addAttrs(style, options.attrs);
-	insertStyleElement(options, style);
-
-	return style;
-}
-
-function createLinkElement (options) {
-	var link = document.createElement("link");
-
-	options.attrs.type = "text/css";
-	options.attrs.rel = "stylesheet";
-
-	addAttrs(link, options.attrs);
-	insertStyleElement(options, link);
-
-	return link;
-}
-
-function addAttrs (el, attrs) {
-	Object.keys(attrs).forEach(function (key) {
-		el.setAttribute(key, attrs[key]);
-	});
-}
-
-function addStyle (obj, options) {
-	var style, update, remove, result;
-
-	// If a transform function was defined, run it on the css
-	if (options.transform && obj.css) {
-	    result = options.transform(obj.css);
-
-	    if (result) {
-	    	// If transform returns a value, use that instead of the original css.
-	    	// This allows running runtime transformations on the css.
-	    	obj.css = result;
-	    } else {
-	    	// If the transform function returns a falsy value, don't add this css.
-	    	// This allows conditional loading of css
-	    	return function() {
-	    		// noop
-	    	};
-	    }
-	}
-
-	if (options.singleton) {
-		var styleIndex = singletonCounter++;
-
-		style = singleton || (singleton = createStyleElement(options));
-
-		update = applyToSingletonTag.bind(null, style, styleIndex, false);
-		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
-
-	} else if (
-		obj.sourceMap &&
-		typeof URL === "function" &&
-		typeof URL.createObjectURL === "function" &&
-		typeof URL.revokeObjectURL === "function" &&
-		typeof Blob === "function" &&
-		typeof btoa === "function"
-	) {
-		style = createLinkElement(options);
-		update = updateLink.bind(null, style, options);
-		remove = function () {
-			removeStyleElement(style);
-
-			if(style.href) URL.revokeObjectURL(style.href);
-		};
-	} else {
-		style = createStyleElement(options);
-		update = applyToTag.bind(null, style);
-		remove = function () {
-			removeStyleElement(style);
-		};
-	}
-
-	update(obj);
-
-	return function updateStyle (newObj) {
-		if (newObj) {
-			if (
-				newObj.css === obj.css &&
-				newObj.media === obj.media &&
-				newObj.sourceMap === obj.sourceMap
-			) {
-				return;
-			}
-
-			update(obj = newObj);
-		} else {
-			remove();
-		}
-	};
-}
-
-var replaceText = (function () {
-	var textStore = [];
-
-	return function (index, replacement) {
-		textStore[index] = replacement;
-
-		return textStore.filter(Boolean).join('\n');
-	};
-})();
-
-function applyToSingletonTag (style, index, remove, obj) {
-	var css = remove ? "" : obj.css;
-
-	if (style.styleSheet) {
-		style.styleSheet.cssText = replaceText(index, css);
-	} else {
-		var cssNode = document.createTextNode(css);
-		var childNodes = style.childNodes;
-
-		if (childNodes[index]) style.removeChild(childNodes[index]);
-
-		if (childNodes.length) {
-			style.insertBefore(cssNode, childNodes[index]);
-		} else {
-			style.appendChild(cssNode);
-		}
-	}
-}
-
-function applyToTag (style, obj) {
-	var css = obj.css;
-	var media = obj.media;
-
-	if(media) {
-		style.setAttribute("media", media)
-	}
-
-	if(style.styleSheet) {
-		style.styleSheet.cssText = css;
-	} else {
-		while(style.firstChild) {
-			style.removeChild(style.firstChild);
-		}
-
-		style.appendChild(document.createTextNode(css));
-	}
-}
-
-function updateLink (link, options, obj) {
-	var css = obj.css;
-	var sourceMap = obj.sourceMap;
-
-	/*
-		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
-		and there is no publicPath defined then lets turn convertToAbsoluteUrls
-		on by default.  Otherwise default to the convertToAbsoluteUrls option
-		directly
-	*/
-	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
-
-	if (options.convertToAbsoluteUrls || autoFixUrls) {
-		css = fixUrls(css);
-	}
-
-	if (sourceMap) {
-		// http://stackoverflow.com/a/26603875
-		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
-	}
-
-	var blob = new Blob([css], { type: "text/css" });
-
-	var oldSrc = link.href;
-
-	link.href = URL.createObjectURL(blob);
-
-	if(oldSrc) URL.revokeObjectURL(oldSrc);
-}
-
-
-/***/ }),
-/* 168 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = !__webpack_require__(11) && !__webpack_require__(6)(function(){
-  return Object.defineProperty(__webpack_require__(114)('div'), 'a', {get: function(){ return 7; }}).a != 7;
-});
-
-/***/ }),
 /* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports.f = __webpack_require__(9);
+module.exports = !__webpack_require__(11) && !__webpack_require__(6)(function(){
+  return Object.defineProperty(__webpack_require__(116)('div'), 'a', {get: function(){ return 7; }}).a != 7;
+});
 
 /***/ }),
 /* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
+exports.f = __webpack_require__(9);
+
+/***/ }),
+/* 171 */
+/***/ (function(module, exports, __webpack_require__) {
+
 var has          = __webpack_require__(18)
   , toIObject    = __webpack_require__(22)
   , arrayIndexOf = __webpack_require__(85)(false)
-  , IE_PROTO     = __webpack_require__(116)('IE_PROTO');
+  , IE_PROTO     = __webpack_require__(118)('IE_PROTO');
 
 module.exports = function(object, names){
   var O      = toIObject(object)
@@ -10941,7 +11024,7 @@ module.exports = function(object, names){
 };
 
 /***/ }),
-/* 171 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var dP       = __webpack_require__(12)
@@ -10959,7 +11042,7 @@ module.exports = __webpack_require__(11) ? Object.defineProperties : function de
 };
 
 /***/ }),
-/* 172 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
@@ -10984,7 +11067,7 @@ module.exports.f = function getOwnPropertyNames(it){
 
 
 /***/ }),
-/* 173 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10993,7 +11076,7 @@ module.exports.f = function getOwnPropertyNames(it){
 var getKeys  = __webpack_require__(51)
   , gOPS     = __webpack_require__(86)
   , pIE      = __webpack_require__(75)
-  , toObject = __webpack_require__(16)
+  , toObject = __webpack_require__(17)
   , IObject  = __webpack_require__(74)
   , $assign  = Object.assign;
 
@@ -11023,7 +11106,7 @@ module.exports = !$assign || __webpack_require__(6)(function(){
 } : $assign;
 
 /***/ }),
-/* 174 */
+/* 175 */
 /***/ (function(module, exports) {
 
 // 7.2.9 SameValue(x, y)
@@ -11032,7 +11115,7 @@ module.exports = Object.is || function is(x, y){
 };
 
 /***/ }),
-/* 175 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11062,12 +11145,12 @@ module.exports = Function.bind || function bind(that /*, args... */){
 };
 
 /***/ }),
-/* 176 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $parseInt = __webpack_require__(5).parseInt
   , $trim     = __webpack_require__(62).trim
-  , ws        = __webpack_require__(121)
+  , ws        = __webpack_require__(123)
   , hex       = /^[\-+]?0[xX]/;
 
 module.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? function parseInt(str, radix){
@@ -11076,20 +11159,20 @@ module.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? f
 } : $parseInt;
 
 /***/ }),
-/* 177 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $parseFloat = __webpack_require__(5).parseFloat
   , $trim       = __webpack_require__(62).trim;
 
-module.exports = 1 / $parseFloat(__webpack_require__(121) + '-0') !== -Infinity ? function parseFloat(str){
+module.exports = 1 / $parseFloat(__webpack_require__(123) + '-0') !== -Infinity ? function parseFloat(str){
   var string = $trim(String(str), 3)
     , result = $parseFloat(string);
   return result === 0 && string.charAt(0) == '-' ? -0 : result;
 } : $parseFloat;
 
 /***/ }),
-/* 178 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var cof = __webpack_require__(30);
@@ -11099,7 +11182,7 @@ module.exports = function(it, msg){
 };
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 20.1.2.3 Number.isInteger(number)
@@ -11110,7 +11193,7 @@ module.exports = function isInteger(it){
 };
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, exports) {
 
 // 20.2.2.20 Math.log1p(x)
@@ -11119,7 +11202,7 @@ module.exports = Math.log1p || function log1p(x){
 };
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // call something on iterator step with safe closing on error
@@ -11136,11 +11219,11 @@ module.exports = function(iterator, fn, value, entries){
 };
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var aFunction = __webpack_require__(21)
-  , toObject  = __webpack_require__(16)
+  , toObject  = __webpack_require__(17)
   , IObject   = __webpack_require__(74)
   , toLength  = __webpack_require__(14);
 
@@ -11169,13 +11252,13 @@ module.exports = function(that, callbackfn, aLen, memo, isRight){
 };
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 // 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 
-var toObject = __webpack_require__(16)
+var toObject = __webpack_require__(17)
   , toIndex  = __webpack_require__(52)
   , toLength = __webpack_require__(14);
 
@@ -11201,7 +11284,7 @@ module.exports = [].copyWithin || function copyWithin(target/*= 0*/, start/*= 0,
 };
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, exports) {
 
 module.exports = function(done, value){
@@ -11209,7 +11292,7 @@ module.exports = function(done, value){
 };
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 21.2.5.3 get RegExp.prototype.flags()
@@ -11219,12 +11302,12 @@ if(__webpack_require__(11) && /./g.flags != 'g')__webpack_require__(12).f(RegExp
 });
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var strong = __webpack_require__(187);
+var strong = __webpack_require__(188);
 
 // 23.1 Map Objects
 module.exports = __webpack_require__(92)('Map', function(get){
@@ -11242,7 +11325,7 @@ module.exports = __webpack_require__(92)('Map', function(get){
 }, strong, true);
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11254,8 +11337,8 @@ var dP          = __webpack_require__(12).f
   , anInstance  = __webpack_require__(56)
   , defined     = __webpack_require__(31)
   , forOf       = __webpack_require__(65)
-  , $iterDefine = __webpack_require__(127)
-  , step        = __webpack_require__(184)
+  , $iterDefine = __webpack_require__(129)
+  , step        = __webpack_require__(185)
   , setSpecies  = __webpack_require__(55)
   , DESCRIPTORS = __webpack_require__(11)
   , fastKey     = __webpack_require__(46).fastKey
@@ -11390,12 +11473,12 @@ module.exports = {
 };
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var strong = __webpack_require__(187);
+var strong = __webpack_require__(188);
 
 // 23.2 Set Objects
 module.exports = __webpack_require__(92)('Set', function(get){
@@ -11408,7 +11491,7 @@ module.exports = __webpack_require__(92)('Set', function(get){
 }, strong);
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11416,8 +11499,8 @@ module.exports = __webpack_require__(92)('Set', function(get){
 var each         = __webpack_require__(35)(0)
   , redefine     = __webpack_require__(20)
   , meta         = __webpack_require__(46)
-  , assign       = __webpack_require__(173)
-  , weak         = __webpack_require__(190)
+  , assign       = __webpack_require__(174)
+  , weak         = __webpack_require__(191)
   , isObject     = __webpack_require__(8)
   , getWeak      = meta.getWeak
   , isExtensible = Object.isExtensible
@@ -11470,7 +11553,7 @@ if(new $WeakMap().set((Object.freeze || Object)(tmp), 7).get(tmp) != 7){
 }
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11559,7 +11642,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // all object keys, includes non-enumerable and symbols
@@ -11574,12 +11657,12 @@ module.exports = Reflect && Reflect.ownKeys || function ownKeys(it){
 };
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // https://github.com/tc39/proposal-string-pad-start-end
 var toLength = __webpack_require__(14)
-  , repeat   = __webpack_require__(123)
+  , repeat   = __webpack_require__(125)
   , defined  = __webpack_require__(31);
 
 module.exports = function(that, maxLength, fillString, left){
@@ -11596,7 +11679,7 @@ module.exports = function(that, maxLength, fillString, left){
 
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getKeys   = __webpack_require__(51)
@@ -11617,12 +11700,12 @@ module.exports = function(isEntries){
 };
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // https://github.com/DavidBruant/Map-Set.prototype.toJSON
 var classof = __webpack_require__(76)
-  , from    = __webpack_require__(195);
+  , from    = __webpack_require__(196);
 module.exports = function(NAME){
   return function toJSON(){
     if(classof(this) != NAME)throw TypeError(NAME + "#toJSON isn't generic");
@@ -11631,7 +11714,7 @@ module.exports = function(NAME){
 };
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var forOf = __webpack_require__(65);
@@ -11644,7 +11727,7 @@ module.exports = function(iter, ITERATOR){
 
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11663,12 +11746,12 @@ module.exports = function(iter, ITERATOR){
 var _prodInvariant = __webpack_require__(67),
     _assign = __webpack_require__(10);
 
-var ReactNoopUpdateQueue = __webpack_require__(197);
+var ReactNoopUpdateQueue = __webpack_require__(198);
 
 var canDefineProperty = __webpack_require__(95);
 var emptyObject = __webpack_require__(96);
 var invariant = __webpack_require__(2);
-var lowPriorityWarning = __webpack_require__(140);
+var lowPriorityWarning = __webpack_require__(142);
 
 /**
  * Base class helpers for the updating state of a component.
@@ -11793,7 +11876,7 @@ module.exports = {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11894,7 +11977,7 @@ module.exports = ReactNoopUpdateQueue;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11919,7 +12002,7 @@ var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol
 module.exports = REACT_ELEMENT_TYPE;
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11965,7 +12048,7 @@ function getIteratorFn(maybeIterable) {
 module.exports = getIteratorFn;
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11995,9 +12078,9 @@ var ReactElement = __webpack_require__(58);
 var checkReactTypeSpec = __webpack_require__(447);
 
 var canDefineProperty = __webpack_require__(95);
-var getIteratorFn = __webpack_require__(199);
+var getIteratorFn = __webpack_require__(200);
 var warning = __webpack_require__(3);
-var lowPriorityWarning = __webpack_require__(140);
+var lowPriorityWarning = __webpack_require__(142);
 
 function getDeclarationErrorAddendum() {
   if (ReactCurrentOwner.current) {
@@ -12226,7 +12309,7 @@ module.exports = ReactElementValidator;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 201 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12245,7 +12328,7 @@ module.exports = ReactElementValidator;
 // Therefore we re-export development-only version with all the PropTypes checks here.
 // However if one is migrating to the `prop-types` npm library, they will go through the
 // `index.js` entry point, and it will branch depending on the environment.
-var factory = __webpack_require__(202);
+var factory = __webpack_require__(203);
 module.exports = function(isValidElement) {
   // It is still allowed in 15.5.
   var throwOnDirectAccess = false;
@@ -12254,7 +12337,7 @@ module.exports = function(isValidElement) {
 
 
 /***/ }),
-/* 202 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12273,7 +12356,7 @@ var emptyFunction = __webpack_require__(28);
 var invariant = __webpack_require__(2);
 var warning = __webpack_require__(3);
 
-var ReactPropTypesSecret = __webpack_require__(141);
+var ReactPropTypesSecret = __webpack_require__(143);
 var checkPropTypes = __webpack_require__(451);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
@@ -12774,7 +12857,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 203 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12797,7 +12880,7 @@ var ReactDOMComponentFlags = {
 module.exports = ReactDOMComponentFlags;
 
 /***/ }),
-/* 204 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12861,7 +12944,7 @@ module.exports = accumulateInto;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 205 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12897,7 +12980,7 @@ function forEachAccumulated(arr, cb, scope) {
 module.exports = forEachAccumulated;
 
 /***/ }),
-/* 206 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12913,7 +12996,7 @@ module.exports = forEachAccumulated;
 
 
 
-var ExecutionEnvironment = __webpack_require__(15);
+var ExecutionEnvironment = __webpack_require__(16);
 
 var contentKey = null;
 
@@ -12935,7 +13018,7 @@ function getTextContentAccessor() {
 module.exports = getTextContentAccessor;
 
 /***/ }),
-/* 207 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13060,7 +13143,7 @@ module.exports = PooledClass.addPoolingTo(CallbackQueue);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 208 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13087,7 +13170,7 @@ var ReactFeatureFlags = {
 module.exports = ReactFeatureFlags;
 
 /***/ }),
-/* 209 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13215,7 +13298,7 @@ var inputValueTracking = {
 module.exports = inputValueTracking;
 
 /***/ }),
-/* 210 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13271,7 +13354,7 @@ function isTextInputElement(elem) {
 module.exports = isTextInputElement;
 
 /***/ }),
-/* 211 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13301,7 +13384,7 @@ var ViewportMetrics = {
 module.exports = ViewportMetrics;
 
 /***/ }),
-/* 212 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13317,7 +13400,7 @@ module.exports = ViewportMetrics;
 
 
 
-var ExecutionEnvironment = __webpack_require__(15);
+var ExecutionEnvironment = __webpack_require__(16);
 var escapeTextContentForBrowser = __webpack_require__(101);
 var setInnerHTML = __webpack_require__(100);
 
@@ -13358,7 +13441,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = setTextContent;
 
 /***/ }),
-/* 213 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13390,7 +13473,7 @@ function focusNode(node) {
 module.exports = focusNode;
 
 /***/ }),
-/* 214 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13549,7 +13632,7 @@ var CSSProperty = {
 module.exports = CSSProperty;
 
 /***/ }),
-/* 215 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13790,7 +13873,7 @@ module.exports = DOMPropertyOperations;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 216 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13812,7 +13895,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 217 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13830,7 +13913,7 @@ module.exports = ReactPropTypesSecret;
 
 var _assign = __webpack_require__(10);
 
-var LinkedValueUtils = __webpack_require__(150);
+var LinkedValueUtils = __webpack_require__(152);
 var ReactDOMComponentTree = __webpack_require__(13);
 var ReactUpdates = __webpack_require__(37);
 
@@ -14018,7 +14101,7 @@ module.exports = ReactDOMSelect;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 218 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14038,8 +14121,8 @@ var _prodInvariant = __webpack_require__(7),
     _assign = __webpack_require__(10);
 
 var ReactCompositeComponent = __webpack_require__(498);
-var ReactEmptyComponent = __webpack_require__(220);
-var ReactHostComponent = __webpack_require__(221);
+var ReactEmptyComponent = __webpack_require__(221);
+var ReactHostComponent = __webpack_require__(222);
 
 var getNextDebugID = __webpack_require__(501);
 var invariant = __webpack_require__(2);
@@ -14153,7 +14236,7 @@ module.exports = instantiateReactComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 219 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14199,7 +14282,7 @@ module.exports = ReactNodeTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 220 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14234,7 +14317,7 @@ ReactEmptyComponent.injection = ReactEmptyComponentInjection;
 module.exports = ReactEmptyComponent;
 
 /***/ }),
-/* 221 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14308,7 +14391,7 @@ module.exports = ReactHostComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 222 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14331,7 +14414,7 @@ var REACT_ELEMENT_TYPE = __webpack_require__(502);
 
 var getIteratorFn = __webpack_require__(503);
 var invariant = __webpack_require__(2);
-var KeyEscapeUtils = __webpack_require__(154);
+var KeyEscapeUtils = __webpack_require__(156);
 var warning = __webpack_require__(3);
 
 var SEPARATOR = '.';
@@ -14490,7 +14573,7 @@ module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 223 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14573,7 +14656,7 @@ module.exports = EventListener;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 224 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14592,8 +14675,8 @@ module.exports = EventListener;
 var ReactDOMSelection = __webpack_require__(515);
 
 var containsNode = __webpack_require__(517);
-var focusNode = __webpack_require__(213);
-var getActiveElement = __webpack_require__(225);
+var focusNode = __webpack_require__(214);
+var getActiveElement = __webpack_require__(226);
 
 function isInDocument(node) {
   return containsNode(document.documentElement, node);
@@ -14701,7 +14784,7 @@ var ReactInputSelection = {
 module.exports = ReactInputSelection;
 
 /***/ }),
-/* 225 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14745,7 +14828,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
-/* 226 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14771,19 +14854,19 @@ var ReactCurrentOwner = __webpack_require__(36);
 var ReactDOMComponentTree = __webpack_require__(13);
 var ReactDOMContainerInfo = __webpack_require__(532);
 var ReactDOMFeatureFlags = __webpack_require__(533);
-var ReactFeatureFlags = __webpack_require__(208);
+var ReactFeatureFlags = __webpack_require__(209);
 var ReactInstanceMap = __webpack_require__(80);
 var ReactInstrumentation = __webpack_require__(29);
 var ReactMarkupChecksum = __webpack_require__(534);
 var ReactReconciler = __webpack_require__(68);
-var ReactUpdateQueue = __webpack_require__(155);
+var ReactUpdateQueue = __webpack_require__(157);
 var ReactUpdates = __webpack_require__(37);
 
 var emptyObject = __webpack_require__(96);
-var instantiateReactComponent = __webpack_require__(218);
+var instantiateReactComponent = __webpack_require__(219);
 var invariant = __webpack_require__(2);
 var setInnerHTML = __webpack_require__(100);
-var shouldUpdateReactComponent = __webpack_require__(153);
+var shouldUpdateReactComponent = __webpack_require__(155);
 var warning = __webpack_require__(3);
 
 var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
@@ -15289,7 +15372,7 @@ module.exports = ReactMount;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 227 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15305,7 +15388,7 @@ module.exports = ReactMount;
 
 
 
-var ReactNodeTypes = __webpack_require__(219);
+var ReactNodeTypes = __webpack_require__(220);
 
 function getHostComponentFromComposite(inst) {
   var type;
@@ -15322,89 +15405,6 @@ function getHostComponentFromComposite(inst) {
 }
 
 module.exports = getHostComponentFromComposite;
-
-/***/ }),
-/* 228 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _isFunction2 = __webpack_require__(103);
-
-var _isFunction3 = _interopRequireDefault(_isFunction2);
-
-var _extendReactClass = __webpack_require__(545);
-
-var _extendReactClass2 = _interopRequireDefault(_extendReactClass);
-
-var _wrapStatelessFunction = __webpack_require__(645);
-
-var _wrapStatelessFunction2 = _interopRequireDefault(_wrapStatelessFunction);
-
-var _makeConfiguration = __webpack_require__(656);
-
-var _makeConfiguration2 = _interopRequireDefault(_makeConfiguration);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/**
- * Determines if the given object has the signature of a class that inherits React.Component.
- */
-
-
-/**
- * @see https://github.com/gajus/react-css-modules#options
- */
-var isReactComponent = function isReactComponent(maybeReactComponent) {
-  return 'prototype' in maybeReactComponent && (0, _isFunction3.default)(maybeReactComponent.prototype.render);
-};
-
-/**
- * When used as a function.
- */
-var functionConstructor = function functionConstructor(Component, defaultStyles, options) {
-  var decoratedClass = void 0;
-
-  var configuration = (0, _makeConfiguration2.default)(options);
-
-  if (isReactComponent(Component)) {
-    decoratedClass = (0, _extendReactClass2.default)(Component, defaultStyles, configuration);
-  } else {
-    decoratedClass = (0, _wrapStatelessFunction2.default)(Component, defaultStyles, configuration);
-  }
-
-  if (Component.displayName) {
-    decoratedClass.displayName = Component.displayName;
-  } else {
-    decoratedClass.displayName = Component.name;
-  }
-
-  return decoratedClass;
-};
-
-/**
- * When used as a ES7 decorator.
- */
-var decoratorConstructor = function decoratorConstructor(defaultStyles, options) {
-  return function (Component) {
-    return functionConstructor(Component, defaultStyles, options);
-  };
-};
-
-exports.default = function () {
-  if ((0, _isFunction3.default)(arguments.length <= 0 ? undefined : arguments[0])) {
-    return functionConstructor(arguments.length <= 0 ? undefined : arguments[0], arguments.length <= 1 ? undefined : arguments[1], arguments.length <= 2 ? undefined : arguments[2]);
-  } else {
-    return decoratorConstructor(arguments.length <= 0 ? undefined : arguments[0], arguments.length <= 1 ? undefined : arguments[1]);
-  }
-};
-
-module.exports = exports['default'];
 
 /***/ }),
 /* 229 */
@@ -15444,7 +15444,7 @@ var _forEach2 = __webpack_require__(248);
 
 var _forEach3 = _interopRequireDefault(_forEach2);
 
-var _react = __webpack_require__(17);
+var _react = __webpack_require__(15);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -16083,7 +16083,7 @@ module.exports = baseGet;
 /***/ (function(module, exports, __webpack_require__) {
 
 var isArray = __webpack_require__(25),
-    isKey = __webpack_require__(163),
+    isKey = __webpack_require__(166),
     stringToPath = __webpack_require__(610),
     toString = __webpack_require__(246);
 
@@ -16144,7 +16144,7 @@ module.exports = toString;
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(104),
-    arrayMap = __webpack_require__(158),
+    arrayMap = __webpack_require__(161),
     isArray = __webpack_require__(25),
     isSymbol = __webpack_require__(110);
 
@@ -16187,7 +16187,7 @@ module.exports = baseToString;
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayEach = __webpack_require__(624),
-    baseEach = __webpack_require__(164),
+    baseEach = __webpack_require__(167),
     castFunction = __webpack_require__(625),
     isArray = __webpack_require__(25);
 
@@ -16272,7 +16272,7 @@ exports.default = function (version) {
   return parseInt(major, 10) < 15 ? _react2.default.createElement('noscript') : null;
 };
 
-var _react = __webpack_require__(17);
+var _react = __webpack_require__(15);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -16368,7 +16368,7 @@ module.exports = defineProperty;
 
 var eq = __webpack_require__(107),
     isArrayLike = __webpack_require__(82),
-    isIndex = __webpack_require__(161),
+    isIndex = __webpack_require__(164),
     isObject = __webpack_require__(44);
 
 /**
@@ -16520,12 +16520,12 @@ module.exports = shuffleSelf;
 
 __webpack_require__(259);
 
-var React = __webpack_require__(17);
+var React = __webpack_require__(15);
 var ReactDOM = __webpack_require__(456);
 
 var Game = __webpack_require__(542);
 
-__webpack_require__(690);
+__webpack_require__(693);
 
 ReactDOM.render(React.createElement(Game, null), document.querySelector('.app'));
 
@@ -16667,18 +16667,18 @@ __webpack_require__(361);
 __webpack_require__(362);
 __webpack_require__(363);
 __webpack_require__(364);
-__webpack_require__(135);
+__webpack_require__(137);
 __webpack_require__(365);
 __webpack_require__(366);
-__webpack_require__(185);
+__webpack_require__(186);
 __webpack_require__(367);
 __webpack_require__(368);
 __webpack_require__(369);
 __webpack_require__(370);
 __webpack_require__(371);
-__webpack_require__(186);
-__webpack_require__(188);
+__webpack_require__(187);
 __webpack_require__(189);
+__webpack_require__(190);
 __webpack_require__(372);
 __webpack_require__(373);
 __webpack_require__(374);
@@ -16763,17 +16763,17 @@ var global         = __webpack_require__(5)
   , setToStringTag = __webpack_require__(61)
   , uid            = __webpack_require__(49)
   , wks            = __webpack_require__(9)
-  , wksExt         = __webpack_require__(169)
-  , wksDefine      = __webpack_require__(115)
+  , wksExt         = __webpack_require__(170)
+  , wksDefine      = __webpack_require__(117)
   , keyOf          = __webpack_require__(262)
   , enumKeys       = __webpack_require__(263)
-  , isArray        = __webpack_require__(118)
+  , isArray        = __webpack_require__(120)
   , anObject       = __webpack_require__(4)
   , toIObject      = __webpack_require__(22)
   , toPrimitive    = __webpack_require__(33)
   , createDesc     = __webpack_require__(45)
   , _create        = __webpack_require__(53)
-  , gOPNExt        = __webpack_require__(172)
+  , gOPNExt        = __webpack_require__(173)
   , $GOPD          = __webpack_require__(26)
   , $DP            = __webpack_require__(12)
   , $keys          = __webpack_require__(51)
@@ -17043,7 +17043,7 @@ $export($export.S + $export.F * !__webpack_require__(11), 'Object', {definePrope
 
 var $export = __webpack_require__(0);
 // 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
-$export($export.S + $export.F * !__webpack_require__(11), 'Object', {defineProperties: __webpack_require__(171)});
+$export($export.S + $export.F * !__webpack_require__(11), 'Object', {defineProperties: __webpack_require__(172)});
 
 /***/ }),
 /* 267 */
@@ -17064,7 +17064,7 @@ __webpack_require__(34)('getOwnPropertyDescriptor', function(){
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 Object.getPrototypeOf(O)
-var toObject        = __webpack_require__(16)
+var toObject        = __webpack_require__(17)
   , $getPrototypeOf = __webpack_require__(27);
 
 __webpack_require__(34)('getPrototypeOf', function(){
@@ -17078,7 +17078,7 @@ __webpack_require__(34)('getPrototypeOf', function(){
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 Object.keys(O)
-var toObject = __webpack_require__(16)
+var toObject = __webpack_require__(17)
   , $keys    = __webpack_require__(51);
 
 __webpack_require__(34)('keys', function(){
@@ -17093,7 +17093,7 @@ __webpack_require__(34)('keys', function(){
 
 // 19.1.2.7 Object.getOwnPropertyNames(O)
 __webpack_require__(34)('getOwnPropertyNames', function(){
-  return __webpack_require__(172).f;
+  return __webpack_require__(173).f;
 });
 
 /***/ }),
@@ -17184,7 +17184,7 @@ __webpack_require__(34)('isExtensible', function($isExtensible){
 // 19.1.3.1 Object.assign(target, source)
 var $export = __webpack_require__(0);
 
-$export($export.S + $export.F, 'Object', {assign: __webpack_require__(173)});
+$export($export.S + $export.F, 'Object', {assign: __webpack_require__(174)});
 
 /***/ }),
 /* 278 */
@@ -17192,7 +17192,7 @@ $export($export.S + $export.F, 'Object', {assign: __webpack_require__(173)});
 
 // 19.1.3.10 Object.is(value1, value2)
 var $export = __webpack_require__(0);
-$export($export.S, 'Object', {is: __webpack_require__(174)});
+$export($export.S, 'Object', {is: __webpack_require__(175)});
 
 /***/ }),
 /* 279 */
@@ -17200,7 +17200,7 @@ $export($export.S, 'Object', {is: __webpack_require__(174)});
 
 // 19.1.3.19 Object.setPrototypeOf(O, proto)
 var $export = __webpack_require__(0);
-$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(120).set});
+$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(122).set});
 
 /***/ }),
 /* 280 */
@@ -17225,7 +17225,7 @@ if(test + '' != '[object z]'){
 // 19.2.3.2 / 15.3.4.5 Function.prototype.bind(thisArg, args...)
 var $export = __webpack_require__(0);
 
-$export($export.P, 'Function', {bind: __webpack_require__(175)});
+$export($export.P, 'Function', {bind: __webpack_require__(176)});
 
 /***/ }),
 /* 282 */
@@ -17281,7 +17281,7 @@ if(!(HAS_INSTANCE in FunctionProto))__webpack_require__(12).f(FunctionProto, HAS
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export   = __webpack_require__(0)
-  , $parseInt = __webpack_require__(176);
+  , $parseInt = __webpack_require__(177);
 // 18.2.5 parseInt(string, radix)
 $export($export.G + $export.F * (parseInt != $parseInt), {parseInt: $parseInt});
 
@@ -17290,7 +17290,7 @@ $export($export.G + $export.F * (parseInt != $parseInt), {parseInt: $parseInt});
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export     = __webpack_require__(0)
-  , $parseFloat = __webpack_require__(177);
+  , $parseFloat = __webpack_require__(178);
 // 18.2.4 parseFloat(string)
 $export($export.G + $export.F * (parseFloat != $parseFloat), {parseFloat: $parseFloat});
 
@@ -17303,7 +17303,7 @@ $export($export.G + $export.F * (parseFloat != $parseFloat), {parseFloat: $parse
 var global            = __webpack_require__(5)
   , has               = __webpack_require__(18)
   , cof               = __webpack_require__(30)
-  , inheritIfRequired = __webpack_require__(122)
+  , inheritIfRequired = __webpack_require__(124)
   , toPrimitive       = __webpack_require__(33)
   , fails             = __webpack_require__(6)
   , gOPN              = __webpack_require__(54).f
@@ -17377,8 +17377,8 @@ if(!$Number(' 0o1') || !$Number('0b1') || $Number('+0x1')){
 
 var $export      = __webpack_require__(0)
   , toInteger    = __webpack_require__(47)
-  , aNumberValue = __webpack_require__(178)
-  , repeat       = __webpack_require__(123)
+  , aNumberValue = __webpack_require__(179)
+  , repeat       = __webpack_require__(125)
   , $toFixed     = 1..toFixed
   , floor        = Math.floor
   , data         = [0, 0, 0, 0, 0, 0]
@@ -17496,7 +17496,7 @@ $export($export.P + $export.F * (!!$toFixed && (
 
 var $export      = __webpack_require__(0)
   , $fails       = __webpack_require__(6)
-  , aNumberValue = __webpack_require__(178)
+  , aNumberValue = __webpack_require__(179)
   , $toPrecision = 1..toPrecision;
 
 $export($export.P + $export.F * ($fails(function(){
@@ -17542,7 +17542,7 @@ $export($export.S, 'Number', {
 // 20.1.2.3 Number.isInteger(number)
 var $export = __webpack_require__(0);
 
-$export($export.S, 'Number', {isInteger: __webpack_require__(179)});
+$export($export.S, 'Number', {isInteger: __webpack_require__(180)});
 
 /***/ }),
 /* 292 */
@@ -17563,7 +17563,7 @@ $export($export.S, 'Number', {
 
 // 20.1.2.5 Number.isSafeInteger(number)
 var $export   = __webpack_require__(0)
-  , isInteger = __webpack_require__(179)
+  , isInteger = __webpack_require__(180)
   , abs       = Math.abs;
 
 $export($export.S, 'Number', {
@@ -17595,7 +17595,7 @@ $export($export.S, 'Number', {MIN_SAFE_INTEGER: -0x1fffffffffffff});
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export     = __webpack_require__(0)
-  , $parseFloat = __webpack_require__(177);
+  , $parseFloat = __webpack_require__(178);
 // 20.1.2.12 Number.parseFloat(string)
 $export($export.S + $export.F * (Number.parseFloat != $parseFloat), 'Number', {parseFloat: $parseFloat});
 
@@ -17604,7 +17604,7 @@ $export($export.S + $export.F * (Number.parseFloat != $parseFloat), 'Number', {p
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export   = __webpack_require__(0)
-  , $parseInt = __webpack_require__(176);
+  , $parseInt = __webpack_require__(177);
 // 20.1.2.13 Number.parseInt(string, radix)
 $export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', {parseInt: $parseInt});
 
@@ -17614,7 +17614,7 @@ $export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', {parse
 
 // 20.2.2.3 Math.acosh(x)
 var $export = __webpack_require__(0)
-  , log1p   = __webpack_require__(180)
+  , log1p   = __webpack_require__(181)
   , sqrt    = Math.sqrt
   , $acosh  = Math.acosh;
 
@@ -17667,7 +17667,7 @@ $export($export.S + $export.F * !($atanh && 1 / $atanh(-0) < 0), 'Math', {
 
 // 20.2.2.9 Math.cbrt(x)
 var $export = __webpack_require__(0)
-  , sign    = __webpack_require__(124);
+  , sign    = __webpack_require__(126);
 
 $export($export.S, 'Math', {
   cbrt: function cbrt(x){
@@ -17708,7 +17708,7 @@ $export($export.S, 'Math', {
 
 // 20.2.2.14 Math.expm1(x)
 var $export = __webpack_require__(0)
-  , $expm1  = __webpack_require__(125);
+  , $expm1  = __webpack_require__(127);
 
 $export($export.S + $export.F * ($expm1 != Math.expm1), 'Math', {expm1: $expm1});
 
@@ -17718,7 +17718,7 @@ $export($export.S + $export.F * ($expm1 != Math.expm1), 'Math', {expm1: $expm1})
 
 // 20.2.2.16 Math.fround(x)
 var $export   = __webpack_require__(0)
-  , sign      = __webpack_require__(124)
+  , sign      = __webpack_require__(126)
   , pow       = Math.pow
   , EPSILON   = pow(2, -52)
   , EPSILON32 = pow(2, -23)
@@ -17815,7 +17815,7 @@ $export($export.S, 'Math', {
 // 20.2.2.20 Math.log1p(x)
 var $export = __webpack_require__(0);
 
-$export($export.S, 'Math', {log1p: __webpack_require__(180)});
+$export($export.S, 'Math', {log1p: __webpack_require__(181)});
 
 /***/ }),
 /* 310 */
@@ -17837,7 +17837,7 @@ $export($export.S, 'Math', {
 // 20.2.2.28 Math.sign(x)
 var $export = __webpack_require__(0);
 
-$export($export.S, 'Math', {sign: __webpack_require__(124)});
+$export($export.S, 'Math', {sign: __webpack_require__(126)});
 
 /***/ }),
 /* 312 */
@@ -17845,7 +17845,7 @@ $export($export.S, 'Math', {sign: __webpack_require__(124)});
 
 // 20.2.2.30 Math.sinh(x)
 var $export = __webpack_require__(0)
-  , expm1   = __webpack_require__(125)
+  , expm1   = __webpack_require__(127)
   , exp     = Math.exp;
 
 // V8 near Chromium 38 has a problem with very small numbers
@@ -17865,7 +17865,7 @@ $export($export.S + $export.F * __webpack_require__(6)(function(){
 
 // 20.2.2.33 Math.tanh(x)
 var $export = __webpack_require__(0)
-  , expm1   = __webpack_require__(125)
+  , expm1   = __webpack_require__(127)
   , exp     = Math.exp;
 
 $export($export.S, 'Math', {
@@ -17959,10 +17959,10 @@ __webpack_require__(62)('trim', function($trim){
 
 "use strict";
 
-var $at  = __webpack_require__(126)(true);
+var $at  = __webpack_require__(128)(true);
 
 // 21.1.3.27 String.prototype[@@iterator]()
-__webpack_require__(127)(String, 'String', function(iterated){
+__webpack_require__(129)(String, 'String', function(iterated){
   this._t = String(iterated); // target
   this._i = 0;                // next index
 // 21.1.5.2.1 %StringIteratorPrototype%.next()
@@ -17983,7 +17983,7 @@ __webpack_require__(127)(String, 'String', function(iterated){
 "use strict";
 
 var $export = __webpack_require__(0)
-  , $at     = __webpack_require__(126)(false);
+  , $at     = __webpack_require__(128)(false);
 $export($export.P, 'String', {
   // 21.1.3.3 String.prototype.codePointAt(pos)
   codePointAt: function codePointAt(pos){
@@ -18000,11 +18000,11 @@ $export($export.P, 'String', {
 
 var $export   = __webpack_require__(0)
   , toLength  = __webpack_require__(14)
-  , context   = __webpack_require__(129)
+  , context   = __webpack_require__(131)
   , ENDS_WITH = 'endsWith'
   , $endsWith = ''[ENDS_WITH];
 
-$export($export.P + $export.F * __webpack_require__(130)(ENDS_WITH), 'String', {
+$export($export.P + $export.F * __webpack_require__(132)(ENDS_WITH), 'String', {
   endsWith: function endsWith(searchString /*, endPosition = @length */){
     var that = context(this, searchString, ENDS_WITH)
       , endPosition = arguments.length > 1 ? arguments[1] : undefined
@@ -18025,10 +18025,10 @@ $export($export.P + $export.F * __webpack_require__(130)(ENDS_WITH), 'String', {
 // 21.1.3.7 String.prototype.includes(searchString, position = 0)
 
 var $export  = __webpack_require__(0)
-  , context  = __webpack_require__(129)
+  , context  = __webpack_require__(131)
   , INCLUDES = 'includes';
 
-$export($export.P + $export.F * __webpack_require__(130)(INCLUDES), 'String', {
+$export($export.P + $export.F * __webpack_require__(132)(INCLUDES), 'String', {
   includes: function includes(searchString /*, position = 0 */){
     return !!~context(this, searchString, INCLUDES)
       .indexOf(searchString, arguments.length > 1 ? arguments[1] : undefined);
@@ -18043,7 +18043,7 @@ var $export = __webpack_require__(0);
 
 $export($export.P, 'String', {
   // 21.1.3.13 String.prototype.repeat(count)
-  repeat: __webpack_require__(123)
+  repeat: __webpack_require__(125)
 });
 
 /***/ }),
@@ -18055,11 +18055,11 @@ $export($export.P, 'String', {
 
 var $export     = __webpack_require__(0)
   , toLength    = __webpack_require__(14)
-  , context     = __webpack_require__(129)
+  , context     = __webpack_require__(131)
   , STARTS_WITH = 'startsWith'
   , $startsWith = ''[STARTS_WITH];
 
-$export($export.P + $export.F * __webpack_require__(130)(STARTS_WITH), 'String', {
+$export($export.P + $export.F * __webpack_require__(132)(STARTS_WITH), 'String', {
   startsWith: function startsWith(searchString /*, position = 0 */){
     var that   = context(this, searchString, STARTS_WITH)
       , index  = toLength(Math.min(arguments.length > 1 ? arguments[1] : undefined, that.length))
@@ -18255,7 +18255,7 @@ $export($export.S, 'Date', {now: function(){ return new Date().getTime(); }});
 "use strict";
 
 var $export     = __webpack_require__(0)
-  , toObject    = __webpack_require__(16)
+  , toObject    = __webpack_require__(17)
   , toPrimitive = __webpack_require__(33);
 
 $export($export.P + $export.F * __webpack_require__(6)(function(){
@@ -18349,7 +18349,7 @@ module.exports = function(hint){
 // 22.1.2.2 / 15.4.3.2 Array.isArray(arg)
 var $export = __webpack_require__(0);
 
-$export($export.S, 'Array', {isArray: __webpack_require__(118)});
+$export($export.S, 'Array', {isArray: __webpack_require__(120)});
 
 /***/ }),
 /* 344 */
@@ -18359,12 +18359,12 @@ $export($export.S, 'Array', {isArray: __webpack_require__(118)});
 
 var ctx            = __webpack_require__(39)
   , $export        = __webpack_require__(0)
-  , toObject       = __webpack_require__(16)
-  , call           = __webpack_require__(181)
-  , isArrayIter    = __webpack_require__(131)
+  , toObject       = __webpack_require__(17)
+  , call           = __webpack_require__(182)
+  , isArrayIter    = __webpack_require__(133)
   , toLength       = __webpack_require__(14)
-  , createProperty = __webpack_require__(132)
-  , getIterFn      = __webpack_require__(133);
+  , createProperty = __webpack_require__(134)
+  , getIterFn      = __webpack_require__(135);
 
 $export($export.S + $export.F * !__webpack_require__(89)(function(iter){ Array.from(iter); }), 'Array', {
   // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
@@ -18402,7 +18402,7 @@ $export($export.S + $export.F * !__webpack_require__(89)(function(iter){ Array.f
 "use strict";
 
 var $export        = __webpack_require__(0)
-  , createProperty = __webpack_require__(132);
+  , createProperty = __webpack_require__(134);
 
 // WebKit Array.of isn't generic
 $export($export.S + $export.F * __webpack_require__(6)(function(){
@@ -18445,7 +18445,7 @@ $export($export.P + $export.F * (__webpack_require__(74) != Object || !__webpack
 "use strict";
 
 var $export    = __webpack_require__(0)
-  , html       = __webpack_require__(119)
+  , html       = __webpack_require__(121)
   , cof        = __webpack_require__(30)
   , toIndex    = __webpack_require__(52)
   , toLength   = __webpack_require__(14)
@@ -18480,7 +18480,7 @@ $export($export.P + $export.F * __webpack_require__(6)(function(){
 
 var $export   = __webpack_require__(0)
   , aFunction = __webpack_require__(21)
-  , toObject  = __webpack_require__(16)
+  , toObject  = __webpack_require__(17)
   , fails     = __webpack_require__(6)
   , $sort     = [].sort
   , test      = [1, 2, 3];
@@ -18534,7 +18534,7 @@ module.exports = function(original, length){
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(8)
-  , isArray  = __webpack_require__(118)
+  , isArray  = __webpack_require__(120)
   , SPECIES  = __webpack_require__(9)('species');
 
 module.exports = function(original){
@@ -18621,7 +18621,7 @@ $export($export.P + $export.F * !__webpack_require__(32)([].every, true), 'Array
 "use strict";
 
 var $export = __webpack_require__(0)
-  , $reduce = __webpack_require__(182);
+  , $reduce = __webpack_require__(183);
 
 $export($export.P + $export.F * !__webpack_require__(32)([].reduce, true), 'Array', {
   // 22.1.3.18 / 15.4.4.21 Array.prototype.reduce(callbackfn [, initialValue])
@@ -18637,7 +18637,7 @@ $export($export.P + $export.F * !__webpack_require__(32)([].reduce, true), 'Arra
 "use strict";
 
 var $export = __webpack_require__(0)
-  , $reduce = __webpack_require__(182);
+  , $reduce = __webpack_require__(183);
 
 $export($export.P + $export.F * !__webpack_require__(32)([].reduceRight, true), 'Array', {
   // 22.1.3.19 / 15.4.4.22 Array.prototype.reduceRight(callbackfn [, initialValue])
@@ -18702,7 +18702,7 @@ $export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(32)($nati
 // 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 var $export = __webpack_require__(0);
 
-$export($export.P, 'Array', {copyWithin: __webpack_require__(183)});
+$export($export.P, 'Array', {copyWithin: __webpack_require__(184)});
 
 __webpack_require__(64)('copyWithin');
 
@@ -18713,7 +18713,7 @@ __webpack_require__(64)('copyWithin');
 // 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 var $export = __webpack_require__(0);
 
-$export($export.P, 'Array', {fill: __webpack_require__(134)});
+$export($export.P, 'Array', {fill: __webpack_require__(136)});
 
 __webpack_require__(64)('fill');
 
@@ -18768,7 +18768,7 @@ __webpack_require__(55)('Array');
 /***/ (function(module, exports, __webpack_require__) {
 
 var global            = __webpack_require__(5)
-  , inheritIfRequired = __webpack_require__(122)
+  , inheritIfRequired = __webpack_require__(124)
   , dP                = __webpack_require__(12).f
   , gOPN              = __webpack_require__(54).f
   , isRegExp          = __webpack_require__(88)
@@ -18817,7 +18817,7 @@ __webpack_require__(55)('RegExp');
 
 "use strict";
 
-__webpack_require__(185);
+__webpack_require__(186);
 var anObject    = __webpack_require__(4)
   , $flags      = __webpack_require__(90)
   , DESCRIPTORS = __webpack_require__(11)
@@ -18979,9 +18979,9 @@ var LIBRARY            = __webpack_require__(50)
   , aFunction          = __webpack_require__(21)
   , anInstance         = __webpack_require__(56)
   , forOf              = __webpack_require__(65)
-  , speciesConstructor = __webpack_require__(136)
-  , task               = __webpack_require__(137).set
-  , microtask          = __webpack_require__(138)()
+  , speciesConstructor = __webpack_require__(138)
+  , task               = __webpack_require__(139).set
+  , microtask          = __webpack_require__(140)()
   , PROMISE            = 'Promise'
   , TypeError          = global.TypeError
   , process            = global.process
@@ -19275,7 +19275,7 @@ $export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(89)(function
 
 "use strict";
 
-var weak = __webpack_require__(190);
+var weak = __webpack_require__(191);
 
 // 23.4 WeakSet Objects
 __webpack_require__(92)('WeakSet', function(get){
@@ -19295,13 +19295,13 @@ __webpack_require__(92)('WeakSet', function(get){
 
 var $export      = __webpack_require__(0)
   , $typed       = __webpack_require__(93)
-  , buffer       = __webpack_require__(139)
+  , buffer       = __webpack_require__(141)
   , anObject     = __webpack_require__(4)
   , toIndex      = __webpack_require__(52)
   , toLength     = __webpack_require__(14)
   , isObject     = __webpack_require__(8)
   , ArrayBuffer  = __webpack_require__(5).ArrayBuffer
-  , speciesConstructor = __webpack_require__(136)
+  , speciesConstructor = __webpack_require__(138)
   , $ArrayBuffer = buffer.ArrayBuffer
   , $DataView    = buffer.DataView
   , $isView      = $typed.ABV && ArrayBuffer.isView
@@ -19345,7 +19345,7 @@ __webpack_require__(55)(ARRAY_BUFFER);
 
 var $export = __webpack_require__(0);
 $export($export.G + $export.W + $export.F * !__webpack_require__(93).ABV, {
-  DataView: __webpack_require__(139).DataView
+  DataView: __webpack_require__(141).DataView
 });
 
 /***/ }),
@@ -19470,7 +19470,7 @@ var $export    = __webpack_require__(0)
   , anObject   = __webpack_require__(4)
   , isObject   = __webpack_require__(8)
   , fails      = __webpack_require__(6)
-  , bind       = __webpack_require__(175)
+  , bind       = __webpack_require__(176)
   , rConstruct = (__webpack_require__(5).Reflect || {}).construct;
 
 // MS Edge supports only 2 arguments and argumentsList argument is optional
@@ -19570,7 +19570,7 @@ var Enumerate = function(iterated){
     , key;
   for(key in iterated)keys.push(key);
 };
-__webpack_require__(128)(Enumerate, 'Object', function(){
+__webpack_require__(130)(Enumerate, 'Object', function(){
   var that = this
     , keys = that._k
     , key;
@@ -19678,7 +19678,7 @@ $export($export.S, 'Reflect', {
 // 26.1.11 Reflect.ownKeys(target)
 var $export = __webpack_require__(0);
 
-$export($export.S, 'Reflect', {ownKeys: __webpack_require__(191)});
+$export($export.S, 'Reflect', {ownKeys: __webpack_require__(192)});
 
 /***/ }),
 /* 395 */
@@ -19743,7 +19743,7 @@ $export($export.S, 'Reflect', {set: set});
 
 // 26.1.14 Reflect.setPrototypeOf(target, proto)
 var $export  = __webpack_require__(0)
-  , setProto = __webpack_require__(120);
+  , setProto = __webpack_require__(122);
 
 if(setProto)$export($export.S, 'Reflect', {
   setPrototypeOf: function setPrototypeOf(target, proto){
@@ -19783,7 +19783,7 @@ __webpack_require__(64)('includes');
 
 // https://github.com/mathiasbynens/String.prototype.at
 var $export = __webpack_require__(0)
-  , $at     = __webpack_require__(126)(true);
+  , $at     = __webpack_require__(128)(true);
 
 $export($export.P, 'String', {
   at: function at(pos){
@@ -19799,7 +19799,7 @@ $export($export.P, 'String', {
 
 // https://github.com/tc39/proposal-string-pad-start-end
 var $export = __webpack_require__(0)
-  , $pad    = __webpack_require__(192);
+  , $pad    = __webpack_require__(193);
 
 $export($export.P, 'String', {
   padStart: function padStart(maxLength /*, fillString = ' ' */){
@@ -19815,7 +19815,7 @@ $export($export.P, 'String', {
 
 // https://github.com/tc39/proposal-string-pad-start-end
 var $export = __webpack_require__(0)
-  , $pad    = __webpack_require__(192);
+  , $pad    = __webpack_require__(193);
 
 $export($export.P, 'String', {
   padEnd: function padEnd(maxLength /*, fillString = ' ' */){
@@ -19868,7 +19868,7 @@ var $RegExpStringIterator = function(regexp, string){
   this._s = string;
 };
 
-__webpack_require__(128)($RegExpStringIterator, 'RegExp String', function next(){
+__webpack_require__(130)($RegExpStringIterator, 'RegExp String', function next(){
   var match = this._r.exec(this._s);
   return {value: match, done: match === null};
 });
@@ -19889,13 +19889,13 @@ $export($export.P, 'String', {
 /* 405 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(115)('asyncIterator');
+__webpack_require__(117)('asyncIterator');
 
 /***/ }),
 /* 406 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(115)('observable');
+__webpack_require__(117)('observable');
 
 /***/ }),
 /* 407 */
@@ -19903,10 +19903,10 @@ __webpack_require__(115)('observable');
 
 // https://github.com/tc39/proposal-object-getownpropertydescriptors
 var $export        = __webpack_require__(0)
-  , ownKeys        = __webpack_require__(191)
+  , ownKeys        = __webpack_require__(192)
   , toIObject      = __webpack_require__(22)
   , gOPD           = __webpack_require__(26)
-  , createProperty = __webpack_require__(132);
+  , createProperty = __webpack_require__(134);
 
 $export($export.S, 'Object', {
   getOwnPropertyDescriptors: function getOwnPropertyDescriptors(object){
@@ -19927,7 +19927,7 @@ $export($export.S, 'Object', {
 
 // https://github.com/tc39/proposal-object-values-entries
 var $export = __webpack_require__(0)
-  , $values = __webpack_require__(193)(false);
+  , $values = __webpack_require__(194)(false);
 
 $export($export.S, 'Object', {
   values: function values(it){
@@ -19941,7 +19941,7 @@ $export($export.S, 'Object', {
 
 // https://github.com/tc39/proposal-object-values-entries
 var $export  = __webpack_require__(0)
-  , $entries = __webpack_require__(193)(true);
+  , $entries = __webpack_require__(194)(true);
 
 $export($export.S, 'Object', {
   entries: function entries(it){
@@ -19956,7 +19956,7 @@ $export($export.S, 'Object', {
 "use strict";
 
 var $export         = __webpack_require__(0)
-  , toObject        = __webpack_require__(16)
+  , toObject        = __webpack_require__(17)
   , aFunction       = __webpack_require__(21)
   , $defineProperty = __webpack_require__(12);
 
@@ -19974,7 +19974,7 @@ __webpack_require__(11) && $export($export.P + __webpack_require__(94), 'Object'
 "use strict";
 
 var $export         = __webpack_require__(0)
-  , toObject        = __webpack_require__(16)
+  , toObject        = __webpack_require__(17)
   , aFunction       = __webpack_require__(21)
   , $defineProperty = __webpack_require__(12);
 
@@ -19992,7 +19992,7 @@ __webpack_require__(11) && $export($export.P + __webpack_require__(94), 'Object'
 "use strict";
 
 var $export                  = __webpack_require__(0)
-  , toObject                 = __webpack_require__(16)
+  , toObject                 = __webpack_require__(17)
   , toPrimitive              = __webpack_require__(33)
   , getPrototypeOf           = __webpack_require__(27)
   , getOwnPropertyDescriptor = __webpack_require__(26).f;
@@ -20016,7 +20016,7 @@ __webpack_require__(11) && $export($export.P + __webpack_require__(94), 'Object'
 "use strict";
 
 var $export                  = __webpack_require__(0)
-  , toObject                 = __webpack_require__(16)
+  , toObject                 = __webpack_require__(17)
   , toPrimitive              = __webpack_require__(33)
   , getPrototypeOf           = __webpack_require__(27)
   , getOwnPropertyDescriptor = __webpack_require__(26).f;
@@ -20040,7 +20040,7 @@ __webpack_require__(11) && $export($export.P + __webpack_require__(94), 'Object'
 // https://github.com/DavidBruant/Map-Set.prototype.toJSON
 var $export  = __webpack_require__(0);
 
-$export($export.P + $export.R, 'Map', {toJSON: __webpack_require__(194)('Map')});
+$export($export.P + $export.R, 'Map', {toJSON: __webpack_require__(195)('Map')});
 
 /***/ }),
 /* 415 */
@@ -20049,7 +20049,7 @@ $export($export.P + $export.R, 'Map', {toJSON: __webpack_require__(194)('Map')})
 // https://github.com/DavidBruant/Map-Set.prototype.toJSON
 var $export  = __webpack_require__(0);
 
-$export($export.P + $export.R, 'Set', {toJSON: __webpack_require__(194)('Set')});
+$export($export.P + $export.R, 'Set', {toJSON: __webpack_require__(195)('Set')});
 
 /***/ }),
 /* 416 */
@@ -20207,8 +20207,8 @@ metadata.exp({getMetadata: function getMetadata(metadataKey, target /*, targetKe
 /* 425 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Set                     = __webpack_require__(188)
-  , from                    = __webpack_require__(195)
+var Set                     = __webpack_require__(189)
+  , from                    = __webpack_require__(196)
   , metadata                = __webpack_require__(41)
   , anObject                = __webpack_require__(4)
   , getPrototypeOf          = __webpack_require__(27)
@@ -20315,7 +20315,7 @@ metadata.exp({metadata: function metadata(metadataKey, metadataValue){
 
 // https://github.com/rwaldron/tc39-notes/blob/master/es6/2014-09/sept-25.md#510-globalasap-for-enqueuing-a-microtask
 var $export   = __webpack_require__(0)
-  , microtask = __webpack_require__(138)()
+  , microtask = __webpack_require__(140)()
   , process   = __webpack_require__(5).process
   , isNode    = __webpack_require__(30)(process) == 'process';
 
@@ -20336,7 +20336,7 @@ $export($export.G, {
 var $export     = __webpack_require__(0)
   , global      = __webpack_require__(5)
   , core        = __webpack_require__(38)
-  , microtask   = __webpack_require__(138)()
+  , microtask   = __webpack_require__(140)()
   , OBSERVABLE  = __webpack_require__(9)('observable')
   , aFunction   = __webpack_require__(21)
   , anObject    = __webpack_require__(4)
@@ -20596,7 +20596,7 @@ module.exports = __webpack_require__(5);
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(0)
-  , $task   = __webpack_require__(137);
+  , $task   = __webpack_require__(139);
 $export($export.G + $export.B, {
   setImmediate:   $task.set,
   clearImmediate: $task.clear
@@ -20606,7 +20606,7 @@ $export($export.G + $export.B, {
 /* 437 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var $iterators    = __webpack_require__(135)
+var $iterators    = __webpack_require__(137)
   , redefine      = __webpack_require__(20)
   , global        = __webpack_require__(5)
   , hide          = __webpack_require__(19)
@@ -21737,9 +21737,9 @@ module.exports = PooledClass;
 var _prodInvariant = __webpack_require__(67);
 
 var ReactCurrentOwner = __webpack_require__(36);
-var REACT_ELEMENT_TYPE = __webpack_require__(198);
+var REACT_ELEMENT_TYPE = __webpack_require__(199);
 
-var getIteratorFn = __webpack_require__(199);
+var getIteratorFn = __webpack_require__(200);
 var invariant = __webpack_require__(2);
 var KeyEscapeUtils = __webpack_require__(445);
 var warning = __webpack_require__(3);
@@ -21989,7 +21989,7 @@ var ReactElement = __webpack_require__(58);
  */
 var createDOMFactory = ReactElement.createFactory;
 if (process.env.NODE_ENV !== 'production') {
-  var ReactElementValidator = __webpack_require__(200);
+  var ReactElementValidator = __webpack_require__(201);
   createDOMFactory = ReactElementValidator.createFactory;
 }
 
@@ -22304,7 +22304,7 @@ module.exports = ReactPropTypesSecret;
 var _require = __webpack_require__(58),
     isValidElement = _require.isValidElement;
 
-var factory = __webpack_require__(201);
+var factory = __webpack_require__(202);
 
 module.exports = factory(isValidElement);
 
@@ -22327,7 +22327,7 @@ module.exports = factory(isValidElement);
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(2);
   var warning = __webpack_require__(3);
-  var ReactPropTypesSecret = __webpack_require__(141);
+  var ReactPropTypesSecret = __webpack_require__(143);
   var loggedTypeFailures = {};
 }
 
@@ -22413,13 +22413,13 @@ module.exports = '15.6.1';
 
 
 
-var _require = __webpack_require__(196),
+var _require = __webpack_require__(197),
     Component = _require.Component;
 
 var _require2 = __webpack_require__(58),
     isValidElement = _require2.isValidElement;
 
-var ReactNoopUpdateQueue = __webpack_require__(197);
+var ReactNoopUpdateQueue = __webpack_require__(198);
 var factory = __webpack_require__(454);
 
 module.exports = factory(Component, isValidElement, ReactNoopUpdateQueue);
@@ -23379,13 +23379,13 @@ module.exports = __webpack_require__(457);
 
 var ReactDOMComponentTree = __webpack_require__(13);
 var ReactDefaultInjection = __webpack_require__(458);
-var ReactMount = __webpack_require__(226);
+var ReactMount = __webpack_require__(227);
 var ReactReconciler = __webpack_require__(68);
 var ReactUpdates = __webpack_require__(37);
 var ReactVersion = __webpack_require__(536);
 
 var findDOMNode = __webpack_require__(537);
-var getHostComponentFromComposite = __webpack_require__(227);
+var getHostComponentFromComposite = __webpack_require__(228);
 var renderSubtreeIntoContainer = __webpack_require__(538);
 var warning = __webpack_require__(3);
 
@@ -23427,7 +23427,7 @@ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' && typeof __REACT_DEVT
 }
 
 if (process.env.NODE_ENV !== 'production') {
-  var ExecutionEnvironment = __webpack_require__(15);
+  var ExecutionEnvironment = __webpack_require__(16);
   if (ExecutionEnvironment.canUseDOM && window.top === window.self) {
     // First check if devtools is not installed
     if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined') {
@@ -23663,7 +23663,7 @@ module.exports = ARIADOMPropertyConfig;
 
 
 var EventPropagators = __webpack_require__(77);
-var ExecutionEnvironment = __webpack_require__(15);
+var ExecutionEnvironment = __webpack_require__(16);
 var FallbackCompositionState = __webpack_require__(461);
 var SyntheticCompositionEvent = __webpack_require__(462);
 var SyntheticInputEvent = __webpack_require__(463);
@@ -24055,7 +24055,7 @@ var _assign = __webpack_require__(10);
 
 var PooledClass = __webpack_require__(59);
 
-var getTextContentAccessor = __webpack_require__(206);
+var getTextContentAccessor = __webpack_require__(207);
 
 /**
  * This helper class stores information about text content of a target node,
@@ -24236,15 +24236,15 @@ module.exports = SyntheticInputEvent;
 
 var EventPluginHub = __webpack_require__(78);
 var EventPropagators = __webpack_require__(77);
-var ExecutionEnvironment = __webpack_require__(15);
+var ExecutionEnvironment = __webpack_require__(16);
 var ReactDOMComponentTree = __webpack_require__(13);
 var ReactUpdates = __webpack_require__(37);
 var SyntheticEvent = __webpack_require__(42);
 
-var inputValueTracking = __webpack_require__(209);
-var getEventTarget = __webpack_require__(144);
-var isEventSupported = __webpack_require__(145);
-var isTextInputElement = __webpack_require__(210);
+var inputValueTracking = __webpack_require__(210);
+var getEventTarget = __webpack_require__(146);
+var isEventSupported = __webpack_require__(147);
+var isTextInputElement = __webpack_require__(211);
 
 var eventTypes = {
   change: {
@@ -24748,7 +24748,7 @@ module.exports = ReactOwner;
 var ReactInvalidSetStateWarningHook = __webpack_require__(468);
 var ReactHostOperationHistoryHook = __webpack_require__(469);
 var ReactComponentTreeHook = __webpack_require__(24);
-var ExecutionEnvironment = __webpack_require__(15);
+var ExecutionEnvironment = __webpack_require__(16);
 
 var performanceNow = __webpack_require__(470);
 var warning = __webpack_require__(3);
@@ -25233,7 +25233,7 @@ module.exports = performanceNow;
 
 
 
-var ExecutionEnvironment = __webpack_require__(15);
+var ExecutionEnvironment = __webpack_require__(16);
 
 var performance;
 
@@ -25635,7 +25635,7 @@ module.exports = HTMLDOMPropertyConfig;
 
 
 
-var DOMChildrenOperations = __webpack_require__(147);
+var DOMChildrenOperations = __webpack_require__(149);
 var ReactDOMIDOperations = __webpack_require__(480);
 
 /**
@@ -25671,7 +25671,7 @@ module.exports = ReactComponentBrowserEnvironment;
 var _prodInvariant = __webpack_require__(7);
 
 var DOMLazyTree = __webpack_require__(69);
-var ExecutionEnvironment = __webpack_require__(15);
+var ExecutionEnvironment = __webpack_require__(16);
 
 var createNodesFromMarkup = __webpack_require__(477);
 var emptyFunction = __webpack_require__(28);
@@ -25723,7 +25723,7 @@ module.exports = Danger;
 
 /*eslint-disable fb-www/unsafe-html*/
 
-var ExecutionEnvironment = __webpack_require__(15);
+var ExecutionEnvironment = __webpack_require__(16);
 
 var createArrayFromMixed = __webpack_require__(478);
 var getMarkupWrap = __webpack_require__(479);
@@ -25945,7 +25945,7 @@ module.exports = createArrayFromMixed;
 
 /*eslint-disable fb-www/unsafe-html */
 
-var ExecutionEnvironment = __webpack_require__(15);
+var ExecutionEnvironment = __webpack_require__(16);
 
 var invariant = __webpack_require__(2);
 
@@ -26044,7 +26044,7 @@ module.exports = getMarkupWrap;
 
 
 
-var DOMChildrenOperations = __webpack_require__(147);
+var DOMChildrenOperations = __webpack_require__(149);
 var ReactDOMComponentTree = __webpack_require__(13);
 
 /**
@@ -26090,17 +26090,17 @@ var _prodInvariant = __webpack_require__(7),
 var AutoFocusUtils = __webpack_require__(482);
 var CSSPropertyOperations = __webpack_require__(483);
 var DOMLazyTree = __webpack_require__(69);
-var DOMNamespaces = __webpack_require__(148);
+var DOMNamespaces = __webpack_require__(150);
 var DOMProperty = __webpack_require__(48);
-var DOMPropertyOperations = __webpack_require__(215);
+var DOMPropertyOperations = __webpack_require__(216);
 var EventPluginHub = __webpack_require__(78);
 var EventPluginRegistry = __webpack_require__(97);
 var ReactBrowserEventEmitter = __webpack_require__(102);
-var ReactDOMComponentFlags = __webpack_require__(203);
+var ReactDOMComponentFlags = __webpack_require__(204);
 var ReactDOMComponentTree = __webpack_require__(13);
 var ReactDOMInput = __webpack_require__(493);
 var ReactDOMOption = __webpack_require__(494);
-var ReactDOMSelect = __webpack_require__(217);
+var ReactDOMSelect = __webpack_require__(218);
 var ReactDOMTextarea = __webpack_require__(495);
 var ReactInstrumentation = __webpack_require__(29);
 var ReactMultiChild = __webpack_require__(496);
@@ -26109,10 +26109,10 @@ var ReactServerRenderingTransaction = __webpack_require__(505);
 var emptyFunction = __webpack_require__(28);
 var escapeTextContentForBrowser = __webpack_require__(101);
 var invariant = __webpack_require__(2);
-var isEventSupported = __webpack_require__(145);
-var shallowEqual = __webpack_require__(152);
-var inputValueTracking = __webpack_require__(209);
-var validateDOMNesting = __webpack_require__(156);
+var isEventSupported = __webpack_require__(147);
+var shallowEqual = __webpack_require__(154);
+var inputValueTracking = __webpack_require__(210);
+var validateDOMNesting = __webpack_require__(158);
 var warning = __webpack_require__(3);
 
 var Flags = ReactDOMComponentFlags;
@@ -27100,7 +27100,7 @@ module.exports = ReactDOMComponent;
 
 var ReactDOMComponentTree = __webpack_require__(13);
 
-var focusNode = __webpack_require__(213);
+var focusNode = __webpack_require__(214);
 
 var AutoFocusUtils = {
   focusDOMComponent: function () {
@@ -27127,8 +27127,8 @@ module.exports = AutoFocusUtils;
 
 
 
-var CSSProperty = __webpack_require__(214);
-var ExecutionEnvironment = __webpack_require__(15);
+var CSSProperty = __webpack_require__(215);
+var ExecutionEnvironment = __webpack_require__(16);
 var ReactInstrumentation = __webpack_require__(29);
 
 var camelizeStyleName = __webpack_require__(484);
@@ -27430,7 +27430,7 @@ module.exports = camelize;
 
 
 
-var CSSProperty = __webpack_require__(214);
+var CSSProperty = __webpack_require__(215);
 var warning = __webpack_require__(3);
 
 var isUnitlessNumber = CSSProperty.isUnitlessNumber;
@@ -27700,7 +27700,7 @@ module.exports = ReactEventEmitterMixin;
 
 
 
-var ExecutionEnvironment = __webpack_require__(15);
+var ExecutionEnvironment = __webpack_require__(16);
 
 /**
  * Generate a mapping of standard vendor prefixes using the defined style property and event name.
@@ -27809,8 +27809,8 @@ module.exports = getVendorPrefixedEventName;
 var _prodInvariant = __webpack_require__(7),
     _assign = __webpack_require__(10);
 
-var DOMPropertyOperations = __webpack_require__(215);
-var LinkedValueUtils = __webpack_require__(150);
+var DOMPropertyOperations = __webpack_require__(216);
+var LinkedValueUtils = __webpack_require__(152);
 var ReactDOMComponentTree = __webpack_require__(13);
 var ReactUpdates = __webpack_require__(37);
 
@@ -28103,7 +28103,7 @@ var _assign = __webpack_require__(10);
 
 var React = __webpack_require__(66);
 var ReactDOMComponentTree = __webpack_require__(13);
-var ReactDOMSelect = __webpack_require__(217);
+var ReactDOMSelect = __webpack_require__(218);
 
 var warning = __webpack_require__(3);
 var didWarnInvalidOptionChildren = false;
@@ -28230,7 +28230,7 @@ module.exports = ReactDOMOption;
 var _prodInvariant = __webpack_require__(7),
     _assign = __webpack_require__(10);
 
-var LinkedValueUtils = __webpack_require__(150);
+var LinkedValueUtils = __webpack_require__(152);
 var ReactDOMComponentTree = __webpack_require__(13);
 var ReactUpdates = __webpack_require__(37);
 
@@ -28395,7 +28395,7 @@ module.exports = ReactDOMTextarea;
 
 var _prodInvariant = __webpack_require__(7);
 
-var ReactComponentEnvironment = __webpack_require__(151);
+var ReactComponentEnvironment = __webpack_require__(153);
 var ReactInstanceMap = __webpack_require__(80);
 var ReactInstrumentation = __webpack_require__(29);
 
@@ -28847,10 +28847,10 @@ module.exports = ReactMultiChild;
 
 var ReactReconciler = __webpack_require__(68);
 
-var instantiateReactComponent = __webpack_require__(218);
-var KeyEscapeUtils = __webpack_require__(154);
-var shouldUpdateReactComponent = __webpack_require__(153);
-var traverseAllChildren = __webpack_require__(222);
+var instantiateReactComponent = __webpack_require__(219);
+var KeyEscapeUtils = __webpack_require__(156);
+var shouldUpdateReactComponent = __webpack_require__(155);
+var traverseAllChildren = __webpack_require__(223);
 var warning = __webpack_require__(3);
 
 var ReactComponentTreeHook;
@@ -29008,12 +29008,12 @@ var _prodInvariant = __webpack_require__(7),
     _assign = __webpack_require__(10);
 
 var React = __webpack_require__(66);
-var ReactComponentEnvironment = __webpack_require__(151);
+var ReactComponentEnvironment = __webpack_require__(153);
 var ReactCurrentOwner = __webpack_require__(36);
-var ReactErrorUtils = __webpack_require__(143);
+var ReactErrorUtils = __webpack_require__(145);
 var ReactInstanceMap = __webpack_require__(80);
 var ReactInstrumentation = __webpack_require__(29);
-var ReactNodeTypes = __webpack_require__(219);
+var ReactNodeTypes = __webpack_require__(220);
 var ReactReconciler = __webpack_require__(68);
 
 if (process.env.NODE_ENV !== 'production') {
@@ -29022,8 +29022,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 var emptyObject = __webpack_require__(96);
 var invariant = __webpack_require__(2);
-var shallowEqual = __webpack_require__(152);
-var shouldUpdateReactComponent = __webpack_require__(153);
+var shallowEqual = __webpack_require__(154);
+var shouldUpdateReactComponent = __webpack_require__(155);
 var warning = __webpack_require__(3);
 
 var CompositeTypes = {
@@ -29913,7 +29913,7 @@ module.exports = ReactCompositeComponent;
 var _prodInvariant = __webpack_require__(7);
 
 var ReactPropTypeLocationNames = __webpack_require__(500);
-var ReactPropTypesSecret = __webpack_require__(216);
+var ReactPropTypesSecret = __webpack_require__(217);
 
 var invariant = __webpack_require__(2);
 var warning = __webpack_require__(3);
@@ -30132,8 +30132,8 @@ module.exports = getIteratorFn;
 
 
 
-var KeyEscapeUtils = __webpack_require__(154);
-var traverseAllChildren = __webpack_require__(222);
+var KeyEscapeUtils = __webpack_require__(156);
+var traverseAllChildren = __webpack_require__(223);
 var warning = __webpack_require__(3);
 
 var ReactComponentTreeHook;
@@ -30312,7 +30312,7 @@ module.exports = ReactServerRenderingTransaction;
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var ReactUpdateQueue = __webpack_require__(155);
+var ReactUpdateQueue = __webpack_require__(157);
 
 var warning = __webpack_require__(3);
 
@@ -30664,13 +30664,13 @@ module.exports = {
 var _prodInvariant = __webpack_require__(7),
     _assign = __webpack_require__(10);
 
-var DOMChildrenOperations = __webpack_require__(147);
+var DOMChildrenOperations = __webpack_require__(149);
 var DOMLazyTree = __webpack_require__(69);
 var ReactDOMComponentTree = __webpack_require__(13);
 
 var escapeTextContentForBrowser = __webpack_require__(101);
 var invariant = __webpack_require__(2);
-var validateDOMNesting = __webpack_require__(156);
+var validateDOMNesting = __webpack_require__(158);
 
 /**
  * Text nodes violate a couple assumptions that React makes about components:
@@ -30904,13 +30904,13 @@ module.exports = ReactDefaultBatchingStrategy;
 
 var _assign = __webpack_require__(10);
 
-var EventListener = __webpack_require__(223);
-var ExecutionEnvironment = __webpack_require__(15);
+var EventListener = __webpack_require__(224);
+var ExecutionEnvironment = __webpack_require__(16);
 var PooledClass = __webpack_require__(59);
 var ReactDOMComponentTree = __webpack_require__(13);
 var ReactUpdates = __webpack_require__(37);
 
-var getEventTarget = __webpack_require__(144);
+var getEventTarget = __webpack_require__(146);
 var getUnboundedScrollPosition = __webpack_require__(512);
 
 /**
@@ -31108,11 +31108,11 @@ module.exports = getUnboundedScrollPosition;
 
 var DOMProperty = __webpack_require__(48);
 var EventPluginHub = __webpack_require__(78);
-var EventPluginUtils = __webpack_require__(142);
-var ReactComponentEnvironment = __webpack_require__(151);
-var ReactEmptyComponent = __webpack_require__(220);
+var EventPluginUtils = __webpack_require__(144);
+var ReactComponentEnvironment = __webpack_require__(153);
+var ReactEmptyComponent = __webpack_require__(221);
 var ReactBrowserEventEmitter = __webpack_require__(102);
-var ReactHostComponent = __webpack_require__(221);
+var ReactHostComponent = __webpack_require__(222);
 var ReactUpdates = __webpack_require__(37);
 
 var ReactInjection = {
@@ -31147,13 +31147,13 @@ module.exports = ReactInjection;
 
 var _assign = __webpack_require__(10);
 
-var CallbackQueue = __webpack_require__(207);
+var CallbackQueue = __webpack_require__(208);
 var PooledClass = __webpack_require__(59);
 var ReactBrowserEventEmitter = __webpack_require__(102);
-var ReactInputSelection = __webpack_require__(224);
+var ReactInputSelection = __webpack_require__(225);
 var ReactInstrumentation = __webpack_require__(29);
 var Transaction = __webpack_require__(98);
-var ReactUpdateQueue = __webpack_require__(155);
+var ReactUpdateQueue = __webpack_require__(157);
 
 /**
  * Ensures that, when possible, the selection range (currently selected text
@@ -31329,10 +31329,10 @@ module.exports = ReactReconcileTransaction;
 
 
 
-var ExecutionEnvironment = __webpack_require__(15);
+var ExecutionEnvironment = __webpack_require__(16);
 
 var getNodeForCharacterOffset = __webpack_require__(516);
-var getTextContentAccessor = __webpack_require__(206);
+var getTextContentAccessor = __webpack_require__(207);
 
 /**
  * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -32038,14 +32038,14 @@ module.exports = SVGDOMPropertyConfig;
 
 
 var EventPropagators = __webpack_require__(77);
-var ExecutionEnvironment = __webpack_require__(15);
+var ExecutionEnvironment = __webpack_require__(16);
 var ReactDOMComponentTree = __webpack_require__(13);
-var ReactInputSelection = __webpack_require__(224);
+var ReactInputSelection = __webpack_require__(225);
 var SyntheticEvent = __webpack_require__(42);
 
-var getActiveElement = __webpack_require__(225);
-var isTextInputElement = __webpack_require__(210);
-var shallowEqual = __webpack_require__(152);
+var getActiveElement = __webpack_require__(226);
+var isTextInputElement = __webpack_require__(211);
+var shallowEqual = __webpack_require__(154);
 
 var skipSelectionChangeEvent = ExecutionEnvironment.canUseDOM && 'documentMode' in document && document.documentMode <= 11;
 
@@ -32233,7 +32233,7 @@ module.exports = SelectEventPlugin;
 
 var _prodInvariant = __webpack_require__(7);
 
-var EventListener = __webpack_require__(223);
+var EventListener = __webpack_require__(224);
 var EventPropagators = __webpack_require__(77);
 var ReactDOMComponentTree = __webpack_require__(13);
 var SyntheticAnimationEvent = __webpack_require__(523);
@@ -32249,7 +32249,7 @@ var SyntheticUIEvent = __webpack_require__(79);
 var SyntheticWheelEvent = __webpack_require__(531);
 
 var emptyFunction = __webpack_require__(28);
-var getEventCharCode = __webpack_require__(157);
+var getEventCharCode = __webpack_require__(159);
 var invariant = __webpack_require__(2);
 
 /**
@@ -32592,9 +32592,9 @@ module.exports = SyntheticFocusEvent;
 
 var SyntheticUIEvent = __webpack_require__(79);
 
-var getEventCharCode = __webpack_require__(157);
+var getEventCharCode = __webpack_require__(159);
 var getEventKey = __webpack_require__(527);
-var getEventModifierState = __webpack_require__(146);
+var getEventModifierState = __webpack_require__(148);
 
 /**
  * @interface KeyboardEvent
@@ -32679,7 +32679,7 @@ module.exports = SyntheticKeyboardEvent;
 
 
 
-var getEventCharCode = __webpack_require__(157);
+var getEventCharCode = __webpack_require__(159);
 
 /**
  * Normalization of deprecated HTML5 `key` values
@@ -32839,7 +32839,7 @@ module.exports = SyntheticDragEvent;
 
 var SyntheticUIEvent = __webpack_require__(79);
 
-var getEventModifierState = __webpack_require__(146);
+var getEventModifierState = __webpack_require__(148);
 
 /**
  * @interface TouchEvent
@@ -32987,7 +32987,7 @@ module.exports = SyntheticWheelEvent;
 
 
 
-var validateDOMNesting = __webpack_require__(156);
+var validateDOMNesting = __webpack_require__(158);
 
 var DOC_NODE_TYPE = 9;
 
@@ -33179,7 +33179,7 @@ var ReactCurrentOwner = __webpack_require__(36);
 var ReactDOMComponentTree = __webpack_require__(13);
 var ReactInstanceMap = __webpack_require__(80);
 
-var getHostComponentFromComposite = __webpack_require__(227);
+var getHostComponentFromComposite = __webpack_require__(228);
 var invariant = __webpack_require__(2);
 var warning = __webpack_require__(3);
 
@@ -33239,7 +33239,7 @@ module.exports = findDOMNode;
 
 
 
-var ReactMount = __webpack_require__(226);
+var ReactMount = __webpack_require__(227);
 
 module.exports = ReactMount.renderSubtreeIntoContainer;
 
@@ -33526,8 +33526,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var React = __webpack_require__(17);
-var CSSModules = __webpack_require__(228);
+var React = __webpack_require__(15);
+var CSSModules = __webpack_require__(160);
 
 var _require = __webpack_require__(659),
     ReactPlayer = _require.default;
@@ -33797,7 +33797,7 @@ var _isObject2 = __webpack_require__(44);
 
 var _isObject3 = _interopRequireDefault(_isObject2);
 
-var _react = __webpack_require__(17);
+var _react = __webpack_require__(15);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -33944,7 +33944,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 /* 547 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayMap = __webpack_require__(158),
+var arrayMap = __webpack_require__(161),
     baseIteratee = __webpack_require__(231),
     baseMap = __webpack_require__(619),
     isArray = __webpack_require__(25);
@@ -34324,8 +34324,8 @@ module.exports = stackHas;
 /***/ (function(module, exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(105),
-    Map = __webpack_require__(159),
-    MapCache = __webpack_require__(160);
+    Map = __webpack_require__(162),
+    MapCache = __webpack_require__(163);
 
 /** Used as the size to enable large array optimizations. */
 var LARGE_ARRAY_SIZE = 200;
@@ -34475,7 +34475,7 @@ module.exports = getValue;
 
 var Hash = __webpack_require__(565),
     ListCache = __webpack_require__(105),
-    Map = __webpack_require__(159);
+    Map = __webpack_require__(162);
 
 /**
  * Removes all key-value entries from the map.
@@ -34882,7 +34882,7 @@ module.exports = baseIsEqualDeep;
 /* 577 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var MapCache = __webpack_require__(160),
+var MapCache = __webpack_require__(163),
     setCacheAdd = __webpack_require__(578),
     setCacheHas = __webpack_require__(579);
 
@@ -35424,7 +35424,7 @@ var baseTimes = __webpack_require__(593),
     isArguments = __webpack_require__(237),
     isArray = __webpack_require__(25),
     isBuffer = __webpack_require__(238),
-    isIndex = __webpack_require__(161),
+    isIndex = __webpack_require__(164),
     isTypedArray = __webpack_require__(240);
 
 /** Used for built-in method references. */
@@ -35550,7 +35550,7 @@ module.exports = stubFalse;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(70),
-    isLength = __webpack_require__(162),
+    isLength = __webpack_require__(165),
     isObjectLike = __webpack_require__(71);
 
 /** `Object#toString` result references. */
@@ -35734,7 +35734,7 @@ module.exports = overArg;
 /***/ (function(module, exports, __webpack_require__) {
 
 var DataView = __webpack_require__(603),
-    Map = __webpack_require__(159),
+    Map = __webpack_require__(162),
     Promise = __webpack_require__(604),
     Set = __webpack_require__(605),
     WeakMap = __webpack_require__(606),
@@ -35882,7 +35882,7 @@ module.exports = getMatchData;
 var baseIsEqual = __webpack_require__(234),
     get = __webpack_require__(609),
     hasIn = __webpack_require__(613),
-    isKey = __webpack_require__(163),
+    isKey = __webpack_require__(166),
     isStrictComparable = __webpack_require__(242),
     matchesStrictComparable = __webpack_require__(243),
     toKey = __webpack_require__(111);
@@ -36023,7 +36023,7 @@ module.exports = memoizeCapped;
 /* 612 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var MapCache = __webpack_require__(160);
+var MapCache = __webpack_require__(163);
 
 /** Error message constants. */
 var FUNC_ERROR_TEXT = 'Expected a function';
@@ -36164,8 +36164,8 @@ module.exports = baseHasIn;
 var castPath = __webpack_require__(245),
     isArguments = __webpack_require__(237),
     isArray = __webpack_require__(25),
-    isIndex = __webpack_require__(161),
-    isLength = __webpack_require__(162),
+    isIndex = __webpack_require__(164),
+    isLength = __webpack_require__(165),
     toKey = __webpack_require__(111);
 
 /**
@@ -36208,7 +36208,7 @@ module.exports = hasPath;
 
 var baseProperty = __webpack_require__(617),
     basePropertyDeep = __webpack_require__(618),
-    isKey = __webpack_require__(163),
+    isKey = __webpack_require__(166),
     toKey = __webpack_require__(111);
 
 /**
@@ -36286,7 +36286,7 @@ module.exports = basePropertyDeep;
 /* 619 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseEach = __webpack_require__(164),
+var baseEach = __webpack_require__(167),
     isArrayLike = __webpack_require__(82);
 
 /**
@@ -36662,7 +36662,7 @@ module.exports = filter;
 /* 630 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseEach = __webpack_require__(164);
+var baseEach = __webpack_require__(167);
 
 /**
  * The base implementation of `_.filter` without support for iteratee shorthands.
@@ -37177,7 +37177,7 @@ var _isObject2 = __webpack_require__(44);
 
 var _isObject3 = _interopRequireDefault(_isObject2);
 
-var _react = __webpack_require__(17);
+var _react = __webpack_require__(15);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -37753,7 +37753,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(17);
+var _react = __webpack_require__(15);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -37761,7 +37761,7 @@ var _lodash = __webpack_require__(660);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
-var _props3 = __webpack_require__(165);
+var _props3 = __webpack_require__(168);
 
 var _YouTube = __webpack_require__(663);
 
@@ -39493,7 +39493,7 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(202)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(203)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
@@ -39520,7 +39520,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 var emptyFunction = __webpack_require__(28);
 var invariant = __webpack_require__(2);
-var ReactPropTypesSecret = __webpack_require__(141);
+var ReactPropTypesSecret = __webpack_require__(143);
 
 module.exports = function() {
   function shim(props, propName, componentName, location, propFullName, secret) {
@@ -39585,7 +39585,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-var _react = __webpack_require__(17);
+var _react = __webpack_require__(15);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -39838,7 +39838,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-var _react = __webpack_require__(17);
+var _react = __webpack_require__(15);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -39850,7 +39850,7 @@ var _FilePlayer2 = __webpack_require__(113);
 
 var _FilePlayer3 = _interopRequireDefault(_FilePlayer2);
 
-var _props3 = __webpack_require__(165);
+var _props3 = __webpack_require__(168);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
@@ -40120,7 +40120,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-var _react = __webpack_require__(17);
+var _react = __webpack_require__(15);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -40332,7 +40332,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-var _react = __webpack_require__(17);
+var _react = __webpack_require__(15);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -40721,7 +40721,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-var _react = __webpack_require__(17);
+var _react = __webpack_require__(15);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -40907,7 +40907,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-var _react = __webpack_require__(17);
+var _react = __webpack_require__(15);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -41160,7 +41160,7 @@ var transform;
 var options = {"sourceMap":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(167)(content, options);
+var update = __webpack_require__(115)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -41180,7 +41180,7 @@ if(false) {
 /* 673 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(166)(undefined);
+exports = module.exports = __webpack_require__(114)(undefined);
 // imports
 
 
@@ -41303,15 +41303,17 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var React = __webpack_require__(17);
-var CSSModules = __webpack_require__(228);
+var React = __webpack_require__(15);
+var CSSModules = __webpack_require__(160);
 var sampleSize = __webpack_require__(676);
 
 var _require = __webpack_require__(686),
     List = _require.List;
 
-var styles = __webpack_require__(687);
-var characters = __webpack_require__(689);
+var Clock = __webpack_require__(687);
+
+var styles = __webpack_require__(690);
+var characters = __webpack_require__(692);
 
 var Play = function (_React$Component) {
 	_inherits(Play, _React$Component);
@@ -41374,7 +41376,11 @@ var Play = function (_React$Component) {
 				React.createElement(
 					'div',
 					{ styleName: 'information-area' },
-					'3:21'
+					React.createElement(
+						'div',
+						{ styleName: 'clock' },
+						React.createElement(Clock, null)
+					)
 				)
 			);
 		}
@@ -41569,7 +41575,7 @@ module.exports = values;
 /* 682 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayMap = __webpack_require__(158);
+var arrayMap = __webpack_require__(161);
 
 /**
  * The base implementation of `_.values` and `_.valuesIn` which creates an
@@ -46740,10 +46746,68 @@ module.exports = toNumber;
 /* 687 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = __webpack_require__(15);
+var CSSModules = __webpack_require__(160);
+
+var styles = __webpack_require__(688);
+
+var Clock = function (_React$Component) {
+	_inherits(Clock, _React$Component);
+
+	function Clock(props) {
+		_classCallCheck(this, Clock);
+
+		var _this = _possibleConstructorReturn(this, (Clock.__proto__ || Object.getPrototypeOf(Clock)).call(this, props));
+
+		_this.state = {
+			time: '00:00'
+		};
+		return _this;
+	}
+
+	_createClass(Clock, [{
+		key: 'render',
+		value: function render() {
+			return React.createElement(
+				'div',
+				{ styleName: 'clock' },
+				React.createElement(
+					'div',
+					{ styleName: 'circle' },
+					React.createElement(
+						'div',
+						{ styleName: 'inner-circle' },
+						this.state.time
+					)
+				)
+			);
+		}
+	}]);
+
+	return Clock;
+}(React.Component);
+
+module.exports = CSSModules(Clock, styles);
+
+/***/ }),
+/* 688 */
+/***/ (function(module, exports, __webpack_require__) {
+
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(688);
+var content = __webpack_require__(689);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -46751,14 +46815,14 @@ var transform;
 var options = {"sourceMap":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(167)(content, options);
+var update = __webpack_require__(115)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js??ref--2-1!../node_modules/postcss-loader/lib/index.js??ref--2-2!./play.pcss", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js??ref--2-1!../node_modules/postcss-loader/lib/index.js??ref--2-2!./play.pcss");
+		module.hot.accept("!!../node_modules/css-loader/index.js??ref--2-1!../node_modules/postcss-loader/lib/index.js??ref--2-2!./clock.pcss", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js??ref--2-1!../node_modules/postcss-loader/lib/index.js??ref--2-2!./clock.pcss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -46768,33 +46832,22 @@ if(false) {
 }
 
 /***/ }),
-/* 688 */
+/* 689 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(166)(undefined);
+exports = module.exports = __webpack_require__(114)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, ".play__play--3u_vb {\n\tposition: absolute;\n\twidth: 100%;\n\theight: 100%;\n\n\tdisplay: -webkit-box;\n\n\tdisplay: -ms-flexbox;\n\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t    -ms-flex-direction: column;\n\t        flex-direction: column;\n}\n\n.play__name-card-area--1SKuK {\n\t-webkit-box-flex: 0;\n\t    -ms-flex: 0 0 76px;\n\t        flex: 0 0 76px;\n\tmargin-top: 20px;\n\n\tborder: 0 solid #007122;\n\tborder-width: 8px 0;\n\t-webkit-box-sizing: border-box;\n\t        box-sizing: border-box;\n\n\tbackground-color: white;\n\n\tline-height: 25px;\n\tpadding: 5px 2em;\n\n\tfont-size: 18px;\n\tfont-weight: bold;\n\tword-spacing: 0.2em;\n\n\t-webkit-box-shadow: 0 0 10px 0 black;\n\n\t        box-shadow: 0 0 10px 0 black;\n}\n\n.play__character-cards-area--1k7SV {\n\t-webkit-box-flex: 1;\n\t    -ms-flex: 1 1 0px;\n\t        flex: 1 1;\n\n\tdisplay: -webkit-box;\n\n\tdisplay: -ms-flexbox;\n\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t    -ms-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-box-pack: center;\n\t    -ms-flex-pack: center;\n\t        justify-content: center;\n}\n\n.play__character-cards--31vSQ {\n\tmargin: 5px;\n\n\tdisplay: -webkit-box;\n\n\tdisplay: -ms-flexbox;\n\n\tdisplay: flex;\n\t-ms-flex-wrap: wrap;\n\t    flex-wrap: wrap;\n\t-webkit-box-align: center;\n\t    -ms-flex-align: center;\n\t        align-items: center;\n}\n\n.play__character-card-area--cM3YN {\n\twidth: 25%;\n\theight: 120px;\n\n\tposition: relative;\n}\n\n.play__character-card--2iEu_ {\n\tmargin: 5px;\n\tbackground-color: white;\n\n\tposition: absolute;\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n\tbottom: 0;\n\n\tdisplay: -webkit-box;\n\n\tdisplay: -ms-flexbox;\n\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t    -ms-flex-pack: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t    -ms-flex-align: center;\n\t        align-items: center;\n\n\tborder: 8px solid #007122;\n\t-webkit-box-sizing: border-box;\n\t        box-sizing: border-box;\n\t-webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.7);\n\t        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.7);\n}\n\n.play__character-body--1W-LY {\n\tmax-width: 100%;\n\toverflow: hidden;\n\n\tfont-family: serif;\n\tfont-weight: bold;\n\tfont-size: 64px;\n\tline-height: 120px;\n}\n\n.play__information-area--3Wuas {\n\t-webkit-box-flex: 0;\n\t    -ms-flex: 0 0 60px;\n\t        flex: 0 0 60px;\n}\n", ""]);
+exports.push([module.i, ".clock__clock--20MC- {\n\twidth: 100px;\n\theight: 60px;\n}\n\n.clock__circle--1vhBT {\n\tposition: relative;\n\twidth: 100px;\n\theight: 100px;\n\tborder-radius: 50%;\n\n\tbackground-color: #91b38d;\n\n\t-webkit-box-shadow: 0 0 10px black;\n\n\t        box-shadow: 0 0 10px black;\n}\n\n.clock__inner-circle--3iiYC {\n\n\twidth: 80px;\n\theight: 80px;\n\tborder-radius: 50%;\n\n\tposition: absolute;\n\ttop: 10px;\n\tleft: 10px;\n\n\tbackground-color: #3a5b2c;\n\tcolor: white;\n\ttext-align: center;\n\n\tline-height: 80px;\n}\n", ""]);
 
 // exports
 exports.locals = {
-	"play": "play__play--3u_vb",
-	"name-card-area": "play__name-card-area--1SKuK",
-	"character-cards-area": "play__character-cards-area--1k7SV",
-	"character-cards": "play__character-cards--31vSQ",
-	"character-card-area": "play__character-card-area--cM3YN",
-	"character-card": "play__character-card--2iEu_",
-	"character-body": "play__character-body--1W-LY",
-	"information-area": "play__information-area--3Wuas"
+	"clock": "clock__clock--20MC-",
+	"circle": "clock__circle--1vhBT",
+	"inner-circle": "clock__inner-circle--3iiYC"
 };
-
-/***/ }),
-/* 689 */
-/***/ (function(module, exports) {
-
-module.exports = [{"codepoint":19952,"name":"HEXAGRAM FOR REVOLUTION","description":["――革は、巳日(いじつ)にしてすなわち孚(まこと)とせらる。元(おお)いに亨(とお)り貞(ただ)しきに利(よ)ろし。悔(くい)亡ぶ。","結局どこの文化圏でも、君主は常に君臨して統治する存在なのだ。禅譲とはなんだったのか。","ちなみに、この卦の上爻の爻辞にある「君子豹変、小人革面」は、「君子は豹変す」の語源である。"],"references":["高田眞治・後藤基巳訳　『易経』　岩波書店〈岩波文庫〉、1959年。ISBN 9784003320112。"]},{"codepoint":1567,"name":"ARABIC QUESTION MARK","description":["アラビア語では疑問符を左右反対にして書く。理由はもちろん、そもそもアラビア語では右から左に文章を書くから――なのだが、同じく右書きのヘブライ語やイディッシュ語では通常の疑問符と同じ向きのものを使う。"],"references":["https://en.wikipedia.org/wiki/Question_mark#Mirrored_question_mark"]},{"codepoint":127136,"name":"PLAYING CARD BACK","description":["トランプの裏面。","トランプがUnicodeに収録されているのだから、そのうち「Unicodeかるた」もUnicodeに収録される日が来るかもしれない。しかし「Unicodeかるた」もUnicodeに収録されると、その文字を記載した「Unicodeかるた」のカードが必要になり、さらにそのカードを表す文字がUnicodeに収録され、さらに⋯⋯。","⋯⋯やっぱり収録されないほうが幸せかもしれない。"]},{"codepoint":127153,"name":"PLAYING CARD ACE OF HEARTS","description":["トランプの、ハートのエース。","「エース」というのはもともと、トランプやサイコロの目を表すための序数の一つである。エースの後は、デュース、トレイ、ケイター、シンク、と続くのだが、現在ではデュース以外の単語はほとんど使われない。"]},{"codepoint":9856,"name":"DIE FACE-1","description":["賽の目の1。ピンとも呼ぶ。サイコロのこの目だけが赤いのは、実は日本だけである。","通るかっ⋯⋯! こんなもん⋯⋯!"]},{"codepoint":9857,"name":"DIE FACE-2","description":["賽の目の2。墨を塗ることで3にも4にも5にも6にもできる便利な目である。"]},{"codepoint":9858,"name":"DIE FACE-3","description":["賽の目の3。","元老院と敵対したユリウス・カエサルは、ルビコン川を渡り進軍する際に「賽は投げられた」と述べた。彼が礎を築いた帝政ローマの皇帝が賭博を禁じながらも自らはダイスゲームに熱中したのは、ひょっとしたら彼のせいかもしれない。"]},{"codepoint":9859,"name":"DIE FACE-4","description":["賽の目の4。中国では1の目に加えてこの目も赤く塗られている。清代は趙翼の伝によると、唐の玄宗帝がこの目でゲームに勝ったため4の目を赤く塗らせたとか。"],"references":["https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%A4%E3%82%B3%E3%83%AD#.E4.B8.AD.E5.9B.BD.E3.81.AE.E3.82.B5.E3.82.A4.E3.82.B3.E3.83.AD","https://zh.wikipedia.org/wiki/%E9%AA%B0%E5%AD%90#.E6.AD.B7.E5.8F.B2"]},{"codepoint":9860,"name":"DIE FACE-5","description":["賽の目の5。","古代ローマで用いられたサイコロの一種に、2の目と5の目が欠けた4面のダイスがある。形も立方体とか正四面体ではない、へんてこな形をしている。"],"references":["https://en.wikipedia.org/wiki/Dice#History","http://www.aerobiologicalengineering.com/wxk116/Roman/BoardGames/tali.html"]},{"codepoint":9861,"name":"DIE FACE-6","description":["賽の目の6。賽の目が彫刻されているサイコロの場合、1の目が一番彫る量が少ないので少しだけ重く、そのぶん6の目がでる確率が少しだけ高い⋯⋯かもしれない。"]},{"codepoint":48,"name":"DIGIT ZERO","description":["アラビア数字のゼロ。","ゼロを表す文字は、ゼロという概念が生まれる前に生まれた。"]},{"codepoint":65,"name":"LATIN CAPITAL LETTER A","description":["ラテン文字の大文字のエー。ラテン文字の最初の文字にして、世界で最も有名な文字の一つ。"]},{"codepoint":97,"name":"LATIN SMALL LETTER A","description":["ラテン文字の小文字のエー。というよりもアー。15世紀から16世紀にかけての大母音推移の結果、この文字を「エー」と読むのは英語だけである。"]},{"codepoint":66,"name":"LATIN CAPITAL LETTER B","description":["ラテン文字の大文字のビー。","「B級」「B寝台」など、なにかと「一歩劣った」イメージが付きまとうアルファベット。血液型のB型のイメージがなんとなく悪いのも、もしかしたらそういう連想から来てるのかもしれない。"]},{"codepoint":98,"name":"LATIN SMALL LETTER B","description":["ラテン文字の小文字のビー。サムズアップ。","B(ビー)はギリシャ文字のΒ(ベータ)に由来しており、発音も古代ギリシア語にならって/b/(バ行の音)である⋯⋯のだが、当のギリシャ語では発音が/v/(ヴァ行の音)に変わってしまった。ラテン文字圏の言語だけが、古典ギリシャ語の音を残している。","まるで日本の漢字の唐音や漢音のようだ。"]},{"codepoint":67,"name":"LATIN CAPITAL LETTER C","description":["ラテン文字の大文字のシー。ギリシャ文字のΓ(ガンマ)が横倒しになって丸まったもの。","ラテン文字は全体的にギリシャ文字と比べて丸まっているのが特徴である。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。"]},{"codepoint":99,"name":"LATIN SMALL LETTER C","description":["ラテン文字の小文字のシー。元となったギリシャ文字のガンマ(Gamma)の綴りからも見て取れるとおり、この文字は当初は/g/(ガ行の音)を表す文字だった。ギリシャ文字からエトルリア文字に輸入された際に濁りのない/k/(カ行の音)を表すようになり、ラテン文字となったときには/g/と/k/の2つの音を表すようになっていた。","その後もこの文字は多様化の洗礼を受け、言語によって/k/、/s/、/ʧ/、/θ/、/t͡s/など、様々な音価を持つめんどくさい文字となっている。","ところで、悪逆で有名なローマ皇帝、ガイウス帝の名前(プラエノーメン)の綴りはGaiusだが、イニシャルで書くときにはCと書く。Cが/g/だった頃の名残である。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic","https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%A9%E3%82%A8%E3%83%8E%E3%83%BC%E3%83%A1%E3%83%B3"]},{"codepoint":68,"name":"LATIN CAPITAL LETTER D","description":["ラテン文字の大文字のディー。ギリシャ文字のΔ(デルタ)から派生した。","英語圏で「the D」といえば、男の雄大なアレを指す隠語である。しかしてこんな有名なジョークがある。","Boy: There are 20 letters in the Alphabet, right?\nGirl: Nope. 26.\nBoy: Oh, sorry I must have forgot U R A Q T.\nGirl: You'd still be missing one letter.\nBoy: Yeah I know, I will give you the D later...","蛇足ながら解説しておくと「U R A Q T」は「You are a cutie.」の意味である。"]},{"codepoint":100,"name":"LATIN SMALL LETTER D","description":["ラテン文字の小文字のディー。","大文字と小文字で形が大きく異なる文字の一つ。右側の長い縦棒は、元は大文字のDの曲線部分の書き出しが大きく左に突き出した形が由来である。やがて時代とともに横棒が縦棒になり、現在のdの形になったとされている。"],"references":["https://en.wikipedia.org/wiki/D#History"]},{"codepoint":69,"name":"LATIN CAPITAL LETTER E","description":["ラテン文字の大文字のイー。ギリシャ文字のΕ(イプシロン)に由来しており、形も全く同じである。","ラテン文字を使用するほとんどの言語で、最も多く使われる文字である。一方で大変に努力すればこの文字抜きで文章を書くことも可能で、『ギャズビー』に代表される「E」抜きの文章も多く書かれている。"]},{"codepoint":101,"name":"LATIN SMALL LETTER E","description":["ラテン文字の小文字のイー。","自然対数の底にeの文字を割り当てたのはオイラーだと言われており、欧米圏ではこの数をオイラー数と呼ぶことも多い⋯⋯が、さすがにeはオイラー(Euler)の頭文字ではなく、指数(exponent)の頭文字の可能性が高いと言われている。"],"references":["http://ualr.edu/lasmoller/efacts.html"]},{"codepoint":70,"name":"LATIN CAPITAL LETTER F","description":["ラテン文字の大文字のエフ。字源的には、ギリシャ文字のΥ(ウプシロン)の上のほうを、こう⋯⋯右にくいっと傾けたものと見るのが正しい。","森博嗣は、誰よりも文字を愛したミステリー作家である。中でもアルファベットの「F」は、彼の代表作である『すべてがFになる』で事件の鍵を握る文字だ。作中では、博士の部屋に残されたコンピューターに表示されていた「すべてがFになる」という言葉を解き明かしていく。その謎は、同じくミステリー作家である我孫子武丸の推薦文によると⋯⋯「リアルオーディオよりCOOLでJAVAよりもHOT」だ。"],"references":["https://en.wikipedia.org/wiki/F","西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","森博嗣　『すべてがFになる : The perfect insider』　講談社〈講談社文庫〉、1998年。ISBN 9784062639248。"]},{"codepoint":102,"name":"LATIN SMALL LETTER F","description":["ラテン文字の小文字のエフ。","多くの言語で/f/(ファ行の音)を表す。この音はフェニキア語にもギリシャ語にもなかった音なので、ラテン語(正確にはエトルリア語)を表記する際に大層悩んだ。最初はギリシャ語で/wh/を表す「FH」という表記が使われていたが、やがて「F」1字になり、この文字自体も/f/を表す文字になった。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","http://seesaawiki.jp/w/qvarie/d/%a5%e9%a5%c6%a5%f3%ca%b8%bb%fa%a1%daF%a1%db","https://en.wikipedia.org/wiki/F"]},{"codepoint":71,"name":"LATIN CAPITAL LETTER G","description":["ラテン文字の大文字のジー。名前を言ってはいけないあの生物。","紀元前3世紀ごろまでのラテン語では、「C」が/k/(カ行の音)および/g/(ガ行の音)を表していた。しかし流石に不便だったのか、後にこの「C」に1本線を足して「G」とし、/k/と/g/を区別するようにしたのが起源である。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic"]},{"codepoint":103,"name":"LATIN SMALL LETTER G","description":["ラテン文字の小文字のジー。","手書きの文字に近い字と、下の方で一回転させる形の2種類の字形が存在するが、これらはそれぞれ、「一階建てのg (the single-story g)」、「二階建てのg (the double-story g)」と呼ばれている。"],"references":["https://advenc.ru/post/strochnye-istiny","https://twitter.com/nixeneko/status/757286834187538432"]},{"codepoint":72,"name":"LATIN CAPITAL LETTER H","description":["ラテン文字の大文字のエイチ。日本においては最も卑猥なアルファベットである。","実際のところ、なぜ英語でこの文字を「エイチ」ないし「ヘイチ」と読むのかに関してはよくわかっていない。オックスフォード英語辞典には、「ハー(古典ラテン語)」→「アハ(ラテン語)」→「アカ(俗ラテン語)」→「アッチ(古フランス語)」→「アーチ(中期英語)」と変遷した、とあるが、必ずしも定説ではない。"],"references":["https://en.wikipedia.org/wiki/H","https://en.oxforddictionaries.com/definition/h","https://www.theguardian.com/science/shortcuts/2013/nov/04/letter-h-contentious-alphabet-history-alphabetical-rosen"]},{"codepoint":104,"name":"LATIN SMALL LETTER H","description":["ラテン文字の小文字のエイチ。","エイチはギリシャ文字のΗ(エータ)に由来している⋯⋯が、この文字が表す/h/(ハ行の音)は、古代ギリシャ語での発音を受け継いだものである。現在のギリシャ語でΗ(エータ)は、なんと母音である。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic","https://en.wikipedia.org/wiki/H"]},{"codepoint":73,"name":"LATIN CAPITAL LETTER I","description":["ラテン文字の大文字のアイ。Hのあとに来るもの。","1928年に制定されたトルコ語ラテン文字では、2種類のアイをドットがついているかついてないかで区別する。つまり「I」と「i」は別の文字であり、「I」の小文字は「ı(ドットなし小文字アイ)」、「i」の大文字は「İ(ドット付き大文字アイ)」となる。これは、同じ文字体系でも言語によって大文字/小文字変換を使い分けなくてはいけない例として、しばしば取り沙汰される。"],"references":["http://www.unicode.org/versions/Unicode10.0.0/ch05.pdf#page=44","http://seesaawiki.jp/w/qvarie/d/%a5%e9%a5%c6%a5%f3%ca%b8%bb%fa%a1%daI%a1%db"]},{"codepoint":105,"name":"LATIN SMALL LETTER I","description":["ラテン文字の小文字のアイ。","1998年、AppleはMacintoshコンピューターの新シリーズ「iMac」を発表した。これが現在まで用いられているiPhoneやiPodやiTunesの「i」の端緒である。その由来は「Internet」の頭文字を筆頭として、「Individual」「Instruct」「Inform」など様々な意味をかけ合わせたものとのことだが、それがなぜ小文字なのかは⋯⋯まあ、おそらくブランドデザイン的な問題だろうと思われている。"],"references":["https://www.quora.com/Why-is-the-letter-i-in-the-word-iPhone-is-in-lower-case-Is-there-any-reason-for-it/answer/Mark-Hetherington?srid=h2BPt","http://www.iphonejd.com/iphone_jd/2009/01/the-i-in-iphone.html"]},{"codepoint":74,"name":"LATIN CAPITAL LETTER J","description":["ラテン文字の大文字のジェー。ラテン文字というのは要するにラテン語を表記するための文字だからラテン文字と呼ぶのだが、これは元々ラテン語にはない文字⋯⋯というよりはI(アイ)の異体字だった。","ラテン文字が成立してから2000年近く経った14世紀ごろ、Iに対応する半母音である/j/(や行の音)を表現するために区別されて使われるようになったとされる。なのでギリシャ文字やキリル文字にはこの字に対応する文字はない。"]},{"codepoint":106,"name":"LATIN SMALL LETTER J","description":["ラテン文字の小文字のジェー。当初、この文字は/j/(ヤ行の音)を表現するための文字だった⋯⋯が、時にヨーロッパ激動の近世。教会の拡大にともなって様々な民族がラテン文字を使うようになり、この文字も転用・借用の洗礼を受けることになる。特に英語では古フランス語での転訛を経て/dʒ/(ジャ行の音)を表すようになり、今でもそのイメージが強い。","加えてスペイン語では、イスラム統治時代の影響でこれまた全く異なる/x/を表現する文字となっており、現在でも言語間での乖離が激しい文字の一つとなっている。"],"references":["https://ja.wikipedia.org/wiki/J","https://en.wikipedia.org/wiki/J","https://english.stackexchange.com/a/148414","https://english.stackexchange.com/a/148416"]},{"codepoint":75,"name":"LATIN CAPITAL LETTER K","description":["ラテン文字の大文字のケー。","ギリシャ文字のΚ(カッパ)からラテン文字のK(ケー)が生まれたのち、この文字は同じ発音を持つC(シー)に統合され、消滅した。そのためラテン語の直系(ロマンス諸語)であるフランス語やイタリア語などでは原則としてこの文字は使用しない。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。"]},{"codepoint":107,"name":"LATIN SMALL LETTER K","description":["ラテン文字の小文字のケー。","英語では、語頭に「kn-」が綴られた時には「k」を発音しない、「黙字のK」と呼ばれる現象が存在する。これは発音が難しいため省略されたという説が濃厚だが、ドイツ語やスウェーデン語では現在でも「kn-」の「k」を発音する。ドイツ人の真面目さが現れているのだろうか(?)。","BUMP OF CHICKEN の楽曲「K」は、この「黙字のK」を上手くストーリーに組み込んだ名作である。"],"references":["https://en.wikipedia.org/wiki/Silent_k","https://www.quora.com/Why-should-we-write-the-letter-K-if-it-is-silent-in-words-like-knowledge-and-knife/answer/Priyanka-Sharma-878?srid=h2BPt"]},{"codepoint":76,"name":"LATIN CAPITAL LETTER L","description":["ラテン文字の大文字のエル。","物理学などで用いられる単位は、人名に由来するものは大文字で、それ以外は小文字で記述することになっている。中でも体積の単位である「リットル」の名称は、18世紀フランスの物理学者であるクロード・リットルに由来している。彼はその生涯を主に珪酸化合物の研究に捧げ、その一環として、今日でも用いられている実験用ガラス器具の製造法を確立した。現在、体積の単位を大文字の「L」で記述するのは、彼がもたらした正確な液体計量法を讃えてのことなのである。","⋯⋯というのは真っ赤なウソで、「クロード・リットル」の人物伝なるものは、物理学界では有名な作り話。リットルを大文字で記述する正しい理由は、数字の1との混同を避けるためである。"],"references":["https://uwaterloo.ca/chem13news/sites/ca.chem13news/files/uploads/files/Jean%20Litre-article.pdf"]},{"codepoint":108,"name":"LATIN SMALL LETTER L","description":["ラテン文字の小文字のエル。","6点点字において、左側の3点を用いて表される(⠇)が、これは小文字の「l」の形をかたどったもの⋯⋯ではない。12番目の文字「L」を表すために、2番目の文字「B」に左下の点を足して作ったものである。"],"references":["http://seesaawiki.jp/w/qvarie/d/%a5%e9%a5%c6%a5%f3%ca%b8%bb%fa%a1%daL%a1%db","https://en.wikipedia.org/wiki/Braille","https://en.wikipedia.org/wiki/Braille_pattern_dots-123"]},{"codepoint":77,"name":"LATIN CAPITAL LETTER M","description":["ラテン文字の大文字のエム。","ラテン文字では最も幅の広い文字。かつての活字では大文字の「M」の型(ソート)の縦横が同じ長さになるようにデザインされていたため、活字におけるこの長さのことをエムと呼んだ。現在の書体では必ずしもそうなっていないが、主に、活字でいうところの縦の長さを指す単位としてエムは現在でも使われている。"],"references":["https://en.wikipedia.org/wiki/Em_(typography)"]},{"codepoint":109,"name":"LATIN SMALL LETTER M","description":["ラテン文字の小文字のエム。","英語圏ではかつてマイルを「m」と略していたが、メートルが国際化するにつれて「mi」表記が使われるようになり、現在では「mi」と書くのが主流である。","この際ついでにマイル自体も廃止してほしいものである。"],"references":["https://en.wikipedia.org/wiki/Mile"]},{"codepoint":78,"name":"LATIN CAPITAL LETTER N","description":["ラテン文字の大文字のエヌ。","ラテン文字の起源をたどっていくと、最終的にはエジプトのヒエログリフに行き着くという説がある。定説でこそないがそれなりに支持されている学説なのだが、それによると、「N」の起源は蛇の形を象ったヒエログリフであるという。今の形にも若干その面影を見ることができるかもしれない。"],"references":["William Bright, Peter T. Daniels　『The world's writing systems』　Oxford University Press、1996年。ISBN 9780195079937。","https://www.jstor.org/stable/3853586"]},{"codepoint":110,"name":"LATIN SMALL LETTER N","description":["ラテン文字の小文字のエヌ。","あるとき、「ヨーロッパの言語において、『夜』という単語は『N』と『八』を組み合わせたものである」という説が話題に上がったことがある。例えば、英語なら「n」+「eight」→「night」、ドイツ語なら「n」+「Acht」→「Nacht」と言った具合である。これは確かにいくつかの言語で成り立つのだが⋯⋯その全てがゲルマン語派である以上、ゲルマン祖語が同根であることによる一致、および偶然の産物以外の何物でもない。"],"references":["https://linguistics.stackexchange.com/a/11446","https://www.facebook.com/etymonline/posts/821462227970662"]},{"codepoint":79,"name":"LATIN CAPITAL LETTER O","description":["ラテン文字の大文字のオー。オーの字は、文字の歴史において最も形の変化が少ない文字の一つであり、紀元前10世紀ごろ生まれたフェニキア文字からずっと形が変わっていない。つまり、ある意味でラテン文字の中で最も古い文字、と言えるかもしれない。","ちなみにY(ワイ)も元のフェニキア文字と同じ形だが、こちらはラテン文字では一度消滅して復活した経緯を持つので、歴史は比較的浅い。"]},{"codepoint":111,"name":"LATIN SMALL LETTER O","description":["ラテン文字の小文字のオー。ラテン文字・ギリシャ文字・キリル文字の間で同じ活字を共有できる小文字は、実はこれだけである。"]},{"codepoint":80,"name":"LATIN CAPITAL LETTER P","description":["ラテン文字の大文字のピー。"]},{"codepoint":112,"name":"LATIN SMALL LETTER P","description":["ラテン文字の小文字のピー。"]},{"codepoint":329,"name":"LATIN SMALL LETTER N PRECEDED BY APOSTROPHE","description":["ラテン文字の小文字のnと前置アポストロフィー。Rock'n roll のように様々な単語の略記として用いられる。特にオランダ語をマイナーチェンジして作られたアフリカーンス語では、オランダ語の不定冠詞eenの略記法であるこれを正式な不定冠詞として採用しており、非常によく用いられる⋯⋯のだが、ひと目見たら分かる通り、明らかに「2文字」である。","そのためこの文字は、現在では「強く非推奨」となっており、12文字の(互換文字でない)使用非推奨文字の1つに数えられている。"],"references":["http://www.unicode.org/versions/Unicode10.0.0/ch07.pdf","http://www.unicode.org/notes/tn27/tn27-4.html"]},{"codepoint":12356,"name":"HIRAGANA LETTER I","description":["ひらがなの「い」。字母は「以」。","いろは順で並べた時に最初に来る文字。「いの一番」という成語もこれが由来である。"]},{"codepoint":12358,"name":"HIRAGANA LETTER U","description":["ひらがなの「う」。字母は「宇」。","暑中の土用の丑の日に鰻を食べる習慣は、おそらく近世からのものだと考えられているが、なぜ丑の日なのか、なぜ鰻なのかはよく分かっていない。「う」しの日だから「う」なぎを食べる、つまり「う」のつく食べ物ならなんでも良いのだ⋯⋯という説も有名だが、これもまた起源がよく分かっていない。何から何まで謎な行事である。"],"references":["http://dl.ndl.go.jp/info:ndljp/pid/1767733/16","https://ja.wikipedia.org/wiki/%E5%9C%9F%E7%94%A8%E3%81%AE%E4%B8%91%E3%81%AE%E6%97%A5"]},{"codepoint":12362,"name":"HIRAGANA LETTER O","description":["ひらがなの「お」。字母は「於」。","江戸時代中期まで、わ行の文字だと思われていた。「お」を「あ行」に、「を」を「わ行」に正しく配置し直したのは、他ならぬ本居宣長である。"],"references":["https://ja.wikipedia.org/wiki/%E3%82%92#.E6.B1.9F.E6.88.B8.E6.99.82.E4.BB.A3","http://www.norinagakinenkan.com/norinaga/kaisetsu/jion.html","http://dl.ndl.go.jp/info:ndljp/pid/993103/10"]},{"codepoint":12363,"name":"HIRAGANA LETTER KA","description":["ひらがなの「か」。字母は「加」。","江戸いろはかるたの「か」は「癩(かったい)の瘡(かさ)うらみ」である。癩も瘡も病名であり、自分よりも僅かでも病状の軽い病人を羨むこと、転じてつまらない愚痴をこぼすことを指す。ちなみに癩は「ハンセン病」、瘡は「梅毒」を指し、どちらも現在では治療法が確立している病気である。"],"references":["http://umejii.cocolog-nifty.com/blog/2007/07/post_dc51.html"]},{"codepoint":12367,"name":"HIRAGANA LETTER KU","description":["ひらがなの「く」。字母は「久」。","――深い鋼青から柔らかな桔梗(ききゃう)、それからうるはしい天の瑠璃(るり)、それからけむりに目を瞑(つぶ)るとな、やはりはがねの空が眼(め)の前一面にこめてその中にるりいろのくの字が沢山沢山光ってうごいてゐるよ。くの字が光ってうご……。\n――宮沢賢治『柳沢』"],"references":["http://www.aozora.gr.jp/cards/000081/files/4465_8269.html","http://why.kenji.ne.jp/review/review402.html"]},{"codepoint":12369,"name":"HIRAGANA LETTER KE","description":["ひらがなの「け」。字母は「計」。","2017年7月現在、「け」でGoogle検索をかけると「けものフレンズ」がヒットする。"]},{"codepoint":12371,"name":"HIRAGANA LETTER KO","description":["ひらがなの「こ」。字母は「己」。",{"TODO":"書く"}],"references":[{"TODO":"書く"}]},{"codepoint":12381,"name":"HIRAGANA LETTER SO","description":["ひらがなの「そ」。字母は「曾」。","左上の部分を続けて書く形と、離して書く形の2種類の字形が存在する。実のところ、ひらがなには(漢字と違って)公的に定められた「正しい字形」が存在しないため、どちらが正しいとも言えないのが難しいところ。"],"references":["http://umejii.cocolog-nifty.com/blog/2007/07/post_dc51.html"]},{"codepoint":12383,"name":"HIRAGANA LETTER TA","description":["ひらがなの「た」。字母は「太」。","たにほたたんたのなたたたぞたなたぞでたたよたくたぬかされたたる、たかたわいたそうたたなたたひたらたたがたなである。(ヒント: たぬき)"]},{"codepoint":12385,"name":"HIRAGANA LETTER TI","description":["ひらがなの「ち」。字母は「知」。","「知は力なり」と言ったのはイギリス経験論の泰斗たるフランシス・ベーコンだが、彼は晩年、鶏に雪を詰めて冷凍する実験をしている最中に肺炎を患い、そのまま病死してしまった。好奇心は哲学者を殺す。"],"references":["https://en.wikipedia.org/wiki/Francis_Bacon#Death"]},{"codepoint":12388,"name":"HIRAGANA LETTER TU","description":["ひらがなの「つ」。字母は「川」もしくは「州」。","字母は「川」が有力とされているが、「川」の読みは「かは」(訓)「セン」(呉音・漢音)であり、どうしたら「川」が「つ」になるのかよく分かっていない。一説には、呉音以前の中国上古音が「ツウ」であり、それに由来するとも。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12392,"name":"HIRAGANA LETTER TO","description":["ひらがなの「と」。字母は「止」。","元となった読みは訓読みの「とまる」ではなく上古音の「ト」である。","将棋の歩兵の裏側に「と」と書いてあるのも、「歩」に含まれる「止」の文字が関連しているとか、していないとか。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12394,"name":"HIRAGANA LETTER NA","description":["ひらがなの「な」。字母は「奈」。","いろは順でも五十音順でも同じ位置に来る二つのひらがなのうちの一つ。ちなみにもう一つは「た」である。"]},{"codepoint":12395,"name":"HIRAGANA LETTER NI","description":["ひらがなの「に」。字母は「仁」。","おそらく最も字母に形が近いひらがなであると思われる。次点は「こ」「す」「た」「や」あたりか。"]},{"codepoint":12396,"name":"HIRAGANA LETTER NU","description":["ひらがなの「ぬ」。字母は「奴」。","多くの頻度統計において、清音としては最も出現頻度の低い仮名である。そのため、かな入力配列において「ぬ」は、キーボードの左上の最も打ちにくい場所に追いやられている。"],"references":["http://ameblo.jp/asuka-layout/entry-11421831908.html","https://www50.atwiki.jp/keylay/pages/16.html","http://61degc.seesaa.net/article/33618150.html"]},{"codepoint":12397,"name":"HIRAGANA LETTER NE","description":["ひらがなの「ね」。字母は「祢」。","FXで有り金を全部溶かすと、この文字と「ぬ」の区別がつかなくなることで有名。"]},{"codepoint":12398,"name":"HIRAGANA LETTER NO","description":["ひらがなの「の」。字母は「乃」。","Unicodeの付属規格書には、「ひらがなの『の』は数学記号として用いられることもある」と2001年から記されている。しかし、はたして「の」が何を表す記号として用いられているのか、今もって謎とされている。"],"references":["http://www.unicode.org/reports/tr25/tr25-15.pdf#page=5","https://togetter.com/li/848185"]},{"codepoint":12399,"name":"HIRAGANA LETTER HA","description":["ひらがなの「は」。字母は「波」。","江戸時代の言葉で、恥ずかしいことを「はの字」とか「おはの字」とか言った。「恥ずかしい」と言うのも恥ずかしかったのだろう。"]},{"codepoint":12405,"name":"HIRAGANA LETTER HU","description":["ひらがなの「ふ」。字母は「不」。","日本語の「ふ」の音の子音は、英語の「h」とも「f」とも「wh」とも異なる、無声両唇摩擦音と呼ばれる特殊な子音である。実はこの子音を持つ言語は世界的にも珍しく、日本語に流暢な外国人でも「ふ」の音だけは苦手としていることが多いらしい。"],"references":["http://www.timor-leste.emb-japan.go.jp/column_abe2.html","https://oshiete.goo.ne.jp/qa/8260172.html","https://en.wikipedia.org/wiki/Voiceless_bilabial_fricative","https://www.quora.com/In-Japanese-how-do-you-pronounce-the-kana-%E3%81%B5-or-%E3%83%95-fu-or-hu"]},{"codepoint":12408,"name":"HIRAGANA LETTER HE","ssml":["HIRAGANA","LETTER","<phoneme alphabet=\"ipa\" ph=\"he̞\">HE</phoneme>"],"description":["ひらがなの「へ」。字母は「阝」。","「阝」は「部屋」の「部」の略字である。成り立ちがわかりづらいが、奈良時代ごろにはカタカナの「マ」のような形をしており、これを経由して現在の形になったと考えるとわかりやすい。"],"references":["https://ja.wikipedia.org/wiki/%E3%81%B8","森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12411,"name":"HIRAGANA LETTER HO","description":["ひらがなの「ほ」。字母は「保」。","「ほの字」とは「惚れている」を表す俗語である。今でも使われるが、用例は江戸初期まで遡るとか。"]},{"codepoint":12414,"name":"HIRAGANA LETTER MA","description":["ひらがなの「ま」。字母は「末」。","尾張いろはかるたの「ま」の札は「待てば甘露の日和あり」である。甘露とは中国の伝説で君主が善政を敷いたときに降るとされる、甘い雨のこと。現在では「待てば海路の日和あり」で知られているが、これは甘露が海路に転じたものである。","つまり、アメではなくアメが⋯⋯。いや、なんでもない。"],"references":["http://www.geocities.jp/n_quaker/karuta/owari.html","https://ja.wikipedia.org/wiki/%E7%94%98%E9%9C%B2"]},{"codepoint":12416,"name":"HIRAGANA LETTER MU","description":["ひらがなの「む」。字母は「武」。","とあるゲームにおいて、マックスウェルなる人物が全てを終わらせる時にノートから召喚する文字。"],"references":["http://www.nicovideo.jp/watch/sm17484462"]},{"codepoint":12420,"name":"HIRAGANA LETTER YA","description":["ひらがなの「や」。字母は「也」。","時は平安、藤原成範卿は、流罪を赦されて京に召還されたとき、内裏にて宮女から次のごとき和歌を受け取った。","――雲の上はありし昔にかはらねど見し玉だれの内やゆかしき","成範卿が配流される前は彼も簾中に出入りできる身分だったことを指しての歌である。返歌をしようとした成範だったが、時の内大臣である平重盛が参内したのを見て、すぐさま受け取った歌の「や」の文字を書き換えて宮女に返し、忽ち辞去した。果たしてその字は―― (U+305Eに続く)"],"references":["http://dl.ndl.go.jp/info:ndljp/pid/945602/53","http://dl.ndl.go.jp/info:ndljp/pid/877526/29"]},{"codepoint":12424,"name":"HIRAGANA LETTER YO","description":["ひらがなの「よ」。字母は「与󠄁」。","2017年5月、数学記号の一種としてひらがなの「よ」が用いられている論文があると話題になった。論文は圏論に関する証明を行っており、「米田の補題」から導かれる、任意の局所小圏に対して定義される前層圏への充満忠実関手、すなわち「米田埋め込み」を「よ」と表記している。由来はもちろん、「米田の補題」に名が知られる数学者米田信夫の頭文字である。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。","https://twitter.com/unununum_1/status/860125300104937472","https://arxiv.org/abs/1506.08870"]},{"codepoint":12425,"name":"HIRAGANA LETTER RA","description":["ひらがなの「ら」。字母は「良」。","おもちゃ専門量販店の「Toys\"Я\"us」の名前は、「Toys are us.」という英文に由来している。「R」が反転しているのは、英語圏の子どもがよく間違える書き方だとか。日本語名の「トイザらス」の「ら」がひらがななのも原語にならっており、同じように「子どもの間違い」をうまく図表化した、秀逸なローカリゼーションによるものである。"],"references":["https://www.toysrus.co.jp/h/CSfHelpFaq10.jsp"]},{"codepoint":12426,"name":"HIRAGANA LETTER RI","description":["ひらがなの「り」。字母は「利」。","「利」の右側ではなく、全体を崩して作られた文字である。ショゴスの鳴き声。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12427,"name":"HIRAGANA LETTER RU","description":["ひらがなの「る」。字母は「留」。","しりとりの必勝法。また、広辞苑に掲載されている単語でしりとりをしても、ポケモンの名前でしりとりをしても、最も長いしりとりの最後の単語は「る」で始まることが知られている。"],"references":["http://oride.net/trivia/trivia361-368.htm#tane32","http://auemath.aichi-edu.ac.jp/~ykhashi/semi/2010note/08_issey_final.pdf"]},{"codepoint":12428,"name":"HIRAGANA LETTER RE","description":["ひらがなの「れ」。字母は「礼」。","日本の車のナンバープレートで、レンタカーに付けられる文字といえば「わ」が有名だが、実は制度上は「れ」も用いることができる。特に、全国の陸運支局の中で、札幌だけはなぜかナンバープレート交付開始直後から「れ」ナンバーのプレートを発行していた。一説にはFAXで書類を送信した際に「わ」と「れ」を取り違えたとされているが、信憑性は低い。","現在、「れ」ナンバーのレンタカーを見られるのは北海道と沖縄だけである。"],"references":["https://trafficnews.jp/post/65790/2/"]},{"codepoint":12429,"name":"HIRAGANA LETTER RO","description":["ひらがなの「ろ」。字母は「吕」。","字母の「吕(呂の異体字)」は人間の背骨をかたどった象形文字である。この用法は文字を転じて現在「膂力」の「りょ」にかろうじて形を留めている。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12431,"name":"HIRAGANA LETTER WA","description":["ひらがなの「わ」。字母は「和」。","日本の車のナンバープレートで「わ」といえば、主にレンタカーに付けられる文字である。なぜ「わ」がレンタカーなのかはよく分かってないが、「50音順で後半の使われていなかった文字が当てはめられたのではないか」と言われている。"],"references":["https://trafficnews.jp/post/65790/2/"]},{"codepoint":12432,"name":"HIRAGANA LETTER WI","description":["ひらがなの「ゐ」。字母は「為」。","万物は流転する。文字も流転する。平安期に上代仮名が消え、1900年に変体仮名が消えたように、この文字も1946年11月16日に歴史の表舞台から姿を消した。消え行く文字たちに祈りを。そして新たな文字たちに祝福を。"]},{"codepoint":12434,"name":"HIRAGANA LETTER WO","description":["ひらがなの「を」。字母は「遠」。","戦後の国語改革を生き延びた歴戦の勇士。「を」が助詞でなかったら、「ゐ」「ゑ」同様にこの文字も消える運命にあったのだ。"]},{"codepoint":12504,"name":"KATAKANA LETTER HE","description":["カタカナの「ヘ」。字源は「阝」。","仮名の中で唯一、ひらがなとカタカナの形が全く同じ文字。しかし印刷される書体では、ひらがな・カタカナそれぞれのデザインに合わせて微妙な違いを設けており、プロの活版職人なら活字を見ただけでひらがなかカタカナか判別できるらしい。"],"references":["http://crd.ndl.go.jp/reference/detail?page=ref_view&id=1000137387"]},{"codepoint":29356,"name":"CJK UNIFIED IDEOGRAPH-72AC","definition":"dog; radical number 94","description":["――「貴様は手習いをしたか?」「手習いどころか唐様でも和様でもなんでも書きます」「どふやら嘘らしい、貴様『大』の字を書き得るか」「書き得る書き得る」「そんなら書いて見せなへか」「ムム書いて見せよふ見せよふ」と七といふ字や八といふ字を書く。「ソレ見やれ大の字も知らぬ。文字を知らぬ者は畜生だ」と言へば大きに腹を立てて「そんなら大の字を書いて見せやうか」「サァサァ書いて見やれ」「書かねへでは畜生だと言はれたが悔しい、書いて見せやう」と大の字を書き、脇へ点を打つて「サァこれでも畜生か」。\n――桜川慈悲成「無筆」 『落噺常々草』所収","江戸ののび太である。"],"references":["http://dl.ndl.go.jp/info:ndljp/pid/8929358/8","http://rakugonobutai.web.fc2.com/156sitinoji/siti.html"]},{"codepoint":29482,"name":"CJK UNIFIED IDEOGRAPH-732A","definition":"pig, hog, wild boar","description":["日本ではイノシシを意味する漢字だが、中国やその他の国では主にブタを意味する。したがって干支の亥年も、中国ではイノシシ年ではなくブタ年である。"]},{"codepoint":24525,"name":"CJK UNIFIED IDEOGRAPH-5FCD","definition":"endure, bear, suffer; forbear","description":["即ち、<ruby><rb>刃の下に心あり</rb><rt>ハートアンダーブレード</rt></ruby>。",{"TODO":"書く"}]},{"codepoint":895,"name":"GREEK CAPITAL LETTER YOT","description":["果てしなく不可解。果てしなく厄介。それがUnicodeに収録された32番目のギリシャ文字、「ヨット」である。","大げさに言えば、この文字はギリシャ文字に存在するはずがない、存在してはいけない文字だ。","ギリシャ文字は、現存する文字体系の中でも、最も古い歴史を持つ文字の一つである。紀元前9世紀から現代に至るまで、実に3000年近くに渡って大きな変化をすることなく伝え続けられた。その長い歴史の中には、表記法の変化に伴って消失し、現代では使われなくなった文字も存在する。ディガンマやスティグマなどが典型的な例である。","その淘汰と発生の歴史の中のどこにも、「ヨット」は存在しない。現代ギリシャ語の語彙に「ヨット」なる文字は登場しないし、古代の文献にもこれに対応する文字は存在しない。ならば「ギリシャ文字のヨット」とは何なのか。一体誰が、何のために追加した文字なのか。","形は、ラテン文字のJ(ジェー)に似ている……。いや、むしろ似ていて当然だ。なぜならそもそも「ヨット」というのは、ラテン文字のJのドイツ語読みにほかならないからである。","ラテン文字としてのJは、26字存在する基本ラテン文字の中でも最も新しい文字である。字形としての用例は古代ローマ期まで遡るが、音素/j/(ヤ行の音)を表す文字として独立に数えられるようになったのは、中世後期になってからである。そのころギリシャでは活版印刷の普及とともに活字体が形成され、確固たる表記体系が確立された。そこに「異国の文字」が入り込む隙は、なかった。","なので「ギリシャ文字のヨット」というのは、ほとんど現代の空想の産物である。この文字は、現代のギリシャ語学者が、かつてギリシャ語に存在した音素、/j/を表記するために考案した、架空のギリシャ文字なのだ。","音素/j/は、現代ギリシャ語では使われることがない。ギリシャ文字が生まれた紀元前9世紀のギリシャ語にもこの音は存在しなかった。なのでこの音に対応する文字は最初から存在しない。しかし、それ以前の時代……紀元前2000年紀から1000年紀にかけて、ギリシャ語が線文字Aやキプロス文字を用いて歪に表記されていた時代、今なお盛んに研究が行われているその時代のギリシャ語に、音素/j/は存在していたと推定されている。",{"TODO":"書く"}],"references":["http://www.opoudjis.net/unicode/yot.html"]},{"codepoint":7838,"name":"LATIN CAPITAL LETTER SHARP S","description":["「ß(エスツェット)」の大文字問題は、古来100年間にわたりドイツ人を悩ませてきた問題だった。","「ß」は、ドイツ語特有の文字で、字音的には「ss」と同一である。かつては「ss」を含む単語は自由に「ß」に書き換えることが可能だったが、19世紀ごろから、それぞれがある程度意識して使い分けるようになった。","このようにしてドイツ語に「ß」は生まれた。例えば、ドイツ語で「いかだ」は「Floß」である。ドイツ語に「ss」で始まる単語はないので、「ß」で始まる単語もない。従って大文字の「ß」は存在しえない――万が一、文章をすべて大文字で記す事になった場合は、「ß」を「ss」に開けばいい。「Floß」は「FLOSS」となる。","事態がまかり通らなくなったのは、20世紀に入ってからである。1901年、ドイツの国語改革の一環として、ドイツ語の正しい綴りを統一する「ドイツ正書法」が制定された。これにより、「ß」を使用する単語と「ss」を使用する単語が明確に規定され、「ß」と「ss」の弁別が生まれた。同時に、「ß」を大文字で書く時は「SS」とするというルールが明文化された。そして1997年、ドイツ正書法が改正され、「ß」と「ss」の区別はさらに厳密なものになった。長母音の後は「ß」、短母音の後は「ss」というルールが生まれ、これがあらゆる単語に適用されるようになった。","こうなってくると、もはや「ß」と「ss」は別の文字である。例えば、「大きさ」を意味する「Maße(マーセ)」と、「塊」を意味する「Masse(マッセ)」とは異なる。これらを大文字で書いたときに、「Maße」が「Masse」と同じ綴りになるのは違和感がある⋯⋯という流れが生まれ始めた。こうして「ß」の大文字を表す文字が各方面で作られたが、正書法に則ってないので使うべきでないという意見もあり、大きな論争となった。","そんな具合なので、2007年、Unicodeに「ß」の大文字が独立した文字として登録されたときには、大きな話題を呼んだ。新しい文字コードに対応するためのフォントがすぐさま設計され、新聞の見出しなどでも徐々に「ß」の大文字が用いられるようになっていった。","そして2017年6月28日、ドイツ正書法の改正により、「ß」の大文字が公式に認められることとなった。ドイツ正書法が制定されて爾来116年、ようやくこの文字は市民権を勝ち取ったのである。","古くからある文字を、どうやって新しい書記体系に組み込むか。このような問題は、他の言語でもしばしば見られる。日本語だって例外ではない。例えば、踊り字の一つである「くの字点」を、横書きで表現する時にどうするのかという問題――横書き用の新たな「くの字点」を考案するのか、それとも「くの字点」を用いず開いてしまうのか⋯⋯。開いてしまっても意味としては同じだが、きっと「くの字点」の古典的な雰囲気を崩してしまうことに抵抗がある人も多いだろう。","ドイツ語は、新たな文字を考案するという選択をした。個人的には、2007年のUnicode採択が一役買っているのではないかと考えている。","文字コードは社会を変える。"],"references":["https://en.wikipedia.org/wiki/%C3%9F","https://en.wikipedia.org/wiki/Capital_%E1%BA%9E","http://www.unicode.org/versions/Unicode10.0.0/ch05.pdf#page=45","http://www.zeit.de/news/2017-06/29/sprache-die-deutsche-sprache-hat-jetzt-auch-ein-grosses-eszett-29114003","http://www.pocus.jp/e-deutsch/eszet.html","https://web.archive.org/web/20110131220357/http://opentype.info:80/blog/2011/01/24/capital-sharp-s/","http://blog.colorfullife.net/archives/2007/06/04-000644.php"]},{"codepoint":65021,"name":"ARABIC LIGATURE BISMILLAH AR-RAHMAN AR-RAHEEM","description":["アラビア書道は、アラビア文字の美しさを極限まで追求した芸術である。複雑に絡みながら一面を埋め尽くす線と線、壮大で美麗な文字の交わりは、見るものを否応なしに圧倒する力を有している。",{"TODO":"書く"},"画像は右下からスルス体で連ねられたバスマラである。頂点には「アッラー」の文字を配し、左右には「ラフマーニ」と「ラヒーム」の二語が対称に置かれた涙滴形となっている。全体として、非常に美しい調和がとれている。",{"TODO":"書く"}],"references":["https://commons.wikimedia.org/wiki/File:Bismillah_Calligraphy_37.svg","https://plaza.rakuten.co.jp/alqalam/diary/200705200000/","http://www.nippon.com/ja/people/e00028/","http://www.unicode.org/L2/L2002/02163-n2413-4-urdu.pdf","http://www.unicode.org/L2/L2002/02011R-kew.pdf","http://www.unicode.org/versions/Unicode10.0.0/ch09.pdf#page=31"]}]
 
 /***/ }),
 /* 690 */
@@ -46811,7 +46864,68 @@ var transform;
 var options = {"sourceMap":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(167)(content, options);
+var update = __webpack_require__(115)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../node_modules/css-loader/index.js??ref--2-1!../node_modules/postcss-loader/lib/index.js??ref--2-2!./play.pcss", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js??ref--2-1!../node_modules/postcss-loader/lib/index.js??ref--2-2!./play.pcss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 691 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(114)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".play__play--3u_vb {\n\tposition: absolute;\n\twidth: 100%;\n\theight: 100%;\n\n\tdisplay: -webkit-box;\n\n\tdisplay: -ms-flexbox;\n\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t    -ms-flex-direction: column;\n\t        flex-direction: column;\n}\n\n.play__name-card-area--1SKuK {\n\t-webkit-box-flex: 0;\n\t    -ms-flex: 0 0 76px;\n\t        flex: 0 0 76px;\n\tmargin-top: 20px;\n\n\tborder: 0 solid #007122;\n\tborder-width: 8px 0;\n\t-webkit-box-sizing: border-box;\n\t        box-sizing: border-box;\n\n\tbackground-color: white;\n\n\tline-height: 25px;\n\tpadding: 5px 2em;\n\n\tfont-size: 18px;\n\tfont-weight: bold;\n\tword-spacing: 0.2em;\n\n\t-webkit-box-shadow: 0 0 10px 0 black;\n\n\t        box-shadow: 0 0 10px 0 black;\n}\n\n.play__character-cards-area--1k7SV {\n\t-webkit-box-flex: 1;\n\t    -ms-flex: 1 1 0px;\n\t        flex: 1 1;\n\n\tdisplay: -webkit-box;\n\n\tdisplay: -ms-flexbox;\n\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t    -ms-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-box-pack: center;\n\t    -ms-flex-pack: center;\n\t        justify-content: center;\n}\n\n.play__character-cards--31vSQ {\n\tmargin: 5px;\n\n\tdisplay: -webkit-box;\n\n\tdisplay: -ms-flexbox;\n\n\tdisplay: flex;\n\t-ms-flex-wrap: wrap;\n\t    flex-wrap: wrap;\n\t-webkit-box-align: center;\n\t    -ms-flex-align: center;\n\t        align-items: center;\n}\n\n.play__character-card-area--cM3YN {\n\twidth: 25%;\n\theight: 120px;\n\n\tposition: relative;\n}\n\n.play__character-card--2iEu_ {\n\tmargin: 5px;\n\tbackground-color: white;\n\n\tposition: absolute;\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n\tbottom: 0;\n\n\tdisplay: -webkit-box;\n\n\tdisplay: -ms-flexbox;\n\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t    -ms-flex-pack: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t    -ms-flex-align: center;\n\t        align-items: center;\n\n\tborder: 8px solid #007122;\n\t-webkit-box-sizing: border-box;\n\t        box-sizing: border-box;\n\t-webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.7);\n\t        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.7);\n}\n\n.play__character-body--1W-LY {\n\tmax-width: 100%;\n\toverflow: hidden;\n\n\tfont-family: serif;\n\tfont-weight: bold;\n\tfont-size: 64px;\n\tline-height: 120px;\n}\n\n.play__information-area--3Wuas {\n\t-webkit-box-flex: 0;\n\t    -ms-flex: 0 0 60px;\n\t        flex: 0 0 60px;\n\tdisplay: -webkit-box;\n\tdisplay: -ms-flexbox;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t    -ms-flex-pack: center;\n\t        justify-content: center;\n}\n\n.play__clock--2H7io {\n\t-webkit-box-flex: 0;\n\t    -ms-flex: 0 0 0px;\n\t        flex: 0 0;\n}\n", ""]);
+
+// exports
+exports.locals = {
+	"play": "play__play--3u_vb",
+	"name-card-area": "play__name-card-area--1SKuK",
+	"character-cards-area": "play__character-cards-area--1k7SV",
+	"character-cards": "play__character-cards--31vSQ",
+	"character-card-area": "play__character-card-area--cM3YN",
+	"character-card": "play__character-card--2iEu_",
+	"character-body": "play__character-body--1W-LY",
+	"information-area": "play__information-area--3Wuas",
+	"clock": "play__clock--2H7io"
+};
+
+/***/ }),
+/* 692 */
+/***/ (function(module, exports) {
+
+module.exports = [{"codepoint":19952,"name":"HEXAGRAM FOR REVOLUTION","description":["――革は、巳日(いじつ)にしてすなわち孚(まこと)とせらる。元(おお)いに亨(とお)り貞(ただ)しきに利(よ)ろし。悔(くい)亡ぶ。","結局どこの文化圏でも、君主は常に君臨して統治する存在なのだ。禅譲とはなんだったのか。","ちなみに、この卦の上爻の爻辞にある「君子豹変、小人革面」は、「君子は豹変す」の語源である。"],"references":["高田眞治・後藤基巳訳　『易経』　岩波書店〈岩波文庫〉、1959年。ISBN 9784003320112。"]},{"codepoint":1567,"name":"ARABIC QUESTION MARK","description":["アラビア語では疑問符を左右反対にして書く。理由はもちろん、そもそもアラビア語では右から左に文章を書くから――なのだが、同じく右書きのヘブライ語やイディッシュ語では通常の疑問符と同じ向きのものを使う。"],"references":["https://en.wikipedia.org/wiki/Question_mark#Mirrored_question_mark"]},{"codepoint":127136,"name":"PLAYING CARD BACK","description":["トランプの裏面。","トランプがUnicodeに収録されているのだから、そのうち「Unicodeかるた」もUnicodeに収録される日が来るかもしれない。しかし「Unicodeかるた」もUnicodeに収録されると、その文字を記載した「Unicodeかるた」のカードが必要になり、さらにそのカードを表す文字がUnicodeに収録され、さらに⋯⋯。","⋯⋯やっぱり収録されないほうが幸せかもしれない。"]},{"codepoint":127153,"name":"PLAYING CARD ACE OF HEARTS","description":["トランプの、ハートのエース。","「エース」というのはもともと、トランプやサイコロの目を表すための序数の一つである。エースの後は、デュース、トレイ、ケイター、シンク、と続くのだが、現在ではデュース以外の単語はほとんど使われない。"]},{"codepoint":9856,"name":"DIE FACE-1","description":["賽の目の1。ピンとも呼ぶ。サイコロのこの目だけが赤いのは、実は日本だけである。","通るかっ⋯⋯! こんなもん⋯⋯!"]},{"codepoint":9857,"name":"DIE FACE-2","description":["賽の目の2。墨を塗ることで3にも4にも5にも6にもできる便利な目である。"]},{"codepoint":9858,"name":"DIE FACE-3","description":["賽の目の3。","元老院と敵対したユリウス・カエサルは、ルビコン川を渡り進軍する際に「賽は投げられた」と述べた。彼が礎を築いた帝政ローマの皇帝が賭博を禁じながらも自らはダイスゲームに熱中したのは、ひょっとしたら彼のせいかもしれない。"]},{"codepoint":9859,"name":"DIE FACE-4","description":["賽の目の4。中国では1の目に加えてこの目も赤く塗られている。清代は趙翼の伝によると、唐の玄宗帝がこの目でゲームに勝ったため4の目を赤く塗らせたとか。"],"references":["https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%A4%E3%82%B3%E3%83%AD#.E4.B8.AD.E5.9B.BD.E3.81.AE.E3.82.B5.E3.82.A4.E3.82.B3.E3.83.AD","https://zh.wikipedia.org/wiki/%E9%AA%B0%E5%AD%90#.E6.AD.B7.E5.8F.B2"]},{"codepoint":9860,"name":"DIE FACE-5","description":["賽の目の5。","古代ローマで用いられたサイコロの一種に、2の目と5の目が欠けた4面のダイスがある。形も立方体とか正四面体ではない、へんてこな形をしている。"],"references":["https://en.wikipedia.org/wiki/Dice#History","http://www.aerobiologicalengineering.com/wxk116/Roman/BoardGames/tali.html"]},{"codepoint":9861,"name":"DIE FACE-6","description":["賽の目の6。賽の目が彫刻されているサイコロの場合、1の目が一番彫る量が少ないので少しだけ重く、そのぶん6の目がでる確率が少しだけ高い⋯⋯かもしれない。"]},{"codepoint":48,"name":"DIGIT ZERO","description":["アラビア数字のゼロ。","ゼロを表す文字は、ゼロという概念が生まれる前に生まれた。"]},{"codepoint":65,"name":"LATIN CAPITAL LETTER A","description":["ラテン文字の大文字のエー。ラテン文字の最初の文字にして、世界で最も有名な文字の一つ。"]},{"codepoint":97,"name":"LATIN SMALL LETTER A","description":["ラテン文字の小文字のエー。というよりもアー。15世紀から16世紀にかけての大母音推移の結果、この文字を「エー」と読むのは英語だけである。"]},{"codepoint":66,"name":"LATIN CAPITAL LETTER B","description":["ラテン文字の大文字のビー。","「B級」「B寝台」など、なにかと「一歩劣った」イメージが付きまとうアルファベット。血液型のB型のイメージがなんとなく悪いのも、もしかしたらそういう連想から来てるのかもしれない。"]},{"codepoint":98,"name":"LATIN SMALL LETTER B","description":["ラテン文字の小文字のビー。サムズアップ。","B(ビー)はギリシャ文字のΒ(ベータ)に由来しており、発音も古代ギリシア語にならって/b/(バ行の音)である⋯⋯のだが、当のギリシャ語では発音が/v/(ヴァ行の音)に変わってしまった。ラテン文字圏の言語だけが、古典ギリシャ語の音を残している。","まるで日本の漢字の唐音や漢音のようだ。"]},{"codepoint":67,"name":"LATIN CAPITAL LETTER C","description":["ラテン文字の大文字のシー。ギリシャ文字のΓ(ガンマ)が横倒しになって丸まったもの。","ラテン文字は全体的にギリシャ文字と比べて丸まっているのが特徴である。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。"]},{"codepoint":99,"name":"LATIN SMALL LETTER C","description":["ラテン文字の小文字のシー。元となったギリシャ文字のガンマ(Gamma)の綴りからも見て取れるとおり、この文字は当初は/g/(ガ行の音)を表す文字だった。ギリシャ文字からエトルリア文字に輸入された際に濁りのない/k/(カ行の音)を表すようになり、ラテン文字となったときには/g/と/k/の2つの音を表すようになっていた。","その後もこの文字は多様化の洗礼を受け、言語によって/k/、/s/、/ʧ/、/θ/、/t͡s/など、様々な音価を持つめんどくさい文字となっている。","ところで、悪逆で有名なローマ皇帝、ガイウス帝の名前(プラエノーメン)の綴りはGaiusだが、イニシャルで書くときにはCと書く。Cが/g/だった頃の名残である。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic","https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%A9%E3%82%A8%E3%83%8E%E3%83%BC%E3%83%A1%E3%83%B3"]},{"codepoint":68,"name":"LATIN CAPITAL LETTER D","description":["ラテン文字の大文字のディー。ギリシャ文字のΔ(デルタ)から派生した。","英語圏で「the D」といえば、男の雄大なアレを指す隠語である。しかしてこんな有名なジョークがある。","Boy: There are 20 letters in the Alphabet, right?\nGirl: Nope. 26.\nBoy: Oh, sorry I must have forgot U R A Q T.\nGirl: You'd still be missing one letter.\nBoy: Yeah I know, I will give you the D later...","蛇足ながら解説しておくと「U R A Q T」は「You are a cutie.」の意味である。"]},{"codepoint":100,"name":"LATIN SMALL LETTER D","description":["ラテン文字の小文字のディー。","大文字と小文字で形が大きく異なる文字の一つ。右側の長い縦棒は、元は大文字のDの曲線部分の書き出しが大きく左に突き出した形が由来である。やがて時代とともに横棒が縦棒になり、現在のdの形になったとされている。"],"references":["https://en.wikipedia.org/wiki/D#History"]},{"codepoint":69,"name":"LATIN CAPITAL LETTER E","description":["ラテン文字の大文字のイー。ギリシャ文字のΕ(イプシロン)に由来しており、形も全く同じである。","ラテン文字を使用するほとんどの言語で、最も多く使われる文字である。一方で大変に努力すればこの文字抜きで文章を書くことも可能で、『ギャズビー』に代表される「E」抜きの文章も多く書かれている。"]},{"codepoint":101,"name":"LATIN SMALL LETTER E","description":["ラテン文字の小文字のイー。","自然対数の底にeの文字を割り当てたのはオイラーだと言われており、欧米圏ではこの数をオイラー数と呼ぶことも多い⋯⋯が、さすがにeはオイラー(Euler)の頭文字ではなく、指数(exponent)の頭文字の可能性が高いと言われている。"],"references":["http://ualr.edu/lasmoller/efacts.html"]},{"codepoint":70,"name":"LATIN CAPITAL LETTER F","description":["ラテン文字の大文字のエフ。字源的には、ギリシャ文字のΥ(ウプシロン)の上のほうを、こう⋯⋯右にくいっと傾けたものと見るのが正しい。","森博嗣は、誰よりも文字を愛したミステリー作家である。中でもアルファベットの「F」は、彼の代表作である『すべてがFになる』で事件の鍵を握る文字だ。作中では、博士の部屋に残されたコンピューターに表示されていた「すべてがFになる」という言葉を解き明かしていく。その謎は、同じくミステリー作家である我孫子武丸の推薦文によると⋯⋯「リアルオーディオよりCOOLでJAVAよりもHOT」だ。"],"references":["https://en.wikipedia.org/wiki/F","西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","森博嗣　『すべてがFになる : The perfect insider』　講談社〈講談社文庫〉、1998年。ISBN 9784062639248。"]},{"codepoint":102,"name":"LATIN SMALL LETTER F","description":["ラテン文字の小文字のエフ。","多くの言語で/f/(ファ行の音)を表す。この音はフェニキア語にもギリシャ語にもなかった音なので、ラテン語(正確にはエトルリア語)を表記する際に大層悩んだ。最初はギリシャ語で/wh/を表す「FH」という表記が使われていたが、やがて「F」1字になり、この文字自体も/f/を表す文字になった。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","http://seesaawiki.jp/w/qvarie/d/%a5%e9%a5%c6%a5%f3%ca%b8%bb%fa%a1%daF%a1%db","https://en.wikipedia.org/wiki/F"]},{"codepoint":71,"name":"LATIN CAPITAL LETTER G","description":["ラテン文字の大文字のジー。名前を言ってはいけないあの生物。","紀元前3世紀ごろまでのラテン語では、「C」が/k/(カ行の音)および/g/(ガ行の音)を表していた。しかし流石に不便だったのか、後にこの「C」に1本線を足して「G」とし、/k/と/g/を区別するようにしたのが起源である。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic"]},{"codepoint":103,"name":"LATIN SMALL LETTER G","description":["ラテン文字の小文字のジー。","手書きの文字に近い字と、下の方で一回転させる形の2種類の字形が存在するが、これらはそれぞれ、「一階建てのg (the single-story g)」、「二階建てのg (the double-story g)」と呼ばれている。"],"references":["https://advenc.ru/post/strochnye-istiny","https://twitter.com/nixeneko/status/757286834187538432"]},{"codepoint":72,"name":"LATIN CAPITAL LETTER H","description":["ラテン文字の大文字のエイチ。日本においては最も卑猥なアルファベットである。","実際のところ、なぜ英語でこの文字を「エイチ」ないし「ヘイチ」と読むのかに関してはよくわかっていない。オックスフォード英語辞典には、「ハー(古典ラテン語)」→「アハ(ラテン語)」→「アカ(俗ラテン語)」→「アッチ(古フランス語)」→「アーチ(中期英語)」と変遷した、とあるが、必ずしも定説ではない。"],"references":["https://en.wikipedia.org/wiki/H","https://en.oxforddictionaries.com/definition/h","https://www.theguardian.com/science/shortcuts/2013/nov/04/letter-h-contentious-alphabet-history-alphabetical-rosen"]},{"codepoint":104,"name":"LATIN SMALL LETTER H","description":["ラテン文字の小文字のエイチ。","エイチはギリシャ文字のΗ(エータ)に由来している⋯⋯が、この文字が表す/h/(ハ行の音)は、古代ギリシャ語での発音を受け継いだものである。現在のギリシャ語でΗ(エータ)は、なんと母音である。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic","https://en.wikipedia.org/wiki/H"]},{"codepoint":73,"name":"LATIN CAPITAL LETTER I","description":["ラテン文字の大文字のアイ。Hのあとに来るもの。","1928年に制定されたトルコ語ラテン文字では、2種類のアイをドットがついているかついてないかで区別する。つまり「I」と「i」は別の文字であり、「I」の小文字は「ı(ドットなし小文字アイ)」、「i」の大文字は「İ(ドット付き大文字アイ)」となる。これは、同じ文字体系でも言語によって大文字/小文字変換を使い分けなくてはいけない例として、しばしば取り沙汰される。"],"references":["http://www.unicode.org/versions/Unicode10.0.0/ch05.pdf#page=44","http://seesaawiki.jp/w/qvarie/d/%a5%e9%a5%c6%a5%f3%ca%b8%bb%fa%a1%daI%a1%db"]},{"codepoint":105,"name":"LATIN SMALL LETTER I","description":["ラテン文字の小文字のアイ。","1998年、AppleはMacintoshコンピューターの新シリーズ「iMac」を発表した。これが現在まで用いられているiPhoneやiPodやiTunesの「i」の端緒である。その由来は「Internet」の頭文字を筆頭として、「Individual」「Instruct」「Inform」など様々な意味をかけ合わせたものとのことだが、それがなぜ小文字なのかは⋯⋯まあ、おそらくブランドデザイン的な問題だろうと思われている。"],"references":["https://www.quora.com/Why-is-the-letter-i-in-the-word-iPhone-is-in-lower-case-Is-there-any-reason-for-it/answer/Mark-Hetherington?srid=h2BPt","http://www.iphonejd.com/iphone_jd/2009/01/the-i-in-iphone.html"]},{"codepoint":74,"name":"LATIN CAPITAL LETTER J","description":["ラテン文字の大文字のジェー。ラテン文字というのは要するにラテン語を表記するための文字だからラテン文字と呼ぶのだが、これは元々ラテン語にはない文字⋯⋯というよりはI(アイ)の異体字だった。","ラテン文字が成立してから2000年近く経った14世紀ごろ、Iに対応する半母音である/j/(や行の音)を表現するために区別されて使われるようになったとされる。なのでギリシャ文字やキリル文字にはこの字に対応する文字はない。"]},{"codepoint":106,"name":"LATIN SMALL LETTER J","description":["ラテン文字の小文字のジェー。当初、この文字は/j/(ヤ行の音)を表現するための文字だった⋯⋯が、時にヨーロッパ激動の近世。教会の拡大にともなって様々な民族がラテン文字を使うようになり、この文字も転用・借用の洗礼を受けることになる。特に英語では古フランス語での転訛を経て/dʒ/(ジャ行の音)を表すようになり、今でもそのイメージが強い。","加えてスペイン語では、イスラム統治時代の影響でこれまた全く異なる/x/を表現する文字となっており、現在でも言語間での乖離が激しい文字の一つとなっている。"],"references":["https://ja.wikipedia.org/wiki/J","https://en.wikipedia.org/wiki/J","https://english.stackexchange.com/a/148414","https://english.stackexchange.com/a/148416"]},{"codepoint":75,"name":"LATIN CAPITAL LETTER K","description":["ラテン文字の大文字のケー。","ギリシャ文字のΚ(カッパ)からラテン文字のK(ケー)が生まれたのち、この文字は同じ発音を持つC(シー)に統合され、消滅した。そのためラテン語の直系(ロマンス諸語)であるフランス語やイタリア語などでは原則としてこの文字は使用しない。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。"]},{"codepoint":107,"name":"LATIN SMALL LETTER K","description":["ラテン文字の小文字のケー。","英語では、語頭に「kn-」が綴られた時には「k」を発音しない、「黙字のK」と呼ばれる現象が存在する。これは発音が難しいため省略されたという説が濃厚だが、ドイツ語やスウェーデン語では現在でも「kn-」の「k」を発音する。ドイツ人の真面目さが現れているのだろうか(?)。","BUMP OF CHICKEN の楽曲「K」は、この「黙字のK」を上手くストーリーに組み込んだ名作である。"],"references":["https://en.wikipedia.org/wiki/Silent_k","https://www.quora.com/Why-should-we-write-the-letter-K-if-it-is-silent-in-words-like-knowledge-and-knife/answer/Priyanka-Sharma-878?srid=h2BPt"]},{"codepoint":76,"name":"LATIN CAPITAL LETTER L","description":["ラテン文字の大文字のエル。","物理学などで用いられる単位は、人名に由来するものは大文字で、それ以外は小文字で記述することになっている。中でも体積の単位である「リットル」の名称は、18世紀フランスの物理学者であるクロード・リットルに由来している。彼はその生涯を主に珪酸化合物の研究に捧げ、その一環として、今日でも用いられている実験用ガラス器具の製造法を確立した。現在、体積の単位を大文字の「L」で記述するのは、彼がもたらした正確な液体計量法を讃えてのことなのである。","⋯⋯というのは真っ赤なウソで、「クロード・リットル」の人物伝なるものは、物理学界では有名な作り話。リットルを大文字で記述する正しい理由は、数字の1との混同を避けるためである。"],"references":["https://uwaterloo.ca/chem13news/sites/ca.chem13news/files/uploads/files/Jean%20Litre-article.pdf"]},{"codepoint":108,"name":"LATIN SMALL LETTER L","description":["ラテン文字の小文字のエル。","6点点字において、左側の3点を用いて表される(⠇)が、これは小文字の「l」の形をかたどったもの⋯⋯ではない。12番目の文字「L」を表すために、2番目の文字「B」に左下の点を足して作ったものである。"],"references":["http://seesaawiki.jp/w/qvarie/d/%a5%e9%a5%c6%a5%f3%ca%b8%bb%fa%a1%daL%a1%db","https://en.wikipedia.org/wiki/Braille","https://en.wikipedia.org/wiki/Braille_pattern_dots-123"]},{"codepoint":77,"name":"LATIN CAPITAL LETTER M","description":["ラテン文字の大文字のエム。","ラテン文字では最も幅の広い文字。かつての活字では大文字の「M」の型(ソート)の縦横が同じ長さになるようにデザインされていたため、活字におけるこの長さのことをエムと呼んだ。現在の書体では必ずしもそうなっていないが、主に、活字でいうところの縦の長さを指す単位としてエムは現在でも使われている。"],"references":["https://en.wikipedia.org/wiki/Em_(typography)"]},{"codepoint":109,"name":"LATIN SMALL LETTER M","description":["ラテン文字の小文字のエム。","英語圏ではかつてマイルを「m」と略していたが、メートルが国際化するにつれて「mi」表記が使われるようになり、現在では「mi」と書くのが主流である。","この際ついでにマイル自体も廃止してほしいものである。"],"references":["https://en.wikipedia.org/wiki/Mile"]},{"codepoint":78,"name":"LATIN CAPITAL LETTER N","description":["ラテン文字の大文字のエヌ。","ラテン文字の起源をたどっていくと、最終的にはエジプトのヒエログリフに行き着くという説がある。定説でこそないがそれなりに支持されている学説なのだが、それによると、「N」の起源は蛇の形を象ったヒエログリフであるという。今の形にも若干その面影を見ることができるかもしれない。"],"references":["William Bright, Peter T. Daniels　『The world's writing systems』　Oxford University Press、1996年。ISBN 9780195079937。","https://www.jstor.org/stable/3853586"]},{"codepoint":110,"name":"LATIN SMALL LETTER N","description":["ラテン文字の小文字のエヌ。","あるとき、「ヨーロッパの言語において、『夜』という単語は『N』と『八』を組み合わせたものである」という説が話題に上がったことがある。例えば、英語なら「n」+「eight」→「night」、ドイツ語なら「n」+「Acht」→「Nacht」と言った具合である。これは確かにいくつかの言語で成り立つのだが⋯⋯その全てがゲルマン語派である以上、ゲルマン祖語が同根であることによる一致、および偶然の産物以外の何物でもない。"],"references":["https://linguistics.stackexchange.com/a/11446","https://www.facebook.com/etymonline/posts/821462227970662"]},{"codepoint":79,"name":"LATIN CAPITAL LETTER O","description":["ラテン文字の大文字のオー。オーの字は、文字の歴史において最も形の変化が少ない文字の一つであり、紀元前10世紀ごろ生まれたフェニキア文字からずっと形が変わっていない。つまり、ある意味でラテン文字の中で最も古い文字、と言えるかもしれない。","ちなみにY(ワイ)も元のフェニキア文字と同じ形だが、こちらはラテン文字では一度消滅して復活した経緯を持つので、歴史は比較的浅い。"]},{"codepoint":111,"name":"LATIN SMALL LETTER O","description":["ラテン文字の小文字のオー。ラテン文字・ギリシャ文字・キリル文字の間で同じ活字を共有できる小文字は、実はこれだけである。"]},{"codepoint":80,"name":"LATIN CAPITAL LETTER P","description":["ラテン文字の大文字のピー。"]},{"codepoint":112,"name":"LATIN SMALL LETTER P","description":["ラテン文字の小文字のピー。"]},{"codepoint":329,"name":"LATIN SMALL LETTER N PRECEDED BY APOSTROPHE","description":["ラテン文字の小文字のnと前置アポストロフィー。Rock'n roll のように様々な単語の略記として用いられる。特にオランダ語をマイナーチェンジして作られたアフリカーンス語では、オランダ語の不定冠詞eenの略記法であるこれを正式な不定冠詞として採用しており、非常によく用いられる⋯⋯のだが、ひと目見たら分かる通り、明らかに「2文字」である。","そのためこの文字は、現在では「強く非推奨」となっており、12文字の(互換文字でない)使用非推奨文字の1つに数えられている。"],"references":["http://www.unicode.org/versions/Unicode10.0.0/ch07.pdf","http://www.unicode.org/notes/tn27/tn27-4.html"]},{"codepoint":12356,"name":"HIRAGANA LETTER I","description":["ひらがなの「い」。字母は「以」。","いろは順で並べた時に最初に来る文字。「いの一番」という成語もこれが由来である。"]},{"codepoint":12358,"name":"HIRAGANA LETTER U","description":["ひらがなの「う」。字母は「宇」。","暑中の土用の丑の日に鰻を食べる習慣は、おそらく近世からのものだと考えられているが、なぜ丑の日なのか、なぜ鰻なのかはよく分かっていない。「う」しの日だから「う」なぎを食べる、つまり「う」のつく食べ物ならなんでも良いのだ⋯⋯という説も有名だが、これもまた起源がよく分かっていない。何から何まで謎な行事である。"],"references":["http://dl.ndl.go.jp/info:ndljp/pid/1767733/16","https://ja.wikipedia.org/wiki/%E5%9C%9F%E7%94%A8%E3%81%AE%E4%B8%91%E3%81%AE%E6%97%A5"]},{"codepoint":12362,"name":"HIRAGANA LETTER O","description":["ひらがなの「お」。字母は「於」。","江戸時代中期まで、わ行の文字だと思われていた。「お」を「あ行」に、「を」を「わ行」に正しく配置し直したのは、他ならぬ本居宣長である。"],"references":["https://ja.wikipedia.org/wiki/%E3%82%92#.E6.B1.9F.E6.88.B8.E6.99.82.E4.BB.A3","http://www.norinagakinenkan.com/norinaga/kaisetsu/jion.html","http://dl.ndl.go.jp/info:ndljp/pid/993103/10"]},{"codepoint":12363,"name":"HIRAGANA LETTER KA","description":["ひらがなの「か」。字母は「加」。","江戸いろはかるたの「か」は「癩(かったい)の瘡(かさ)うらみ」である。癩も瘡も病名であり、自分よりも僅かでも病状の軽い病人を羨むこと、転じてつまらない愚痴をこぼすことを指す。ちなみに癩は「ハンセン病」、瘡は「梅毒」を指し、どちらも現在では治療法が確立している病気である。"],"references":["http://umejii.cocolog-nifty.com/blog/2007/07/post_dc51.html"]},{"codepoint":12367,"name":"HIRAGANA LETTER KU","description":["ひらがなの「く」。字母は「久」。","――深い鋼青から柔らかな桔梗(ききゃう)、それからうるはしい天の瑠璃(るり)、それからけむりに目を瞑(つぶ)るとな、やはりはがねの空が眼(め)の前一面にこめてその中にるりいろのくの字が沢山沢山光ってうごいてゐるよ。くの字が光ってうご……。\n――宮沢賢治『柳沢』"],"references":["http://www.aozora.gr.jp/cards/000081/files/4465_8269.html","http://why.kenji.ne.jp/review/review402.html"]},{"codepoint":12369,"name":"HIRAGANA LETTER KE","description":["ひらがなの「け」。字母は「計」。","2017年7月現在、「け」でGoogle検索をかけると「けものフレンズ」がヒットする。"]},{"codepoint":12371,"name":"HIRAGANA LETTER KO","description":["ひらがなの「こ」。字母は「己」。",{"TODO":"書く"}],"references":[{"TODO":"書く"}]},{"codepoint":12381,"name":"HIRAGANA LETTER SO","description":["ひらがなの「そ」。字母は「曾」。","左上の部分を続けて書く形と、離して書く形の2種類の字形が存在する。実のところ、ひらがなには(漢字と違って)公的に定められた「正しい字形」が存在しないため、どちらが正しいとも言えないのが難しいところ。"],"references":["http://umejii.cocolog-nifty.com/blog/2007/07/post_dc51.html"]},{"codepoint":12383,"name":"HIRAGANA LETTER TA","description":["ひらがなの「た」。字母は「太」。","たにほたたんたのなたたたぞたなたぞでたたよたくたぬかされたたる、たかたわいたそうたたなたたひたらたたがたなである。(ヒント: たぬき)"]},{"codepoint":12385,"name":"HIRAGANA LETTER TI","description":["ひらがなの「ち」。字母は「知」。","「知は力なり」と言ったのはイギリス経験論の泰斗たるフランシス・ベーコンだが、彼は晩年、鶏に雪を詰めて冷凍する実験をしている最中に肺炎を患い、そのまま病死してしまった。好奇心は哲学者を殺す。"],"references":["https://en.wikipedia.org/wiki/Francis_Bacon#Death"]},{"codepoint":12388,"name":"HIRAGANA LETTER TU","description":["ひらがなの「つ」。字母は「川」もしくは「州」。","字母は「川」が有力とされているが、「川」の読みは「かは」(訓)「セン」(呉音・漢音)であり、どうしたら「川」が「つ」になるのかよく分かっていない。一説には、呉音以前の中国上古音が「ツウ」であり、それに由来するとも。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12392,"name":"HIRAGANA LETTER TO","description":["ひらがなの「と」。字母は「止」。","元となった読みは訓読みの「とまる」ではなく上古音の「ト」である。","将棋の歩兵の裏側に「と」と書いてあるのも、「歩」に含まれる「止」の文字が関連しているとか、していないとか。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12394,"name":"HIRAGANA LETTER NA","description":["ひらがなの「な」。字母は「奈」。","いろは順でも五十音順でも同じ位置に来る二つのひらがなのうちの一つ。ちなみにもう一つは「た」である。"]},{"codepoint":12395,"name":"HIRAGANA LETTER NI","description":["ひらがなの「に」。字母は「仁」。","おそらく最も字母に形が近いひらがなであると思われる。次点は「こ」「す」「た」「や」あたりか。"]},{"codepoint":12396,"name":"HIRAGANA LETTER NU","description":["ひらがなの「ぬ」。字母は「奴」。","多くの頻度統計において、清音としては最も出現頻度の低い仮名である。そのため、かな入力配列において「ぬ」は、キーボードの左上の最も打ちにくい場所に追いやられている。"],"references":["http://ameblo.jp/asuka-layout/entry-11421831908.html","https://www50.atwiki.jp/keylay/pages/16.html","http://61degc.seesaa.net/article/33618150.html"]},{"codepoint":12397,"name":"HIRAGANA LETTER NE","description":["ひらがなの「ね」。字母は「祢」。","FXで有り金を全部溶かすと、この文字と「ぬ」の区別がつかなくなることで有名。"]},{"codepoint":12398,"name":"HIRAGANA LETTER NO","description":["ひらがなの「の」。字母は「乃」。","Unicodeの付属規格書には、「ひらがなの『の』は数学記号として用いられることもある」と2001年から記されている。しかし、はたして「の」が何を表す記号として用いられているのか、今もって謎とされている。"],"references":["http://www.unicode.org/reports/tr25/tr25-15.pdf#page=5","https://togetter.com/li/848185"]},{"codepoint":12399,"name":"HIRAGANA LETTER HA","description":["ひらがなの「は」。字母は「波」。","江戸時代の言葉で、恥ずかしいことを「はの字」とか「おはの字」とか言った。「恥ずかしい」と言うのも恥ずかしかったのだろう。"]},{"codepoint":12405,"name":"HIRAGANA LETTER HU","description":["ひらがなの「ふ」。字母は「不」。","日本語の「ふ」の音の子音は、英語の「h」とも「f」とも「wh」とも異なる、無声両唇摩擦音と呼ばれる特殊な子音である。実はこの子音を持つ言語は世界的にも珍しく、日本語に流暢な外国人でも「ふ」の音だけは苦手としていることが多いらしい。"],"references":["http://www.timor-leste.emb-japan.go.jp/column_abe2.html","https://oshiete.goo.ne.jp/qa/8260172.html","https://en.wikipedia.org/wiki/Voiceless_bilabial_fricative","https://www.quora.com/In-Japanese-how-do-you-pronounce-the-kana-%E3%81%B5-or-%E3%83%95-fu-or-hu"]},{"codepoint":12408,"name":"HIRAGANA LETTER HE","ssml":["HIRAGANA","LETTER","<phoneme alphabet=\"ipa\" ph=\"he̞\">HE</phoneme>"],"description":["ひらがなの「へ」。字母は「阝」。","「阝」は「部屋」の「部」の略字である。成り立ちがわかりづらいが、奈良時代ごろにはカタカナの「マ」のような形をしており、これを経由して現在の形になったと考えるとわかりやすい。"],"references":["https://ja.wikipedia.org/wiki/%E3%81%B8","森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12411,"name":"HIRAGANA LETTER HO","description":["ひらがなの「ほ」。字母は「保」。","「ほの字」とは「惚れている」を表す俗語である。今でも使われるが、用例は江戸初期まで遡るとか。"]},{"codepoint":12414,"name":"HIRAGANA LETTER MA","description":["ひらがなの「ま」。字母は「末」。","尾張いろはかるたの「ま」の札は「待てば甘露の日和あり」である。甘露とは中国の伝説で君主が善政を敷いたときに降るとされる、甘い雨のこと。現在では「待てば海路の日和あり」で知られているが、これは甘露が海路に転じたものである。","つまり、アメではなくアメが⋯⋯。いや、なんでもない。"],"references":["http://www.geocities.jp/n_quaker/karuta/owari.html","https://ja.wikipedia.org/wiki/%E7%94%98%E9%9C%B2"]},{"codepoint":12416,"name":"HIRAGANA LETTER MU","description":["ひらがなの「む」。字母は「武」。","とあるゲームにおいて、マックスウェルなる人物が全てを終わらせる時にノートから召喚する文字。"],"references":["http://www.nicovideo.jp/watch/sm17484462"]},{"codepoint":12420,"name":"HIRAGANA LETTER YA","description":["ひらがなの「や」。字母は「也」。","時は平安、藤原成範卿は、流罪を赦されて京に召還されたとき、内裏にて宮女から次のごとき和歌を受け取った。","――雲の上はありし昔にかはらねど見し玉だれの内やゆかしき","成範卿が配流される前は彼も簾中に出入りできる身分だったことを指しての歌である。返歌をしようとした成範だったが、時の内大臣である平重盛が参内したのを見て、すぐさま受け取った歌の「や」の文字を書き換えて宮女に返し、忽ち辞去した。果たしてその字は―― (U+305Eに続く)"],"references":["http://dl.ndl.go.jp/info:ndljp/pid/945602/53","http://dl.ndl.go.jp/info:ndljp/pid/877526/29"]},{"codepoint":12424,"name":"HIRAGANA LETTER YO","description":["ひらがなの「よ」。字母は「与󠄁」。","2017年5月、数学記号の一種としてひらがなの「よ」が用いられている論文があると話題になった。論文は圏論に関する証明を行っており、「米田の補題」から導かれる、任意の局所小圏に対して定義される前層圏への充満忠実関手、すなわち「米田埋め込み」を「よ」と表記している。由来はもちろん、「米田の補題」に名が知られる数学者米田信夫の頭文字である。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。","https://twitter.com/unununum_1/status/860125300104937472","https://arxiv.org/abs/1506.08870"]},{"codepoint":12425,"name":"HIRAGANA LETTER RA","description":["ひらがなの「ら」。字母は「良」。","おもちゃ専門量販店の「Toys\"Я\"us」の名前は、「Toys are us.」という英文に由来している。「R」が反転しているのは、英語圏の子どもがよく間違える書き方だとか。日本語名の「トイザらス」の「ら」がひらがななのも原語にならっており、同じように「子どもの間違い」をうまく図表化した、秀逸なローカリゼーションによるものである。"],"references":["https://www.toysrus.co.jp/h/CSfHelpFaq10.jsp"]},{"codepoint":12426,"name":"HIRAGANA LETTER RI","description":["ひらがなの「り」。字母は「利」。","「利」の右側ではなく、全体を崩して作られた文字である。ショゴスの鳴き声。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12427,"name":"HIRAGANA LETTER RU","description":["ひらがなの「る」。字母は「留」。","しりとりの必勝法。また、広辞苑に掲載されている単語でしりとりをしても、ポケモンの名前でしりとりをしても、最も長いしりとりの最後の単語は「る」で始まることが知られている。"],"references":["http://oride.net/trivia/trivia361-368.htm#tane32","http://auemath.aichi-edu.ac.jp/~ykhashi/semi/2010note/08_issey_final.pdf"]},{"codepoint":12428,"name":"HIRAGANA LETTER RE","description":["ひらがなの「れ」。字母は「礼」。","日本の車のナンバープレートで、レンタカーに付けられる文字といえば「わ」が有名だが、実は制度上は「れ」も用いることができる。特に、全国の陸運支局の中で、札幌だけはなぜかナンバープレート交付開始直後から「れ」ナンバーのプレートを発行していた。一説にはFAXで書類を送信した際に「わ」と「れ」を取り違えたとされているが、信憑性は低い。","現在、「れ」ナンバーのレンタカーを見られるのは北海道と沖縄だけである。"],"references":["https://trafficnews.jp/post/65790/2/"]},{"codepoint":12429,"name":"HIRAGANA LETTER RO","description":["ひらがなの「ろ」。字母は「吕」。","字母の「吕(呂の異体字)」は人間の背骨をかたどった象形文字である。この用法は文字を転じて現在「膂力」の「りょ」にかろうじて形を留めている。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12431,"name":"HIRAGANA LETTER WA","description":["ひらがなの「わ」。字母は「和」。","日本の車のナンバープレートで「わ」といえば、主にレンタカーに付けられる文字である。なぜ「わ」がレンタカーなのかはよく分かってないが、「50音順で後半の使われていなかった文字が当てはめられたのではないか」と言われている。"],"references":["https://trafficnews.jp/post/65790/2/"]},{"codepoint":12432,"name":"HIRAGANA LETTER WI","description":["ひらがなの「ゐ」。字母は「為」。","万物は流転する。文字も流転する。平安期に上代仮名が消え、1900年に変体仮名が消えたように、この文字も1946年11月16日に歴史の表舞台から姿を消した。消え行く文字たちに祈りを。そして新たな文字たちに祝福を。"]},{"codepoint":12434,"name":"HIRAGANA LETTER WO","description":["ひらがなの「を」。字母は「遠」。","戦後の国語改革を生き延びた歴戦の勇士。「を」が助詞でなかったら、「ゐ」「ゑ」同様にこの文字も消える運命にあったのだ。"]},{"codepoint":12504,"name":"KATAKANA LETTER HE","description":["カタカナの「ヘ」。字源は「阝」。","仮名の中で唯一、ひらがなとカタカナの形が全く同じ文字。しかし印刷される書体では、ひらがな・カタカナそれぞれのデザインに合わせて微妙な違いを設けており、プロの活版職人なら活字を見ただけでひらがなかカタカナか判別できるらしい。"],"references":["http://crd.ndl.go.jp/reference/detail?page=ref_view&id=1000137387"]},{"codepoint":29356,"name":"CJK UNIFIED IDEOGRAPH-72AC","definition":"dog; radical number 94","description":["――「貴様は手習いをしたか?」「手習いどころか唐様でも和様でもなんでも書きます」「どふやら嘘らしい、貴様『大』の字を書き得るか」「書き得る書き得る」「そんなら書いて見せなへか」「ムム書いて見せよふ見せよふ」と七といふ字や八といふ字を書く。「ソレ見やれ大の字も知らぬ。文字を知らぬ者は畜生だ」と言へば大きに腹を立てて「そんなら大の字を書いて見せやうか」「サァサァ書いて見やれ」「書かねへでは畜生だと言はれたが悔しい、書いて見せやう」と大の字を書き、脇へ点を打つて「サァこれでも畜生か」。\n――桜川慈悲成「無筆」 『落噺常々草』所収","江戸ののび太である。"],"references":["http://dl.ndl.go.jp/info:ndljp/pid/8929358/8","http://rakugonobutai.web.fc2.com/156sitinoji/siti.html"]},{"codepoint":29482,"name":"CJK UNIFIED IDEOGRAPH-732A","definition":"pig, hog, wild boar","description":["日本ではイノシシを意味する漢字だが、中国やその他の国では主にブタを意味する。したがって干支の亥年も、中国ではイノシシ年ではなくブタ年である。"]},{"codepoint":24525,"name":"CJK UNIFIED IDEOGRAPH-5FCD","definition":"endure, bear, suffer; forbear","description":["即ち、<ruby><rb>刃の下に心あり</rb><rt>ハートアンダーブレード</rt></ruby>。",{"TODO":"書く"}]},{"codepoint":895,"name":"GREEK CAPITAL LETTER YOT","description":["果てしなく不可解。果てしなく厄介。それがUnicodeに収録された32番目のギリシャ文字、「ヨット」である。","大げさに言えば、この文字はギリシャ文字に存在するはずがない、存在してはいけない文字だ。","ギリシャ文字は、現存する文字体系の中でも、最も古い歴史を持つ文字の一つである。紀元前9世紀から現代に至るまで、実に3000年近くに渡って大きな変化をすることなく伝え続けられた。その長い歴史の中には、表記法の変化に伴って消失し、現代では使われなくなった文字も存在する。ディガンマやスティグマなどが典型的な例である。","その淘汰と発生の歴史の中のどこにも、「ヨット」は存在しない。現代ギリシャ語の語彙に「ヨット」なる文字は登場しないし、古代の文献にもこれに対応する文字は存在しない。ならば「ギリシャ文字のヨット」とは何なのか。一体誰が、何のために追加した文字なのか。","形は、ラテン文字のJ(ジェー)に似ている……。いや、むしろ似ていて当然だ。なぜならそもそも「ヨット」というのは、ラテン文字のJのドイツ語読みにほかならないからである。","ラテン文字としてのJは、26字存在する基本ラテン文字の中でも最も新しい文字である。字形としての用例は古代ローマ期まで遡るが、音素/j/(ヤ行の音)を表す文字として独立に数えられるようになったのは、中世後期になってからである。そのころギリシャでは活版印刷の普及とともに活字体が形成され、確固たる表記体系が確立された。そこに「異国の文字」が入り込む隙は、なかった。","なので「ギリシャ文字のヨット」というのは、ほとんど現代の空想の産物である。この文字は、現代のギリシャ語学者が、かつてギリシャ語に存在した音素、/j/を表記するために考案した、架空のギリシャ文字なのだ。","音素/j/は、現代ギリシャ語では使われることがない。ギリシャ文字が生まれた紀元前9世紀のギリシャ語にもこの音は存在しなかった。なのでこの音に対応する文字は最初から存在しない。しかし、それ以前の時代……紀元前2000年紀から1000年紀にかけて、ギリシャ語が線文字Aやキプロス文字を用いて歪に表記されていた時代、今なお盛んに研究が行われているその時代のギリシャ語に、音素/j/は存在していたと推定されている。",{"TODO":"書く"}],"references":["http://www.opoudjis.net/unicode/yot.html"]},{"codepoint":7838,"name":"LATIN CAPITAL LETTER SHARP S","description":["「ß(エスツェット)」の大文字問題は、古来100年間にわたりドイツ人を悩ませてきた問題だった。","「ß」は、ドイツ語特有の文字で、字音的には「ss」と同一である。かつては「ss」を含む単語は自由に「ß」に書き換えることが可能だったが、19世紀ごろから、それぞれがある程度意識して使い分けるようになった。","このようにしてドイツ語に「ß」は生まれた。例えば、ドイツ語で「いかだ」は「Floß」である。ドイツ語に「ss」で始まる単語はないので、「ß」で始まる単語もない。従って大文字の「ß」は存在しえない――万が一、文章をすべて大文字で記す事になった場合は、「ß」を「ss」に開けばいい。「Floß」は「FLOSS」となる。","事態がまかり通らなくなったのは、20世紀に入ってからである。1901年、ドイツの国語改革の一環として、ドイツ語の正しい綴りを統一する「ドイツ正書法」が制定された。これにより、「ß」を使用する単語と「ss」を使用する単語が明確に規定され、「ß」と「ss」の弁別が生まれた。同時に、「ß」を大文字で書く時は「SS」とするというルールが明文化された。そして1997年、ドイツ正書法が改正され、「ß」と「ss」の区別はさらに厳密なものになった。長母音の後は「ß」、短母音の後は「ss」というルールが生まれ、これがあらゆる単語に適用されるようになった。","こうなってくると、もはや「ß」と「ss」は別の文字である。例えば、「大きさ」を意味する「Maße(マーセ)」と、「塊」を意味する「Masse(マッセ)」とは異なる。これらを大文字で書いたときに、「Maße」が「Masse」と同じ綴りになるのは違和感がある⋯⋯という流れが生まれ始めた。こうして「ß」の大文字を表す文字が各方面で作られたが、正書法に則ってないので使うべきでないという意見もあり、大きな論争となった。","そんな具合なので、2007年、Unicodeに「ß」の大文字が独立した文字として登録されたときには、大きな話題を呼んだ。新しい文字コードに対応するためのフォントがすぐさま設計され、新聞の見出しなどでも徐々に「ß」の大文字が用いられるようになっていった。","そして2017年6月28日、ドイツ正書法の改正により、「ß」の大文字が公式に認められることとなった。ドイツ正書法が制定されて爾来116年、ようやくこの文字は市民権を勝ち取ったのである。","古くからある文字を、どうやって新しい書記体系に組み込むか。このような問題は、他の言語でもしばしば見られる。日本語だって例外ではない。例えば、踊り字の一つである「くの字点」を、横書きで表現する時にどうするのかという問題――横書き用の新たな「くの字点」を考案するのか、それとも「くの字点」を用いず開いてしまうのか⋯⋯。開いてしまっても意味としては同じだが、きっと「くの字点」の古典的な雰囲気を崩してしまうことに抵抗がある人も多いだろう。","ドイツ語は、新たな文字を考案するという選択をした。個人的には、2007年のUnicode採択が一役買っているのではないかと考えている。","文字コードは社会を変える。"],"references":["https://en.wikipedia.org/wiki/%C3%9F","https://en.wikipedia.org/wiki/Capital_%E1%BA%9E","http://www.unicode.org/versions/Unicode10.0.0/ch05.pdf#page=45","http://www.zeit.de/news/2017-06/29/sprache-die-deutsche-sprache-hat-jetzt-auch-ein-grosses-eszett-29114003","http://www.pocus.jp/e-deutsch/eszet.html","https://web.archive.org/web/20110131220357/http://opentype.info:80/blog/2011/01/24/capital-sharp-s/","http://blog.colorfullife.net/archives/2007/06/04-000644.php"]},{"codepoint":65021,"name":"ARABIC LIGATURE BISMILLAH AR-RAHMAN AR-RAHEEM","description":["アラビア書道は、アラビア文字の美しさを極限まで追求した芸術である。複雑に絡みながら一面を埋め尽くす線と線、壮大で美麗な文字の交わりは、見るものを否応なしに圧倒する力を有している。",{"TODO":"書く"},"画像は右下からスルス体で連ねられたバスマラである。頂点には「アッラー」の文字を配し、左右には「ラフマーニ」と「ラヒーム」の二語が対称に置かれた涙滴形となっている。全体として、非常に美しい調和がとれている。",{"TODO":"書く"}],"references":["https://commons.wikimedia.org/wiki/File:Bismillah_Calligraphy_37.svg","https://plaza.rakuten.co.jp/alqalam/diary/200705200000/","http://www.nippon.com/ja/people/e00028/","http://www.unicode.org/L2/L2002/02163-n2413-4-urdu.pdf","http://www.unicode.org/L2/L2002/02011R-kew.pdf","http://www.unicode.org/versions/Unicode10.0.0/ch09.pdf#page=31"]}]
+
+/***/ }),
+/* 693 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(694);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"sourceMap":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(115)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -46828,10 +46942,10 @@ if(false) {
 }
 
 /***/ }),
-/* 691 */
+/* 694 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(166)(undefined);
+exports = module.exports = __webpack_require__(114)(undefined);
 // imports
 
 
