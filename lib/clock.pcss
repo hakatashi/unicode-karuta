@@ -1,0 +1,35 @@
+$diameter: 100px;
+
+.clock {
+	width: $diameter;
+	height: calc($diameter * 0.6);
+}
+
+.circle {
+	position: relative;
+	width: $diameter;
+	height: $diameter;
+	border-radius: 50%;
+
+	background-color: #91b38d;
+
+	box-shadow: 0 0 10px black;
+}
+
+.inner-circle {
+	$size: calc($diameter * 0.8);
+
+	width: $size;
+	height: $size;
+	border-radius: 50%;
+
+	position: absolute;
+	top: calc(($diameter - $size) / 2);
+	left: calc(($diameter - $size) / 2);
+
+	background-color: #3a5b2c;
+	color: white;
+	text-align: center;
+
+	line-height: $size;
+}

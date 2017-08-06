@@ -3,6 +3,8 @@ const CSSModules = require('react-css-modules');
 const sampleSize = require('lodash/sampleSize');
 const {List} = require('immutable');
 
+const Clock = require('./clock.jsx');
+
 const styles = require('./play.pcss');
 const characters = require('../characters.yml');
 
@@ -42,7 +44,9 @@ class Play extends React.Component {
 					</div>
 				</div>
 				<div styleName="information-area">
-					3:21
+					<div styleName="clock">
+						<Clock/>
+					</div>
 				</div>
 			</div>
 		);
