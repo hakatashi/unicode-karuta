@@ -16,8 +16,19 @@ $diameter: 100px;
 	box-shadow: 0 0 10px black;
 }
 
+.progress {
+	position: absolute;
+
+	width: $diameter;
+	height: $diameter;
+}
+
+.progress-path {
+	fill: #368730;
+}
+
 .inner-circle {
-	$size: calc($diameter * 0.8);
+	$size: calc($diameter * 0.84);
 
 	width: $size;
 	height: $size;
@@ -31,5 +42,9 @@ $diameter: 100px;
 	color: white;
 	text-align: center;
 
-	line-height: $size;
+	line-height: calc($size * 0.8);
+
+	font-family: 'Roboto Condensed';
+	font-weight: bold;
+	font-size: 30px;
 }
