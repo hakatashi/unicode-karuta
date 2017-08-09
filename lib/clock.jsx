@@ -1,5 +1,6 @@
 const React = require('react');
 const CSSModules = require('react-css-modules');
+const oneLine = require('common-tags/lib/oneLine');
 
 const styles = require('./clock.pcss');
 
@@ -8,7 +9,7 @@ class Clock extends React.Component {
 		super(props);
 
 		this.state = {
-			time: '00:00',
+			time: '00.00',
 			percentage: 0,
 		};
 
@@ -26,7 +27,7 @@ class Clock extends React.Component {
 					<svg styleName="progress" viewBox="0 0 100 100">
 						<path
 							styleName="progress-path"
-							d={`
+							d={oneLine`
 								M 50 50
 								L 50 100
 								A
