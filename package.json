@@ -50,7 +50,7 @@
     "precss": "^2.0.0",
     "pug-cli": "^1.0.0-alpha6",
     "react": "^15.6.1",
-    "react-css-modules": "^4.6.0",
+    "react-css-modules": "^4.7.1",
     "react-dom": "^15.6.1",
     "react-player": "^0.20.0",
     "style-loader": "^0.18.2",
