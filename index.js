@@ -309,11 +309,9 @@ process.umask = function() { return 0; };
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -370,12 +368,10 @@ module.exports = invariant;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-2015, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -478,11 +474,9 @@ module.exports = function (exec) {
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -688,12 +682,10 @@ module.exports = function (it) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -911,11 +903,9 @@ module.exports = __webpack_require__(69);
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -1047,12 +1037,10 @@ module.exports = function (NAME, exec) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -1520,11 +1508,9 @@ module.exports = Object.getPrototypeOf || function (O) {
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -1561,12 +1547,10 @@ module.exports = emptyFunction;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -1759,12 +1743,10 @@ module.exports = function (TYPE, $create) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -1793,12 +1775,10 @@ module.exports = ReactCurrentOwner;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -2006,7 +1986,7 @@ function enqueueUpdate(component) {
  * if no updates are currently being performed.
  */
 function asap(callback, context) {
-  !batchingStrategy.isBatchingUpdates ? process.env.NODE_ENV !== 'production' ? invariant(false, 'ReactUpdates.asap: Can\'t enqueue an asap callback in a context whereupdates are not being batched.') : _prodInvariant('125') : void 0;
+  invariant(batchingStrategy.isBatchingUpdates, "ReactUpdates.asap: Can't enqueue an asap callback in a context where" + 'updates are not being batched.');
   asapCallbackQueue.enqueue(callback, context);
   asapEnqueued = true;
 }
@@ -2594,12 +2574,10 @@ module.exports = {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -2775,6 +2753,33 @@ _assign(SyntheticEvent.prototype, {
 
 SyntheticEvent.Interface = EventInterface;
 
+/**
+ * Helper to reduce boilerplate when creating subclasses.
+ *
+ * @param {function} Class
+ * @param {?object} Interface
+ */
+SyntheticEvent.augmentClass = function (Class, Interface) {
+  var Super = this;
+
+  var E = function () {};
+  E.prototype = Super.prototype;
+  var prototype = new E();
+
+  _assign(prototype, Class.prototype);
+  Class.prototype = prototype;
+  Class.prototype.constructor = Class;
+
+  Class.Interface = _assign({}, Super.Interface, Interface);
+  Class.augmentClass = Super.augmentClass;
+
+  PooledClass.addPoolingTo(Class, PooledClass.fourArgumentPooler);
+};
+
+/** Proxying after everything set on SyntheticEvent
+  * to resolve Proxy issue on some WebKit browsers
+  * in which some Event properties are set to undefined (GH#10010)
+  */
 if (process.env.NODE_ENV !== 'production') {
   if (isProxySupported) {
     /*eslint-disable no-func-assign */
@@ -2798,28 +2803,6 @@ if (process.env.NODE_ENV !== 'production') {
     /*eslint-enable no-func-assign */
   }
 }
-/**
- * Helper to reduce boilerplate when creating subclasses.
- *
- * @param {function} Class
- * @param {?object} Interface
- */
-SyntheticEvent.augmentClass = function (Class, Interface) {
-  var Super = this;
-
-  var E = function () {};
-  E.prototype = Super.prototype;
-  var prototype = new E();
-
-  _assign(prototype, Class.prototype);
-  Class.prototype = prototype;
-  Class.prototype.constructor = Class;
-
-  Class.Interface = _assign({}, Super.Interface, Interface);
-  Class.augmentClass = Super.augmentClass;
-
-  PooledClass.addPoolingTo(Class, PooledClass.fourArgumentPooler);
-};
 
 PooledClass.addPoolingTo(SyntheticEvent, PooledClass.fourArgumentPooler);
 
@@ -2990,12 +2973,10 @@ module.exports = function (key) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -3396,12 +3377,10 @@ module.exports = function (target, src, safe) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -3743,12 +3722,10 @@ module.exports = ReactElement;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -4020,12 +3997,10 @@ module.exports = function (it, TYPE) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -4159,11 +4134,9 @@ module.exports = React;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -4202,12 +4175,10 @@ module.exports = reactProdInvariant;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -4374,12 +4345,10 @@ module.exports = ReactReconciler;
 
 "use strict";
 /**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -4795,12 +4764,10 @@ module.exports = function (it) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -4935,12 +4902,10 @@ module.exports = EventPropagators;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -5215,12 +5180,10 @@ module.exports = EventPluginHub;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -5279,12 +5242,10 @@ module.exports = SyntheticUIEvent;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -5823,12 +5784,10 @@ module.exports = function (COLLECTION) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -5856,11 +5815,9 @@ module.exports = canDefineProperty;
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -5881,12 +5838,10 @@ module.exports = emptyObject;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -6140,12 +6095,10 @@ module.exports = EventPluginRegistry;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -6374,12 +6327,10 @@ module.exports = TransactionImpl;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -6451,12 +6402,10 @@ module.exports = SyntheticMouseEvent;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -6554,12 +6503,10 @@ module.exports = setInnerHTML;
 
 "use strict";
 /**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * Based on the escape-html library, which is used under the MIT License below:
  *
@@ -6681,12 +6628,10 @@ module.exports = escapeTextContentForBrowser;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -8934,12 +8879,10 @@ exports[DATA_VIEW] = $DataView;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-2015, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9005,12 +8948,10 @@ module.exports = lowPriorityWarning;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  */
 
 
@@ -9026,12 +8967,10 @@ module.exports = ReactPropTypesSecret;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9258,12 +9197,10 @@ module.exports = EventPluginUtils;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -9320,7 +9257,9 @@ if (process.env.NODE_ENV !== 'production') {
   if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function' && typeof document !== 'undefined' && typeof document.createEvent === 'function') {
     var fakeNode = document.createElement('react');
     ReactErrorUtils.invokeGuardedCallback = function (name, func, a) {
-      var boundFunc = func.bind(null, a);
+      var boundFunc = function () {
+        func(a);
+      };
       var evtType = 'react-' + name;
       fakeNode.addEventListener(evtType, boundFunc, false);
       var evt = document.createEvent('Event');
@@ -9340,12 +9279,10 @@ module.exports = ReactErrorUtils;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9380,12 +9317,10 @@ module.exports = getEventTarget;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9445,12 +9380,10 @@ module.exports = isEventSupported;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9493,12 +9426,10 @@ module.exports = getEventModifierState;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9725,12 +9656,10 @@ module.exports = DOMChildrenOperations;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9750,12 +9679,10 @@ module.exports = DOMNamespaces;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9787,12 +9714,10 @@ module.exports = createMicrosoftUnsafeLocalFunction;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9931,12 +9856,10 @@ module.exports = LinkedValueUtils;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -9982,11 +9905,9 @@ module.exports = ReactComponentEnvironment;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  * 
@@ -10054,12 +9975,10 @@ module.exports = shallowEqual;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -10101,12 +10020,10 @@ module.exports = shouldUpdateReactComponent;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -10165,12 +10082,10 @@ module.exports = KeyEscapeUtils;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -10405,12 +10320,10 @@ module.exports = ReactUpdateQueue;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -10782,12 +10695,10 @@ module.exports = validateDOMNesting;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -12256,12 +12167,10 @@ module.exports = Math.scale || function scale(x, inLow, inHigh, outLow, outHigh)
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -12405,12 +12314,10 @@ module.exports = {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -12506,12 +12413,10 @@ module.exports = ReactNoopUpdateQueue;
 
 "use strict";
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -12531,12 +12436,10 @@ module.exports = REACT_ELEMENT_TYPE;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -12577,12 +12480,10 @@ module.exports = getIteratorFn;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -12838,12 +12739,10 @@ module.exports = ReactElementValidator;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  */
 
 
@@ -12866,12 +12765,10 @@ module.exports = function(isValidElement) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  */
 
 
@@ -12879,6 +12776,7 @@ module.exports = function(isValidElement) {
 var emptyFunction = __webpack_require__(28);
 var invariant = __webpack_require__(2);
 var warning = __webpack_require__(3);
+var assign = __webpack_require__(10);
 
 var ReactPropTypesSecret = __webpack_require__(152);
 var checkPropTypes = __webpack_require__(493);
@@ -12977,7 +12875,8 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
     objectOf: createObjectOfTypeChecker,
     oneOf: createEnumTypeChecker,
     oneOfType: createUnionTypeChecker,
-    shape: createShapeTypeChecker
+    shape: createShapeTypeChecker,
+    exact: createStrictShapeTypeChecker,
   };
 
   /**
@@ -13192,7 +13091,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
       if (typeof checker !== 'function') {
         warning(
           false,
-          'Invalid argument supplid to oneOfType. Expected an array of check functions, but ' +
+          'Invalid argument supplied to oneOfType. Expected an array of check functions, but ' +
           'received %s at index %s.',
           getPostfixForTypeWarning(checker),
           i
@@ -13243,6 +13142,36 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
       }
       return null;
     }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createStrictShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      // We need to check all keys in case some are required but missing from
+      // props.
+      var allKeys = assign({}, props[propName], shapeTypes);
+      for (var key in allKeys) {
+        var checker = shapeTypes[key];
+        if (!checker) {
+          return new PropTypeError(
+            'Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' +
+            '\nBad object: ' + JSON.stringify(props[propName], null, '  ') +
+            '\nValid keys: ' +  JSON.stringify(Object.keys(shapeTypes), null, '  ')
+          );
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+
     return createChainableTypeChecker(validate);
   }
 
@@ -13386,12 +13315,10 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 "use strict";
 /**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -13409,12 +13336,10 @@ module.exports = ReactDOMComponentFlags;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -13473,12 +13398,10 @@ module.exports = accumulateInto;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -13509,12 +13432,10 @@ module.exports = forEachAccumulated;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -13547,12 +13468,10 @@ module.exports = getTextContentAccessor;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -13672,12 +13591,10 @@ module.exports = PooledClass.addPoolingTo(CallbackQueue);
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -13699,12 +13616,10 @@ module.exports = ReactFeatureFlags;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -13727,7 +13642,7 @@ function attachTracker(inst, tracker) {
 }
 
 function detachTracker(inst) {
-  delete inst._wrapperState.valueTracker;
+  inst._wrapperState.valueTracker = null;
 }
 
 function getValueFromNode(node) {
@@ -13827,12 +13742,10 @@ module.exports = inputValueTracking;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -13883,12 +13796,10 @@ module.exports = isTextInputElement;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -13913,12 +13824,10 @@ module.exports = ViewportMetrics;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -13971,11 +13880,9 @@ module.exports = setTextContent;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -14002,12 +13909,10 @@ module.exports = focusNode;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -14026,6 +13931,7 @@ var isUnitlessNumber = {
   boxFlexGroup: true,
   boxOrdinalGroup: true,
   columnCount: true,
+  columns: true,
   flex: true,
   flexGrow: true,
   flexPositive: true,
@@ -14161,12 +14067,10 @@ module.exports = CSSProperty;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -14402,12 +14306,10 @@ module.exports = DOMPropertyOperations;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -14424,12 +14326,10 @@ module.exports = ReactPropTypesSecret;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -14630,12 +14530,10 @@ module.exports = ReactDOMSelect;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -14765,12 +14663,10 @@ module.exports = instantiateReactComponent;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -14811,12 +14707,10 @@ module.exports = ReactNodeTypes;
 
 "use strict";
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -14846,12 +14740,10 @@ module.exports = ReactEmptyComponent;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -14920,12 +14812,10 @@ module.exports = ReactHostComponent;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -15105,11 +14995,9 @@ module.exports = traverseAllChildren;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -15185,12 +15073,10 @@ module.exports = EventListener;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -15316,11 +15202,9 @@ module.exports = ReactInputSelection;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -15357,12 +15241,10 @@ module.exports = getActiveElement;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -15901,12 +15783,10 @@ module.exports = ReactMount;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -22478,12 +22358,10 @@ module.exports = function (regExp, replace) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -22674,12 +22552,10 @@ module.exports = ReactChildren;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -22792,12 +22668,10 @@ module.exports = PooledClass;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -22974,12 +22848,10 @@ module.exports = traverseAllChildren;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -23038,12 +22910,10 @@ module.exports = KeyEscapeUtils;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -23213,12 +23083,10 @@ module.exports = ReactDOMFactories;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -23306,12 +23174,10 @@ module.exports = checkReactTypeSpec;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -23337,12 +23203,10 @@ module.exports = ReactPropTypeLocationNames;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -23359,12 +23223,10 @@ module.exports = ReactPropTypesSecret;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -23383,12 +23245,10 @@ module.exports = factory(isValidElement);
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  */
 
 
@@ -23422,7 +23282,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
         try {
           // This is intentionally an invariant that gets caught. It's the same
           // behavior as without this statement except with a better message.
-          invariant(typeof typeSpecs[typeSpecName] === 'function', '%s: %s type `%s` is invalid; it must be a function, usually from ' + 'React.PropTypes.', componentName || 'React class', location, typeSpecName);
+          invariant(typeof typeSpecs[typeSpecName] === 'function', '%s: %s type `%s` is invalid; it must be a function, usually from ' + 'the `prop-types` package, but received `%s`.', componentName || 'React class', location, typeSpecName, typeof typeSpecs[typeSpecName]);
           error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
         } catch (ex) {
           error = ex;
@@ -23452,18 +23312,16 @@ module.exports = checkPropTypes;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-module.exports = '15.6.1';
+module.exports = '15.6.2';
 
 /***/ }),
 /* 495 */
@@ -23471,12 +23329,10 @@ module.exports = '15.6.1';
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -23499,12 +23355,10 @@ module.exports = factory(Component, isValidElement, ReactNoopUpdateQueue);
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -24379,12 +24233,10 @@ module.exports = factory;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -24433,12 +24285,10 @@ module.exports = __webpack_require__(499);
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -24550,12 +24400,10 @@ module.exports = ReactDOM;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -24641,12 +24489,10 @@ module.exports = {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -24720,12 +24566,10 @@ module.exports = ARIADOMPropertyConfig;
 
 "use strict";
 /**
- * Copyright 2013-present Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -25109,12 +24953,10 @@ module.exports = BeforeInputEventPlugin;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -25209,12 +25051,10 @@ module.exports = FallbackCompositionState;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -25250,12 +25090,10 @@ module.exports = SyntheticCompositionEvent;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -25292,12 +25130,10 @@ module.exports = SyntheticInputEvent;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -25422,7 +25258,7 @@ if (ExecutionEnvironment.canUseDOM) {
   // IE9 claims to support the input event but fails to trigger it when
   // deleting text, so we ignore its input events.
 
-  isInputEventSupported = isEventSupported('input') && (!('documentMode' in document) || document.documentMode > 9);
+  isInputEventSupported = isEventSupported('input') && (!document.documentMode || document.documentMode > 9);
 }
 
 /**
@@ -25609,12 +25445,10 @@ module.exports = ChangeEventPlugin;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -25703,12 +25537,10 @@ module.exports = ReactRef;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -25802,12 +25634,10 @@ module.exports = ReactOwner;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -26169,12 +25999,10 @@ module.exports = ReactDebugTool;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -26212,12 +26040,10 @@ module.exports = ReactInvalidSetStateWarningHook;
 
 "use strict";
 /**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -26254,11 +26080,9 @@ module.exports = ReactHostOperationHistoryHook;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -26291,11 +26115,9 @@ module.exports = performanceNow;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -26318,12 +26140,10 @@ module.exports = performance || {};
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -26349,12 +26169,10 @@ module.exports = DefaultEventPluginOrder;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -26452,12 +26270,10 @@ module.exports = EnterLeaveEventPlugin;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -26506,6 +26322,7 @@ var HTMLDOMPropertyConfig = {
     contentEditable: 0,
     contextMenu: 0,
     controls: HAS_BOOLEAN_VALUE,
+    controlsList: 0,
     coords: 0,
     crossOrigin: 0,
     data: 0, // For `<object />` acts as `src`.
@@ -26693,12 +26510,10 @@ module.exports = HTMLDOMPropertyConfig;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -26726,12 +26541,10 @@ module.exports = ReactComponentBrowserEnvironment;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -26781,11 +26594,9 @@ module.exports = Danger;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -26871,11 +26682,9 @@ module.exports = createNodesFromMarkup;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -27004,11 +26813,9 @@ module.exports = createArrayFromMixed;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -27102,12 +26909,10 @@ module.exports = getMarkupWrap;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -27140,12 +26945,10 @@ module.exports = ReactDOMIDOperations;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -27906,6 +27709,10 @@ ReactDOMComponent.Mixin = {
         // happen after `_updateDOMProperties`. Otherwise HTML5 input validations
         // raise warnings and prevent the new value from being assigned.
         ReactDOMInput.updateWrapper(this);
+
+        // We also check that we haven't missed a value update, such as a
+        // Radio group shifting the checked value to another named radio input.
+        inputValueTracking.updateValueIfChanged(this);
         break;
       case 'textarea':
         ReactDOMTextarea.updateWrapper(this);
@@ -28156,12 +27963,10 @@ module.exports = ReactDOMComponent;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -28185,12 +27990,10 @@ module.exports = AutoFocusUtils;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -28407,11 +28210,9 @@ module.exports = CSSPropertyOperations;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -28454,11 +28255,9 @@ module.exports = camelizeStyleName;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -28488,12 +28287,10 @@ module.exports = camelize;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -28574,11 +28371,9 @@ module.exports = dangerousStyleValue;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -28620,11 +28415,9 @@ module.exports = hyphenateStyleName;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -28656,11 +28449,9 @@ module.exports = hyphenate;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  * @typechecks static-only
@@ -28690,12 +28481,10 @@ module.exports = memoizeStringOnly;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -28721,12 +28510,10 @@ module.exports = quoteAttributeValueForBrowser;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -28758,12 +28545,10 @@ module.exports = ReactEventEmitterMixin;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -28864,12 +28649,10 @@ module.exports = getVendorPrefixedEventName;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -29157,12 +28940,10 @@ module.exports = ReactDOMInput;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -29285,12 +29066,10 @@ module.exports = ReactDOMOption;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -29451,12 +29230,10 @@ module.exports = ReactDOMTextarea;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -29903,12 +29680,10 @@ module.exports = ReactMultiChild;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -30062,12 +29837,10 @@ module.exports = ReactChildReconciler;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -30336,7 +30109,7 @@ var ReactCompositeComponent = {
   },
 
   _constructComponent: function (doConstruct, publicProps, publicContext, updateQueue) {
-    if (process.env.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV !== 'production' && !doConstruct) {
       ReactCurrentOwner.current = this;
       try {
         return this._constructComponentWithoutOwner(doConstruct, publicProps, publicContext, updateQueue);
@@ -30968,12 +30741,10 @@ module.exports = ReactCompositeComponent;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -31061,12 +30832,10 @@ module.exports = checkReactTypeSpec;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -31092,12 +30861,10 @@ module.exports = ReactPropTypeLocationNames;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -31118,12 +30885,10 @@ module.exports = getNextDebugID;
 
 "use strict";
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -31143,12 +30908,10 @@ module.exports = REACT_ELEMENT_TYPE;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -31189,12 +30952,10 @@ module.exports = getIteratorFn;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -31271,12 +31032,10 @@ module.exports = flattenChildren;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -31367,12 +31126,10 @@ module.exports = ReactServerRenderingTransaction;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -31512,12 +31269,10 @@ module.exports = ReactServerUpdateQueue;
 
 "use strict";
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -31577,12 +31332,10 @@ module.exports = ReactDOMEmptyComponent;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -31719,12 +31472,10 @@ module.exports = {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -31887,12 +31638,10 @@ module.exports = ReactDOMTextComponent;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -31960,12 +31709,10 @@ module.exports = ReactDefaultBatchingStrategy;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -32121,11 +31868,9 @@ module.exports = ReactEventListener;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -32164,12 +31909,10 @@ module.exports = getUnboundedScrollPosition;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -32203,12 +31946,10 @@ module.exports = ReactInjection;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -32387,12 +32128,10 @@ module.exports = ReactReconcileTransaction;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -32604,12 +32343,10 @@ module.exports = ReactDOMSelection;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -32686,11 +32423,9 @@ module.exports = getNodeForCharacterOffset;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -32731,11 +32466,9 @@ module.exports = containsNode;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -32761,11 +32494,9 @@ module.exports = isTextNode;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -32788,12 +32519,10 @@ module.exports = isNode;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -33095,12 +32824,10 @@ module.exports = SVGDOMPropertyConfig;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -33288,12 +33015,10 @@ module.exports = SelectEventPlugin;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -33520,12 +33245,10 @@ module.exports = SimpleEventPlugin;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -33564,12 +33287,10 @@ module.exports = SyntheticAnimationEvent;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -33607,12 +33328,10 @@ module.exports = SyntheticClipboardEvent;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -33648,12 +33367,10 @@ module.exports = SyntheticFocusEvent;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -33737,12 +33454,10 @@ module.exports = SyntheticKeyboardEvent;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -33854,12 +33569,10 @@ module.exports = getEventKey;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -33895,12 +33608,10 @@ module.exports = SyntheticDragEvent;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -33945,12 +33656,10 @@ module.exports = SyntheticTouchEvent;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -33989,12 +33698,10 @@ module.exports = SyntheticTransitionEvent;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -34045,12 +33752,10 @@ module.exports = SyntheticWheelEvent;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -34084,12 +33789,10 @@ module.exports = ReactDOMContainerInfo;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -34108,12 +33811,10 @@ module.exports = ReactDOMFeatureFlags;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -34163,12 +33864,10 @@ module.exports = ReactMarkupChecksum;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -34212,18 +33911,16 @@ module.exports = adler32;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-module.exports = '15.6.1';
+module.exports = '15.6.2';
 
 /***/ }),
 /* 579 */
@@ -34231,12 +33928,10 @@ module.exports = '15.6.1';
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -34297,12 +33992,10 @@ module.exports = findDOMNode;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -34318,12 +34011,10 @@ module.exports = ReactMount.renderSubtreeIntoContainer;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -34436,12 +34127,10 @@ module.exports = ReactDOMUnknownPropertyHook;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -34485,12 +34174,10 @@ module.exports = ReactDOMNullInputValuePropHook;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -40733,12 +40420,10 @@ module.exports = omit;
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  */
 
 if (process.env.NODE_ENV !== 'production') {
@@ -40771,12 +40456,10 @@ if (process.env.NODE_ENV !== 'production') {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  */
 
 
@@ -40821,7 +40504,8 @@ module.exports = function() {
     objectOf: getShim,
     oneOf: getShim,
     oneOfType: getShim,
-    shape: getShim
+    shape: getShim,
+    exact: getShim
   };
 
   ReactPropTypes.checkPropTypes = emptyFunction;
@@ -42799,12 +42483,10 @@ module.exports = baseSampleSize;
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
- *  Copyright (c) 2014-2015, Facebook, Inc.
- *  All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- *  This source code is licensed under the BSD-style license found in the
- *  LICENSE file in the root directory of this source tree. An additional grant
- *  of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  */
 
 (function (global, factory) {
@@ -48757,7 +48439,7 @@ exports = module.exports = __webpack_require__(121)(undefined);
 
 
 // module
-exports.push([module.i, "@font-face {\n\tfont-family: \"Roboto Condensed\";\n\tfont-style: italic;\n\tfont-weight: 300;\n\tsrc: local(\"Roboto Condensed Light Italic\"),local(RobotoCondensed-LightItalic),url(//fonts.gstatic.com/s/robotocondensed/v13/mg0cGfGRUERshzBlvqxeAEgLa83GLIFqS5fNKyK1-MQ.eot?#) format(\"eot\"),url(//fonts.gstatic.com/s/robotocondensed/v13/mg0cGfGRUERshzBlvqxeABN-SY3RXjKuKZR1RHIa0nw.woff2) format(\"woff2\"),url(//fonts.gstatic.com/s/robotocondensed/v13/mg0cGfGRUERshzBlvqxeAO6J62hFWZVScRuaNBOo_rA.woff) format(\"woff\");\n}\n\n@font-face {\n\tfont-family: \"Roboto Condensed\";\n\tfont-style: italic;\n\tfont-weight: 400;\n\tsrc: local(\"Roboto Condensed Italic\"),local(RobotoCondensed-Italic),url(//fonts.gstatic.com/s/robotocondensed/v13/BP5K8ZAJv9qEbmuFp8RpJWVMz6u1mZhSCOxOw1L508I.eot?#) format(\"eot\"),url(//fonts.gstatic.com/s/robotocondensed/v13/BP5K8ZAJv9qEbmuFp8RpJdbvlX87CS9_IgWvysdluIM.woff2) format(\"woff2\"),url(//fonts.gstatic.com/s/robotocondensed/v13/BP5K8ZAJv9qEbmuFp8RpJfHZ7IfZvqUgXLEMrfwTXOk.woff) format(\"woff\");\n}\n\n@font-face {\n\tfont-family: \"Roboto Condensed\";\n\tfont-style: italic;\n\tfont-weight: 700;\n\tsrc: local(\"Roboto Condensed Bold Italic\"),local(RobotoCondensed-BoldItalic),url(//fonts.gstatic.com/s/robotocondensed/v13/mg0cGfGRUERshzBlvqxeAN6vkPPln-l9D31-51M-Ebk.eot?#) format(\"eot\"),url(//fonts.gstatic.com/s/robotocondensed/v13/mg0cGfGRUERshzBlvqxeADn8OlxV1N2WpeXfK2HtpfA.woff2) format(\"woff2\"),url(//fonts.gstatic.com/s/robotocondensed/v13/mg0cGfGRUERshzBlvqxeAAm1Bdh5PCvFKhAPu2iWX-U.woff) format(\"woff\");\n}\n\n@font-face {\n\tfont-family: \"Roboto Condensed\";\n\tfont-style: normal;\n\tfont-weight: 300;\n\tsrc: local(\"Roboto Condensed Light\"),local(RobotoCondensed-Light),url(//fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nCrW_eugtb5_efFKynOEdiw.eot?#) format(\"eot\"),url(//fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nBBQ_Gf4FfI8J4SYljBAylk.woff2) format(\"woff2\"),url(//fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nNeiznanRB67rGZDYkMvKPc.woff) format(\"woff\");\n}\n\n@font-face {\n\tfont-family: \"Roboto Condensed\";\n\tfont-style: normal;\n\tfont-weight: 400;\n\tsrc: local(\"Roboto Condensed\"),local(RobotoCondensed-Regular),url(//fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsG8ITcfo9NwJpvZiO7_FxEg.eot?#) format(\"eot\"),url(//fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsDAdhzWOYhqHvOZMRGaEyPo.woff2) format(\"woff2\"),url(//fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsFzqCfRpIA3W6ypxnPISCPA.woff) format(\"woff\");\n}\n\n@font-face {\n\tfont-family: \"Roboto Condensed\";\n\tfont-style: normal;\n\tfont-weight: 700;\n\tsrc: local(\"Roboto Condensed Bold\"),local(RobotoCondensed-Bold),url(//fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nJTpJ4fOLLwmHp8vl0kIMg4.eot?#) format(\"eot\"),url(//fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nHm2hrkyco9jQ3NKMXpgOBg.woff2) format(\"woff2\"),url(//fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nCSLrGe-fkSRw2DeVgOoWcQ.woff) format(\"woff\");\n}\n\n.clock__clock--20MC- {\n\twidth: 100px;\n\theight: 60px;\n}\n\n.clock__circle--1vhBT {\n\tposition: relative;\n\twidth: 100px;\n\theight: 100px;\n\tborder-radius: 50%;\n\n\tbackground-color: #91b38d;\n\n\t-webkit-box-shadow: 0 0 10px black;\n\n\t        box-shadow: 0 0 10px black;\n}\n\n.clock__progress--9uRmo {\n\tposition: absolute;\n\n\twidth: 100px;\n\theight: 100px;\n}\n\n.clock__progress-path--CzxJl {\n\tfill: #368730;\n}\n\n.clock__inner-circle--3iiYC {\n\n\twidth: 84px;\n\theight: 84px;\n\tborder-radius: 50%;\n\n\tposition: absolute;\n\ttop: 8px;\n\tleft: 8px;\n\n\tbackground-color: #3a5b2c;\n\tcolor: white;\n\ttext-align: center;\n\n\tline-height: 67.2px;\n\n\tfont-family: 'Roboto Condensed';\n\tfont-weight: bold;\n\tfont-size: 30px;\n}\n", ""]);
+exports.push([module.i, "@font-face {\n\tfont-family: \"Roboto Condensed\";\n\tfont-style: italic;\n\tfont-weight: 300;\n\tsrc: local(\"Roboto Condensed Light Italic\"),local(RobotoCondensed-LightItalic),url(//fonts.gstatic.com/s/robotocondensed/v14/mg0cGfGRUERshzBlvqxeAEgLa83GLIFqS5fNKyK1-MQ.eot?#) format(\"eot\"),url(//fonts.gstatic.com/s/robotocondensed/v14/mg0cGfGRUERshzBlvqxeABN-SY3RXjKuKZR1RHIa0nw.woff2) format(\"woff2\"),url(//fonts.gstatic.com/s/robotocondensed/v14/mg0cGfGRUERshzBlvqxeAO6J62hFWZVScRuaNBOo_rA.woff) format(\"woff\");\n}\n\n@font-face {\n\tfont-family: \"Roboto Condensed\";\n\tfont-style: italic;\n\tfont-weight: 400;\n\tsrc: local(\"Roboto Condensed Italic\"),local(RobotoCondensed-Italic),url(//fonts.gstatic.com/s/robotocondensed/v14/BP5K8ZAJv9qEbmuFp8RpJWVMz6u1mZhSCOxOw1L508I.eot?#) format(\"eot\"),url(//fonts.gstatic.com/s/robotocondensed/v14/BP5K8ZAJv9qEbmuFp8RpJdbvlX87CS9_IgWvysdluIM.woff2) format(\"woff2\"),url(//fonts.gstatic.com/s/robotocondensed/v14/BP5K8ZAJv9qEbmuFp8RpJfHZ7IfZvqUgXLEMrfwTXOk.woff) format(\"woff\");\n}\n\n@font-face {\n\tfont-family: \"Roboto Condensed\";\n\tfont-style: italic;\n\tfont-weight: 700;\n\tsrc: local(\"Roboto Condensed Bold Italic\"),local(RobotoCondensed-BoldItalic),url(//fonts.gstatic.com/s/robotocondensed/v14/mg0cGfGRUERshzBlvqxeAN6vkPPln-l9D31-51M-Ebk.eot?#) format(\"eot\"),url(//fonts.gstatic.com/s/robotocondensed/v14/mg0cGfGRUERshzBlvqxeADn8OlxV1N2WpeXfK2HtpfA.woff2) format(\"woff2\"),url(//fonts.gstatic.com/s/robotocondensed/v14/mg0cGfGRUERshzBlvqxeAAm1Bdh5PCvFKhAPu2iWX-U.woff) format(\"woff\");\n}\n\n@font-face {\n\tfont-family: \"Roboto Condensed\";\n\tfont-style: normal;\n\tfont-weight: 300;\n\tsrc: local(\"Roboto Condensed Light\"),local(RobotoCondensed-Light),url(//fonts.gstatic.com/s/robotocondensed/v14/b9QBgL0iMZfDSpmcXcE8nCrW_eugtb5_efFKynOEdiw.eot?#) format(\"eot\"),url(//fonts.gstatic.com/s/robotocondensed/v14/b9QBgL0iMZfDSpmcXcE8nBBQ_Gf4FfI8J4SYljBAylk.woff2) format(\"woff2\"),url(//fonts.gstatic.com/s/robotocondensed/v14/b9QBgL0iMZfDSpmcXcE8nNeiznanRB67rGZDYkMvKPc.woff) format(\"woff\");\n}\n\n@font-face {\n\tfont-family: \"Roboto Condensed\";\n\tfont-style: normal;\n\tfont-weight: 400;\n\tsrc: local(\"Roboto Condensed\"),local(RobotoCondensed-Regular),url(//fonts.gstatic.com/s/robotocondensed/v14/Zd2E9abXLFGSr9G3YK2MsG8ITcfo9NwJpvZiO7_FxEg.eot?#) format(\"eot\"),url(//fonts.gstatic.com/s/robotocondensed/v14/Zd2E9abXLFGSr9G3YK2MsDAdhzWOYhqHvOZMRGaEyPo.woff2) format(\"woff2\"),url(//fonts.gstatic.com/s/robotocondensed/v14/Zd2E9abXLFGSr9G3YK2MsFzqCfRpIA3W6ypxnPISCPA.woff) format(\"woff\");\n}\n\n@font-face {\n\tfont-family: \"Roboto Condensed\";\n\tfont-style: normal;\n\tfont-weight: 700;\n\tsrc: local(\"Roboto Condensed Bold\"),local(RobotoCondensed-Bold),url(//fonts.gstatic.com/s/robotocondensed/v14/b9QBgL0iMZfDSpmcXcE8nJTpJ4fOLLwmHp8vl0kIMg4.eot?#) format(\"eot\"),url(//fonts.gstatic.com/s/robotocondensed/v14/b9QBgL0iMZfDSpmcXcE8nHm2hrkyco9jQ3NKMXpgOBg.woff2) format(\"woff2\"),url(//fonts.gstatic.com/s/robotocondensed/v14/b9QBgL0iMZfDSpmcXcE8nCSLrGe-fkSRw2DeVgOoWcQ.woff) format(\"woff\");\n}\n\n.clock__clock--20MC- {\n\twidth: 100px;\n\theight: 60px;\n}\n\n.clock__circle--1vhBT {\n\tposition: relative;\n\twidth: 100px;\n\theight: 100px;\n\tborder-radius: 50%;\n\n\tbackground-color: #91b38d;\n\n\t-webkit-box-shadow: 0 0 10px black;\n\n\t        box-shadow: 0 0 10px black;\n}\n\n.clock__progress--9uRmo {\n\tposition: absolute;\n\n\twidth: 100px;\n\theight: 100px;\n}\n\n.clock__progress-path--CzxJl {\n\tfill: #368730;\n}\n\n.clock__inner-circle--3iiYC {\n\n\twidth: 84px;\n\theight: 84px;\n\tborder-radius: 50%;\n\n\tposition: absolute;\n\ttop: 8px;\n\tleft: 8px;\n\n\tbackground-color: #3a5b2c;\n\tcolor: white;\n\ttext-align: center;\n\n\tline-height: 67.2px;\n\n\tfont-family: 'Roboto Condensed';\n\tfont-weight: bold;\n\tfont-size: 30px;\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -48827,7 +48509,7 @@ exports.locals = {
 /* 774 */
 /***/ (function(module, exports) {
 
-module.exports = [{"codepoint":19952,"name":"HEXAGRAM FOR REVOLUTION","description":["――革は、巳日(いじつ)にしてすなわち孚(まこと)とせらる。元(おお)いに亨(とお)り貞(ただ)しきに利(よ)ろし。悔(くい)亡ぶ。","結局どこの文化圏でも、君主は常に君臨して統治する存在なのだ。禅譲とはなんだったのか。","ちなみに、この卦の上爻の爻辞にある「君子豹変、小人革面」は、「君子は豹変す」の語源である。"],"references":["高田眞治・後藤基巳訳　『易経』　岩波書店〈岩波文庫〉、1959年。ISBN 9784003320112。"]},{"codepoint":1567,"name":"ARABIC QUESTION MARK","description":["アラビア語では疑問符を左右反対にして書く。理由はもちろん、そもそもアラビア語では右から左に文章を書くから――なのだが、同じく右書きのヘブライ語やイディッシュ語では通常の疑問符と同じ向きのものを使う。"],"references":["https://en.wikipedia.org/wiki/Question_mark#Mirrored_question_mark"]},{"codepoint":127136,"name":"PLAYING CARD BACK","description":["トランプの裏面。","トランプがUnicodeに収録されているのだから、そのうち「Unicodeかるた」もUnicodeに収録される日が来るかもしれない。しかし「Unicodeかるた」もUnicodeに収録されると、その文字を記載した「Unicodeかるた」のカードが必要になり、さらにそのカードを表す文字がUnicodeに収録され、さらに⋯⋯。","⋯⋯やっぱり収録されないほうが幸せかもしれない。"]},{"codepoint":127153,"name":"PLAYING CARD ACE OF HEARTS","description":["トランプの、ハートのエース。","「エース」というのはもともと、トランプやサイコロの目を表すための序数の一つである。エースの後は、デュース、トレイ、ケイター、シンク、と続くのだが、現在ではデュース以外の単語はほとんど使われない。"]},{"codepoint":9856,"name":"DIE FACE-1","description":["賽の目の1。ピンとも呼ぶ。サイコロのこの目だけが赤いのは、実は日本だけである。","通るかっ⋯⋯! こんなもん⋯⋯!"]},{"codepoint":9857,"name":"DIE FACE-2","description":["賽の目の2。墨を塗ることで3にも4にも5にも6にもできる便利な目である。"]},{"codepoint":9858,"name":"DIE FACE-3","description":["賽の目の3。","元老院と敵対したユリウス・カエサルは、ルビコン川を渡り進軍する際に「賽は投げられた」と述べた。彼が礎を築いた帝政ローマの皇帝が賭博を禁じながらも自らはダイスゲームに熱中したのは、ひょっとしたら彼のせいかもしれない。"]},{"codepoint":9859,"name":"DIE FACE-4","description":["賽の目の4。中国では1の目に加えてこの目も赤く塗られている。清代は趙翼の伝によると、唐の玄宗帝がこの目でゲームに勝ったため4の目を赤く塗らせたとか。"],"references":["https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%A4%E3%82%B3%E3%83%AD#.E4.B8.AD.E5.9B.BD.E3.81.AE.E3.82.B5.E3.82.A4.E3.82.B3.E3.83.AD","https://zh.wikipedia.org/wiki/%E9%AA%B0%E5%AD%90#.E6.AD.B7.E5.8F.B2"]},{"codepoint":9860,"name":"DIE FACE-5","description":["賽の目の5。","古代ローマで用いられたサイコロの一種に、2の目と5の目が欠けた4面のダイスがある。形も立方体とか正四面体ではない、へんてこな形をしている。"],"references":["https://en.wikipedia.org/wiki/Dice#History","http://www.aerobiologicalengineering.com/wxk116/Roman/BoardGames/tali.html"]},{"codepoint":9861,"name":"DIE FACE-6","description":["賽の目の6。賽の目が彫刻されているサイコロの場合、1の目が一番彫る量が少ないので少しだけ重く、そのぶん6の目がでる確率が少しだけ高い⋯⋯かもしれない。"]},{"codepoint":48,"name":"DIGIT ZERO","description":["アラビア数字のゼロ。","ゼロを表す文字は、ゼロという概念が生まれる前に生まれた。"]},{"codepoint":65,"name":"LATIN CAPITAL LETTER A","description":["ラテン文字の大文字のエー。ラテン文字の最初の文字にして、世界で最も有名な文字の一つ。"]},{"codepoint":97,"name":"LATIN SMALL LETTER A","description":["ラテン文字の小文字のエー。というよりもアー。15世紀から16世紀にかけての大母音推移の結果、この文字を「エー」と読むのは英語だけである。"]},{"codepoint":66,"name":"LATIN CAPITAL LETTER B","description":["ラテン文字の大文字のビー。","「B級」「B寝台」など、なにかと「一歩劣った」イメージが付きまとうアルファベット。血液型のB型のイメージがなんとなく悪いのも、もしかしたらそういう連想から来てるのかもしれない。"]},{"codepoint":98,"name":"LATIN SMALL LETTER B","description":["ラテン文字の小文字のビー。サムズアップ。","B(ビー)はギリシャ文字のΒ(ベータ)に由来しており、発音も古代ギリシア語にならって/b/(バ行の音)である⋯⋯のだが、当のギリシャ語では発音が/v/(ヴァ行の音)に変わってしまった。ラテン文字圏の言語だけが、古典ギリシャ語の音を残している。","まるで日本の漢字の唐音や漢音のようだ。"]},{"codepoint":67,"name":"LATIN CAPITAL LETTER C","description":["ラテン文字の大文字のシー。ギリシャ文字のΓ(ガンマ)が横倒しになって丸まったもの。","ラテン文字は全体的にギリシャ文字と比べて丸まっているのが特徴である。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。"]},{"codepoint":99,"name":"LATIN SMALL LETTER C","description":["ラテン文字の小文字のシー。元となったギリシャ文字のガンマ(Gamma)の綴りからも見て取れるとおり、この文字は当初は/g/(ガ行の音)を表す文字だった。ギリシャ文字からエトルリア文字に輸入された際に濁りのない/k/(カ行の音)を表すようになり、ラテン文字となったときには/g/と/k/の2つの音を表すようになっていた。","その後もこの文字は多様化の洗礼を受け、言語によって/k/、/s/、/ʧ/、/θ/、/t͡s/など、様々な音価を持つめんどくさい文字となっている。","ところで、悪逆で有名なローマ皇帝、ガイウス帝の名前(プラエノーメン)の綴りはGaiusだが、イニシャルで書くときにはCと書く。Cが/g/だった頃の名残である。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic","https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%A9%E3%82%A8%E3%83%8E%E3%83%BC%E3%83%A1%E3%83%B3"]},{"codepoint":68,"name":"LATIN CAPITAL LETTER D","description":["ラテン文字の大文字のディー。ギリシャ文字のΔ(デルタ)から派生した。","英語圏で「the D」といえば、男の雄大なアレを指す隠語である。しかしてこんな有名なジョークがある。","Boy: There are 20 letters in the Alphabet, right?\nGirl: Nope. 26.\nBoy: Oh, sorry I must have forgot U R A Q T.\nGirl: You'd still be missing one letter.\nBoy: Yeah I know, I will give you the D later...","蛇足ながら解説しておくと「U R A Q T」は「You are a cutie.」の意味である。"]},{"codepoint":100,"name":"LATIN SMALL LETTER D","description":["ラテン文字の小文字のディー。","大文字と小文字で形が大きく異なる文字の一つ。右側の長い縦棒は、元は大文字のDの曲線部分の書き出しが大きく左に突き出した形が由来である。やがて時代とともに横棒が縦棒になり、現在のdの形になったとされている。"],"references":["https://en.wikipedia.org/wiki/D#History"]},{"codepoint":69,"name":"LATIN CAPITAL LETTER E","description":["ラテン文字の大文字のイー。ギリシャ文字のΕ(イプシロン)に由来しており、形も全く同じである。","ラテン文字を使用するほとんどの言語で、最も多く使われる文字である。一方で大変に努力すればこの文字抜きで文章を書くことも可能で、『ギャズビー』に代表される「E」抜きの文章も多く書かれている。"]},{"codepoint":101,"name":"LATIN SMALL LETTER E","description":["ラテン文字の小文字のイー。","自然対数の底にeの文字を割り当てたのはオイラーだと言われており、欧米圏ではこの数をオイラー数と呼ぶことも多い⋯⋯が、さすがにeはオイラー(Euler)の頭文字ではなく、指数(exponent)の頭文字の可能性が高いと言われている。"],"references":["http://ualr.edu/lasmoller/efacts.html"]},{"codepoint":70,"name":"LATIN CAPITAL LETTER F","description":["ラテン文字の大文字のエフ。字源的には、ギリシャ文字のΥ(ウプシロン)の上のほうを、こう⋯⋯右にくいっと傾けたものと見るのが正しい。","森博嗣は、誰よりも文字を愛したミステリー作家である。中でもアルファベットの「F」は、彼の代表作である『すべてがFになる』で事件の鍵を握る文字だ。作中では、博士の部屋に残されたコンピューターに表示されていた「すべてがFになる」という言葉を解き明かしていく。その謎は、同じくミステリー作家である我孫子武丸の推薦文によると⋯⋯「リアルオーディオよりCOOLでJAVAよりもHOT」だ。"],"references":["https://en.wikipedia.org/wiki/F","西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","森博嗣　『すべてがFになる : The perfect insider』　講談社〈講談社文庫〉、1998年。ISBN 9784062639248。"]},{"codepoint":102,"name":"LATIN SMALL LETTER F","description":["ラテン文字の小文字のエフ。","多くの言語で/f/(ファ行の音)を表す。この音はフェニキア語にもギリシャ語にもなかった音なので、ラテン語(正確にはエトルリア語)を表記する際に大層悩んだ。最初はギリシャ語で/wh/を表す「FH」という表記が使われていたが、やがて「F」1字になり、この文字自体も/f/を表す文字になった。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","http://seesaawiki.jp/w/qvarie/d/%a5%e9%a5%c6%a5%f3%ca%b8%bb%fa%a1%daF%a1%db","https://en.wikipedia.org/wiki/F"]},{"codepoint":71,"name":"LATIN CAPITAL LETTER G","description":["ラテン文字の大文字のジー。名前を言ってはいけないあの生物。","紀元前3世紀ごろまでのラテン語では、「C」が/k/(カ行の音)および/g/(ガ行の音)を表していた。しかし流石に不便だったのか、後にこの「C」に1本線を足して「G」とし、/k/と/g/を区別するようにしたのが起源である。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic"]},{"codepoint":103,"name":"LATIN SMALL LETTER G","description":["ラテン文字の小文字のジー。","手書きの文字に近い字と、下の方で一回転させる形の2種類の字形が存在するが、これらはそれぞれ、「一階建てのg (the single-story g)」、「二階建てのg (the double-story g)」と呼ばれている。"],"references":["https://advenc.ru/post/strochnye-istiny","https://twitter.com/nixeneko/status/757286834187538432"]},{"codepoint":72,"name":"LATIN CAPITAL LETTER H","description":["ラテン文字の大文字のエイチ。日本においては最も卑猥なアルファベットである。","実際のところ、なぜ英語でこの文字を「エイチ」ないし「ヘイチ」と読むのかに関してはよくわかっていない。オックスフォード英語辞典には、「ハー(古典ラテン語)」→「アハ(ラテン語)」→「アカ(俗ラテン語)」→「アッチ(古フランス語)」→「アーチ(中期英語)」と変遷した、とあるが、必ずしも定説ではない。"],"references":["https://en.wikipedia.org/wiki/H","https://en.oxforddictionaries.com/definition/h","https://www.theguardian.com/science/shortcuts/2013/nov/04/letter-h-contentious-alphabet-history-alphabetical-rosen"]},{"codepoint":104,"name":"LATIN SMALL LETTER H","description":["ラテン文字の小文字のエイチ。","エイチはギリシャ文字のΗ(エータ)に由来している⋯⋯が、この文字が表す/h/(ハ行の音)は、古代ギリシャ語での発音を受け継いだものである。現在のギリシャ語でΗ(エータ)は、なんと母音である。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic","https://en.wikipedia.org/wiki/H"]},{"codepoint":73,"name":"LATIN CAPITAL LETTER I","description":["ラテン文字の大文字のアイ。Hのあとに来るもの。","1928年に制定されたトルコ語ラテン文字では、2種類のアイをドットがついているかついてないかで区別する。つまり「I」と「i」は別の文字であり、「I」の小文字は「ı(ドットなし小文字アイ)」、「i」の大文字は「İ(ドット付き大文字アイ)」となる。これは、同じ文字体系でも言語によって大文字/小文字変換を使い分けなくてはいけない例として、しばしば取り沙汰される。"],"references":["http://www.unicode.org/versions/Unicode10.0.0/ch05.pdf#page=44","http://seesaawiki.jp/w/qvarie/d/%a5%e9%a5%c6%a5%f3%ca%b8%bb%fa%a1%daI%a1%db"]},{"codepoint":105,"name":"LATIN SMALL LETTER I","description":["ラテン文字の小文字のアイ。","1998年、AppleはMacintoshコンピューターの新シリーズ「iMac」を発表した。これが現在まで用いられているiPhoneやiPodやiTunesの「i」の端緒である。その由来は「Internet」の頭文字を筆頭として、「Individual」「Instruct」「Inform」など様々な意味をかけ合わせたものとのことだが、それがなぜ小文字なのかは⋯⋯まあ、おそらくブランドデザイン的な問題だろうと思われている。"],"references":["https://www.quora.com/Why-is-the-letter-i-in-the-word-iPhone-is-in-lower-case-Is-there-any-reason-for-it/answer/Mark-Hetherington?srid=h2BPt","http://www.iphonejd.com/iphone_jd/2009/01/the-i-in-iphone.html"]},{"codepoint":74,"name":"LATIN CAPITAL LETTER J","description":["ラテン文字の大文字のジェー。ラテン文字というのは要するにラテン語を表記するための文字だからラテン文字と呼ぶのだが、これは元々ラテン語にはない文字⋯⋯というよりはI(アイ)の異体字だった。","ラテン文字が成立してから2000年近く経った14世紀ごろ、Iに対応する半母音である/j/(や行の音)を表現するために区別されて使われるようになったとされる。なのでギリシャ文字やキリル文字にはこの字に対応する文字はない。"]},{"codepoint":106,"name":"LATIN SMALL LETTER J","description":["ラテン文字の小文字のジェー。当初、この文字は/j/(ヤ行の音)を表現するための文字だった⋯⋯が、時にヨーロッパ激動の近世。教会の拡大にともなって様々な民族がラテン文字を使うようになり、この文字も転用・借用の洗礼を受けることになる。特に英語では古フランス語での転訛を経て/dʒ/(ジャ行の音)を表すようになり、今でもそのイメージが強い。","加えてスペイン語では、イスラム統治時代の影響でこれまた全く異なる/x/を表現する文字となっており、現在でも言語間での乖離が激しい文字の一つとなっている。"],"references":["https://ja.wikipedia.org/wiki/J","https://en.wikipedia.org/wiki/J","https://english.stackexchange.com/a/148414","https://english.stackexchange.com/a/148416"]},{"codepoint":75,"name":"LATIN CAPITAL LETTER K","description":["ラテン文字の大文字のケー。","ギリシャ文字のΚ(カッパ)からラテン文字のK(ケー)が生まれたのち、この文字は同じ発音を持つC(シー)に統合され、消滅した。そのためラテン語の直系(ロマンス諸語)であるフランス語やイタリア語などでは原則としてこの文字は使用しない。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。"]},{"codepoint":107,"name":"LATIN SMALL LETTER K","description":["ラテン文字の小文字のケー。","英語では、語頭に「kn-」が綴られた時には「k」を発音しない、「黙字のK」と呼ばれる現象が存在する。これは発音が難しいため省略されたという説が濃厚だが、ドイツ語やスウェーデン語では現在でも「kn-」の「k」を発音する。ドイツ人の真面目さが現れているのだろうか(?)。","BUMP OF CHICKEN の楽曲「K」は、この「黙字のK」を上手くストーリーに組み込んだ名作である。"],"references":["https://en.wikipedia.org/wiki/Silent_k","https://www.quora.com/Why-should-we-write-the-letter-K-if-it-is-silent-in-words-like-knowledge-and-knife/answer/Priyanka-Sharma-878?srid=h2BPt"]},{"codepoint":76,"name":"LATIN CAPITAL LETTER L","description":["ラテン文字の大文字のエル。","物理学などで用いられる単位は、人名に由来するものは大文字で、それ以外は小文字で記述することになっている。中でも体積の単位である「リットル」の名称は、18世紀フランスの物理学者であるクロード・リットルに由来している。彼はその生涯を主に珪酸化合物の研究に捧げ、その一環として、今日でも用いられている実験用ガラス器具の製造法を確立した。現在、体積の単位を大文字の「L」で記述するのは、彼がもたらした正確な液体計量法を讃えてのことなのである。","⋯⋯というのは真っ赤なウソで、「クロード・リットル」の人物伝なるものは、物理学界では有名な作り話。リットルを大文字で記述する正しい理由は、数字の1との混同を避けるためである。"],"references":["https://uwaterloo.ca/chem13news/sites/ca.chem13news/files/uploads/files/Jean%20Litre-article.pdf"]},{"codepoint":108,"name":"LATIN SMALL LETTER L","description":["ラテン文字の小文字のエル。","6点点字において、左側の3点を用いて表される(⠇)が、これは小文字の「l」の形をかたどったもの⋯⋯ではない。12番目の文字「L」を表すために、2番目の文字「B」に左下の点を足して作ったものである。"],"references":["http://seesaawiki.jp/w/qvarie/d/%a5%e9%a5%c6%a5%f3%ca%b8%bb%fa%a1%daL%a1%db","https://en.wikipedia.org/wiki/Braille","https://en.wikipedia.org/wiki/Braille_pattern_dots-123"]},{"codepoint":77,"name":"LATIN CAPITAL LETTER M","description":["ラテン文字の大文字のエム。","ラテン文字では最も幅の広い文字。かつての活字では大文字の「M」の型(ソート)の縦横が同じ長さになるようにデザインされていたため、活字におけるこの長さのことをエムと呼んだ。現在の書体では必ずしもそうなっていないが、主に、活字でいうところの縦の長さを指す単位としてエムは現在でも使われている。"],"references":["https://en.wikipedia.org/wiki/Em_(typography)"]},{"codepoint":109,"name":"LATIN SMALL LETTER M","description":["ラテン文字の小文字のエム。","英語圏ではかつてマイルを「m」と略していたが、メートルが国際化するにつれて「mi」表記が使われるようになり、現在では「mi」と書くのが主流である。","この際ついでにマイル自体も廃止してほしいものである。"],"references":["https://en.wikipedia.org/wiki/Mile"]},{"codepoint":78,"name":"LATIN CAPITAL LETTER N","description":["ラテン文字の大文字のエヌ。","ラテン文字の起源をたどっていくと、最終的にはエジプトのヒエログリフに行き着くという説がある。定説でこそないがそれなりに支持されている学説なのだが、それによると、「N」の起源は蛇の形を象ったヒエログリフであるという。今の形にも若干その面影を見ることができるかもしれない。"],"references":["William Bright, Peter T. Daniels　『The world's writing systems』　Oxford University Press、1996年。ISBN 9780195079937。","https://www.jstor.org/stable/3853586"]},{"codepoint":110,"name":"LATIN SMALL LETTER N","description":["ラテン文字の小文字のエヌ。","あるとき、「ヨーロッパの言語において、『夜』という単語は『N』と『八』を組み合わせたものである」という説が話題に上がったことがある。例えば、英語なら「n」+「eight」→「night」、ドイツ語なら「n」+「Acht」→「Nacht」と言った具合である。これは確かにいくつかの言語で成り立つのだが⋯⋯その全てがゲルマン語派である以上、ゲルマン祖語が同根であることによる一致、および偶然の産物以外の何物でもない。"],"references":["https://linguistics.stackexchange.com/a/11446","https://www.facebook.com/etymonline/posts/821462227970662"]},{"codepoint":79,"name":"LATIN CAPITAL LETTER O","description":["ラテン文字の大文字のオー。オーの字は、文字の歴史において最も形の変化が少ない文字の一つであり、紀元前10世紀ごろ生まれたフェニキア文字からずっと形が変わっていない。つまり、ある意味でラテン文字の中で最も古い文字、と言えるかもしれない。","ちなみにY(ワイ)も元のフェニキア文字と同じ形だが、こちらはラテン文字では一度消滅して復活した経緯を持つので、歴史は比較的浅い。"]},{"codepoint":111,"name":"LATIN SMALL LETTER O","description":["ラテン文字の小文字のオー。ラテン文字・ギリシャ文字・キリル文字の間で同じ活字を共有できる小文字は、実はこれだけである。"]},{"codepoint":80,"name":"LATIN CAPITAL LETTER P","description":["ラテン文字の大文字のピー。"]},{"codepoint":112,"name":"LATIN SMALL LETTER P","description":["ラテン文字の小文字のピー。"]},{"codepoint":329,"name":"LATIN SMALL LETTER N PRECEDED BY APOSTROPHE","description":["ラテン文字の小文字のnと前置アポストロフィー。Rock'n roll のように様々な単語の略記として用いられる。特にオランダ語をマイナーチェンジして作られたアフリカーンス語では、オランダ語の不定冠詞eenの略記法であるこれを正式な不定冠詞として採用しており、非常によく用いられる⋯⋯のだが、ひと目見たら分かる通り、明らかに「2文字」である。","そのためこの文字は、現在では「強く非推奨」となっており、12文字の(互換文字でない)使用非推奨文字の1つに数えられている。"],"references":["http://www.unicode.org/versions/Unicode10.0.0/ch07.pdf","http://www.unicode.org/notes/tn27/tn27-4.html"]},{"codepoint":12356,"name":"HIRAGANA LETTER I","description":["ひらがなの「い」。字母は「以」。","いろは順で並べた時に最初に来る文字。「いの一番」という成語もこれが由来である。"]},{"codepoint":12358,"name":"HIRAGANA LETTER U","description":["ひらがなの「う」。字母は「宇」。","暑中の土用の丑の日に鰻を食べる習慣は、おそらく近世からのものだと考えられているが、なぜ丑の日なのか、なぜ鰻なのかはよく分かっていない。「う」しの日だから「う」なぎを食べる、つまり「う」のつく食べ物ならなんでも良いのだ⋯⋯という説も有名だが、これもまた起源がよく分かっていない。何から何まで謎な行事である。"],"references":["http://dl.ndl.go.jp/info:ndljp/pid/1767733/16","https://ja.wikipedia.org/wiki/%E5%9C%9F%E7%94%A8%E3%81%AE%E4%B8%91%E3%81%AE%E6%97%A5"]},{"codepoint":12362,"name":"HIRAGANA LETTER O","description":["ひらがなの「お」。字母は「於」。","江戸時代中期まで、わ行の文字だと思われていた。「お」を「あ行」に、「を」を「わ行」に正しく配置し直したのは、他ならぬ本居宣長である。"],"references":["https://ja.wikipedia.org/wiki/%E3%82%92#.E6.B1.9F.E6.88.B8.E6.99.82.E4.BB.A3","http://www.norinagakinenkan.com/norinaga/kaisetsu/jion.html","http://dl.ndl.go.jp/info:ndljp/pid/993103/10"]},{"codepoint":12363,"name":"HIRAGANA LETTER KA","description":["ひらがなの「か」。字母は「加」。","江戸いろはかるたの「か」は「癩(かったい)の瘡(かさ)うらみ」である。癩も瘡も病名であり、自分よりも僅かでも病状の軽い病人を羨むこと、転じてつまらない愚痴をこぼすことを指す。ちなみに癩は「ハンセン病」、瘡は「梅毒」を指し、どちらも現在では治療法が確立している病気である。"],"references":["http://umejii.cocolog-nifty.com/blog/2007/07/post_dc51.html"]},{"codepoint":12367,"name":"HIRAGANA LETTER KU","description":["ひらがなの「く」。字母は「久」。","――深い鋼青から柔らかな桔梗(ききゃう)、それからうるはしい天の瑠璃(るり)、それからけむりに目を瞑(つぶ)るとな、やはりはがねの空が眼(め)の前一面にこめてその中にるりいろのくの字が沢山沢山光ってうごいてゐるよ。くの字が光ってうご……。\n――宮沢賢治『柳沢』"],"references":["http://www.aozora.gr.jp/cards/000081/files/4465_8269.html","http://why.kenji.ne.jp/review/review402.html"]},{"codepoint":12369,"name":"HIRAGANA LETTER KE","description":["ひらがなの「け」。字母は「計」。","2017年7月現在、「け」でGoogle検索をかけると「けものフレンズ」がヒットする。"]},{"codepoint":12371,"name":"HIRAGANA LETTER KO","description":["ひらがなの「こ」。字母は「己」。","上方いろはかるたの「こ」は、「志は松の葉」である。「志」というのは、「寸志」「松の細い葉に包む程度のもの」という意味で、他人への贈品をへりくだって言う言葉。"],"references":[{"TODO":"書く"}]},{"codepoint":12381,"name":"HIRAGANA LETTER SO","description":["ひらがなの「そ」。字母は「曾」。","左上の部分を続けて書く形と、離して書く形の2種類の字形が存在する。実のところ、ひらがなには(漢字と違って)公的に定められた「正しい字形」が存在しないため、どちらが正しいとも言えないのが難しいところ。"],"references":["http://umejii.cocolog-nifty.com/blog/2007/07/post_dc51.html"]},{"codepoint":12383,"name":"HIRAGANA LETTER TA","description":["ひらがなの「た」。字母は「太」。","たにほたたんたのなたたたぞたなたぞでたたよたくたぬかされたたる、たかたわいたそうたたなたたひたらたたがたなである。(ヒント: たぬき)"]},{"codepoint":12385,"name":"HIRAGANA LETTER TI","description":["ひらがなの「ち」。字母は「知」。","「知は力なり」と言ったのはイギリス経験論の泰斗たるフランシス・ベーコンだが、彼は晩年、鶏に雪を詰めて冷凍する実験をしている最中に肺炎を患い、そのまま病死してしまった。好奇心は哲学者を殺す。"],"references":["https://en.wikipedia.org/wiki/Francis_Bacon#Death"]},{"codepoint":12388,"name":"HIRAGANA LETTER TU","description":["ひらがなの「つ」。字母は「川」もしくは「州」。","字母は「川」が有力とされているが、「川」の読みは「かは」(訓)「セン」(呉音・漢音)であり、どうしたら「川」が「つ」になるのかよく分かっていない。一説には、呉音以前の中国上古音が「ツウ」であり、それに由来するとも。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12392,"name":"HIRAGANA LETTER TO","description":["ひらがなの「と」。字母は「止」。","元となった読みは訓読みの「とまる」ではなく上古音の「ト」である。","将棋の歩兵の裏側に「と」と書いてあるのも、「歩」に含まれる「止」の文字が関連しているとか、していないとか。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12394,"name":"HIRAGANA LETTER NA","description":["ひらがなの「な」。字母は「奈」。","いろは順でも五十音順でも同じ位置に来る二つのひらがなのうちの一つ。ちなみにもう一つは「た」である。"]},{"codepoint":12395,"name":"HIRAGANA LETTER NI","description":["ひらがなの「に」。字母は「仁」。","おそらく最も字母に形が近いひらがなであると思われる。次点は「こ」「す」「た」「や」あたりか。"]},{"codepoint":12396,"name":"HIRAGANA LETTER NU","description":["ひらがなの「ぬ」。字母は「奴」。","多くの頻度統計において、清音としては最も出現頻度の低い仮名である。そのため、かな入力配列において「ぬ」は、キーボードの左上の最も打ちにくい場所に追いやられている。"],"references":["http://ameblo.jp/asuka-layout/entry-11421831908.html","https://www50.atwiki.jp/keylay/pages/16.html","http://61degc.seesaa.net/article/33618150.html"]},{"codepoint":12397,"name":"HIRAGANA LETTER NE","description":["ひらがなの「ね」。字母は「祢」。","FXで有り金を全部溶かすと、この文字と「ぬ」の区別がつかなくなることで有名。"]},{"codepoint":12398,"name":"HIRAGANA LETTER NO","description":["ひらがなの「の」。字母は「乃」。","Unicodeの付属規格書には、「ひらがなの『の』は数学記号として用いられることもある」と2001年から記されている。しかし、はたして「の」が何を表す記号として用いられているのか、今もって謎とされている。"],"references":["http://www.unicode.org/reports/tr25/tr25-15.pdf#page=5","https://togetter.com/li/848185"]},{"codepoint":12399,"name":"HIRAGANA LETTER HA","description":["ひらがなの「は」。字母は「波」。","江戸時代の言葉で、恥ずかしいことを「はの字」とか「おはの字」とか言った。「恥ずかしい」と言うのも恥ずかしかったのだろう。"]},{"codepoint":12405,"name":"HIRAGANA LETTER HU","description":["ひらがなの「ふ」。字母は「不」。","日本語の「ふ」の音の子音は、英語の「h」とも「f」とも「wh」とも異なる、無声両唇摩擦音と呼ばれる特殊な子音である。実はこの子音を持つ言語は世界的にも珍しく、日本語に流暢な外国人でも「ふ」の音だけは苦手としていることが多いらしい。"],"references":["http://www.timor-leste.emb-japan.go.jp/column_abe2.html","https://oshiete.goo.ne.jp/qa/8260172.html","https://en.wikipedia.org/wiki/Voiceless_bilabial_fricative","https://www.quora.com/In-Japanese-how-do-you-pronounce-the-kana-%E3%81%B5-or-%E3%83%95-fu-or-hu"]},{"codepoint":12408,"name":"HIRAGANA LETTER HE","ssml":["HIRAGANA","LETTER","<phoneme alphabet=\"ipa\" ph=\"he̞\">HE</phoneme>"],"description":["ひらがなの「へ」。字母は「阝」。","「阝」は「部屋」の「部」の略字である。成り立ちがわかりづらいが、奈良時代ごろにはカタカナの「マ」のような形をしており、これを経由して現在の形になったと考えるとわかりやすい。"],"references":["https://ja.wikipedia.org/wiki/%E3%81%B8","森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12411,"name":"HIRAGANA LETTER HO","description":["ひらがなの「ほ」。字母は「保」。","「ほの字」とは「惚れている」を表す俗語である。今でも使われるが、用例は江戸初期まで遡るとか。"]},{"codepoint":12414,"name":"HIRAGANA LETTER MA","description":["ひらがなの「ま」。字母は「末」。","尾張いろはかるたの「ま」の札は「待てば甘露の日和あり」である。甘露とは中国の伝説で君主が善政を敷いたときに降るとされる、甘い雨のこと。現在では「待てば海路の日和あり」で知られているが、これは甘露が海路に転じたものである。","つまり、アメではなくアメが⋯⋯。いや、なんでもない。"],"references":["http://www.geocities.jp/n_quaker/karuta/owari.html","https://ja.wikipedia.org/wiki/%E7%94%98%E9%9C%B2"]},{"codepoint":12416,"name":"HIRAGANA LETTER MU","description":["ひらがなの「む」。字母は「武」。","とあるゲームにおいて、マックスウェルなる人物が全てを終わらせる時にノートから召喚する文字。"],"references":["http://www.nicovideo.jp/watch/sm17484462"]},{"codepoint":12420,"name":"HIRAGANA LETTER YA","description":["ひらがなの「や」。字母は「也」。","時は平安、藤原成範卿は、流罪を赦されて京に召還されたとき、内裏にて宮女から次のごとき和歌を受け取った。","――雲の上はありし昔にかはらねど見し玉だれの内やゆかしき","成範卿が配流される前は彼も簾中に出入りできる身分だったことを指しての歌である。返歌をしようとした成範だったが、時の内大臣である平重盛が参内したのを見て、すぐさま受け取った歌の「や」の文字を書き換えて宮女に返し、忽ち辞去した。果たしてその字は―― (U+305Eに続く)"],"references":["http://dl.ndl.go.jp/info:ndljp/pid/945602/53","http://dl.ndl.go.jp/info:ndljp/pid/877526/29"]},{"codepoint":12424,"name":"HIRAGANA LETTER YO","description":["ひらがなの「よ」。字母は「与󠄁」。","2017年5月、数学記号の一種としてひらがなの「よ」が用いられている論文があると話題になった。論文は圏論に関する証明を行っており、「米田の補題」から導かれる、任意の局所小圏に対して定義される前層圏への充満忠実関手、すなわち「米田埋め込み」を「よ」と表記している。由来はもちろん、「米田の補題」に名が知られる数学者米田信夫の頭文字である。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。","https://twitter.com/unununum_1/status/860125300104937472","https://arxiv.org/abs/1506.08870"]},{"codepoint":12425,"name":"HIRAGANA LETTER RA","description":["ひらがなの「ら」。字母は「良」。","おもちゃ専門量販店の「Toys\"Я\"us」の名前は、「Toys are us.」という英文に由来している。「R」が反転しているのは、英語圏の子どもがよく間違える書き方だとか。日本語名の「トイザらス」の「ら」がひらがななのも原語にならっており、同じように「子どもの間違い」をうまく図表化した、秀逸なローカリゼーションによるものである。"],"references":["https://www.toysrus.co.jp/h/CSfHelpFaq10.jsp"]},{"codepoint":12426,"name":"HIRAGANA LETTER RI","description":["ひらがなの「り」。字母は「利」。","「利」の右側ではなく、全体を崩して作られた文字である。ショゴスの鳴き声。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12427,"name":"HIRAGANA LETTER RU","description":["ひらがなの「る」。字母は「留」。","しりとりの必勝法。そして、広辞苑に掲載されている単語でしりとりをしても、ポケモンの名前でしりとりをしても、最も長いしりとりの最後の単語は「る」で始まることが知られている。"],"references":["http://oride.net/trivia/trivia361-368.htm#tane32","http://auemath.aichi-edu.ac.jp/~ykhashi/semi/2010note/08_issey_final.pdf"]},{"codepoint":12428,"name":"HIRAGANA LETTER RE","description":["ひらがなの「れ」。字母は「礼」。","日本の車のナンバープレートで、レンタカーに付けられる文字といえば「わ」が有名だが、実は制度上は「れ」も用いることができる。特に、全国の陸運支局の中で、札幌だけはなぜかナンバープレート交付開始直後から「れ」ナンバーのプレートを発行していた。一説にはFAXで書類を送信した際に「わ」と「れ」を取り違えたとされているが、信憑性は低い。","現在、「れ」ナンバーのレンタカーを見られるのは北海道と沖縄だけである。"],"references":["https://trafficnews.jp/post/65790/2/"]},{"codepoint":12429,"name":"HIRAGANA LETTER RO","description":["ひらがなの「ろ」。字母は「吕」。","字母の「吕(呂の異体字)」は人間の背骨をかたどった象形文字である。この用法は文字を転じて現在「膂力」の「りょ」にかろうじて形を留めている。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12431,"name":"HIRAGANA LETTER WA","description":["ひらがなの「わ」。字母は「和」。","日本の車のナンバープレートで「わ」といえば、主にレンタカーに付けられる文字である。なぜ「わ」がレンタカーなのかはよく分かってないが、「50音順で後半の使われていなかった文字が当てはめられたのではないか」と言われている。"],"references":["https://trafficnews.jp/post/65790/2/"]},{"codepoint":12432,"name":"HIRAGANA LETTER WI","description":["ひらがなの「ゐ」。字母は「為」。","万物は流転する。文字も流転する。平安期に上代仮名が消え、1900年に変体仮名が消えたように、この文字も1946年11月16日に歴史の表舞台から姿を消した。消え行く文字たちに祈りを。そして新たな文字たちに祝福を。"]},{"codepoint":12434,"name":"HIRAGANA LETTER WO","description":["ひらがなの「を」。字母は「遠」。","戦後の国語改革を生き延びた歴戦の勇士。「を」が助詞でなかったら、「ゐ」「ゑ」同様にこの文字も消える運命にあったのだ。"]},{"codepoint":12504,"name":"KATAKANA LETTER HE","description":["カタカナの「ヘ」。字源は「阝」。","仮名の中で唯一、ひらがなとカタカナの形が全く同じ文字。しかし印刷される書体では、ひらがな・カタカナそれぞれのデザインに合わせて微妙な違いを設けており、プロの活版職人なら活字を見ただけでひらがなかカタカナか判別できるらしい。"],"references":["http://crd.ndl.go.jp/reference/detail?page=ref_view&id=1000137387"]},{"codepoint":29356,"name":"CJK UNIFIED IDEOGRAPH-72AC","definition":"dog; radical number 94","description":["――「貴様は手習いをしたか?」「手習いどころか唐様でも和様でもなんでも書きます」「どふやら嘘らしい、貴様『大』の字を書き得るか」「書き得る書き得る」「そんなら書いて見せなへか」「ムム書いて見せよふ見せよふ」と七といふ字や八といふ字を書く。「ソレ見やれ大の字も知らぬ。文字を知らぬ者は畜生だ」と言へば大きに腹を立てて「そんなら大の字を書いて見せやうか」「サァサァ書いて見やれ」「書かねへでは畜生だと言はれたが悔しい、書いて見せやう」と大の字を書き、脇へ点を打つて「サァこれでも畜生か」。\n――桜川慈悲成「無筆」 『落噺常々草』所収","江戸ののび太である。"],"references":["http://dl.ndl.go.jp/info:ndljp/pid/8929358/8","http://rakugonobutai.web.fc2.com/156sitinoji/siti.html"]},{"codepoint":29482,"name":"CJK UNIFIED IDEOGRAPH-732A","definition":"pig, hog, wild boar","description":["日本ではイノシシを意味する漢字だが、中国やその他の国では主にブタを意味する。したがって干支の亥年も、中国ではイノシシ年ではなくブタ年である。"]},{"codepoint":24525,"name":"CJK UNIFIED IDEOGRAPH-5FCD","definition":"endure, bear, suffer; forbear","description":["即ち、<ruby><rb>刃の下に心あり</rb><rt>ハートアンダーブレード</rt></ruby>。",{"TODO":"書く"}]},{"codepoint":135673,"name":"CJK UNIFIED IDEOGRAPH-211F9","description":["国構えの中に「兔(ウサギ)」の文字。《篇海》引く「与月同籀文」⋯⋯即ち、ウサギの住む土地、「月」を意味する漢字である。","中国に伝わる月の説話といえば嫦娥奔月が有名だが、月の兎の話(玉兎伝説)も同じく古くから伝わっている。別伝では、月へ昇った嫦娥は神罰により兎に变化した、とも。","この字は佚書とされる字書『史籀篇』に見られるとされる「籀文」である。『史籀篇』は現存しないがゆえにその内容については謎に包まれており、それゆえこの漢字の字源も明らかではない。しかし、玉兎伝説との関連はほぼ間違いないと見てよいだろう。そして、この字に対応する、「太陽」を意味する漢字も存在するのだが⋯⋯。"]},{"codepoint":135694,"name":"CJK UNIFIED IDEOGRAPH-2120E","description":["国構えの中に「烏(カラス)」の文字。《集韻》引く「籀文日字」⋯⋯即ち、「太陽」を意味する漢字である。","太陽にカラスが棲んでいるという金烏伝説は、中国神話に語られる伝説の一つだ。かつて10個の太陽が地上を照らしたとき、英雄后羿は1つの太陽に狙いを定めて矢を引いた。射ると太陽はたちまち爆発四散して落下し、あとには三本足のカラスの死体が残されたという。","日本神話に登場する八咫烏も、これと同じ三足烏の系統に属する。この漢字は籀文であり字源は明らかではないが、金烏伝説との関連はほぼ間違いないと見ていいだろう。そして、この字に対応する、「月」を意味する漢字も存在するのだが⋯⋯。"]},{"codepoint":32703,"name":"CJK UNIFIED IDEOGRAPH-7FBF","description":[{"TODO":"書く"}]},{"codepoint":13315,"name":"CJK UNIFIED IDEOGRAPH-3403","description":["漢字――である。","朝鮮国字の一種で、「かなづち」などを意味する象形文字という説が有力。","筆者はこれに「アース」という読みを与えたい。"],"references":["http://www.guoxuedashi.com/zidian/3403.html"]},{"codepoint":38276,"name":"CJK UNIFIED IDEOGRAPH-9584","description":["初期のボーカロイドに造詣のある人には懐かしい漢字かもしれない。珍字を扱った卑屈Pの楽曲「なんだかとっても! いいかんじ」にてサビを飾る漢字である。","楽曲中でこの字は、「漢字部屋」というウェブサイトから引用した「ものかげからきゅうにとびだしてひとをおどろかせるときにはっするこえ」という長い読みを与えられているが、これは、まあ、ある意味では間違いではない。","これは宋代の『賓退錄』に初めて見られる漢字で、ここでは「身を隱し忽ちに出で、以て人を驚かす聲を言う也」という説明を与えられている。この意味の時点ですでにシチュエーションがおもしろい。この説明文を直訳したと思われる例の訓も、意味としては正しいといえる。","しかし、「漢字部屋」に掲載されているこの訓は、当該サイトに「典拠不明」と記されているとおり、どこから取ったものなのか、いまいちはっきりしない。有力なのは諸橋轍次の『大漢和辞典』に掲載されている字釈だが、これも原文とは大きく異なる。なので、この字を以て「最も長い読みの漢字」とされると、かなり納得がいかない。","が、少なくともこの漢字が「物陰から急に飛び出して人を驚かせる時に発する声」という愉快な意味を持つことは間違いない。こんな感じの文字なので字源もよく分からないが、見たまま捉えるなら、「門」の陰に「人」がいる様子を表した会意文字となるだろう。","ところで――この字と同じく「門」と「人」から構成される漢字に、「閃」がある。この字は現在では主に「ひらめき」の意味で用いられるが、原義は《説文》などに見られるとおり、「門の中から人が顔を出している様子」である。ここから「突然現れる」という用法が生まれた。となると、この間に「門の中から人が突然顔を出す」という意義が存在したであろうことは想像に難くない。","これを踏まえて考えると⋯⋯「閃」と「閄」には絶妙な意味の繋がりが見て取れる。門の中から人が現れるか、陰から人が現れるかというだけの違いである。筆者は、「閄」が「閃」になぞらえて作られた造字であり、それ自体が一種のユーモアだったのではないかと想像しているが⋯⋯。","はてさて、いずれにせよ真相は藪の中である。"],"references":["http://www.nicovideo.jp/watch/sm3556898","https://www.kanripo.org/text/KR3j0051/005#1a","http://www.geocities.jp/f9305710/henkanji.html","http://dic.nicovideo.jp/a/%E9%96%84","http://www.guoxuedashi.com/hydcd/510588d.html","http://www.guoxuedashi.com/kangxi/pic.php?f=dcd&p=16821","http://www.guoxuedashi.com/kangxi/pic.php?f=dcd&p=16825","http://www.guoxuedashi.com/kangxi/30952l.html","http://www.guoxuedashi.com/kangxi/14415l.html","http://cjjc.weblio.jp/content/%E9%96%83"]},{"codepoint":895,"name":"GREEK CAPITAL LETTER YOT","description":["果てしなく不可解。果てしなく厄介。それがUnicodeに収録された32番目のギリシャ文字、「ヨット」である。","大げさに言えば、この文字はギリシャ文字に存在するはずがない、存在してはいけない文字だ。","ギリシャ文字は、現存する文字体系の中でも、最も古い歴史を持つ文字の一つである。紀元前9世紀から現代に至るまで、実に3000年近くに渡って大きな変化をすることなく伝え続けられた。その長い歴史の中には、表記法の変化に伴って消失し、現代では使われなくなった文字も存在する。ディガンマやスティグマなどが典型的な例である。","その淘汰と発生の歴史の中のどこにも、「ヨット」は存在しない。現代ギリシャ語の語彙に「ヨット」なる文字は登場しないし、古代の文献にもこれに対応する文字は存在しない。ならば「ギリシャ文字のヨット」とは何なのか。一体誰が、何のために追加した文字なのか。","形は、ラテン文字のJ(ジェー)に似ている……。いや、むしろ似ていて当然だ。なぜならそもそも「ヨット」というのは、ラテン文字のJのドイツ語読みにほかならないからである。","ラテン文字としてのJは、26字存在する基本ラテン文字の中でも最も新しい文字である。字形としての用例は古代ローマ期まで遡るが、音素/j/(ヤ行の音)を表す文字として独立に数えられるようになったのは、中世後期になってからである。そのころギリシャでは活版印刷の普及とともに活字体が形成され、確固たる表記体系が確立された。そこに「異国の文字」が入り込む隙は、なかった。","なので「ギリシャ文字のヨット」というのは、ほとんど現代の空想の産物である。この文字は、現代のギリシャ語学者が、かつてギリシャ語に存在した音素、/j/を表記するために考案した、架空のギリシャ文字なのだ。","音素/j/は、現代ギリシャ語では使われることがない。ギリシャ文字が生まれた紀元前9世紀のギリシャ語にもこの音は存在しなかった。なのでこの音に対応する文字が最初から存在しないのは、ある意味あたり前のことだ。しかし、それ以前の時代……紀元前2000年紀から1000年紀にかけて、ギリシャ語が線文字Aやキプロス文字を用いて歪に表記されていた時代、今なお盛んに研究が行われているその時代のギリシャ語に、音素/j/は存在していたと推定されている。",{"TODO":"書く"}],"references":["http://www.opoudjis.net/unicode/yot.html"]},{"codepoint":7838,"name":"LATIN CAPITAL LETTER SHARP S","description":["「ß(エスツェット)」の大文字問題は、古来100年間にわたりドイツ人を悩ませてきた問題だった。","「ß」は、ドイツ語特有の文字で、字音的には「ss」と同一である。かつては「ss」を含む単語は自由に「ß」に書き換えることが可能だったが、19世紀ごろから、それぞれがある程度意識して使い分けるようになった。","このようにしてドイツ語に「ß」は生まれた。例えば、ドイツ語で「いかだ」は「Floß」である。ドイツ語に「ss」で始まる単語はないので、「ß」で始まる単語もない。従って大文字の「ß」は存在しえない――万が一、文章をすべて大文字で記す事になった場合は、「ß」を「ss」に開けばいい。「Floß」は「FLOSS」となる。","事態がまかり通らなくなったのは、20世紀に入ってからである。1901年、ドイツの国語改革の一環として、ドイツ語の正しい綴りを統一する「ドイツ正書法」が制定された。これにより、「ß」を使用する単語と「ss」を使用する単語が明確に規定され、「ß」と「ss」の弁別が生まれた。同時に、「ß」を大文字で書く時は「SS」とするというルールが明文化された。そして1997年、ドイツ正書法が改正され、「ß」と「ss」の区別はさらに厳密なものになった。長母音の後は「ß」、短母音の後は「ss」というルールが生まれ、これがあらゆる単語に適用されるようになった。","こうなってくると、もはや「ß」と「ss」は別の文字である。例えば、「大きさ」を意味する「Maße(マーセ)」と、「塊」を意味する「Masse(マッセ)」とは異なる。これらを大文字で書いたときに、「Maße」が「Masse」と同じ綴りになるのは違和感がある⋯⋯という流れが生まれ始めた。こうして「ß」の大文字を表す文字が各方面で作られたが、正書法に則ってないので使うべきでないという意見もあり、大きな論争となった。","そんな具合なので、2007年、Unicodeに「ß」の大文字が独立した文字として登録されたときには、大きな話題を呼んだ。新しい文字コードに対応するためのフォントがすぐさま設計され、新聞の見出しなどでも徐々に「ß」の大文字が用いられるようになっていった。","そして2017年6月28日、ドイツ正書法の改正により、「ß」の大文字が公式に認められることとなった。ドイツ正書法が制定されて爾来116年、ようやくこの文字は市民権を勝ち取ったのである。","古くからある文字を、どうやって新しい書記体系に組み込むか。このような問題は、他の言語でもしばしば見られる。日本語だって例外ではない。例えば、踊り字の一つである「くの字点」を、横書きで表現する時にどうするのかという問題――横書き用の新たな「くの字点」を考案するのか、それとも「くの字点」を用いず開いてしまうのか⋯⋯。開いてしまっても意味としては同じだが、きっと「くの字点」の古典的な雰囲気を崩してしまうことに抵抗がある人も多いだろう。","ドイツ語は、新たな文字を考案するという選択をした。個人的には、2007年のUnicode採択が一役買っているのではないかと考えている。","文字コードは社会を変える。"],"references":["https://en.wikipedia.org/wiki/%C3%9F","https://en.wikipedia.org/wiki/Capital_%E1%BA%9E","http://www.unicode.org/versions/Unicode10.0.0/ch05.pdf#page=45","http://www.zeit.de/news/2017-06/29/sprache-die-deutsche-sprache-hat-jetzt-auch-ein-grosses-eszett-29114003","http://www.pocus.jp/e-deutsch/eszet.html","https://web.archive.org/web/20110131220357/http://opentype.info:80/blog/2011/01/24/capital-sharp-s/","http://blog.colorfullife.net/archives/2007/06/04-000644.php"]},{"codepoint":65021,"name":"ARABIC LIGATURE BISMILLAH AR-RAHMAN AR-RAHEEM","description":["アラビア書道は、アラビア文字の美しさを極限まで追求した芸術である。複雑に絡みながら一面を埋め尽くす線と線、壮大で美麗な文字の交わりは、見るものを否応なしに圧倒する力を有している。",{"TODO":"書く"},"画像は右下からスルス体で連ねられたバスマラである。頂点には「アッラー」の文字を配し、左右には「ラフマーニ」と「ラヒーム」の二語が対称に置かれた涙滴形となっている。全体として、非常に美しい調和がとれている。",{"TODO":"書く"}],"references":["https://commons.wikimedia.org/wiki/File:Bismillah_Calligraphy_37.svg","https://plaza.rakuten.co.jp/alqalam/diary/200705200000/","http://www.nippon.com/ja/people/e00028/","http://www.unicode.org/L2/L2002/02163-n2413-4-urdu.pdf","http://www.unicode.org/L2/L2002/02011R-kew.pdf","http://www.unicode.org/versions/Unicode10.0.0/ch09.pdf#page=31"]}]
+module.exports = [{"codepoint":19952,"name":"HEXAGRAM FOR REVOLUTION","description":["――革は、巳日(いじつ)にしてすなわち孚(まこと)とせらる。元(おお)いに亨(とお)り貞(ただ)しきに利(よ)ろし。悔(くい)亡ぶ。","結局どこの文化圏でも、君主は常に君臨して統治する存在なのだ。禅譲とはなんだったのか。","ちなみに、この卦の上爻の爻辞にある「君子豹変、小人革面」は、「君子は豹変す」の語源である。"],"references":["高田眞治・後藤基巳訳　『易経』　岩波書店〈岩波文庫〉、1959年。ISBN 9784003320112。"]},{"codepoint":1567,"name":"ARABIC QUESTION MARK","description":["アラビア語では疑問符を左右反対にして書く。理由はもちろん、そもそもアラビア語では右から左に文章を書くから――なのだが、同じく右書きのヘブライ語やイディッシュ語では通常の疑問符と同じ向きのものを使う。"],"references":["https://en.wikipedia.org/wiki/Question_mark#Mirrored_question_mark"]},{"codepoint":127136,"name":"PLAYING CARD BACK","description":["トランプの裏面。","トランプがUnicodeに収録されているのだから、そのうち「Unicodeかるた」もUnicodeに収録される日が来るかもしれない。しかし「Unicodeかるた」もUnicodeに収録されると、その文字を記載した「Unicodeかるた」のカードが必要になり、さらにそのカードを表す文字がUnicodeに収録され、さらに⋯⋯。","⋯⋯やっぱり収録されないほうが幸せかもしれない。"]},{"codepoint":127153,"name":"PLAYING CARD ACE OF HEARTS","description":["トランプの、ハートのエース。","「エース」というのはもともと、トランプやサイコロの目を表すための序数の一つである。エースの後は、デュース、トレイ、ケイター、シンク、と続くのだが、現在ではデュース以外の単語はほとんど使われない。"]},{"codepoint":9856,"name":"DIE FACE-1","description":["賽の目の1。ピンとも呼ぶ。サイコロのこの目だけが赤いのは、実は日本だけである。","通るかっ⋯⋯! こんなもん⋯⋯!"]},{"codepoint":9857,"name":"DIE FACE-2","description":["賽の目の2。墨を塗ることで3にも4にも5にも6にもできる便利な目である。"]},{"codepoint":9858,"name":"DIE FACE-3","description":["賽の目の3。","元老院と敵対したユリウス・カエサルは、ルビコン川を渡り進軍する際に「賽は投げられた」と述べた。彼が礎を築いた帝政ローマの皇帝が賭博を禁じながらも自らはダイスゲームに熱中したのは、ひょっとしたら彼のせいかもしれない。"]},{"codepoint":9859,"name":"DIE FACE-4","description":["賽の目の4。中国では1の目に加えてこの目も赤く塗られている。清代は趙翼の伝によると、唐の玄宗帝がこの目でゲームに勝ったため4の目を赤く塗らせたとか。"],"references":["https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%A4%E3%82%B3%E3%83%AD#.E4.B8.AD.E5.9B.BD.E3.81.AE.E3.82.B5.E3.82.A4.E3.82.B3.E3.83.AD","https://zh.wikipedia.org/wiki/%E9%AA%B0%E5%AD%90#.E6.AD.B7.E5.8F.B2"]},{"codepoint":9860,"name":"DIE FACE-5","description":["賽の目の5。","古代ローマで用いられたサイコロの一種に、2の目と5の目が欠けた4面のダイスがある。形も立方体とか正四面体ではない、へんてこな形をしている。"],"references":["https://en.wikipedia.org/wiki/Dice#History","http://www.aerobiologicalengineering.com/wxk116/Roman/BoardGames/tali.html"]},{"codepoint":9861,"name":"DIE FACE-6","description":["賽の目の6。賽の目が彫刻されているサイコロの場合、1の目が一番彫る量が少ないので少しだけ重く、そのぶん6の目がでる確率が少しだけ高い⋯⋯かもしれない。"]},{"codepoint":48,"name":"DIGIT ZERO","description":["アラビア数字のゼロ。","ゼロを表す文字は、ゼロという概念が生まれる前に生まれた。"]},{"codepoint":65,"name":"LATIN CAPITAL LETTER A","description":["ラテン文字の大文字のエー。ラテン文字の最初の文字にして、世界で最も有名な文字の一つ。"]},{"codepoint":97,"name":"LATIN SMALL LETTER A","description":["ラテン文字の小文字のエー。というよりもアー。15世紀から16世紀にかけての大母音推移の結果、この文字を「エー」と読むのは英語だけである。"]},{"codepoint":66,"name":"LATIN CAPITAL LETTER B","description":["ラテン文字の大文字のビー。","「B級」「B寝台」など、なにかと「一歩劣った」イメージが付きまとうアルファベット。血液型のB型のイメージがなんとなく悪いのも、もしかしたらそういう連想から来てるのかもしれない。"]},{"codepoint":98,"name":"LATIN SMALL LETTER B","description":["ラテン文字の小文字のビー。サムズアップ。","B(ビー)はギリシャ文字のΒ(ベータ)に由来しており、発音も古代ギリシア語にならって/b/(バ行の音)である⋯⋯のだが、当のギリシャ語では発音が/v/(ヴァ行の音)に変わってしまった。ラテン文字圏の言語だけが、古典ギリシャ語の音を残している。","まるで日本の漢字の唐音や漢音のようだ。"]},{"codepoint":67,"name":"LATIN CAPITAL LETTER C","description":["ラテン文字の大文字のシー。ギリシャ文字のΓ(ガンマ)が横倒しになって丸まったもの。","ラテン文字は全体的にギリシャ文字と比べて丸まっているのが特徴である。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。"]},{"codepoint":99,"name":"LATIN SMALL LETTER C","description":["ラテン文字の小文字のシー。元となったギリシャ文字のガンマ(Gamma)の綴りからも見て取れるとおり、この文字は当初は/g/(ガ行の音)を表す文字だった。ギリシャ文字からエトルリア文字に輸入された際に濁りのない/k/(カ行の音)を表すようになり、ラテン文字となったときには/g/と/k/の2つの音を表すようになっていた。","その後もこの文字は多様化の洗礼を受け、言語によって/k/、/s/、/ʧ/、/θ/、/t͡s/など、様々な音価を持つめんどくさい文字となっている。","ところで、悪逆で有名なローマ皇帝、ガイウス帝の名前(プラエノーメン)の綴りはGaiusだが、イニシャルで書くときにはCと書く。Cが/g/だった頃の名残である。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic","https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%A9%E3%82%A8%E3%83%8E%E3%83%BC%E3%83%A1%E3%83%B3"]},{"codepoint":68,"name":"LATIN CAPITAL LETTER D","description":["ラテン文字の大文字のディー。ギリシャ文字のΔ(デルタ)から派生した。","英語圏で「the D」といえば、男の雄大なアレを指す隠語である。しかしてこんな有名なジョークがある。","Boy: There are 20 letters in the Alphabet, right?\nGirl: Nope. 26.\nBoy: Oh, sorry I must have forgot U R A Q T.\nGirl: You'd still be missing one letter.\nBoy: Yeah I know, I will give you the D later...","蛇足ながら解説しておくと「U R A Q T」は「You are a cutie.」の意味である。"]},{"codepoint":100,"name":"LATIN SMALL LETTER D","description":["ラテン文字の小文字のディー。","大文字と小文字で形が大きく異なる文字の一つ。右側の長い縦棒は、元は大文字のDの曲線部分の書き出しが大きく左に突き出した形が由来である。やがて時代とともに横棒が縦棒になり、現在のdの形になったとされている。"],"references":["https://en.wikipedia.org/wiki/D#History"]},{"codepoint":69,"name":"LATIN CAPITAL LETTER E","description":["ラテン文字の大文字のイー。ギリシャ文字のΕ(イプシロン)に由来しており、形も全く同じである。","ラテン文字を使用するほとんどの言語で、最も多く使われる文字である。一方で大変に努力すればこの文字抜きで文章を書くことも可能で、『ギャズビー』に代表される「E」抜きの文章も多く書かれている。"]},{"codepoint":101,"name":"LATIN SMALL LETTER E","description":["ラテン文字の小文字のイー。","自然対数の底にeの文字を割り当てたのはオイラーだと言われており、欧米圏ではこの数をオイラー数と呼ぶことも多い⋯⋯が、さすがにeはオイラー(Euler)の頭文字ではなく、指数(exponent)の頭文字の可能性が高いと言われている。"],"references":["http://ualr.edu/lasmoller/efacts.html"]},{"codepoint":70,"name":"LATIN CAPITAL LETTER F","description":["ラテン文字の大文字のエフ。字源的には、ギリシャ文字のΥ(ウプシロン)の上のほうを、こう⋯⋯右にくいっと傾けたものと見るのが正しい。","森博嗣は、誰よりも文字を愛したミステリー作家である。中でもアルファベットの「F」は、彼の代表作である『すべてがFになる』で事件の鍵を握る文字だ。作中では、博士の部屋に残されたコンピューターに表示されていた「すべてがFになる」という言葉を解き明かしていく。その謎は、同じくミステリー作家である我孫子武丸の推薦文によると⋯⋯「リアルオーディオよりCOOLでJAVAよりもHOT」だ。"],"references":["https://en.wikipedia.org/wiki/F","西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","森博嗣　『すべてがFになる : The perfect insider』　講談社〈講談社文庫〉、1998年。ISBN 9784062639248。"]},{"codepoint":102,"name":"LATIN SMALL LETTER F","description":["ラテン文字の小文字のエフ。","多くの言語で/f/(ファ行の音)を表す。この音はフェニキア語にもギリシャ語にもなかった音なので、ラテン語(正確にはエトルリア語)を表記する際に大層悩んだ。最初はギリシャ語で/wh/を表す「FH」という表記が使われていたが、やがて「F」1字になり、この文字自体も/f/を表す文字になった。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","http://seesaawiki.jp/w/qvarie/d/%a5%e9%a5%c6%a5%f3%ca%b8%bb%fa%a1%daF%a1%db","https://en.wikipedia.org/wiki/F"]},{"codepoint":71,"name":"LATIN CAPITAL LETTER G","description":["ラテン文字の大文字のジー。名前を言ってはいけないあの生物。","紀元前3世紀ごろまでのラテン語では、「C」が/k/(カ行の音)および/g/(ガ行の音)を表していた。しかし流石に不便だったのか、後にこの「C」に1本線を足して「G」とし、/k/と/g/を区別するようにしたのが起源である。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic"]},{"codepoint":103,"name":"LATIN SMALL LETTER G","description":["ラテン文字の小文字のジー。","手書きの文字に近い字と、下の方で一回転させる形の2種類の字形が存在するが、これらはそれぞれ、「一階建てのg (the single-story g)」、「二階建てのg (the double-story g)」と呼ばれている。"],"references":["https://advenc.ru/post/strochnye-istiny","https://twitter.com/nixeneko/status/757286834187538432"]},{"codepoint":72,"name":"LATIN CAPITAL LETTER H","description":["ラテン文字の大文字のエイチ。日本においては最も卑猥なアルファベットである。","実際のところ、なぜ英語でこの文字を「エイチ」ないし「ヘイチ」と読むのかに関してはよくわかっていない。オックスフォード英語辞典には、「ハー(古典ラテン語)」→「アハ(ラテン語)」→「アカ(俗ラテン語)」→「アッチ(古フランス語)」→「アーチ(中期英語)」と変遷した、とあるが、必ずしも定説ではない。"],"references":["https://en.wikipedia.org/wiki/H","https://en.oxforddictionaries.com/definition/h","https://www.theguardian.com/science/shortcuts/2013/nov/04/letter-h-contentious-alphabet-history-alphabetical-rosen"]},{"codepoint":104,"name":"LATIN SMALL LETTER H","description":["ラテン文字の小文字のエイチ。","エイチはギリシャ文字のΗ(エータ)に由来している⋯⋯が、この文字が表す/h/(ハ行の音)は、古代ギリシャ語での発音を受け継いだものである。現在のギリシャ語でΗ(エータ)は、なんと母音である。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。","http://nixeneko.hatenablog.com/entry/c90_greek_latin_cyrillic","https://en.wikipedia.org/wiki/H"]},{"codepoint":73,"name":"LATIN CAPITAL LETTER I","description":["ラテン文字の大文字のアイ。Hのあとに来るもの。","1928年に制定されたトルコ語ラテン文字では、2種類のアイをドットがついているかついてないかで区別する。つまり「I」と「i」は別の文字であり、「I」の小文字は「ı(ドットなし小文字アイ)」、「i」の大文字は「İ(ドット付き大文字アイ)」となる。これは、同じ文字体系でも言語によって大文字/小文字変換を使い分けなくてはいけない例として、しばしば取り沙汰される。"],"references":["http://www.unicode.org/versions/Unicode10.0.0/ch05.pdf#page=44","http://seesaawiki.jp/w/qvarie/d/%a5%e9%a5%c6%a5%f3%ca%b8%bb%fa%a1%daI%a1%db"]},{"codepoint":105,"name":"LATIN SMALL LETTER I","description":["ラテン文字の小文字のアイ。","1998年、AppleはMacintoshコンピューターの新シリーズ「iMac」を発表した。これが現在まで用いられているiPhoneやiPodやiTunesの「i」の端緒である。その由来は「Internet」の頭文字を筆頭として、「Individual」「Instruct」「Inform」など様々な意味をかけ合わせたものとのことだが、それがなぜ小文字なのかは⋯⋯まあ、おそらくブランドデザイン的な問題だろうと思われている。"],"references":["https://www.quora.com/Why-is-the-letter-i-in-the-word-iPhone-is-in-lower-case-Is-there-any-reason-for-it/answer/Mark-Hetherington?srid=h2BPt","http://www.iphonejd.com/iphone_jd/2009/01/the-i-in-iphone.html"]},{"codepoint":74,"name":"LATIN CAPITAL LETTER J","description":["ラテン文字の大文字のジェー。ラテン文字というのは要するにラテン語を表記するための文字だからラテン文字と呼ぶのだが、これは元々ラテン語にはない文字⋯⋯というよりはI(アイ)の異体字だった。","ラテン文字が成立してから2000年近く経った14世紀ごろ、Iに対応する半母音である/j/(や行の音)を表現するために区別されて使われるようになったとされる。なのでギリシャ文字やキリル文字にはこの字に対応する文字はない。"]},{"codepoint":106,"name":"LATIN SMALL LETTER J","description":["ラテン文字の小文字のジェー。当初、この文字は/j/(ヤ行の音)を表現するための文字だった⋯⋯が、時にヨーロッパ激動の近世。教会の拡大にともなって様々な民族がラテン文字を使うようになり、この文字も転用・借用の洗礼を受けることになる。特に英語では古フランス語での転訛を経て/dʒ/(ジャ行の音)を表すようになり、今でもそのイメージが強い。","加えてスペイン語では、イスラム統治時代の影響でこれまた全く異なる/x/を表現する文字となっており、現在でも言語間での乖離が激しい文字の一つとなっている。"],"references":["https://ja.wikipedia.org/wiki/J","https://en.wikipedia.org/wiki/J","https://english.stackexchange.com/a/148414","https://english.stackexchange.com/a/148416"]},{"codepoint":75,"name":"LATIN CAPITAL LETTER K","description":["ラテン文字の大文字のケー。","ギリシャ文字のΚ(カッパ)からラテン文字のK(ケー)が生まれたのち、この文字は同じ発音を持つC(シー)に統合され、消滅した。そのためラテン語の直系(ロマンス諸語)であるフランス語やイタリア語などでは原則としてこの文字は使用しない。"],"references":["西田竜雄　『講座言語 第5巻 世界の文字』　大修館書店、1981年。ISBN 9784469110555。"]},{"codepoint":107,"name":"LATIN SMALL LETTER K","description":["ラテン文字の小文字のケー。","英語では、語頭に「kn-」が綴られた時には「k」を発音しない、「黙字のK」と呼ばれる現象が存在する。これは発音が難しいため省略されたという説が濃厚だが、ドイツ語やスウェーデン語では現在でも「kn-」の「k」を発音する。ドイツ人の真面目さが現れているのだろうか(?)。","BUMP OF CHICKEN の楽曲「K」は、この「黙字のK」を上手くストーリーに組み込んだ名作である。"],"references":["https://en.wikipedia.org/wiki/Silent_k","https://www.quora.com/Why-should-we-write-the-letter-K-if-it-is-silent-in-words-like-knowledge-and-knife/answer/Priyanka-Sharma-878?srid=h2BPt"]},{"codepoint":76,"name":"LATIN CAPITAL LETTER L","description":["ラテン文字の大文字のエル。","物理学などで用いられる単位は、人名に由来するものは大文字で、それ以外は小文字で記述することになっている。中でも体積の単位である「リットル」の名称は、18世紀フランスの物理学者であるクロード・リットルに由来している。彼はその生涯を主に珪酸化合物の研究に捧げ、その一環として、今日でも用いられている実験用ガラス器具の製造法を確立した。現在、体積の単位を大文字の「L」で記述するのは、彼がもたらした正確な液体計量法を讃えてのことなのである。","⋯⋯というのは真っ赤なウソで、「クロード・リットル」の人物伝なるものは、物理学界では有名な作り話。リットルを大文字で記述する正しい理由は、数字の1との混同を避けるためである。"],"references":["https://uwaterloo.ca/chem13news/sites/ca.chem13news/files/uploads/files/Jean%20Litre-article.pdf"]},{"codepoint":108,"name":"LATIN SMALL LETTER L","description":["ラテン文字の小文字のエル。","6点点字において、左側の3点を用いて表される(⠇)が、これは小文字の「l」の形をかたどったもの⋯⋯ではない。12番目の文字「L」を表すために、2番目の文字「B」に左下の点を足して作ったものである。"],"references":["http://seesaawiki.jp/w/qvarie/d/%a5%e9%a5%c6%a5%f3%ca%b8%bb%fa%a1%daL%a1%db","https://en.wikipedia.org/wiki/Braille","https://en.wikipedia.org/wiki/Braille_pattern_dots-123"]},{"codepoint":77,"name":"LATIN CAPITAL LETTER M","description":["ラテン文字の大文字のエム。","ラテン文字では最も幅の広い文字。かつての活字では大文字の「M」の型(ソート)の縦横が同じ長さになるようにデザインされていたため、活字におけるこの長さのことをエムと呼んだ。現在の書体では必ずしもそうなっていないが、主に、活字でいうところの縦の長さを指す単位としてエムは現在でも使われている。"],"references":["https://en.wikipedia.org/wiki/Em_(typography)"]},{"codepoint":109,"name":"LATIN SMALL LETTER M","description":["ラテン文字の小文字のエム。","英語圏ではかつてマイルを「m」と略していたが、メートルが国際化するにつれて「mi」表記が使われるようになり、現在では「mi」と書くのが主流である。","この際ついでにマイル自体も廃止してほしいものである。"],"references":["https://en.wikipedia.org/wiki/Mile"]},{"codepoint":78,"name":"LATIN CAPITAL LETTER N","description":["ラテン文字の大文字のエヌ。","ラテン文字の起源をたどっていくと、最終的にはエジプトのヒエログリフに行き着くという説がある。定説でこそないがそれなりに支持されている学説なのだが、それによると、「N」の起源は蛇の形を象ったヒエログリフであるという。今の形にも若干その面影を見ることができるかもしれない。"],"references":["William Bright, Peter T. Daniels　『The world's writing systems』　Oxford University Press、1996年。ISBN 9780195079937。","https://www.jstor.org/stable/3853586"]},{"codepoint":110,"name":"LATIN SMALL LETTER N","description":["ラテン文字の小文字のエヌ。","あるとき、「ヨーロッパの言語において、『夜』という単語は『N』と『八』を組み合わせたものである」という説が話題に上がったことがある。例えば、英語なら「n」+「eight」→「night」、ドイツ語なら「n」+「Acht」→「Nacht」と言った具合である。これは確かにいくつかの言語で成り立つのだが⋯⋯その全てがゲルマン語派である以上、ゲルマン祖語が同根であることによる一致、および偶然の産物以外の何物でもない。"],"references":["https://linguistics.stackexchange.com/a/11446","https://www.facebook.com/etymonline/posts/821462227970662"]},{"codepoint":79,"name":"LATIN CAPITAL LETTER O","description":["ラテン文字の大文字のオー。オーの字は、文字の歴史において最も形の変化が少ない文字の一つであり、紀元前10世紀ごろ生まれたフェニキア文字からずっと形が変わっていない。つまり、ある意味でラテン文字の中で最も古い文字、と言えるかもしれない。","ちなみにY(ワイ)も元のフェニキア文字と同じ形だが、こちらはラテン文字では一度消滅して復活した経緯を持つので、歴史は比較的浅い。"]},{"codepoint":111,"name":"LATIN SMALL LETTER O","description":["ラテン文字の小文字のオー。ラテン文字・ギリシャ文字・キリル文字の間で同じ活字を共有できる小文字は、実はこれだけである。"]},{"codepoint":80,"name":"LATIN CAPITAL LETTER P","description":["ラテン文字の大文字のピー。"]},{"codepoint":112,"name":"LATIN SMALL LETTER P","description":["ラテン文字の小文字のピー。"]},{"codepoint":329,"name":"LATIN SMALL LETTER N PRECEDED BY APOSTROPHE","description":["ラテン文字の小文字のnと前置アポストロフィー。Rock'n roll のように様々な単語の略記として用いられる。特にオランダ語をマイナーチェンジして作られたアフリカーンス語では、オランダ語の不定冠詞eenの略記法であるこれを正式な不定冠詞として採用しており、非常によく用いられる⋯⋯のだが、ひと目見たら分かる通り、明らかに「2文字」である。","そのためこの文字は、現在では「強く非推奨」となっており、12文字の(互換文字でない)使用非推奨文字の1つに数えられている。"],"references":["http://www.unicode.org/versions/Unicode10.0.0/ch07.pdf","http://www.unicode.org/notes/tn27/tn27-4.html"]},{"codepoint":12354,"name":"HIRAGANA LETTER A","description":["ひらがなの「あ」。字母は「安」。","五十音順で最初に並べられる平仮名である。五十音が現在の「あいうえお」の順番に並んだのは10世紀の悉曇学の影響だという。印欧語族に属するサンスクリット語は少なからずロマンス諸語とルーツを共有しているはずなので、ラテン文字も平仮名も同じ「あ」の音から始まるのも、ひょっとしたら偶然じゃないかもしれない。"]},{"codepoint":12356,"name":"HIRAGANA LETTER I","description":["ひらがなの「い」。字母は「以」。","いろは順で並べた時に最初に来る文字。「いの一番」という成語もこれが由来である。"]},{"codepoint":12358,"name":"HIRAGANA LETTER U","description":["ひらがなの「う」。字母は「宇」。","暑中の土用の丑の日に鰻を食べる習慣は、おそらく近世からのものだと考えられているが、なぜ丑の日なのか、なぜ鰻なのかはよく分かっていない。「う」しの日だから「う」なぎを食べる、つまり「う」のつく食べ物ならなんでも良いのだ⋯⋯という説も有名だが、これもまた起源がよく分かっていない。何から何まで謎な行事である。"],"references":["http://dl.ndl.go.jp/info:ndljp/pid/1767733/16","https://ja.wikipedia.org/wiki/%E5%9C%9F%E7%94%A8%E3%81%AE%E4%B8%91%E3%81%AE%E6%97%A5"]},{"codepoint":12360,"name":"HIRAGANA LETTER E","description":["ひらがなの「え」。字母は「衣」。","国民的ロボット、ドラえもんは22世紀の世界では不良ロボットであったという設定。製造されて間もなく自分の名前を書けと言われ「ドラエモン」と書こうとしたが「エ」をカタカナで書けず、仕方なく「えもん」とひらがなで続けたため「ドラえもん」となった――というのはいわゆる「片倉設定」で半公式だが、なかなかどうして愛嬌のあるエピソードである。"],"references":["http://dl.ndl.go.jp/info:ndljp/pid/1767733/16","https://ja.wikipedia.org/wiki/%E5%9C%9F%E7%94%A8%E3%81%AE%E4%B8%91%E3%81%AE%E6%97%A5"]},{"codepoint":12362,"name":"HIRAGANA LETTER O","description":["ひらがなの「お」。字母は「於」。","江戸時代中期まで、わ行の文字だと思われていた。「お」を「あ行」に、「を」を「わ行」に正しく配置し直したのは、他ならぬ国学者の本居宣長である。"],"references":["https://ja.wikipedia.org/wiki/%E3%82%92#.E6.B1.9F.E6.88.B8.E6.99.82.E4.BB.A3","http://www.norinagakinenkan.com/norinaga/kaisetsu/jion.html","http://dl.ndl.go.jp/info:ndljp/pid/993103/10"]},{"codepoint":12363,"name":"HIRAGANA LETTER KA","description":["ひらがなの「か」。字母は「加」。","江戸いろはかるたの「か」は「癩(かったい)の瘡(かさ)うらみ」である。癩も瘡も病名であり、自分よりも僅かでも病状の軽い病人を羨むこと、転じてつまらない愚痴をこぼすことを指す。ちなみに癩は「ハンセン病」、瘡は「梅毒」を指し、どちらも現在では治療法が確立している病気である。"],"references":["http://umejii.cocolog-nifty.com/blog/2007/07/post_dc51.html"]},{"codepoint":12365,"name":"HIRAGANA LETTER KI","description":["ひらがなの「き」。字母は「幾」。","「き」の文字のように膝を曲げて腕を投げ出しながら寝ることを「きの字」と呼び、いぎたない姿勢だとされる。ちなみに現代的に言うとこの体勢は「回復体位」である。"],"references":["https://kotobank.jp/word/%E3%81%8D%E3%81%AE%E5%AD%97-475254"]},{"codepoint":12367,"name":"HIRAGANA LETTER KU","description":["ひらがなの「く」。字母は「久」。","――深い鋼青から柔らかな桔梗(ききゃう)、それからうるはしい天の瑠璃(るり)、それからけむりに目を瞑(つぶ)るとな、やはりはがねの空が眼(め)の前一面にこめてその中にるりいろのくの字が沢山沢山光ってうごいてゐるよ。くの字が光ってうご……。\n――宮沢賢治『柳沢』"],"references":["http://www.aozora.gr.jp/cards/000081/files/4465_8269.html","http://why.kenji.ne.jp/review/review402.html"]},{"codepoint":12369,"name":"HIRAGANA LETTER KE","description":["ひらがなの「け」。字母は「計」。","2017年7月現在、「け」でGoogle検索をかけると「けものフレンズ」がヒットする。"]},{"codepoint":12371,"name":"HIRAGANA LETTER KO","description":["ひらがなの「こ」。字母は「己」。","上方いろはかるたの「こ」は、「志は松の葉」である。「志」というのは、「寸志」「松の細い葉に包む程度のもの」という意味で、他人への贈品をへりくだって言う言葉である。"]},{"codepoint":12373,"name":"HIRAGANA LETTER SA","description":["ひらがなの「さ」。字母は「左」。","2画目を続けて書くか話して書くかという2種類の字形が存在する。一方で「さいたま市」の「さ」は、2画目と3画目を続けて書く形を正式に採用しており、小学校の教科書も地図帳も「さいたま市」だけ他の「さ」と形が異なる。市職員は手書きでもこの形で書くとか。"],"references":["https://web.archive.org/web/20160503131537/https://this.kiji.is/99762593899382260"]},{"codepoint":12381,"name":"HIRAGANA LETTER SO","description":["ひらがなの「そ」。字母は「曾」。","左上の部分を続けて書く形と、離して書く形の2種類の字形が存在する。実のところ、ひらがなには(漢字と違って)公的に定められた「正しい字形」が存在しないため、どちらが正しいとも言えないのが難しいところ。"],"references":["http://umejii.cocolog-nifty.com/blog/2007/07/post_dc51.html"]},{"codepoint":12383,"name":"HIRAGANA LETTER TA","description":["ひらがなの「た」。字母は「太」。","たにほたたんたのなたたたぞたなたぞでたたよたくたぬかされたたる、たかたわいたそうたたなたたひたらたたがたなである。(ヒント: たぬき)"]},{"codepoint":12385,"name":"HIRAGANA LETTER TI","description":["ひらがなの「ち」。字母は「知」。","「知は力なり」と言ったのはイギリス経験論の泰斗たるフランシス・ベーコンだが、彼は晩年、鶏に雪を詰めて冷凍する実験をしている最中に肺炎を患い、そのまま病死してしまった。好奇心は哲学者を殺す。"],"references":["https://en.wikipedia.org/wiki/Francis_Bacon#Death"]},{"codepoint":12388,"name":"HIRAGANA LETTER TU","description":["ひらがなの「つ」。字母は「川」もしくは「州」。","字母は「川」が有力とされているが、「川」の読みは「かは」(訓)「セン」(呉音・漢音)であり、どうしたら「川」が「つ」になるのかよく分かっていない。一説には、呉音以前の中国上古音が「ツウ」であり、それに由来するとも。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12390,"name":"HIRAGANA LETTER TE","description":["ひらがなの「て」。字母は「天」。","作家は日本語の愛好家であると同時に偏好家である。例えば芥川龍之介曰く――","――僕は実は平仮名には時時形にこだはることがある。たとへば「て」の字は出来るだけ避けたい。殊に「何何して何何」と次に続けるのは禁物である。その癖「何何してゐる。」と切れる時には苦にならない。「て」の字の次は「く」の字である。これも丁度折れ釘のやうに、上の文章の重量をちやんと受けとめる力に乏しい。"],"references":["http://www.aozora.gr.jp/cards/000879/files/3745_27318.html"]},{"codepoint":12392,"name":"HIRAGANA LETTER TO","description":["ひらがなの「と」。字母は「止」。","元となった読みは訓読みの「とまる」ではなく上古音の「ト」である。","将棋の歩兵の裏側に「と」と書いてあるのも、「歩」に含まれる「止」の文字が関連しているとか、していないとか。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12394,"name":"HIRAGANA LETTER NA","description":["ひらがなの「な」。字母は「奈」。","いろは順でも五十音順でも同じ位置に来る二つのひらがなのうちの一つ。ちなみにもう一つは「た」である。"]},{"codepoint":12395,"name":"HIRAGANA LETTER NI","description":["ひらがなの「に」。字母は「仁」。","おそらく最も字母に形が近いひらがなであると思われる。次点は「こ」「す」「た」「や」あたりか。"]},{"codepoint":12396,"name":"HIRAGANA LETTER NU","description":["ひらがなの「ぬ」。字母は「奴」。","多くの頻度統計において、清音としては最も出現頻度の低い仮名である。そのため、かな入力配列において「ぬ」は、キーボードの左上の最も打ちにくい場所に追いやられている。"],"references":["http://ameblo.jp/asuka-layout/entry-11421831908.html","https://www50.atwiki.jp/keylay/pages/16.html","http://61degc.seesaa.net/article/33618150.html"]},{"codepoint":12397,"name":"HIRAGANA LETTER NE","description":["ひらがなの「ね」。字母は「祢」。","FXで有り金を全部溶かすと、この文字と「ぬ」の区別がつかなくなることで有名。"]},{"codepoint":12398,"name":"HIRAGANA LETTER NO","description":["ひらがなの「の」。字母は「乃」。","Unicodeの付属規格書には、「ひらがなの『の』は数学記号として用いられることもある」と2001年から記されている。しかし、はたして「の」が何を表す記号として用いられているのか、今もって謎とされている。"],"references":["http://www.unicode.org/reports/tr25/tr25-15.pdf#page=5","https://togetter.com/li/848185"]},{"codepoint":12399,"name":"HIRAGANA LETTER HA","description":["ひらがなの「は」。字母は「波」。","江戸時代の言葉で、恥ずかしいことを「はの字」とか「おはの字」とか言った。「恥ずかしい」と言うのも恥ずかしかったのだろう。"]},{"codepoint":12405,"name":"HIRAGANA LETTER HU","description":["ひらがなの「ふ」。字母は「不」。","日本語の「ふ」の音の子音は、英語の「h」とも「f」とも「wh」とも異なる、無声両唇摩擦音と呼ばれる特殊な子音である。実はこの子音を持つ言語は世界的にも珍しく、日本語に流暢な外国人でも「ふ」の音だけは苦手としていることが多いらしい。"],"references":["http://www.timor-leste.emb-japan.go.jp/column_abe2.html","https://oshiete.goo.ne.jp/qa/8260172.html","https://en.wikipedia.org/wiki/Voiceless_bilabial_fricative","https://www.quora.com/In-Japanese-how-do-you-pronounce-the-kana-%E3%81%B5-or-%E3%83%95-fu-or-hu"]},{"codepoint":12408,"name":"HIRAGANA LETTER HE","ssml":["HIRAGANA","LETTER","<phoneme alphabet=\"ipa\" ph=\"he̞\">HE</phoneme>"],"description":["ひらがなの「へ」。字母は「阝」。","「阝」は「部屋」の「部」の略字である。成り立ちがわかりづらいが、奈良時代ごろにはカタカナの「マ」のような形をしており、これを経由して現在の形になったと考えるとわかりやすい。"],"references":["https://ja.wikipedia.org/wiki/%E3%81%B8","森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12411,"name":"HIRAGANA LETTER HO","description":["ひらがなの「ほ」。字母は「保」。","「ほの字」とは「惚れている」を表す俗語である。今でも使われるが、用例は江戸初期まで遡るとか。"]},{"codepoint":12414,"name":"HIRAGANA LETTER MA","description":["ひらがなの「ま」。字母は「末」。","尾張いろはかるたの「ま」の札は「待てば甘露の日和あり」である。甘露とは中国の伝説で君主が善政を敷いたときに降るとされる、甘い雨のこと。現在では「待てば海路の日和あり」で知られているが、これは甘露が海路に転じたものである。","つまり、アメではなくアメが⋯⋯。いや、なんでもない。"],"references":["http://www.geocities.jp/n_quaker/karuta/owari.html","https://ja.wikipedia.org/wiki/%E7%94%98%E9%9C%B2"]},{"codepoint":12416,"name":"HIRAGANA LETTER MU","description":["ひらがなの「む」。字母は「武」。","とあるゲームにおいて、マックスウェルなる人物が全てを終わらせる時にノートから召喚する文字。"],"references":["http://www.nicovideo.jp/watch/sm17484462"]},{"codepoint":12420,"name":"HIRAGANA LETTER YA","description":["ひらがなの「や」。字母は「也」。","時は平安、藤原成範卿は、流罪を赦されて京に召還されたとき、内裏にて宮女から次のごとき和歌を受け取った。","――雲の上はありし昔にかはらねど見し玉だれの内やゆかしき","成範卿が配流される前は彼も簾中に出入りできる身分だったことを指しての歌である。返歌をしようとした成範だったが、時の内大臣である平重盛が参内したのを見て、すぐさま受け取った歌の「や」の文字を書き換えて宮女に返し、忽ち辞去した。果たしてその字は―― (U+305Eに続く)"],"references":["http://dl.ndl.go.jp/info:ndljp/pid/945602/53","http://dl.ndl.go.jp/info:ndljp/pid/877526/29"]},{"codepoint":12422,"name":"HIRAGANA LETTER YU","description":["ひらがなの「ゆ」。字母は「由」。",{"TODO":"書く"}],"references":["http://dl.ndl.go.jp/info:ndljp/pid/945602/53","http://dl.ndl.go.jp/info:ndljp/pid/877526/29"]},{"codepoint":12424,"name":"HIRAGANA LETTER YO","description":["ひらがなの「よ」。字母は「与󠄁」。","2017年5月、数学記号の一種としてひらがなの「よ」が用いられている論文があると話題になった。論文は圏論に関する証明を行っており、「米田の補題」から導かれる、任意の局所小圏に対して定義される前層圏への充満忠実関手、すなわち「米田埋め込み」を「よ」と表記している。由来はもちろん、「米田の補題」に名が知られる数学者米田信夫の頭文字である。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。","https://twitter.com/unununum_1/status/860125300104937472","https://arxiv.org/abs/1506.08870"]},{"codepoint":12425,"name":"HIRAGANA LETTER RA","description":["ひらがなの「ら」。字母は「良」。","おもちゃ専門量販店の「Toys\"Я\"us」の名前は、「Toys are us.」という英文に由来している。「R」が反転しているのは、英語圏の子どもがよく間違える書き方だとか。日本語名の「トイザらス」の「ら」がひらがななのも原語にならっており、同じように「子どもの間違い」をうまく図表化した、秀逸なローカリゼーションによるものである。"],"references":["https://www.toysrus.co.jp/h/CSfHelpFaq10.jsp"]},{"codepoint":12426,"name":"HIRAGANA LETTER RI","description":["ひらがなの「り」。字母は「利」。","「利」の右側ではなく、全体を崩して作られた文字である。ショゴスの鳴き声。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12427,"name":"HIRAGANA LETTER RU","description":["ひらがなの「る」。字母は「留」。","しりとりの必勝法。そして、広辞苑に掲載されている単語でしりとりをしても、ポケモンの名前でしりとりをしても、最も長いしりとりの最後の単語は「る」で始まることが知られている。"],"references":["http://oride.net/trivia/trivia361-368.htm#tane32","http://auemath.aichi-edu.ac.jp/~ykhashi/semi/2010note/08_issey_final.pdf"]},{"codepoint":12428,"name":"HIRAGANA LETTER RE","description":["ひらがなの「れ」。字母は「礼」。","日本の車のナンバープレートで、レンタカーに付けられる文字といえば「わ」が有名だが、実は制度上は「れ」も用いることができる。特に、全国の陸運支局の中で、札幌だけはなぜかナンバープレート交付開始直後から「れ」ナンバーのプレートを発行していた。一説にはFAXで書類を送信した際に「わ」と「れ」を取り違えたとされているが、信憑性は低い。","現在、「れ」ナンバーのレンタカーを見られるのは北海道と沖縄だけである。"],"references":["https://trafficnews.jp/post/65790/2/"]},{"codepoint":12429,"name":"HIRAGANA LETTER RO","description":["ひらがなの「ろ」。字母は「吕」。","字母の「吕(呂の異体字)」は人間の背骨をかたどった象形文字である。この用法は文字を転じて現在「膂力」の「りょ」にかろうじて形を留めている。"],"references":["森岡隆　『図説かなの成り立ち事典』　教育出版、2006年。ISBN 9784316801810。"]},{"codepoint":12431,"name":"HIRAGANA LETTER WA","description":["ひらがなの「わ」。字母は「和」。","日本の車のナンバープレートで「わ」といえば、主にレンタカーに付けられる文字である。なぜ「わ」がレンタカーなのかはよく分かってないが、「50音順で後半の使われていなかった文字が当てはめられたのではないか」と言われている。"],"references":["https://trafficnews.jp/post/65790/2/"]},{"codepoint":12432,"name":"HIRAGANA LETTER WI","description":["ひらがなの「ゐ」。字母は「為」。","万物は流転する。文字も流転する。平安期に上代仮名が消え、1900年に変体仮名が消えたように、この文字も1946年11月16日に歴史の表舞台から姿を消した。消え行く文字たちに祈りを。そして新たな文字たちに祝福を。"]},{"codepoint":12434,"name":"HIRAGANA LETTER WO","description":["ひらがなの「を」。字母は「遠」。","戦後の国語改革を生き延びた歴戦の勇士。「を」が助詞でなかったら、「ゐ」「ゑ」同様にこの文字も消える運命にあったのだ。"]},{"codepoint":12504,"name":"KATAKANA LETTER HE","description":["カタカナの「ヘ」。字源は「阝」。","仮名の中で唯一、ひらがなとカタカナの形が全く同じ文字。しかし印刷される書体では、ひらがな・カタカナそれぞれのデザインに合わせて微妙な違いを設けており、プロの活版職人なら活字を見ただけでひらがなかカタカナか判別できるらしい。"],"references":["http://crd.ndl.go.jp/reference/detail?page=ref_view&id=1000137387"]},{"codepoint":29356,"name":"CJK UNIFIED IDEOGRAPH-72AC","definition":"dog; radical number 94","description":["――「貴様は手習いをしたか?」「手習いどころか唐様でも和様でもなんでも書きます」「どふやら嘘らしい、貴様『大』の字を書き得るか」「書き得る書き得る」「そんなら書いて見せなへか」「ムム書いて見せよふ見せよふ」と七といふ字や八といふ字を書く。「ソレ見やれ大の字も知らぬ。文字を知らぬ者は畜生だ」と言へば大きに腹を立てて「そんなら大の字を書いて見せやうか」「サァサァ書いて見やれ」「書かねへでは畜生だと言はれたが悔しい、書いて見せやう」と大の字を書き、脇へ点を打つて「サァこれでも畜生か」。\n――桜川慈悲成「無筆」 『落噺常々草』所収","江戸ののび太である。"],"references":["http://dl.ndl.go.jp/info:ndljp/pid/8929358/8","http://rakugonobutai.web.fc2.com/156sitinoji/siti.html"]},{"codepoint":29482,"name":"CJK UNIFIED IDEOGRAPH-732A","definition":"pig, hog, wild boar","description":["日本ではイノシシを意味する漢字だが、中国やその他の国では主にブタを意味する。したがって干支の亥年も、中国ではイノシシ年ではなくブタ年である。"]},{"codepoint":24525,"name":"CJK UNIFIED IDEOGRAPH-5FCD","definition":"endure, bear, suffer; forbear","description":["即ち、<ruby><rb>刃の下に心あり</rb><rt>ハートアンダーブレード</rt></ruby>。",{"TODO":"書く"}]},{"codepoint":135673,"name":"CJK UNIFIED IDEOGRAPH-211F9","description":["国構えの中に「兔(ウサギ)」の文字。《篇海》引く「与月同籀文」⋯⋯即ち、ウサギの住む土地、「月」を意味する漢字である。","中国に伝わる月の説話といえば嫦娥奔月が有名だが、月の兎の話(玉兎伝説)も同じく古くから伝わっている。別伝では、月へ昇った嫦娥は神罰により兎に变化した、とも。","この字は佚書とされる字書『史籀篇』に見られるとされる「籀文」である。『史籀篇』は現存しないがゆえにその内容については謎に包まれており、それゆえこの漢字の字源も明らかではない。しかし、玉兎伝説との関連はほぼ間違いないと見てよいだろう。そして、この字に対応する、「太陽」を意味する漢字も存在するのだが⋯⋯。"]},{"codepoint":135694,"name":"CJK UNIFIED IDEOGRAPH-2120E","description":["国構えの中に「烏(カラス)」の文字。《集韻》引く「籀文日字」⋯⋯即ち、「太陽」を意味する漢字である。","太陽にカラスが棲んでいるという金烏伝説は、中国神話に語られる伝説の一つだ。かつて10個の太陽が地上を照らしたとき、英雄后羿は1つの太陽に狙いを定めて矢を引いた。射ると太陽はたちまち爆発四散して落下し、あとには三本足のカラスの死体が残されたという。","日本神話に登場する八咫烏も、これと同じ三足烏の系統に属する。この漢字は籀文であり字源は明らかではないが、金烏伝説との関連はほぼ間違いないと見ていいだろう。そして、この字に対応する、「月」を意味する漢字も存在するのだが⋯⋯。"]},{"codepoint":32703,"name":"CJK UNIFIED IDEOGRAPH-7FBF","description":[{"TODO":"書く"}]},{"codepoint":13315,"name":"CJK UNIFIED IDEOGRAPH-3403","description":["漢字――である。","朝鮮国字の一種で、「かなづち」などを意味する象形文字という説が有力。","筆者はこれに「アース」という読みを与えたい。"],"references":["http://www.guoxuedashi.com/zidian/3403.html"]},{"codepoint":131501,"name":"CJK UNIFIED IDEOGRAPH-201AD","description":["説文解字に見られる珍字。","何より特徴的な下半分のよく分からないうねうねは、もと「雲」の古字である。上半分は「月」が変化したもの。即ち「月が雲に隠れて陰る様子」を表す漢字である。"],"references":["http://www.guoxuedashi.com/zidian/z28216i.html"]},{"codepoint":38276,"name":"CJK UNIFIED IDEOGRAPH-9584","description":["初期のボーカロイドに造詣のある人には懐かしい漢字かもしれない。珍字を扱った卑屈Pの楽曲「なんだかとっても! いいかんじ」にてサビを飾る漢字である。","楽曲中でこの字は、「漢字部屋」というウェブサイトから引用した「ものかげからきゅうにとびだしてひとをおどろかせるときにはっするこえ」という長い読みを与えられている。これは、まあ、ある意味では間違いではない。","この漢字は宋代の『賓退錄』に初めて見られる漢字で、この文献では「身を隱し忽ちに出で、以て人を驚かす聲を言う也」という説明を与えられている。なのでこの説明文を直訳したと思われる例の訓も、意味としては正しいといえる。","しかし、「漢字部屋」に掲載されているこの訓は、当該サイトに「典拠不明」と記されているとおり、どこから取ったものなのか、いまいちはっきりしない。有力なのは諸橋轍次の『大漢和辞典』に掲載されている字釈だが、これも原文とは大きく異なる。なので、この字を以て「最も長い読みの漢字」などと称されると、かなり納得がいかない。","が、少なくともこの漢字が「物陰から急に飛び出して人を驚かせる時に発する声」という愉快な意味を持つことは間違いない。こんな感じの文字なので字源もよく分からないが、見たまま捉えるなら、「門」の陰に「人」がいる様子を表した会意文字となるだろう。","ところで――この字と同じく「門」と「人」から構成される漢字に、「閃」がある。この字は現在では主に「ひらめき」の意味で用いられるが、原義は《説文》などに見られるとおり、「門の中から人が顔を出している様子」である。ここから「突然現れる」という用法が生まれ、さらには「閃光」「突然のひらめき」という意味へと派生していった。となると、この間に「門の中から人が突然顔を出す」という意義が存在したであろうことは想像に難くない。","これを踏まえて考えると⋯⋯「閃」と「閄」には絶妙な意味の繋がりが見て取れる。門の中から人が現れるか、陰から人が現れるかというだけの違いである。筆者は、「閄」が「閃」になぞらえて作られた造字であり、それ自体が一種のユーモアだったのではないかと想像しているが⋯⋯。","はてさて、いずれにせよ真相は藪の中である。"],"references":["http://www.nicovideo.jp/watch/sm3556898","https://www.kanripo.org/text/KR3j0051/005#1a","http://www.geocities.jp/f9305710/henkanji.html","http://dic.nicovideo.jp/a/%E9%96%84","http://www.guoxuedashi.com/hydcd/510588d.html","http://www.guoxuedashi.com/kangxi/pic.php?f=dcd&p=16821","http://www.guoxuedashi.com/kangxi/pic.php?f=dcd&p=16825","http://www.guoxuedashi.com/kangxi/30952l.html","http://www.guoxuedashi.com/kangxi/14415l.html","http://cjjc.weblio.jp/content/%E9%96%83"]},{"codepoint":895,"name":"GREEK CAPITAL LETTER YOT","description":["果てしなく不可解。果てしなく厄介。それがUnicodeに収録された32番目のギリシャ文字、「ヨット」である。","大げさに言えば、この文字はギリシャ文字に存在するはずがない、存在してはいけない文字だ。","ギリシャ文字は、現存する文字体系の中でも、最も古い歴史を持つ文字の一つである。紀元前9世紀から現代に至るまで、実に3000年近くに渡って大きな変化をすることなく伝え続けられた。その長い歴史の中には、表記法の変化に伴って消失し、現代では使われなくなった文字も存在する。ディガンマやスティグマなどが典型的な例である。","その淘汰と発生の歴史の中のどこにも、「ヨット」は存在しない。現代ギリシャ語の語彙に「ヨット」なる文字は登場しないし、古代の文献にもこれに対応する文字は存在しない。ならば「ギリシャ文字のヨット」とは何なのか。一体誰が、何のために追加した文字なのか。","形は、ラテン文字のJ(ジェー)に似ている……。いや、むしろ似ていて当然だ。なぜならそもそも「ヨット」というのは、ラテン文字のJのドイツ語読みにほかならないからである。","ラテン文字としてのJは、26字存在する基本ラテン文字の中でも最も新しい文字である。字形としての用例は古代ローマ期まで遡るが、音素/j/(ヤ行の音)を表す文字として独立に数えられるようになったのは、中世後期になってからである。そのころギリシャでは活版印刷の普及とともに活字体が形成され、確固たる表記体系が確立された。そこに「異国の文字」が入り込む隙は、なかった。","なので「ギリシャ文字のヨット」というのは、ほとんど現代の空想の産物である。この文字は、現代のギリシャ語学者が、かつてギリシャ語に存在した音素、/j/を表記するために考案した、架空のギリシャ文字なのだ。","音素/j/は、現代ギリシャ語では使われることがない。ギリシャ文字が生まれた紀元前9世紀のギリシャ語にもこの音は存在しなかった。なのでこの音に対応する文字が最初から存在しないのは、ある意味あたり前のことだ。しかし、それ以前の時代……紀元前2000年紀から1000年紀にかけて、ギリシャ語が線文字Aやキプロス文字を用いて歪に表記されていた時代、今なお盛んに研究が行われているその時代のギリシャ語に、音素/j/は存在していたと推定されている。",{"TODO":"書く"}],"references":["http://www.opoudjis.net/unicode/yot.html"]},{"codepoint":7838,"name":"LATIN CAPITAL LETTER SHARP S","description":["「ß(エスツェット)」の大文字問題は、古来100年間にわたりドイツ人を悩ませてきた問題だった。","「ß」は、ドイツ語特有の文字で、字音的には「ss」と同一である。かつては「ss」を含む単語は自由に「ß」に書き換えることが可能だったが、19世紀ごろから、それぞれがある程度意識して使い分けるようになった。","このようにしてドイツ語に「ß」は生まれた。例えば、ドイツ語で「いかだ」は「Floß」である。ドイツ語に「ss」で始まる単語はないので、「ß」で始まる単語もない。従って大文字の「ß」は存在しえない――万が一、文章をすべて大文字で記す事になった場合は、「ß」を「ss」に開けばいい。「Floß」は「FLOSS」となる。","事態がまかり通らなくなったのは、20世紀に入ってからである。1901年、ドイツの国語改革の一環として、ドイツ語の正しい綴りを統一する「ドイツ正書法」が制定された。これにより、「ß」を使用する単語と「ss」を使用する単語が明確に規定され、「ß」と「ss」の弁別が生まれた。同時に、「ß」を大文字で書く時は「SS」とするというルールが明文化された。そして1997年、ドイツ正書法が改正され、「ß」と「ss」の区別はさらに厳密なものになった。長母音の後は「ß」、短母音の後は「ss」というルールが生まれ、これがあらゆる単語に適用されるようになった。","こうなってくると、もはや「ß」と「ss」は別の文字である。例えば、「大きさ」を意味する「Maße(マーセ)」と、「塊」を意味する「Masse(マッセ)」とは異なる。これらを大文字で書いたときに、「Maße」が「Masse」と同じ綴りになるのは違和感がある⋯⋯という流れが生まれ始めた。こうして「ß」の大文字を表す文字が各方面で作られたが、正書法に則ってないので使うべきでないという意見もあり、大きな論争となった。","そんな具合なので、2007年、Unicodeに「ß」の大文字が独立した文字として登録されたときには、大きな話題を呼んだ。新しい文字コードに対応するためのフォントがすぐさま設計され、新聞の見出しなどでも徐々に「ß」の大文字が用いられるようになっていった。","そして2017年6月28日、ドイツ正書法の改正により、「ß」の大文字が公式に認められることとなった。ドイツ正書法が制定されて爾来116年、ようやくこの文字は市民権を勝ち取ったのである。","古くからある文字を、どうやって新しい書記体系に組み込むか。このような問題は、他の言語でもしばしば見られる。日本語だって例外ではない。例えば、踊り字の一つである「くの字点」を、横書きで表現する時にどうするのかという問題――横書き用の新たな「くの字点」を考案するのか、それとも「くの字点」を用いず開いてしまうのか⋯⋯。開いてしまっても意味としては同じだが、きっと「くの字点」の古典的な雰囲気を崩してしまうことに抵抗がある人も多いだろう。","ドイツ語は、新たな文字を考案するという選択をした。個人的には、2007年のUnicode採択が一役買っているのではないかと考えている。","文字コードは社会を変える。"],"references":["https://en.wikipedia.org/wiki/%C3%9F","https://en.wikipedia.org/wiki/Capital_%E1%BA%9E","http://www.unicode.org/versions/Unicode10.0.0/ch05.pdf#page=45","http://www.zeit.de/news/2017-06/29/sprache-die-deutsche-sprache-hat-jetzt-auch-ein-grosses-eszett-29114003","http://www.pocus.jp/e-deutsch/eszet.html","https://web.archive.org/web/20110131220357/http://opentype.info:80/blog/2011/01/24/capital-sharp-s/","http://blog.colorfullife.net/archives/2007/06/04-000644.php"]},{"codepoint":65021,"name":"ARABIC LIGATURE BISMILLAH AR-RAHMAN AR-RAHEEM","description":["アラビア書道は、アラビア文字の美しさを極限まで追求した芸術である。複雑に絡みながら一面を埋め尽くす線と線、壮大で美麗な文字の交わりは、見るものを否応なしに圧倒する力を有している。",{"TODO":"書く"},"画像は右下からスルス体で連ねられたバスマラである。頂点には「アッラー」の文字を配し、左右には「ラフマーニ」と「ラヒーム」の二語が対称に置かれた涙滴形となっている。全体として、非常に美しい調和がとれている。",{"TODO":"書く"}],"references":["https://commons.wikimedia.org/wiki/File:Bismillah_Calligraphy_37.svg","https://plaza.rakuten.co.jp/alqalam/diary/200705200000/","http://www.nippon.com/ja/people/e00028/","http://www.unicode.org/L2/L2002/02163-n2413-4-urdu.pdf","http://www.unicode.org/L2/L2002/02011R-kew.pdf","http://www.unicode.org/versions/Unicode10.0.0/ch09.pdf#page=31"]}]
 
 /***/ }),
 /* 775 */
