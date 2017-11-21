@@ -635,6 +635,13 @@
     - https://ja.wikipedia.org/wiki/%E7%94%98%E9%9C%B2
 
 -
+  codepoint: 0x307F
+  name: HIRAGANA LETTER MI
+  description:
+    - ひらがなの「み」。字母は「美」。
+    - 「みみみみみ⋯」と「み」を18個続けて書くと、きゃりーぱみゅぱみゅの楽曲「み」の歌詞になるので、下手に書いたらJASRACに「め」をつけられるかもしれない。ご注意を。
+
+-
   codepoint: 0x3080
   name: HIRAGANA LETTER MU
   description:
@@ -642,6 +649,17 @@
     - とあるゲームにおいて、マックスウェルなる人物が全てを終わらせる時にノートから召喚する文字。
   references:
     - http://www.nicovideo.jp/watch/sm17484462
+
+-
+  codepoint: 0x3081
+  name: HIRAGANA LETTER ME
+  description:
+    - ひらがなの「め」。字母は「女」。
+    - 江戸の火消人足は担当区域ごとに48組に分かれ、それぞれに「い組」「ろ組」「は組」と1字ずつ名前を冠したことから「いろは組」とも呼ばれ、江戸の庶民に深く親しまれた。時に文化二年、中でも現在の新橋から浜松町の周辺を担当した「め組」が芝大神宮で起こした騒動は大いに話題となり、神宮には今でも喧嘩に使用されたというめ組の半鐘が祀られている。
+  references:
+    - https://ja.wikipedia.org/wiki/%E3%82%81%E7%B5%84%E3%81%AE%E5%96%A7%E5%98%A9
+    - http://d.hatena.ne.jp/keyword/%A4%E1%C1%C8
+    - http://www.minato-kanko.com/kankou/shibadaijinguu
 
 -
   codepoint: 0x3084
@@ -660,10 +678,9 @@
   name: HIRAGANA LETTER YU
   description:
     - ひらがなの「ゆ」。字母は「由」。
-    - TODO: 書く
+    - かつて前大戦で帝国陸軍が建造した唯一の潜水艦、三式潜航輸送艇は、名前の通り前線への輸送任務に従事するために製造された潜水艇だった。ゆえに「輸送用」の頭文字、丸付きの「ゆ」を冠し、「マルゆ」と称され今でも親しまれているという。
   references:
-    - http://dl.ndl.go.jp/info:ndljp/pid/945602/53
-    - http://dl.ndl.go.jp/info:ndljp/pid/877526/29
+    - https://ja.wikipedia.org/wiki/%E4%B8%89%E5%BC%8F%E6%BD%9C%E8%88%AA%E8%BC%B8%E9%80%81%E8%89%87
 
 -
   codepoint: 0x3088
