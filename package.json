@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/hakatashi/unicode-karuta#readme",
   "devDependencies": {
-    "autoprefixer": "^7.1.2",
+    "autoprefixer": "^9.1.2",
     "babel-core": "^6.25.0",
     "babel-eslint": "^8.0.0",
     "babel-loader": "^7.1.1",
