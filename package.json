@@ -33,7 +33,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "common-tags": "^1.4.0",
-    "concurrently": "^3.5.0",
+    "concurrently": "^4.1.1",
     "css-loader": "^0.28.4",
     "eslint": "^4.3.0",
     "eslint-plugin-react": "^7.1.0",
